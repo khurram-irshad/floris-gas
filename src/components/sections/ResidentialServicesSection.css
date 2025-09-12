@@ -1,0 +1,166 @@
+/* Residential Services Section Component Styles */
+
+.residential-services-section {
+  padding: 6rem 0;
+}
+
+.residential-services-container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header Styles */
+.residential-services-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.residential-services-title {
+  font-size: 36px;
+  font-family: 'Gilroy-SemiBold', sans-serif;
+  background: linear-gradient(90deg, #4068FC 0%, #60B8FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 6px;
+  line-height: 1.2;
+}
+
+/* Services Grid */
+.residential-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Service Card */
+.residential-service-card {
+  background: #f4f7fa;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  height: 618px;
+}
+
+.residential-service-card:hover {
+  transform: translateY(-4px);
+  background: linear-gradient(199.8deg, #14152B 3.73%, #3E4D7D 58.07%, #14152B 91.85%);
+}
+
+.residential-service-card:hover .residential-service-title {
+  color: #ffffff;
+}
+
+/* Service Image */
+.residential-service-image-container {
+  position: relative;
+  width: 100%;
+  height: 390px;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.residential-service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 0.75rem;
+}
+
+/* Service Content */
+.residential-service-content {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.residential-service-title {
+  font-size: 28px;
+  font-weight: 600;
+  font-family: 'Gilroy-Bold', sans-serif;
+  color: #49484c;
+  margin-bottom: 0.75rem;
+  line-height: 100%;
+}
+
+.residential-service-description {
+  font-size: 18px;
+  color: #d6d9dc;
+  line-height: 100%;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+/* Service Button */
+.residential-service-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: flex-start;
+}
+
+.residential-service-button img {
+  filter: brightness(0) invert(1);
+}
+
+.residential-service-button.blue {
+  background: linear-gradient(90deg, #4068FC 0%, #60B8FF 100%);
+  color: white;
+}
+
+.residential-service-button.blue:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(64, 104, 252, 0.3);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .residential-services-section {
+    padding: 3rem 0;
+  }
+  
+  .residential-services-container {
+    padding: 0 0.75rem;
+  }
+  
+  .residential-services-title {
+    font-size: 28px;
+  }
+  
+  .residential-services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .residential-service-card {
+    height: auto;
+  }
+  
+  .residential-service-image-container {
+    height: 250px;
+  }
+  
+  .residential-service-title {
+    font-size: 22px;
+  }
+  
+  .residential-service-description {
+    font-size: 16px;
+  }
+}

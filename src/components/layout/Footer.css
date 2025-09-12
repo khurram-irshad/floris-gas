@@ -1,0 +1,157 @@
+.footer {
+  background: #191b34;
+  color: white;
+  padding: 4rem 0 0rem 0;
+  border-top: 1px solid #34495e;
+}
+
+.footer-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.footer-brand {
+  max-width: 350px;
+}
+
+.footer-logo {
+  margin-bottom: 1.5rem;
+}
+
+.logo-image {
+  height: auto;
+}
+
+.footer-description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #bdc3c7;
+  margin: 0;
+}
+
+.footer-column-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #4f9cf9;
+  margin: 0 0 1.5rem 0;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-link {
+  color: #bdc3c7;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+
+
+.footer-bottom {
+  border-top: 1px solid #34495e;
+  padding: 1rem 0;
+  text-align: center;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  color: #95a5a6;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+  
+  .footer-brand {
+    grid-column: 1 / -1;
+    max-width: none;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 3rem 0 1.5rem 0;
+  }
+  
+  .footer-container {
+    padding: 0 0.75rem;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-brand {
+    grid-column: 1;
+    margin-bottom: 0;
+  }
+  
+  .footer-column-title {
+    font-size: 16px;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-description {
+    font-size: 13px;
+  }
+  
+  .footer-link {
+    font-size: 13px;
+  }
+  
+  .footer-bottom {
+    padding-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 2rem 0 1rem 0;
+  }
+  
+  .footer-content {
+    gap: 1.5rem;
+  }
+  
+  .footer-column-title {
+    font-size: 15px;
+  }
+  
+  .footer-description {
+    font-size: 12px;
+  }
+  
+  .footer-link {
+    font-size: 12px;
+  }
+  
+  .footer-copyright {
+    font-size: 11px;
+  }
+}

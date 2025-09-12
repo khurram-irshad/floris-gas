@@ -1,0 +1,172 @@
+.location-section {
+  background: radial-gradient(193.05% 218.27% at 8.75% -37.14%, #4E75AA 4.03%, #0E081B 91.3%);
+  padding: 5rem 0;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.location-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+}
+
+.location-title {
+  font-size: 36px;
+  font-weight: 400;
+  color: white;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.location-finder-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  width: 100%;
+}
+
+.location-finder-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #374151;
+  margin: 0 0 2rem 0;
+  text-align: center;
+}
+
+.location-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.location-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.location-input {
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #374151;
+  background: #f9fafb;
+  transition: all 0.3s ease;
+}
+
+.location-input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.location-input::placeholder {
+  color: #9ca3af;
+}
+
+.location-icon-button {
+  position: absolute;
+  right: 12px;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.location-icon {
+  opacity: 0.7;
+  transition: all 0.2s ease;
+  filter: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
+
+.location-submit-button {
+   background: linear-gradient(90deg, #416AFC 0%, #5FB7FF 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+
+.location-submit-button:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .location-section {
+    padding: 3rem 0;
+  }
+  
+  .location-container {
+    padding: 0 0.75rem;
+  }
+  
+  .location-content {
+    gap: 2rem;
+  }
+  
+  .location-title {
+    font-size: 22px;
+  }
+  
+  .location-finder-card {
+    padding: 2rem;
+    max-width: none;
+  }
+  
+  .location-finder-title {
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .location-input {
+    padding: 0.875rem 3rem 0.875rem 1rem;
+    font-size: 14px;
+  }
+  
+  .location-submit-button {
+    padding: 0.875rem 1.5rem;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .location-title {
+    font-size: 20px;
+  }
+  
+  .location-finder-card {
+    padding: 1.5rem;
+  }
+}
