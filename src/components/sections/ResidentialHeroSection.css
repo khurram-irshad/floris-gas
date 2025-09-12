@@ -1,0 +1,177 @@
+.residential-hero-section {
+  position: relative;
+  height: 368px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.residential-hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.residential-hero-image {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.residential-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.residential-hero-container {
+  position: relative;
+  z-index: 3;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.residential-hero-content {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.residential-hero-text {
+  max-width: 600px;
+  color: white;
+}
+
+.residential-hero-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 1.5rem 0;
+  font-family: 'Gilroy-Bold', sans-serif;
+}
+
+.residential-hero-description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 0 2.5rem 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.residential-hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.residential-hero-button {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.residential-hero-button.primary {
+  background: linear-gradient(90deg, #416AFC 0%, #5FB7FF 100%);
+  color: white;
+}
+
+.residential-hero-button.primary:hover {
+  background: linear-gradient(90deg, #3558e0 0%, #4fa6ef 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(65, 106, 252, 0.3);
+}
+
+.residential-hero-button.secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.residential-hero-button.secondary:hover {
+  background: white;
+  color: #1f2937;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .residential-hero-title {
+    font-size: 42px;
+  }
+  
+  .residential-hero-description {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .residential-hero-container {
+    padding: 0 0.75rem;
+  }
+  
+  .residential-hero-content {
+    padding: 1rem 0;
+  }
+  
+  .residential-hero-title {
+    font-size: 36px;
+  }
+  
+  .residential-hero-description {
+    font-size: 16px;
+    margin-bottom: 2rem;
+  }
+  
+  .residential-hero-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .residential-hero-button {
+    width: 100%;
+    max-width: 280px;
+    padding: 0.875rem 1.5rem;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .residential-hero-title {
+    font-size: 28px;
+  }
+  
+  .residential-hero-description {
+    font-size: 15px;
+  }
+  
+  .residential-hero-button {
+    padding: 0.75rem 1.25rem;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .residential-hero-title {
+    font-size: 24px;
+  }
+  
+  .residential-hero-description {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,212 @@
+.key-features-section {
+  background: #ffffff;
+  padding: 5rem 0;
+}
+
+.key-features-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.key-features-header {
+  margin-bottom: 4rem;
+}
+
+.key-features-subtitle {
+  font-size: 16px;
+  color: #64748b;
+  margin: 0 0 1rem 0;
+  letter-spacing: 0.5px;
+}
+
+.key-features-title {
+  font-size: 36px;
+  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  line-height: 1.3;
+  margin: 0 0 1.5rem 0;
+  max-width: 40%;
+}
+
+.key-features-description {
+  font-size: 20px;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 50%;
+}
+
+.key-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.key-feature-card {
+  background: #f4f7fa;
+  border-radius: 12px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.key-feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.key-feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.75rem;
+}
+
+.feature-icon-image {
+  /* No filter needed - use original icon colors like in FeaturesSection */
+}
+
+.key-feature-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0 0 1rem 0;
+  line-height: 1.4;
+  width: 60%;
+}
+
+.key-feature-description {
+  font-size: 16px;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+  width: 60%;
+}
+
+.key-features-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.key-features-button {
+  padding: 0.875rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+.key-features-button.primary {
+  background: linear-gradient(90deg, #4067FC 0%, #60B8FF 100%);
+  color: #ffffff;
+}
+
+.key-features-button.primary:hover {
+  background: linear-gradient(90deg, #3558e0 0%, #4fa6ef 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(64, 103, 252, 0.3);
+}
+
+.key-features-button.secondary {
+  background: #eef2f6;
+  color: #262525;
+}
+
+.key-features-button.secondary:hover {
+  background: #e2e8f0;
+  color: #1e293b;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .key-features-title {
+    font-size: 32px;
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .key-features-section {
+    padding: 3rem 0;
+  }
+  
+  .key-features-container {
+    padding: 0 0.75rem;
+  }
+  
+  .key-features-header {
+    margin-bottom: 3rem;
+  }
+  
+  .key-features-title {
+    font-size: 28px;
+    max-width: 100%;
+  }
+  
+  .key-features-description {
+    font-size: 15px;
+  }
+  
+  .key-features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .key-feature-card {
+    padding: 1.5rem;
+  }
+  
+  .key-features-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .key-features-title {
+    font-size: 24px;
+  }
+  
+  .key-features-description {
+    font-size: 14px;
+  }
+  
+  .key-feature-card {
+    padding: 1.25rem;
+  }
+  
+  .key-feature-icon {
+    width: 56px;
+    height: 56px;
+  }
+  
+  .key-feature-title {
+    font-size: 16px;
+  }
+  
+  .key-feature-description {
+    font-size: 13px;
+  }
+  
+  .key-features-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .key-features-button {
+    width: 100%;
+    max-width: 250px;
+  }
+}
