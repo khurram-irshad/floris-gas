@@ -7,7 +7,7 @@ const partnersData = [
   {
     id: 1,
     name: 'Google',
-    logo: '/google.svg',
+    logo: '/Google.svg',
     alt: 'Google Logo'
   },
   {
