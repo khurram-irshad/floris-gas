@@ -19,7 +19,7 @@ export default function CallToActionSection() {
       <div className="cta-container">
         <div className="cta-content">
           <h2 className="cta-title">
-            Don't wait until you're empty. Find your nearest location now and experience the Florigas difference.
+            Don&apos;t wait until you&apos;re empty. Find your nearest location now and experience the Florigas difference.
           </h2>
           
           <div className="cta-buttons">

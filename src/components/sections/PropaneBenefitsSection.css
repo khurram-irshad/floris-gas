@@ -63,6 +63,7 @@
 
 .benefit-icon-image {
   /* No filter - use original icon colors */
+  display: block;
 }
 
 .propane-benefit-content {

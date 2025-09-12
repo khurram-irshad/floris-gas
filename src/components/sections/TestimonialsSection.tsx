@@ -33,7 +33,7 @@ export default function TestimonialsSection() {
       <div className="testimonials-container">
         <div className="testimonials-header">
           <h2 className="testimonials-title">
-            Don't take our word for it. Hear from our partners.
+            Don&apos;t take our word for it. Hear from our partners.
           </h2>
         </div>
         

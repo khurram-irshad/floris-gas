@@ -44,7 +44,7 @@ export default function KeyFeaturesSection() {
             Key Features of Our Propane Services
           </h2>
           <p className="key-features-description">
-            Our propane services prioritize your family's safety and comfort. Experience reliable solutions that fit your budget.
+            Our propane services prioritize your family&apos;s safety and comfort. Experience reliable solutions that fit your budget.
           </p>
         </div>
 

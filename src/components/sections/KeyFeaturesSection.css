@@ -71,6 +71,7 @@
 
 .feature-icon-image {
   /* No filter needed - use original icon colors like in FeaturesSection */
+  display: block;
 }
 
 .key-feature-title {
