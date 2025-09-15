@@ -8,7 +8,7 @@ const industriesData = [
     id: 1,
     category: "Restaurants & Food Service",
     title: "High-performance propane solutions for commercial kitchens, grilling, and cooking operations with consistent heat and reliability.",
-    image: "/c-kitchen.jpg",
+    image: "/C-kitchen.jpg",
     features: [
       "Commercial kitchen equipment",
       "Outdoor grilling stations", 
