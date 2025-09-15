@@ -1,0 +1,240 @@
+.process-steps-section {
+  background: #ffffff;
+  padding: 5rem 0;
+}
+
+.process-steps-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.process-steps-header {
+  margin-bottom: 4rem;
+}
+
+.process-steps-subtitle {
+  font-size: 16px;
+  color: #64748b;
+  margin: 0 0 1rem 0;
+  letter-spacing: 0.5px;
+}
+
+.process-steps-title {
+  font-size: 36px;
+  font-weight: 500;
+  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  line-height: 1.3;
+  margin: 0 0 1.5rem 0;
+  max-width: 40%;
+}
+
+.process-steps-description {
+  font-size: 18px;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 50%;
+}
+
+.process-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  margin-bottom: 3rem;
+}
+
+.process-step-card {
+  background: #f4f7fa;
+  border-radius: 12px;
+  padding: 1rem;
+  border: 1px solid #e2e8f0;
+}
+
+.process-step-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.process-step-icon {
+  background: #f3f4f6;
+  border-radius: 0.75rem;
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.step-icon-image {
+  /* No filter - use original icon colors like in other sections */
+  display: block;
+}
+
+.process-step-content {
+  /* Content container */
+}
+
+.process-step-number {
+  font-size: 14px;
+  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  text-transform: uppercase;
+}
+
+.process-step-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0 0 1rem 0;
+  line-height: 1.4;
+}
+
+.process-step-description {
+  font-size: 16px;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.process-steps-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.process-steps-button {
+  padding: 0.875rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+.process-steps-button.primary {
+  background: linear-gradient(90deg, #4067FC 0%, #60B8FF 100%);
+  color: #ffffff;
+}
+
+.process-steps-button.primary:hover {
+  background: linear-gradient(90deg, #3558e0 0%, #4fa6ef 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(64, 103, 252, 0.3);
+}
+
+.process-steps-button.secondary {
+  background: #eef2f6;
+  color: #262525;
+}
+
+.process-steps-button.secondary:hover {
+  background: #e2e8f0;
+  color: #1e293b;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .process-steps-title {
+    font-size: 32px;
+    max-width: 60%;
+  }
+  
+  .process-steps-description {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .process-steps-section {
+    padding: 3rem 0;
+  }
+  
+  .process-steps-container {
+    padding: 0 0.75rem;
+  }
+  
+  .process-steps-header {
+    margin-bottom: 3rem;
+  }
+  
+  .process-steps-title {
+    font-size: 28px;
+    max-width: 100%;
+  }
+  
+  .process-steps-description {
+    font-size: 16px;
+    max-width: 100%;
+  }
+  
+  .process-steps-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .process-step-card {
+    padding: 1.5rem;
+  }
+  
+  .process-step-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  
+  .process-step-title {
+    font-size: 18px;
+  }
+  
+  .process-step-description {
+    font-size: 15px;
+  }
+  
+  .process-steps-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .process-steps-title {
+    font-size: 24px;
+  }
+  
+  .process-steps-description {
+    font-size: 15px;
+  }
+  
+  .process-step-card {
+    padding: 1.25rem;
+  }
+  
+  .process-step-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .process-step-title {
+    font-size: 16px;
+  }
+  
+  .process-step-description {
+    font-size: 14px;
+  }
+  
+  .process-steps-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .process-steps-button {
+    width: 100%;
+    max-width: 250px;
+  }
+}

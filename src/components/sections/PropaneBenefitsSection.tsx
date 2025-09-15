@@ -38,8 +38,8 @@ export default function PropaneBenefitsSection() {
                     <Image
                       src={benefit.icon}
                       alt={benefit.title}
-                      width={32}
-                      height={32}
+                      width={48}
+                      height={48}
                       className="benefit-icon-image"
                     />
                   </div>
