@@ -5,6 +5,8 @@ import PropaneSolutionsSection from '@/components/sections/PropaneSolutionsSecti
 import KeyFeaturesSection from '@/components/sections/KeyFeaturesSection';
 import ResidentialServicesSection from '@/components/sections/ResidentialServicesSection';
 import PropaneBenefitsSection from '@/components/sections/PropaneBenefitsSection';
+import ProcessStepsSection from '@/components/sections/ProcessStepsSection';
+import ResidentialFAQSection from '@/components/sections/ResidentialFAQSection';
 import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import CallToActionSection from '@/components/sections/CallToActionSection';
 import LocationSection from '@/components/sections/LocationSection';
@@ -19,6 +21,8 @@ export default function ResidentialPage() {
         <KeyFeaturesSection />
         <ResidentialServicesSection />
         <PropaneBenefitsSection />
+        <ProcessStepsSection />
+        <ResidentialFAQSection />
         <LocationSection />
         <TestimonialsSection />
         <CallToActionSection />
