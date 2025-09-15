@@ -1,0 +1,160 @@
+.commercial-propane-solutions-section {
+  background: #ffffff;
+  padding: 4rem 0;
+}
+
+.commercial-propane-solutions-container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.commercial-propane-solutions-content {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.commercial-propane-solutions-left {
+  flex: 1;
+}
+
+.commercial-propane-solutions-title {
+  font-size: 36px;
+  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  line-height: 1.3;
+  margin: 0;
+  width: 60%;
+}
+
+.commercial-propane-solutions-right {
+  flex: 1;
+}
+
+.commercial-propane-solutions-description {
+  font-size: 20px;
+  font-weight: 400;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0 0 2rem 0;
+}
+
+.commercial-propane-solutions-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.commercial-propane-solutions-button {
+  padding: 2% 2.5%;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+  background: linear-gradient(90deg, #4067FC 0%, #60B8FF 100%);
+  color: #ffffff;
+}
+
+.commercial-propane-learn-more-button {
+    padding: 2% 2.5%;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+    background: #eef2f6;
+    color:#262525;
+}
+
+.commercial-propane-solutions-button.primary {
+  background: #4f80ff;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.commercial-propane-solutions-button.primary:hover {
+  background: #3d6ae6;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(79, 128, 255, 0.3);
+}
+
+.commercial-propane-solutions-button.secondary {
+  background: transparent;
+  color: #64748b;
+  border: 1px solid #cbd5e1;
+}
+
+.commercial-propane-solutions-button.secondary:hover {
+  background: #f1f5f9;
+  color: #475569;
+  border-color: #94a3b8;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .commercial-propane-solutions-content {
+    gap: 3rem;
+  }
+  
+  .commercial-propane-solutions-title {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .commercial-propane-solutions-section {
+    padding: 3rem 0;
+  }
+  
+  .commercial-propane-solutions-container {
+    padding: 0 0.75rem;
+  }
+  
+  .commercial-propane-solutions-content {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .commercial-propane-solutions-title {
+    font-size: 28px;
+  }
+  
+  .commercial-propane-solutions-description {
+    font-size: 15px;
+  }
+  
+  .commercial-propane-solutions-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .commercial-propane-solutions-title {
+    font-size: 24px;
+  }
+  
+  .commercial-propane-solutions-description {
+    font-size: 14px;
+  }
+  
+  .commercial-propane-solutions-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .commercial-propane-solutions-button {
+    width: 100%;
+    max-width: 250px;
+    justify-content: center;
+  }
+}
