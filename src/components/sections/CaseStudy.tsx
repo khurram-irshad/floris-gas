@@ -107,7 +107,7 @@ export default function CaseStudy() {
             <div className="case-study-testimonial">
               <div className="testimonial-content">
                 <p className="testimonial-text">
-                  "FloriGAS transformed our operations. We went from worrying about propane supply to focusing on what we do best - serving great food to our customers."
+                  &quot;FloriGAS transformed our operations. We went from worrying about propane supply to focusing on what we do best - serving great food to our customers.&quot;
                 </p>
                 <div className="testimonial-author">
                   <div className="author-avatar">
