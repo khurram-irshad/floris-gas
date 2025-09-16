@@ -19,7 +19,7 @@ export default function NextSuccessStoryCTA() {
             Want to Be Our Next Success Story?
           </h2>
           <p className="next-success-story-description">
-            Partner with Florida's most trusted propane provider and join thousands of satisfied<br />
+            Partner with Florida&apos;s most trusted propane provider and join thousands of satisfied<br />
             customers who rely on our proven expertise and exceptional service.
           </p>
 
