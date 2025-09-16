@@ -53,17 +53,16 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
 }
+.benefit-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
 
 
 .benefit-icon-container {
   border-radius: 12px;
   display: flex;
-  margin-bottom: 1.5rem;
-}
-
-.benefit-icon {
-  width: 32px;
-  height: 32px;
+  margin-bottom: 2rem;
 }
 
 .benefit-content {

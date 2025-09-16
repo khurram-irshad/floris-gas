@@ -1,0 +1,219 @@
+.how-it-works-section {
+  background: #ffffff;
+  padding: 5rem 0;
+}
+
+.how-it-works-container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.how-it-works-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.how-it-works-subtitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 1rem 0;
+}
+
+.how-it-works-title {
+  font-size: 36px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  line-height: 1.4;
+  margin: 0 0 1.5rem 0;
+}
+
+.how-it-works-description {
+  font-size: 18px;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+  margin: 0 auto;
+}
+
+.process-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+  background-color: #f4f7fa;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+}
+
+.process-step-item {
+  text-align: left;
+  padding: 1rem 1rem 3rem 1rem;
+}
+
+.step-icon-container {
+  border-radius: 12px;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+
+.step-content {
+  text-align: center;
+}
+
+.step-number {
+  font-size: 18px;
+  font-weight: 400;
+  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.step-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #1e293b;
+  margin-bottom: 4px;
+  line-height: 1.3;
+  text-align: left;
+}
+
+.step-description {
+  font-size: 16px;
+  color: #64748b;
+  line-height: 1.3;
+  margin: 0;
+  text-align: left;
+}
+
+.how-it-works-note {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.process-note {
+  font-size: 16px;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+  margin: 0 auto;
+}
+
+.how-it-works-action {
+  text-align: center;
+}
+
+.how-it-works-button {
+  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .how-it-works-title {
+    font-size: 32px;
+  }
+  
+  .process-steps-grid {
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .how-it-works-section {
+    padding: 3rem 0;
+  }
+  
+  .how-it-works-container {
+    padding: 0 0.75rem;
+  }
+  
+  .how-it-works-header {
+    margin-bottom: 2.5rem;
+  }
+  
+  .how-it-works-title {
+    font-size: 28px;
+  }
+  
+  .how-it-works-description {
+    font-size: 16px;
+    br {
+      display: none;
+    }
+  }
+  
+  .process-steps-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .process-step-item {
+    padding: 1rem;
+  }
+  
+  .step-title {
+    font-size: 18px;
+  }
+  
+  .step-description {
+    font-size: 15px;
+  }
+  
+  .process-note {
+    font-size: 15px;
+  }
+  
+  .how-it-works-button {
+    width: 100%;
+    max-width: 280px;
+    padding: 0.875rem 1.5rem;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .how-it-works-title {
+    font-size: 24px;
+  }
+  
+  .step-icon-container {
+    width: 56px;
+    height: 56px;
+  }
+  
+  .step-title {
+    font-size: 16px;
+  }
+  
+  .step-description {
+    font-size: 14px;
+  }
+  
+  .process-note {
+    font-size: 14px;
+  }
+}
