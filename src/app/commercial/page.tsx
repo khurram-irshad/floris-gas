@@ -6,7 +6,7 @@ import IndustriesWeServe from '@/components/sections/IndustriesWeServe';
 import BusinessBenefits from '@/components/sections/BusinessBenefits';
 import ReadyToExperience from '@/components/sections/ReadyToExperience';
 import CaseStudy from '@/components/sections/CaseStudy';
-import LocationSection from '@/components/sections/LocationSection';
+import PowerYourBusinessCTA from '@/components/sections/PowerYourBusinessCTA';
 import ResidentialFAQSection from '@/components/sections/ResidentialFAQSection';
 import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import CallToActionSection from '@/components/sections/CallToActionSection';
@@ -23,7 +23,7 @@ export default function CommercialPage() {
         <ReadyToExperience />
         <CaseStudy />
         <ResidentialFAQSection />
-        <LocationSection />
+        <PowerYourBusinessCTA />
         <TestimonialsSection />
         <CallToActionSection />   
       </main>
