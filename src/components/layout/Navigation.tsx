@@ -14,7 +14,7 @@ const navItems: NavItem[] = [
   { href: '/residential', label: 'RESIDENTIAL' },
   { href: '/commercial', label: 'COMMERCIAL' },
   { href: '/sell-propane', label: 'SELL PROPANE' },
-  { href: '/our-promise', label: 'OUR PROMISE' },
+  { href: '/case-studies', label: 'CASE STUDIES' },
   { href: '/about', label: 'ABOUT' },
   { href: '/contact', label: 'CONTACT' },
 ];
