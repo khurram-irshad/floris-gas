@@ -22,21 +22,6 @@ export default function PowerYourBusinessCTA() {
             Join thousands of Florida businesses that rely on our expertise, reliability,<br />
             and exceptional service for their propane needs.
           </p>
-          
-          <div className="power-your-business-buttons">
-            <button 
-              onClick={handleTalkToExpert}
-              className="power-your-business-button primary"
-            >
-              Talk To An Expert →
-            </button>
-            <button 
-              onClick={handleGetInstantQuote}
-              className="power-your-business-button"
-            >
-              Get Instant Quote
-            </button>
-          </div>
         </div>
 
         <div className="power-your-business-stats">
@@ -52,6 +37,21 @@ export default function PowerYourBusinessCTA() {
             <div className="stat-number">30+</div>
             <div className="power-your-business-stat-label">Years Experience</div>
           </div>
+        </div>
+        
+        <div className="power-your-business-buttons">
+          <button 
+            onClick={handleTalkToExpert}
+            className="power-your-business-button primary"
+          >
+            Talk To An Expert →
+          </button>
+          <button 
+            onClick={handleGetInstantQuote}
+            className="power-your-business-button"
+          >
+            Get Instant Quote
+          </button>
         </div>
       </div>
     </section>

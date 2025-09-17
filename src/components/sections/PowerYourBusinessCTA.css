@@ -130,7 +130,8 @@
   }
   
   .power-your-business-title {
-    font-size: 28px;
+    font-size: 24px;
+    margin-bottom: 0.5rem;
   }
   
   .power-your-business-description {
@@ -141,55 +142,40 @@
   .power-your-business-buttons {
     flex-direction: column;
     gap: 16px;
+
   }
   
   .power-your-business-button {
     width: 100%;
-    max-width: 280px;
     padding: 16px 24px;
   }
   
   .power-your-business-content {
-    margin-bottom: 50px;
-  }
-  
-  .power-your-business-stats {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-  
-  .stat-number {
-    font-size: 20px;
-  }
-  
-  .stat-label {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .power-your-business-title {
-    font-size: 24px;
-  }
-  
-  .power-your-business-description {
-    font-size: 15px;
-  }
-  
-  .power-your-business-description br {
-    display: none;
+    margin-bottom: 40px;
   }
   
   .power-your-business-stats {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .stat-item {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .stat-item:last-child {
+    border-bottom: none;
   }
   
   .stat-number {
-    font-size: 20px;
+    font-size: 24px;
+    margin-bottom: 8px;
   }
   
-  .stat-label {
-    font-size: 14px;
+  .power-your-business-stat-label {
+    font-size: 16px;
   }
 }
+

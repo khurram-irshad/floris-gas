@@ -58,8 +58,8 @@
 }
 
 .feature-icon {
-  width: 32px;
-  height: 32px;
+  width: 48px;
+  height: 48px;
 }
 
 .feature-content {
@@ -141,12 +141,12 @@
   }
   
   .partner-features-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: none;
     gap: 1.5rem;
   }
   
   .partner-feature-card {
-    padding: 1.5rem;
+    padding: 1rem;
   }
   
   .feature-title {
@@ -162,29 +162,3 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-  .what-you-get-title {
-    font-size: 24px;
-  }
-  
-  .partner-features-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  
-  .partner-feature-card {
-    padding: 1.25rem;
-  }
-  
-  .feature-title {
-    font-size: 16px;
-  }
-  
-  .feature-description {
-    font-size: 14px;
-  }
-  
-  .feature-text {
-    font-size: 12px;
-  }
-}

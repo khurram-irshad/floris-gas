@@ -16,7 +16,7 @@
 .business-benefits-subtitle {
   font-size: 14px;
   font-weight: 500;
-  color: #64748b;
+  color: #262424;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin: 0 0 1rem 0;
@@ -52,6 +52,7 @@
   border-radius: 12px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
+  border: 1px solid #E3E6EA;
 }
 .benefit-card:hover {
     transform: translateY(-4px);
@@ -79,7 +80,7 @@
 
 .benefit-description {
   font-size: 14px;
-  color: #64748b;
+  color: #262424;
   line-height: 1.5;
   margin: 0 0 1rem 0;
 }
@@ -165,18 +166,27 @@
   
   .business-benefits-header {
     margin-bottom: 2.5rem;
+    text-align: left;
   }
-  
+  .business-benefits-subtitle {
+    margin: 0 0 0 0;
+    color: #262424;
+  }
   .business-benefits-title {
     font-size: 28px;
+    margin-bottom: 0.5rem;
   }
   
   .business-benefits-description {
     font-size: 16px;
+    color: #262424;
+  }
+  .benefit-description {
+    color: #262424;
   }
   
   .business-benefits-grid {
-    grid-template-columns: repeat(2, 1fr);
+   grid-template-columns: none;
     gap: 1.5rem;
   }
   
@@ -192,34 +202,7 @@
   .business-benefits-button,
   .business-benefits-learn-more {
     width: 100%;
-    max-width: 280px;
     justify-content: center;
   }
 }
 
-@media screen and (max-width: 480px) {
-  .business-benefits-title {
-    font-size: 24px;
-  }
-  
-  .business-benefits-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  
-  .benefit-card {
-    padding: 1.25rem;
-  }
-  
-  .benefit-title {
-    font-size: 16px;
-  }
-  
-  .benefit-description {
-    font-size: 13px;
-  }
-  
-  .benefit-highlight {
-    font-size: 12px;
-  }
-}

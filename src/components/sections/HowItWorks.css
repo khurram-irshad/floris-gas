@@ -58,6 +58,15 @@
 .process-step-item {
   text-align: left;
   padding: 1rem 1rem 3rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.process-step-item:first-child {
+  border-radius: 16px 16px 0 0;
+}
+.process-step-item:last-child {
+    border-bottom: none;
+    border-radius: 0 0 16px 16px;
 }
 
 .step-icon-container {
@@ -145,6 +154,12 @@
   .how-it-works-section {
     padding: 3rem 0;
   }
+  .how-it-works-subtitle {
+    margin-bottom: 0.5rem;
+  }
+  .how-it-works-title{
+    margin-bottom: 0.5rem;
+  }
   
   .how-it-works-container {
     padding: 0 0.75rem;
@@ -175,6 +190,15 @@
     padding: 1rem;
   }
   
+  .process-step-item:first-child {
+    border-radius: 16px 16px 0 0;
+  }
+  
+  .process-step-item:last-child {
+    border-bottom: none;
+    border-radius: 0 0 16px 16px;
+  }
+  
   .step-title {
     font-size: 18px;
   }
@@ -185,35 +209,12 @@
   
   .process-note {
     font-size: 15px;
+    text-align: center;
   }
   
   .how-it-works-button {
     width: 100%;
-    max-width: 280px;
     padding: 0.875rem 1.5rem;
     font-size: 15px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .how-it-works-title {
-    font-size: 24px;
-  }
-  
-  .step-icon-container {
-    width: 56px;
-    height: 56px;
-  }
-  
-  .step-title {
-    font-size: 16px;
-  }
-  
-  .step-description {
-    font-size: 14px;
-  }
-  
-  .process-note {
-    font-size: 14px;
   }
 }

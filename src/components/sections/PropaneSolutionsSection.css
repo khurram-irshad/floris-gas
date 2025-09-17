@@ -100,16 +100,6 @@
   border-color: #94a3b8;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 1024px) {
-  .propane-solutions-content {
-    gap: 3rem;
-  }
-  
-  .propane-solutions-title {
-    font-size: 32px;
-  }
-}
 
 @media screen and (max-width: 768px) {
   .propane-solutions-section {
@@ -123,40 +113,26 @@
   .propane-solutions-content {
     flex-direction: column;
     gap: 2rem;
-    text-align: center;
+    text-align: left;
+  }
+  .propane-solutions-left {
+    flex: 1;
+    margin-right: 24%;
   }
   
   .propane-solutions-title {
     font-size: 28px;
+    width: 100% !important;
   }
   
   .propane-solutions-description {
     font-size: 15px;
   }
   
-  .propane-solutions-buttons {
-    justify-content: center;
-    flex-wrap: wrap;
+  .propane-solutions-button , .propane-learn-more-button{
+   width: 100%;
   }
-}
-
-@media screen and (max-width: 480px) {
-  .propane-solutions-title {
-    font-size: 24px;
-  }
-  
-  .propane-solutions-description {
-    font-size: 14px;
-  }
-  
-  .propane-solutions-buttons {
+  .propane-solutions-buttons{
     flex-direction: column;
-    width: 100%;
-  }
-  
-  .propane-solutions-button {
-    width: 100%;
-    max-width: 250px;
-    justify-content: center;
   }
 }

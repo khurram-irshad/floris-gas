@@ -307,8 +307,11 @@
   }
   
   .case-study-content {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 2rem;
+  }
+  .case-study-left {
+    width: 100%;
   }
   
   .case-study-right {
@@ -329,34 +332,3 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-  .case-study-title {
-    font-size: 24px;
-  }
-  
-  .case-study-left {
-    max-width: 100%;
-  }
-  
-  .case-study-image-container {
-    height: 300px;
-  }
-  
-  .case-study-results {
-    gap: 1rem;
-    flex-direction: column;
-  }
-  
-  .result-stat.cost,
-  .result-stat.uptime,
-  .result-stat.locations {
-    min-width: 100%;
-    margin-bottom: 0.5rem;
-  }
-  
-  .stat-number.cost,
-  .stat-number.uptime,
-  .stat-number.locations {
-    font-size: 18px;
-  }
-}

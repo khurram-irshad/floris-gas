@@ -67,12 +67,26 @@
   
   .case-studies-stats-container {
     padding: 0 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .case-studies-stats-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: none;
     gap: 32px;
     row-gap: 40px;
+    width: 100%;
+  }
+  .case-studies-stat-item {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid #e2e8f0;
+    width: 100%;
+    justify-content: center;
   }
   
   .case-studies-stat-number {
@@ -84,21 +98,3 @@
   }
 }
 
-@media (max-width: 480px) {
-  .case-studies-stats-section {
-    padding: 32px 0;
-  }
-  
-  .case-studies-stats-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-  
-  .case-studies-stat-number {
-    font-size: 32px;
-  }
-  
-  .case-studies-stat-label {
-    font-size: 13px;
-  }
-}

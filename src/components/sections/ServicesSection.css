@@ -102,8 +102,8 @@
 
 .service-description {
   font-size: 18px;
-  color: #d6d9dc;
-  line-height: 100%;
+  color: #49484D;
+  line-height: 1.2;
   margin-bottom: 1.5rem;
   flex: 1;
 }
@@ -135,4 +135,28 @@
 .service-button.blue:hover {
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(64, 104, 252, 0.3);
+}
+@media screen and (max-width: 768px) {
+  .services-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 100%;
+  }
+  .service-title {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Gilroy-Bold', sans-serif;
+    color: #49484c;
+    margin-bottom: 0.75rem;
+    line-height: 100%;
+    letter-spacing: -2%;
+  }
+  .service-description {
+    font-size: 16px;
+    color: #49484D;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    flex: 1;
+  }
+
 }

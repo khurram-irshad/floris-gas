@@ -94,9 +94,9 @@ export default function ThreeDecadesSection() {
                     <Image
                       src={item.icon}
                       alt="Checkmark"
-                      width={16}
-                      height={16}
-                      className="checkmark-icon"
+                      width={24}
+                      height={24}
+                      className="checkmark-icon-case-studies"
                     />
                   </div>
                   <span className="why-choose-text">{item.text}</span>

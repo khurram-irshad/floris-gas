@@ -135,10 +135,12 @@
   
   .residential-faq-header {
     margin-bottom: 3rem;
+    text-align: left;
   }
   
   .residential-faq-title {
     font-size: 28px;
+    margin-bottom: 0.5rem;
   }
   
   .residential-faq-description {

@@ -48,7 +48,7 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  color: #8a8a8c;
+  color: #151515;
 }
 
 
@@ -56,4 +56,38 @@
   font-size: 0.875rem;
   color: #6b7280;
   line-height: 1.2;
+}
+@media (max-width: 768px) {
+  .stats-section {
+    padding: 0rem 0;
+  }
+  
+  .stats-container {
+    padding: 0 0rem;
+  }
+  
+  .stats-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    align-items: center;
+  }
+  
+  .stat-item {
+    width: 100%;
+    padding: 1.5rem;
+  }
+  
+  /* Add bottom border to first and second stat items only */
+  .stat-item:nth-child(1),
+  .stat-item:nth-child(2) {
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Gilroy-Bold', sans-serif;
+    text-align: center;
+  }
 }

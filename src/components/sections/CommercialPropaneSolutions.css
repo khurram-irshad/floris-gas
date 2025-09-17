@@ -120,12 +120,13 @@
   
   .commercial-propane-solutions-content {
     flex-direction: column;
-    gap: 2rem;
-    text-align: center;
+    gap: 1rem;
+    text-align: left;
   }
   
   .commercial-propane-solutions-title {
     font-size: 28px;
+    width: 100% !important;
   }
   
   .commercial-propane-solutions-description {
@@ -133,28 +134,13 @@
   }
   
   .commercial-propane-solutions-buttons {
-    justify-content: center;
-    flex-wrap: wrap;
+   flex-direction: column;
+  }
+  .commercial-propane-solutions-button {
+    width: 100%;
+  }
+  .commercial-propane-learn-more-button {
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 480px) {
-  .commercial-propane-solutions-title {
-    font-size: 24px;
-  }
-  
-  .commercial-propane-solutions-description {
-    font-size: 14px;
-  }
-  
-  .commercial-propane-solutions-buttons {
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  .commercial-propane-solutions-button {
-    width: 100%;
-    max-width: 250px;
-    justify-content: center;
-  }
-}

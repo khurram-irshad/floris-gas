@@ -101,7 +101,7 @@
   line-height: 1;
 }
 
-.stat-label {
+.stat-label-sell {
   font-size: 20px;
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.4;
@@ -151,7 +151,6 @@
   
   .ready-to-sell-propane-button {
     width: 100%;
-    max-width: 280px;
     padding: 16px 24px;
   }
   
@@ -160,43 +159,17 @@
   }
   
   .ready-to-sell-propane-stats {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    grid-template-columns: none;
+    gap: 2rem;
   }
   
   .stat-number {
     font-size: 28px;
   }
   
-  .stat-label {
-    font-size: 13px;
+  .stat-label-sell {
+    font-size: 20px;
+    font-weight: 400;
   }
 }
 
-@media (max-width: 480px) {
-  .ready-to-sell-propane-title,
-  .ready-to-sell-propane-subtitle {
-    font-size: 24px;
-  }
-  
-  .ready-to-sell-propane-description {
-    font-size: 15px;
-  }
-  
-  .ready-to-sell-propane-description br {
-    display: none;
-  }
-  
-  .ready-to-sell-propane-stats {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  
-  .stat-number {
-    font-size: 24px;
-  }
-  
-  .stat-label {
-    font-size: 12px;
-  }
-}

@@ -22,12 +22,6 @@
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .commercial-hero-section {
-    height: 300px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .commercial-hero-section {
-    height: 250px;
+    height: 194px;
   }
 }

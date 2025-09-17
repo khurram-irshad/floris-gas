@@ -61,7 +61,7 @@
   font-size: 20px;
   line-height: 1.6;
   margin: 0 0 2.5rem 0;
-  color: #49484D;
+  color: #262424;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5rem;
@@ -133,8 +133,16 @@
 }
 
 @media screen and (max-width: 768px) {
+  .case-studies-hero-section {
+    position: relative;
+    min-height: 654px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
   .case-studies-hero-container {
-    padding: 3rem 1rem;
+    padding: 0rem 0rem;
   }
   
   .case-studies-hero-title {
@@ -143,6 +151,7 @@
   
   .case-studies-hero-description {
     font-size: 16px;
+    color: #49484D;
   }
   
   .case-studies-hero-description br {
@@ -156,17 +165,6 @@
   
   .case-studies-hero-button {
     width: 100%;
-    max-width: 280px;
     justify-content: center;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .case-studies-hero-title {
-    font-size: 28px;
-  }
-  
-  .case-studies-hero-description {
-    font-size: 15px;
   }
 }
