@@ -124,6 +124,14 @@
   .residential-hero-container {
     padding: 0 0.75rem;
   }
+  .residential-hero-section {
+    height: 194px;
+  }
+  .residential-hero-image {
+    object-fit: cover;
+    object-position: center;
+    height: 194px !important;
+  }
   
   .residential-hero-content {
     padding: 1rem 0;
@@ -151,27 +159,3 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-  .residential-hero-title {
-    font-size: 28px;
-  }
-  
-  .residential-hero-description {
-    font-size: 15px;
-  }
-  
-  .residential-hero-button {
-    padding: 0.75rem 1.25rem;
-    font-size: 13px;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .residential-hero-title {
-    font-size: 24px;
-  }
-  
-  .residential-hero-description {
-    font-size: 14px;
-  }
-}

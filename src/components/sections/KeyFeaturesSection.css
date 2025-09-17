@@ -109,29 +109,13 @@
   color: #ffffff;
 }
 
-.key-features-button.primary:hover {
-  background: linear-gradient(90deg, #3558e0 0%, #4fa6ef 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(64, 103, 252, 0.3);
-}
 
 .key-features-button.secondary {
   background: #eef2f6;
   color: #262525;
 }
 
-.key-features-button.secondary:hover {
-  background: #e2e8f0;
-  color: #1e293b;
-}
 
-/* Responsive Design */
-@media screen and (max-width: 1024px) {
-  .key-features-title {
-    font-size: 32px;
-    max-width: 70%;
-  }
-}
 
 @media screen and (max-width: 768px) {
   .key-features-section {
@@ -153,6 +137,7 @@
   
   .key-features-description {
     font-size: 15px;
+    max-width: 100%;
   }
   
   .key-features-grid {
@@ -166,44 +151,13 @@
   }
   
   .key-features-buttons {
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .key-features-button {
+    width: 100%;
+  }
+  .key-features-button.secondary {
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 480px) {
-  .key-features-title {
-    font-size: 24px;
-  }
-  
-  .key-features-description {
-    font-size: 14px;
-  }
-  
-  .key-feature-card {
-    padding: 1.25rem;
-  }
-  
-  .key-feature-icon {
-    width: 56px;
-    height: 56px;
-  }
-  
-  .key-feature-title {
-    font-size: 16px;
-  }
-  
-  .key-feature-description {
-    font-size: 13px;
-  }
-  
-  .key-features-buttons {
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  .key-features-button {
-    width: 100%;
-    max-width: 250px;
-  }
-}

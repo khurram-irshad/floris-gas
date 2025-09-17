@@ -36,7 +36,7 @@ export default function ServicesSection() {
       <div className="services-container">
         {/* Header */}
         <div className="services-header">
-          <h2 className="services-title">How can we help?</h2>
+          <h2 className="services-title">What we do?</h2>
           <p className="services-subtitle">
             At Florigas Inc. we pride ourselves on offering top-notch customer care and professional
             expertise as your full-service propane supplier in Florida.

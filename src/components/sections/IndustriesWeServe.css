@@ -17,7 +17,6 @@
   font-size: 14px;
   font-weight: 500;
   color: #64748b;
-  text-transform: uppercase;
   letter-spacing: 0.5px;
   margin: 0 0 1rem 0;
 }
@@ -46,6 +45,7 @@
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
+  padding: 1rem;
 }
 
 .industry-card:hover {
@@ -58,6 +58,7 @@
   width: 100%;
   height: 240px;
   overflow: hidden;
+  border-radius: 12px;
 }
 
 .industry-image {
@@ -69,9 +70,6 @@
   transform: scale(1.05);
 }
 
-.industry-content {
-  padding: 1rem;
-}
 
 .industry-category {
   font-size: 14px;
@@ -155,6 +153,16 @@
   .industries-section {
     padding: 3rem 0;
   }
+  .industries-subtitle{
+    margin-bottom: 0rem;
+  }
+  .industry-description {
+    font-size: 24px;
+    font-weight: 500;
+    color: #1e293b;
+    line-height: 1.5;
+    margin: 0 0 1.5rem 0;
+  }
   
   .industries-container {
     padding: 0 0.75rem;
@@ -165,7 +173,7 @@
   }
   
   .industries-title {
-    font-size: 28px;
+    font-size: 24px;
   }
   
   .industries-grid {
@@ -174,32 +182,10 @@
   }
   
   .industry-image-container {
-    height: 180px;
+    height: 240px;
   }
   
   .industry-content {
     padding: 1.25rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .industries-title {
-    font-size: 24px;
-  }
-  
-  .industry-image-container {
-    height: 160px;
-  }
-  
-  .industry-content {
-    padding: 1rem;
-  }
-  
-  .industry-description {
-    font-size: 15px;
-  }
-  
-  .feature-text {
-    font-size: 13px;
   }
 }

@@ -266,7 +266,7 @@
   }
   
   .success-story-content {
-    padding: 20px;
+    padding: 20px 0px 0px 0px;
   }
   
   .success-story-title {
@@ -274,43 +274,3 @@
   }
 }
 
-@media (max-width: 480px) {
-  .success-stories-grid-title {
-    font-size: 28px;
-  }
-  
-  .success-stories-grid-description {
-    font-size: 15px;
-  }
-  
-  .success-stories-filter-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .success-stories-filter-button {
-    width: 100%;
-    max-width: 200px;
-  }
-  
-  .success-story-image-container {
-    height: 180px;
-  }
-  
-  .success-story-content {
-    padding: 16px;
-  }
-  
-  .success-story-title {
-    font-size: 16px;
-  }
-  
-  .success-story-description {
-    font-size: 13px;
-  }
-  
-  .success-stories-load-more-button {
-    width: 100%;
-    max-width: 280px;
-  }
-}

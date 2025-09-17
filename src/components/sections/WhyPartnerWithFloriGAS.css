@@ -132,7 +132,8 @@
   }
   
   .why-partner-title {
-    font-size: 28px;
+    font-size: 24px;
+    margin-bottom: 8px;
   }
   
   .why-partner-description {
@@ -143,8 +144,8 @@
   }
   
   .partner-benefits-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: none;
+    gap: 1rem;
   }
   
   .partner-benefit-card {
@@ -166,30 +167,7 @@
   
   .why-partner-button {
     width: 100%;
-    max-width: 280px;
     justify-content: center;
   }
 }
 
-@media screen and (max-width: 480px) {
-  .why-partner-title {
-    font-size: 24px;
-  }
-  
-  .partner-benefits-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  
-  .partner-benefit-card {
-    padding: 1.25rem;
-  }
-  
-  .benefit-title {
-    font-size: 16px;
-  }
-  
-  .benefit-description {
-    font-size: 14px;
-  }
-}

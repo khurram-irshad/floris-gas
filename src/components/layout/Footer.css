@@ -100,6 +100,12 @@
   .footer-container {
     padding: 0 0.75rem;
   }
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
   
   .footer-content {
     grid-template-columns: 1fr;
@@ -115,10 +121,18 @@
   .footer-column-title {
     font-size: 16px;
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   
-  .footer-description {
+  .footer-description , .footer-link{
     font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   
   .footer-link {
@@ -127,31 +141,5 @@
   
   .footer-bottom {
     padding-top: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .footer {
-    padding: 2rem 0 1rem 0;
-  }
-  
-  .footer-content {
-    gap: 1.5rem;
-  }
-  
-  .footer-column-title {
-    font-size: 15px;
-  }
-  
-  .footer-description {
-    font-size: 12px;
-  }
-  
-  .footer-link {
-    font-size: 12px;
-  }
-  
-  .footer-copyright {
-    font-size: 11px;
   }
 }

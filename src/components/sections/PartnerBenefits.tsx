@@ -100,7 +100,7 @@ export default function PartnerBenefits() {
                   />
                 </div>
                 <div className="stat-content">
-                  <div className="stat-number">98% Satisfaction Rate</div>
+                  <div className="stat-number-sell-propane">98% Satisfaction Rate</div>
                   <div className="stat-label">Customer Reviews</div>
                 </div>
               </div>
@@ -116,7 +116,7 @@ export default function PartnerBenefits() {
                   />
                 </div>
                 <div className="stat-content">
-                  <div className="stat-number">125% Conversion Rate</div>
+                  <div className="stat-number-sell-propane">125% Conversion Rate</div>
                   <div className="stat-label">Customer Reviews</div>
                 </div>
               </div>

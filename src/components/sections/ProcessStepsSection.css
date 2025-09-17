@@ -122,20 +122,9 @@
   color: #ffffff;
 }
 
-.process-steps-button.primary:hover {
-  background: linear-gradient(90deg, #3558e0 0%, #4fa6ef 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(64, 103, 252, 0.3);
-}
-
 .process-steps-button.secondary {
   background: #eef2f6;
   color: #262525;
-}
-
-.process-steps-button.secondary:hover {
-  background: #e2e8f0;
-  color: #1e293b;
 }
 
 /* Responsive Design */
@@ -154,6 +143,9 @@
   .process-steps-section {
     padding: 3rem 0;
   }
+  .process-steps-subtitle {
+    margin: 0;
+  }
   
   .process-steps-container {
     padding: 0 0.75rem;
@@ -166,6 +158,7 @@
   .process-steps-title {
     font-size: 28px;
     max-width: 100%;
+    margin-bottom: 0.5rem;
   }
   
   .process-steps-description {
@@ -175,12 +168,21 @@
   
   .process-steps-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
     margin-bottom: 2rem;
+    border-radius: 16px;
   }
   
   .process-step-card {
     padding: 1.5rem;
+    border-radius: 0;
+  }
+  
+  .process-step-card:first-child {
+    border-radius: 16px 16px 0 0;
+  }
+  
+  .process-step-card:last-child {
+    border-radius: 0 0 16px 16px;
   }
   
   .process-step-icon {
@@ -197,44 +199,10 @@
   }
   
   .process-steps-buttons {
-    justify-content: center;
-    flex-wrap: wrap;
+   flex-direction: column;
+  }
+  .process-steps-button {
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 480px) {
-  .process-steps-title {
-    font-size: 24px;
-  }
-  
-  .process-steps-description {
-    font-size: 15px;
-  }
-  
-  .process-step-card {
-    padding: 1.25rem;
-  }
-  
-  .process-step-icon {
-    width: 3rem;
-    height: 3rem;
-  }
-  
-  .process-step-title {
-    font-size: 16px;
-  }
-  
-  .process-step-description {
-    font-size: 14px;
-  }
-  
-  .process-steps-buttons {
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  .process-steps-button {
-    width: 100%;
-    max-width: 250px;
-  }
-}

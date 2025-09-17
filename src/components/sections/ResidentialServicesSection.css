@@ -94,7 +94,7 @@
 
 .residential-service-description {
   font-size: 18px;
-  color: #d6d9dc;
+  color: #49484c;
   line-height: 100%;
   margin-bottom: 1.5rem;
   flex: 1;
@@ -133,6 +133,10 @@
 @media screen and (max-width: 768px) {
   .residential-services-section {
     padding: 3rem 0;
+  }
+  .residential-services-header{
+    padding-left: 0;
+    padding-right: 0;
   }
   
   .residential-services-container {

@@ -122,9 +122,9 @@
   filter: brightness(0) saturate(100%) invert(67%) sepia(69%) saturate(372%) hue-rotate(95deg) brightness(106%) contrast(101%);
 }
 
-.checkmark-icon {
-  width: 16px;
-  height: 16px;
+.checkmark-icon-case-studies {
+  width: 24px;
+  height: 24px;
 }
 
 .why-choose-text {
@@ -201,6 +201,7 @@
   .why-choose-section {
     grid-template-columns: 1fr;
     gap: 40px;
+    padding: 1rem;
   }
   
   .why-choose-left {
@@ -217,36 +218,3 @@
   }
 }
 
-@media (max-width: 480px) {
-  .three-decades-section {
-    padding: 40px 0;
-  }
-  
-  .three-decades-title {
-    font-size: 28px;
-  }
-  
-  .three-decades-description {
-    font-size: 15px;
-  }
-  
-  .feature-title {
-    font-size: 18px;
-  }
-  
-  .feature-description {
-    font-size: 15px;
-  }
-  
-  .why-choose-title {
-    font-size: 22px;
-  }
-  
-  .why-choose-text {
-    font-size: 15px;
-  }
-  
-  .why-choose-image-container {
-    height: 250px;
-  }
-}

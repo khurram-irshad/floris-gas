@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="footer-brand">
             <div className="footer-logo">
               <Image
-                src="/florisgas-logo.svg"
+                src="/footer-logo.png"
                 alt="Florigas"
                 width={120}
                 height={40}

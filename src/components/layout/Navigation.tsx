@@ -39,11 +39,11 @@ export default function Navigation() {
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50 font-gilroy">
         <div className="mx-auto px-6 sm:px-8 lg:px-12">
-        <div className="flex items-center h-18">
+        <div className="flex items-center h-18 mobile-header">
           {/* Logo - Extreme Left */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <div className="h-8 lg:h-10 relative">
+              <div className="h-8 lg:h-10 relative mobile-logo">
                 <Image
                   src="/florisgas-logo.svg"
                   alt="FlorisGAS Logo"
@@ -88,28 +88,49 @@ export default function Navigation() {
             </button>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="lg:hidden">
-            <button
-              onClick={toggleMenu}
-              className="text-gray-700 hover:text-blue-600 focus:outline-none focus:text-blue-600 transition-colors duration-200"
-              aria-label="Toggle menu"
-            >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
+          {/* Mobile buttons container */}
+          <div className="lg:hidden ml-auto flex items-center gap-3">
+            {/* Location button */}
+            <button className="mobile-location-button-header">
+              <div className="location-icon-container">
+                <Image
+                  src="/mobile-navigation.png"
+                  alt="Location"
+                  width={36}
+                  height={36}
+                  className="location-icon"
+                />
+              </div>
             </button>
+            <div className='mobile-menu-icon-container'>
+              <button
+                onClick={toggleMenu}
+                className="text-gray-700 hover:text-blue-600 focus:outline-none focus:text-blue-600 transition-colors duration-200 p-2"
+                aria-label="Toggle menu"
+              >
+                {isOpen ? (
+                  <X size={24} />
+                ) : (
+                  <div className="mobile-menu-icon">
+                    <div className="hamburger-line"></div>
+                    <div className="hamburger-line"></div>
+                    <div className="hamburger-line"></div>
+                  </div>
+              )}
+              </button>
+            </div>
           </div>
         </div>
 
-        {/* Mobile Navigation */}
         <div
           className={cn(
-            'lg:hidden transition-all duration-300 ease-in-out',
+            'lg:hidden transition-all duration-300 ease-in-out mobile-nav-container',
             isOpen
               ? 'max-h-screen opacity-100 pb-4'
               : 'max-h-0 opacity-0 overflow-hidden'
           )}
         >
-          <nav className="flex flex-col space-y-2 pt-3">
+          <nav className="flex flex-col pt-3">
             {navItems.map((item) => {
               const isActive = isActiveRoute(item.href);
               return (
@@ -123,16 +144,6 @@ export default function Navigation() {
                 </Link>
               );
             })}
-            <button className="bg-accent-red hover:bg-accent-red-hover text-white px-4 py-2.5 rounded-md font-medium text-xs tracking-wide transition-all duration-200 mt-3 self-start shadow-sm flex items-center gap-2">
-              <Image
-                src="/location-01.svg"
-                alt="Location"
-                width={16}
-                height={16}
-                className="w-4 h-4"
-              />
-              FIND LOCATION
-            </button>
           </nav>
         </div>
       </div>
