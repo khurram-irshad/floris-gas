@@ -1,0 +1,148 @@
+/* Hero Video Overlay Component */
+.hero-video-overlay {
+  position: absolute;
+  top: 77%;
+  left: -28%;
+  width: 100%;
+  pointer-events: none; /* Allow clicks to pass through to hero section */
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+
+.hero-video-container {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  padding: 0.75rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  width: 45%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  pointer-events: auto; /* Enable clicks on the video container */
+  transform: translateY(20%); /* Position in bottom-right area */
+  aspect-ratio: 450 / 270; /* Fixed aspect ratio to maintain consistent size */
+}
+
+.hero-video-thumbnail {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-video-thumbnail:hover {
+  transform: scale(1.02);
+}
+
+.hero-thumbnail-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.hero-video-iframe-container {
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-video-iframe {
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Video Play Button */
+.hero-video-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 4;
+  pointer-events: auto;
+}
+
+.hero-video-play-button:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.hero-play-icon {
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+  transition: all 0.3s ease;
+}
+
+.hero-video-play-button:hover .hero-play-icon {
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4));
+  transform: scale(1.05);
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .hero-video-overlay {
+    display: none; /* Hide on mobile for better UX */
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .hero-video-overlay {
+    position: absolute;
+    top: 77%;
+    left: -19%;
+    width: 100%;
+    pointer-events: none;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  
+  }
+  .hero-video-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    padding: 0.75rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    width: 65%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    pointer-events: auto; /* Enable clicks on the video container */
+    transform: translateY(20%); /* Position in bottom-right area */
+    aspect-ratio: 450 / 270; /* Fixed aspect ratio to maintain consistent size */
+  }
+  
+}
+
+
+/* Alternative mobile positioning if you want to show on mobile */
+/* @media screen and (max-width: 767px) {
+  .hero-video-overlay.show-mobile {
+    display: flex;
+    position: relative;
+    height: auto;
+    padding: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .hero-video-container {
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .hero-video-iframe {
+    height: 200px;
+  }
+} */

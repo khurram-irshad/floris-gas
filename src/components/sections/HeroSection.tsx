@@ -26,6 +26,7 @@ export default function HeroSection() {
     phone: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -45,6 +46,14 @@ export default function HeroSection() {
     } finally {
       setIsSubmitting(false);
     }
+  };
+
+  const handlePlayVideo = () => {
+    setIsVideoModalOpen(true);
+  };
+
+  const handleCloseVideoModal = () => {
+    setIsVideoModalOpen(false);
   };
 
   return (
@@ -126,13 +135,12 @@ export default function HeroSection() {
                   
                 />
                 <input
-                  type="phone"
-                  name=""
+                  type="tel"
+                  name="phone"
                   placeholder="Enter Phone"
                   value={formData.phone}
                   onChange={handleInputChange}
                   className="input"
-                  
                 />
                 <button
                   type="submit"
@@ -148,8 +156,59 @@ export default function HeroSection() {
               By submitting your contact details, you agree to receive SMS/calls from FlorisGAS propane. Message & data rates may apply.
             </p>
           </div>
+
+          {/* Mobile Video Button */}
+          <div className="mobile-video-button-container">
+            <button 
+              onClick={handlePlayVideo}
+              className="mobile-video-button"
+            >
+              <svg 
+                width="24" 
+                height="24" 
+                viewBox="0 0 24 24" 
+                fill="none"
+                className="mobile-play-icon"
+              >
+                <circle cx="12" cy="12" r="12" fill="white" />
+                <path 
+                  d="M10 8L16 12L10 16V8Z" 
+                  fill="#4168FC"
+                />
+              </svg>
+              Play Our Vision
+            </button>
+          </div>
         </div>
+    
       </div>
+
+      {/* Video Modal for Mobile */}
+      {isVideoModalOpen && (
+        <div className="video-modal-overlay" onClick={handleCloseVideoModal}>
+          <div className="video-modal-container" onClick={(e) => e.stopPropagation()}>
+            <button 
+              className="video-modal-close"
+              onClick={handleCloseVideoModal}
+              aria-label="Close video"
+            >
+              ×
+            </button>
+            <div className="video-modal-content">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/Fp6kDEAEz9I?autoplay=1"
+                title="What we do - FloriGAS"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="video-modal-iframe"
+              />
+            </div>
+          </div>
+        </div>
+      )}
 
     </section>
   );

@@ -1,0 +1,187 @@
+/* CTA Banner Section */
+.cta-banner-section {
+  padding: 2rem 0 0 0;
+  margin: 4rem 0;
+}
+
+.cta-banner-container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.cta-banner-content {
+  background: linear-gradient(135deg, #4168FC 0%, #72C0FE 100%);
+  border-radius: 20px;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  overflow: visible;
+  min-height: 280px;
+}
+
+/* Left Side - Text Content */
+.cta-text-content {
+  flex: 1;
+  z-index: 3;
+  position: relative;
+  max-width: 55%;
+}
+
+.cta-title {
+  font-size: 36px;
+  font-weight: 500;
+  color: white;
+  line-height: 1.2;
+  margin: 0 0 2rem 0;
+  font-family: 'Gilroy-Bold', sans-serif;
+}
+
+.cta-button {
+  background: white;
+  color: #49484D;
+  border: none;
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Right Side - Person Image */
+.cta-image-content {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 400px;
+  height: 350px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.cta-person-image {
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+  object-position: bottom right;
+}
+
+/* Responsive Design */
+@media (max-width: 880px) {
+  .cta-banner-container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  .cta-banner-content {
+    background: linear-gradient(135deg, #4168FC 0%, #72C0FE 100%);
+    border-radius: 20px;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    overflow: visible;
+    min-height: 280px;
+  }
+  .cta-image-content {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 400px;
+    height: 350px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .cta-title {
+    font-size: 28px;
+  }
+  
+  
+}
+
+@media (max-width: 768px) {
+  .cta-banner-section {
+    margin: 2rem 0;
+  }
+  .cta-text-content {
+    flex: 1;
+    z-index: 3;
+    position: relative;
+    max-width: 100%;
+    margin-bottom: 300px;
+  }
+  .cta-image-content {
+    position: absolute;
+    right: 20%;
+    bottom: 0;
+    z-index: 2;
+    height: 391px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  
+  .cta-banner-container {
+    padding: 0 0rem;
+  }
+  
+  .cta-banner-content {
+    padding: 2rem 1.5rem;
+    height: 550px;
+    
+  }
+  
+  .cta-title {
+    font-size: 28px;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+  }
+  
+  .cta-title br {
+    display: none;
+  }
+  
+  .cta-person-image {
+    width: 320px;
+    height: 391px;
+  }
+  
+  .cta-button {
+    padding: 0.875rem 1.75rem;
+    font-size: 0.95rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .cta-image-content {
+    right: -15%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .cta-image-content {
+    right: -5%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .cta-image-content {
+    right: 5%;
+  }
+}
+@media  screen and (max-width: 660px) {
+  .cta-image-content {
+    right: 20%;
+  }
+}
+

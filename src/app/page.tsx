@@ -1,6 +1,7 @@
 import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
 import HeroSection from '@/components/sections/HeroSection';
+import HeroVideoOverlay from '@/components/sections/HeroVideoOverlay';
 import StatsSection from '@/components/sections/StatsSection';
 import ServicesSection from '@/components/sections/ServicesSection';
 import FeaturesSection from '@/components/sections/FeaturesSection';
@@ -15,9 +16,12 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <Navigation />
       <main>
-        <HeroSection />
-        <StatsSection />
+        <div style={{ position: 'relative' }}>
+          <HeroSection />
+          <HeroVideoOverlay />
+        </div>
         <ServicesSection />
+        <StatsSection />
         <FeaturesSection />
         <PartnersSection />
         <FAQSection />

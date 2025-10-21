@@ -3,7 +3,7 @@
 .hero-section {
   position: relative;
   overflow: hidden;
-  max-height: 728px;
+  max-height: 1058px;
 }
 
 .background-container {
@@ -21,7 +21,7 @@
   position: relative;
   margin: 0 auto;
   padding: 6rem 1rem;
-  height: 768px;
+  height: 1058px;
 }
 
 .main-content {
@@ -158,6 +158,97 @@
   text-align: center;
 }
 
+/* Mobile Video Button */
+.mobile-video-button-container {
+  display: none; /* Hidden by default, shown only on mobile */
+  margin-top: 0.5rem;
+}
+
+.mobile-video-button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: linear-gradient(90deg, #4068FC 0%, #60B8FF 100%);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  border: 4px solid #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(64, 104, 252, 0.3);
+}
+
+.mobile-video-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(64, 104, 252, 0.4);
+}
+
+.mobile-play-icon {
+  flex-shrink: 0;
+}
+
+/* Video Modal */
+.video-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.video-modal-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.video-modal-close {
+  position: absolute;
+  top: -3rem;
+  right: 0;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.video-modal-close:hover {
+  background: white;
+  transform: scale(1.1);
+}
+
+.video-modal-content {
+  width: 100%;
+  height: 100%;
+}
+
+.video-modal-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 /* Responsive Design for Form Container */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .form-container {
@@ -199,6 +290,12 @@
 }
 
 @media screen and (max-width: 768px) {
+  /* Show mobile video button */
+  .mobile-video-button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
   .form-container {
     padding: 1.25rem;
     margin: 0 0.75rem;
@@ -227,6 +324,20 @@
   .disclaimer-text {
     font-size: 0.75rem;
     line-height: 1.4;
+  }
+  
+  /* Mobile video modal adjustments */
+  .video-modal-container {
+    max-width: 95vw;
+    aspect-ratio: 16 / 9;
+  }
+  
+  .video-modal-close {
+    top: -2.5rem;
+    right: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.25rem;
   }
 .social-proof-container {
   display: flex;
@@ -266,12 +377,11 @@
   position: relative;
   margin: 0 auto;
   padding: 6rem 1rem;
-  height: 872px;
+  height: 900px;
 }
 .hero-section {
   position: relative;
   overflow: hidden;
-  max-height: 872px;
 }
 
 }

@@ -1,15 +1,15 @@
-.case-studies-stats-section {
+.about-stats-section {
   background-color: #F8F8FA;
-  padding:30px 0;
+  padding: 30px 0;
 }
 
-.case-studies-stats-container {
+.about-stats-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-.case-studies-stats-grid {
+.about-stats-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
@@ -17,7 +17,7 @@
   justify-items: center;
 }
 
-.case-studies-stat-item {
+.about-stat-item {
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -25,15 +25,16 @@
   gap: 8px;
 }
 
-.case-studies-stat-number {
+.about-stat-number {
   font-size: 40px;
   font-weight: 600;
   color: #49484D;
   line-height: 1;
   margin-bottom: 4px;
+  font-family: 'Gilroy-Bold', sans-serif;
 }
 
-.case-studies-stat-label {
+.about-stat-label {
   font-size: 16px;
   color: #6c757d;
   line-height: 1.3;
@@ -41,30 +42,48 @@
   text-align: left;
 }
 
-
-@media (max-width: 768px) {
-  .case-studies-stats-section {
-    padding: 20px 0;
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-stats-section {
+    padding: 50px 0;
   }
   
-  .case-studies-stats-container {
+  .about-stats-grid {
+    gap: 30px;
+  }
+  
+  .about-stat-number {
+    font-size: 42px;
+  }
+  
+  .about-stat-label {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-stats-section {
+    padding: 40px 0;
+  }
+  
+  .about-stats-container {
     padding: 0 16px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .case-studies-stats-grid {
-    grid-template-columns: none;
+  .about-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
     gap: 32px;
-    row-gap: 20px;
+    row-gap: 40px;
     width: 100%;
   }
   
-  .case-studies-stat-item {
+  .about-stat-item {
     text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 8px;
     border-bottom: 1px solid #e2e8f0;
@@ -73,17 +92,22 @@
     padding-bottom: 20px;
   }
   
-  .case-studies-stat-item:last-child {
-    border-bottom: none;
-  }
-  
-  .case-studies-stat-number {
+  .about-stat-number {
     font-size: 36px;
   }
   
-  .case-studies-stat-label {
+  .about-stat-label {
     font-size: 14px;
-    text-align: center;
   }
 }
 
+@media (max-width: 480px) {
+  .about-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .about-stat-item {
+    justify-content: center;
+  }
+}
