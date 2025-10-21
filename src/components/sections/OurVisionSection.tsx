@@ -30,7 +30,7 @@ export default function OurVisionSection() {
               <div className="vision-content">
                 <h3 className="vision-content-title">Our Vision</h3>
                 <p className="vision-content-description">
-                  Driving Florida's clean, reliable energy future through propane innovation 
+                  Driving Florida&apos;s clean, reliable energy future through propane innovation 
                   delivering efficient, sustainable, and cost-effective energy solutions.
                 </p>
               </div>
@@ -65,7 +65,7 @@ export default function OurVisionSection() {
                   </div>
                   <h4 className="vision-feature-title">Sustainable</h4>
                   <p className="vision-feature-description">
-                    Driving Florida's clean and reliable energy future.
+                    Driving Florida&apos;s clean and reliable energy future.
                   </p>
                 </div>
 

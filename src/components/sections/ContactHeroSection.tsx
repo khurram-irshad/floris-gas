@@ -4,13 +4,13 @@ import Image from 'next/image';
 import './ContactHeroSection.css';
 
 export default function ContactHeroSection() {
-  const handleRequestQuote = () => {
-    console.log('Request A Quote clicked');
-  };
+  // const handleRequestQuote = () => {
+  //   console.log('Request A Quote clicked');
+  // };
 
-  const handleContactNow = () => {
-    console.log('Contact Now clicked');
-  };
+  // const handleContactNow = () => {
+  //   console.log('Contact Now clicked');
+  // };
 
   return (
     <section className="contact-hero-section">

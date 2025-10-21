@@ -33,7 +33,7 @@ export default function AboutHeroSection() {
           </h1>
           
           <p className="about-hero-description">
-            At FloriGAS Inc, we're your trusted full-service propane supplier in Florida — delivering expert<br />
+            At FloriGAS Inc, we&apos;re your trusted full-service propane supplier in Florida — delivering expert<br />
             service, reliable supply, and customer care built on respect, trust, and integrity.
           </p>
           

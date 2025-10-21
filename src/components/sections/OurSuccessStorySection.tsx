@@ -81,7 +81,7 @@ export default function OurSuccessStorySection() {
         <div className="success-story-header">
           <h2 className="success-story-title">Our Success Story</h2>
           <p className="success-story-description">
-            At Florigas Inc, we're your trusted full-service propane supplier in Florida. Backed by years<br />
+            At Florigas Inc, we&apos;re your trusted full-service propane supplier in Florida. Backed by years<br />
             of expertise, we deliver reliable service with integrity, respect, and dedication.
           </p>
         </div>

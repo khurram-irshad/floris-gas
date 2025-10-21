@@ -60,7 +60,7 @@ export default function WhatDriveUsSection() {
                 </div>
                 <h4 className="feature-title">Safety</h4>
                 <p className="feature-description">
-                  Driving Florida's clean and reliable energy future.
+                  Driving Florida&apos;s clean and reliable energy future.
                 </p>
               </div>
 

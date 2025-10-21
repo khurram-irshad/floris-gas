@@ -5,10 +5,10 @@ import Image from 'next/image';
 import './VideoOverlaySection.css';
 
 export default function VideoOverlaySection() {
-  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  // const [isVideoPlaying, setIsVideoPlaying] = useState(false); // Commented out unused variable
 
   const handlePlayVideo = () => {
-    setIsVideoPlaying(true);
+    // setIsVideoPlaying(true); // Commented out since variable is unused
     // You can integrate with YouTube API or iframe here
     window.open('https://www.youtube.com/watch?v=Fp6kDEAEz9I', '_blank');
   };
