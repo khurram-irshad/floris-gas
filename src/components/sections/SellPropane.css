@@ -56,9 +56,10 @@
 .sell-propane-title {
   font-size: 36px;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 100%;
   margin: 0 0 1.5rem 0;
   color: white;
+  font-family: var(--font-gilroy);
 }
 
 .highlight-text {
@@ -67,12 +68,13 @@
 
 .sell-propane-description {
   font-size: 20px;
-  line-height: 1.6;
+  line-height: 100%;
   margin: 0 0 2.5rem 0;
   color: rgba(255, 255, 255, 0.9);
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5rem;
+  font-family: var(--font-gilroy);
 }
 
 .sell-propane-buttons {
@@ -98,6 +100,7 @@
   text-transform: capitalize;
   background: #eef2f6;
   color: #262424;
+  font-family: var(--font-gilroy);
 }
 
 .sell-propane-button.primary {
@@ -140,18 +143,20 @@
   color: white;
 }
 
-.stat-number {
-  font-size: 26px;
-  font-weight: 500;
+.stats-number {
+  font-size: 24px;
+  font-weight: 700;
   color: white;
   margin-bottom: 0.5rem;
   line-height: 1;
+  font-family: var(--font-gilroy);
 }
 
-.stat-label {
-  font-size: 16px;
+.stats-label {
+  font-size: 20px;
   color: rgba(255, 255, 255, 0.8);
   font-weight: 400;
+  font-family: var(--font-gilroy);
 }
 
 /* Responsive Design */
@@ -175,11 +180,14 @@
   }
   
   .sell-propane-title {
-    font-size: 36px;
+    font-size: 28px;
+    font-family: var(--font-gilroy);
+    font-weight: 600;
   }
   
   .sell-propane-description {
     font-size: 16px;
+    font-family: var(--font-gilroy);
     br {
       display: none;
     }

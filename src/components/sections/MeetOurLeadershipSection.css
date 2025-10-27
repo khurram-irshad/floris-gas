@@ -17,21 +17,26 @@
 }
 
 .leadership-title {
-  font-size: 2.5rem;
+  font-size: 36px;
   font-weight: 600;
   color: #1f2937;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
   background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  font-family: var(--font-gilroy);
+  line-height: 100%;
 }
 
 .leadership-description {
-  font-size: 1.125rem;
-  color: #6b7280;
-  line-height: 1.6;
+  font-size: 20px;
+  color: #49484D;
+  line-height: 100%;
   margin: 0;
+  font-family: var(--font-gilroy);
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 /* Desktop Layout */
@@ -101,26 +106,32 @@
 }
 
 .leader-name {
-  font-size: 1.5rem;
+  font-size: 28px;
   font-weight: 600;
-  color: #1f2937;
+  color: #49484D;
   margin-top: 0;
+  margin-bottom: 8px;
+  font-family: var(--font-gilroy);
+  line-height: 100%;
 }
 
 .leader-title {
-  font-size: 1rem;
+  font-size: 18px;
   color:#416AFC !important;
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
   margin-top: 0;
+  font-family: var(--font-gilroy);
+  line-height: 100%;
 }
 
 .leader-description {
-  font-size: 0.95rem;
-  color: #6b7280;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
+  font-size: 18px;
+  color: #49484D;
+  line-height: 100%;
+  margin-bottom: 1rem;
   margin-top: 0;
+  font-family: var(--font-gilroy);
 }
 
 .leader-social {
@@ -167,11 +178,16 @@
   }
 
   .leadership-title {
-    font-size: 2rem;
+    font-size: 24px;
+    font-family: var(--font-gilroy);
+    font-weight: 600;
   }
 
   .leadership-description {
-    font-size: 1rem;
+    font-size: 16px;
+    font-family: var(--font-gilroy);
+    color: #49484D;
+    max-width: 100%;
   }
 
   .leadership-header {
@@ -238,16 +254,22 @@
   }
 
   .leadership-slide .leader-name {
-    font-size: 1.25rem;
+    font-size: 24px;
+    font-family: var(--font-gilroy);
+    font-weight: 600;
   }
 
   .leadership-slide .leader-title {
-    font-size: 0.9rem;
+    font-size: 16px;
+    font-family: var(--font-gilroy);
+    font-weight: 600;
   }
 
   .leadership-slide .leader-description {
-    font-size: 0.875rem;
+    font-size: 18px;
     margin-bottom: 1rem;
+    font-family: var(--font-gilroy);
+    color: #49484D;
   }
 
   .leadership-slide .social-link {

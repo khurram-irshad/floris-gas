@@ -18,19 +18,21 @@
 
 .power-your-business-title {
   font-size: 36px;
-  font-weight: 400;
+  font-weight: 600;
   color: #ffffff;
-  line-height: 1.2;
+  line-height: 100%;
   margin-bottom: 24px;
+  font-family: var(--font-gilroy);
 }
 
 .power-your-business-description {
   font-size: 20px;
   color: rgba(255, 255, 255, 0.9);
-  line-height: 1.2;
+  line-height: 1.6;
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
+  font-family: var(--font-gilroy);
 }
 
 .power-your-business-buttons {
@@ -58,6 +60,7 @@
   color: #262424;
   border: 1px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
+  font-family: var(--font-gilroy);
 }
 
 .power-your-business-button.primary {
@@ -91,10 +94,11 @@
 
 .stat-number {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 600;
   color: #ffffff;
   margin-bottom: 8px;
   line-height: 1;
+  font-family: var(--font-gilroy);
 }
 
 .power-your-business-stat-label {
@@ -102,6 +106,7 @@
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.4;
   font-weight: 400;
+  font-family: var(--font-gilroy);
 }
 
 /* Responsive Design */

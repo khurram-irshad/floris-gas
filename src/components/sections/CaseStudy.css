@@ -46,7 +46,7 @@
 }
 
 .case-study-label {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   color: #49484D;
   letter-spacing: 0.5px;
@@ -56,21 +56,27 @@
   border: 1px solid #E3E6EA;
   padding: 10px;
   width: fit-content;
+  font-family: var(--font-gilroy);
 }
 
 .case-study-title {
   font-size: 36px;
   font-weight: 600;
-  color: #4168FC;
-  line-height: 1.3;
+  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  line-height: 100%;
   margin: 0 0 1.5rem 0;
+  font-family: var(--font-gilroy);
 }
 
 .case-study-subtitle {
-  font-size: 16px;
-  color: #64748b;
+  font-size: 20px;
+  color: #49484D;
   line-height: 1.6;
   margin: 0 0 2.5rem 0;
+  font-family: var(--font-gilroy);
 }
 
 .case-study-sections {
@@ -141,28 +147,32 @@
 
 
 .case-study-item-title.challenge {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: #F17D3A;
+  font-family: var(--font-gilroy);
 }
 
 .case-study-item-title.solution {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: #5C8BE5;
+  font-family: var(--font-gilroy);
 }
 
 .case-study-item-title.result {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: #05BC55;
+  font-family: var(--font-gilroy);
 }
 
 .case-study-item-text {
-  font-size: 14px;
-  color: #64748b;
-  line-height: 1.5;
+  font-size: 16px;
+  color: #49484D;
+  line-height: 100%;
   margin: 0;
+  font-family: var(--font-gilroy);
 }
 
 .case-study-results {
@@ -203,24 +213,27 @@
   font-size: 20px;
   font-weight: 700;
   color: #06bc55;
+  font-family: var(--font-gilroy);
 }
 .stat-number.uptime {
   font-size: 20px;
   font-weight: 700;
   color: #5b8be5;
-
+  font-family: var(--font-gilroy);
 }
 .stat-number.locations {
   font-size: 20px;
   font-weight: 700;
   color: #6e55d0;
+  font-family: var(--font-gilroy);
 }
 
 
 .stat-label {
-  font-size: 12px;
-  color: #64748b;
+  font-size: 14px;
+  color: #49484D;
   font-weight: 500;
+  font-family: var(--font-gilroy);
 }
 
 .case-study-testimonial {
@@ -231,11 +244,12 @@
 }
 
 .testimonial-text {
-  font-size: 16px;
-  color: #1e293b;
+  font-size: 18px;
+  color: #49484D;
   line-height: 1.6;
   margin: 0 0 1rem 0;
   font-style: italic;
+  font-family: var(--font-gilroy);
 }
 
 .testimonial-author {
@@ -254,14 +268,16 @@
 }
 
 .author-name {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
-  color: #1e293b;
+  color: #49484D;
+  font-family: var(--font-gilroy);
 }
 
 .author-title {
-  font-size: 13px;
-  color: #64748b;
+  font-size: 14px;
+  color: #49484D;
+  font-family: var(--font-gilroy);
 }
 
 .case-study-actions {
@@ -279,6 +295,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  font-family: var(--font-gilroy);
 }
 
 .case-study-button img {
@@ -312,10 +329,11 @@
   }
   .case-study-left {
     width: 100%;
+    max-width: 100%;
   }
   
   .case-study-right {
-    padding-left: 0;
+    padding: 1rem;
   }
   
   .case-study-image-container {
@@ -324,6 +342,8 @@
   
   .case-study-title {
     font-size: 28px;
+    font-family: var(--font-gilroy);
+    font-weight: 600;
   }
   
   .case-study-results {

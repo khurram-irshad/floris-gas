@@ -12,11 +12,12 @@
 
 .partners-title {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 600;
+  line-height: 100%;
   color: #49484D;
   margin-bottom: 1.5rem;
   text-align: center;
-  font-family: gilroy, sans-serif;
+ font-family: var(--font-gilroy);
 }
 
 

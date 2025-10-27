@@ -6,28 +6,31 @@ import './ResidentialServicesSection.css';
 const servicesData = [
   {
     id: 1,
+    subtitle: 'Indoor',
     title: 'Safe, Affordable, and Convenient Propane Services for Families.',
-    description: 'Reliable propane solutions, cost-effective pricing, and safety-first services to enhance your home comfort.',
-    image: '/card-1.png',
+    description: 'Reliable heating solutions, and cooking appliances to enhance your home comfort.',
+    image: '/indoor.png',
     buttonText: 'Services',
     buttonColor: 'blue'
   },
   {
     id: 2,
-    title: 'Dependable Backup Generators for Peace of Mind During Outages.',
-    description: 'Our backup generators ensure your home stays powered when you need it most.',
-    image: '/card-2.png',
-    buttonText: 'Generation',
+    subtitle: 'Outdoor',
+    title: 'Transform Your Outdoor Living Space with Propane Solutions.',
+    description: 'From grills to patio heaters, we make your outdoor experience enjoyable year-round.',
+    image: '/outdoor.png',
+    buttonText: 'Outdoor',
     buttonColor: 'blue'
   },
   {
     id: 3,
-    title: 'Transform Your Outdoor Living Space with Propane Solutions.',
-    description: 'From grills to patio heaters, we make your outdoor experience enjoyable year-round.',
-    image: '/card-3.png',
-    buttonText: 'Outdoor',
+    subtitle: 'Backup',
+    title: 'Dependable Backup Generators for Peace of Mind During Outages.',
+    description: 'Our backup generators ensure your home stays powered, no matter the weather.',
+    image: '/backup.png',
+    buttonText: 'Backup',
     buttonColor: 'blue'
-  }
+  },
 ];
 
 export default function ResidentialServicesSection() {
@@ -55,6 +58,7 @@ export default function ResidentialServicesSection() {
                 />
               </div>
               <div className="residential-service-content">
+                <span className="residential-service-subtitle">{service.subtitle}</span>
                 <h3 className="residential-service-title">{service.title}</h3>
                 <p className="residential-service-description">{service.description}</p>
                 <button className={`residential-service-button ${service.buttonColor}`}>

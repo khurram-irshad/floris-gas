@@ -12,16 +12,17 @@
 
 .cta-content {
   text-align: center;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .cta-title {
   font-size: 36px;
-  font-weight: 400;
+  font-weight: 600;
   color: white;
-  line-height: 1.4;
+  line-height: 100%;
   margin: 0 0 3rem 0;
+  font-family: var(--font-gilroy);
 }
 
 .cta-buttons {
@@ -60,7 +61,7 @@
 
 .cta-secondary {
   background: transparent;
-  color: #9c9b9e;
+  color: #49484D;
   border: 2px solid white;
   font-size: 16px;
   background-color: #efefef;
@@ -89,7 +90,7 @@
   }
   
   .cta-title {
-    font-size: 22px;
+    font-size: 24px;
     margin-bottom: 2rem;
   }
   
@@ -114,7 +115,7 @@
 
 @media screen and (max-width: 480px) {
   .cta-title {
-    font-size: 20px;
+    font-size: 24px;
   }
   
   .cta-button {

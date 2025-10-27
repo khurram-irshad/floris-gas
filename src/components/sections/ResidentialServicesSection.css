@@ -20,13 +20,14 @@
 
 .residential-services-title {
   font-size: 36px;
-  font-family: 'Gilroy-SemiBold', sans-serif;
   background: linear-gradient(90deg, #4068FC 0%, #60B8FF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin-bottom: 6px;
   line-height: 1.2;
+  font-family: var(--font-gilroy);
+  font-weight: 600;
 }
 
 /* Services Grid */
@@ -83,10 +84,22 @@
   flex-direction: column;
 }
 
+.residential-service-subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #416AFC 0%, #5DB2FE 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  font-family: var(--font-gilroy);
+}
+
 .residential-service-title {
   font-size: 28px;
   font-weight: 600;
-  font-family: 'Gilroy-Bold', sans-serif;
+  font-family: var(--font-gilroy);
   color: #49484c;
   margin-bottom: 0.75rem;
   line-height: 100%;
@@ -98,6 +111,7 @@
   line-height: 100%;
   margin-bottom: 1.5rem;
   flex: 1;
+  font-family: var(--font-gilroy);
 }
 
 /* Service Button */
@@ -113,6 +127,7 @@
   align-items: center;
   gap: 0.5rem;
   align-self: flex-start;
+  font-family: var(--font-gilroy);
 }
 
 .residential-service-button img {
@@ -144,7 +159,14 @@
   }
   
   .residential-services-title {
-    font-size: 28px;
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: 600;
+    font-family: var(--font-gilroy);
+    background: linear-gradient(90deg, #4068FC 0%, #60B8FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
   
   .residential-services-grid {
@@ -161,7 +183,11 @@
   }
   
   .residential-service-title {
-    font-size: 22px;
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: 600;
+    font-family: var(--font-gilroy);
+    color: #49484D;
   }
   
   .residential-service-description {

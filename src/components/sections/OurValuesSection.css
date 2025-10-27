@@ -17,21 +17,25 @@
 }
 
 .our-values-title {
-  font-size: 2.5rem;
+  font-size: 36px;
   font-weight: 600;
   color: #1f2937;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
   background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  font-family: var(--font-gilroy);
+  line-height: 100%;
 }
 
 .our-values-description {
-  font-size: 1.125rem;
-  color: #6b7280;
-  line-height: 1.6;
+  font-size: 18px;
+  color: #49484D;
+  line-height: 100%;
   margin: 0;
+  font-family: var(--font-gilroy);
+  margin: 0 auto;
 }
 
 /* Content Wrapper with Background */
@@ -119,27 +123,32 @@
 }
 
 .value-title {
-  font-size: 1.25rem;
+  font-size: 24px;
   font-weight: 600;
-  color: #1f2937;
-  margin-bottom: 0.5rem;
+  color: #49484D;
+  margin-bottom: 8px;
   margin-top: 0;
   text-align: right;
+  font-family: var(--font-gilroy);
+  line-height: 100%;
 }
 .value-title-right {
-    font-size: 1.25rem;
+    font-size: 24px;
     font-weight: 600;
-    color: #1f2937;
-    margin-bottom: 0.5rem;
+    color: #49484D;
+    margin-bottom: 8px;
     margin-top: 0;
     text-align: left;
+    font-family: var(--font-gilroy);
+    line-height: 100%;
   }
 
 .value-description {
-  font-size: 0.95rem;
-  color: #6b7280;
-  line-height: 1.5;
+  font-size: 16px;
+  color: #49484D;
+  line-height: 100%;
   margin: 0;
+  font-family: var(--font-gilroy);
 }
 
 .value-icon {
@@ -214,11 +223,16 @@
   }
   
   .our-values-title {
-    font-size: 2rem;
+    font-size: 24px;
+    font-family: var(--font-gilroy);
+    font-weight: 600;
   }
   
   .our-values-description {
-    font-size: 1rem;
+    font-size: 16px;
+    font-family: var(--font-gilroy);
+    color: #49484D;
+    max-width: 100%;
   }
   
    .values-content-wrapper .our-values-grid {
@@ -241,11 +255,16 @@
   }
   
   .value-title {
-    font-size: 1.125rem;
+    font-size: 24px;
     text-align: left;
+    font-family: var(--font-gilroy);
+    font-weight: 600;
+    color: #49484D;
   }
   
   .value-description {
-    font-size: 0.875rem;
+    font-size: 16px;
+    font-family: var(--font-gilroy);
+    color: #49484D;
   }
 }

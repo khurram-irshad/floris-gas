@@ -1,7 +1,7 @@
 /* Services Section Component Styles */
 
 .services-section {
-  padding: 27rem 0;
+  padding: 16% 0rem 6rem 0;
 }
 
 .services-container {
@@ -19,21 +19,23 @@
 .services-title {
   font-size: 36px;
   font-weight: 600;
-  font-family: 'Gilroy-SemiBold', sans-serif;
   background: linear-gradient(90deg, #4068FC 0%, #60B8FF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin-bottom: 6px;
   line-height: 1.2;
+  font-family: var(--font-gilroy);
 }
 
 .services-subtitle {
   font-size: 20px;
-  color: #afafb1;
+  color: #49484D;
+  font-family: var(--font-gilroy);
+  font-weight: 400;
   max-width: 48rem;
   margin: 0 auto;
-  line-height: 1.6;
+  line-height: 100%;
 }
 
 /* Services Grid */
@@ -65,6 +67,10 @@
 .service-card:hover .service-title {
   color: #ffffff;
 }
+.service-card:hover .service-description {
+  color: #ffffff;
+}
+
 
 /* Service Image */
 .service-image-container {
@@ -94,8 +100,8 @@
 .service-title {
   font-size: 28px;
   font-weight: 600;
-  font-family: 'Gilroy-Bold', sans-serif;
-  color: #49484c;
+  font-family: var(--font-gilroy);
+  color: #49484D;
   margin-bottom: 0.75rem;
   line-height: 100%;
 }
@@ -106,6 +112,8 @@
   line-height: 1.2;
   margin-bottom: 1.5rem;
   flex: 1;
+  font-family: var(--font-gilroy);
+  font-weight: 400;
 }
 
 /* Service Button */
@@ -144,15 +152,20 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 100%;
+    font-family: var(--font-gilroy);
+  }
+  .services-subtitle {
+    font-size: 16px;
+    line-height: 100%;
+    color: #49484D;
+
   }
   .service-title {
     font-size: 24px;
     font-weight: 600;
-    font-family: 'Gilroy-Bold', sans-serif;
     color: #49484c;
     margin-bottom: 0.75rem;
     line-height: 100%;
-    letter-spacing: -2%;
   }
   .service-description {
     font-size: 16px;

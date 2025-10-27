@@ -1,4 +1,5 @@
 import { Geist_Mono } from "next/font/google";
+import { gilroy } from "./fonts";
 import "./globals.css";
 
 const geistMono = Geist_Mono({
@@ -12,8 +13,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistMono.variable} font-inter antialiased`}>
+    <html lang="en" className={gilroy.variable}>
+      <body className={`${geistMono.variable} font-gilroy antialiased`}>
         {children}
       </body>
     </html>

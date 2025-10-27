@@ -112,7 +112,7 @@ export default function ContactSection() {
                   />
                 </div>
                 <div className="author-info">
-                  <span className="author-name">Founder, Ceo</span>
+                  <span className="quote-author-name">Founder, Ceo</span>
                 </div>
               </div>
             </div>

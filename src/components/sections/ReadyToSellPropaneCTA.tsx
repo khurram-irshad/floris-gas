@@ -44,20 +44,20 @@ export default function ReadyToSellPropaneCTA() {
 
         <div className="ready-to-sell-propane-stats">
           <div className="stat-item-sell">
-            <div className="stat-number">500+</div>
-            <div className="stat-label-sell">Partner Locations</div>
+            <div className="sell-propane-stats-number">500+</div>
+            <div className="sell-propane-stats-label">Partner Locations</div>
           </div>
           <div className="stat-item-sell">
-            <div className="stat-number">24/7</div>
-            <div className="stat-label-sell">Emergency Support</div>
+            <div className="sell-propane-stats-number">24/7</div>
+            <div className="sell-propane-stats-label">Emergency Support</div>
           </div>
           <div className="stat-item-sell">
-            <div className="stat-number">98%</div>
-            <div className="stat-label-sell">Partner Satisfaction</div>
+            <div className="sell-propane-stats-number">98%</div>
+            <div className="sell-propane-stats-label">Partner Satisfaction</div>
           </div>
           <div className="stat-item-sell">
-            <div className="stat-number">30+</div>
-            <div className="stat-label-sell">Years Experience</div>
+            <div className="sell-propane-stats-number">30+</div>
+            <div className="sell-propane-stats-label">Years Experience</div>
           </div>
         </div>
       </div>

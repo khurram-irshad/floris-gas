@@ -7,23 +7,24 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <div className="footer-content">
-          {/* Logo and Description */}
-          <div className="footer-brand">
-            <div className="footer-logo">
-              <Image
-                src="/footer-logo.png"
-                alt="Florigas"
-                width={120}
-                height={40}
-                className="logo-image"
-              />
-            </div>
-            <p className="footer-description">
-              At Florigas Inc, we pride ourselves on offering top-notch customer care and professional expertise as your full-service propane supplier in Florida.
-            </p>
+        {/* Top Section: Logo and Description */}
+        <div className="footer-brand-section">
+          <div className="footer-logo">
+            <Image
+              src="/footer-logo.png"
+              alt="Florigas"
+              width={120}
+              height={40}
+              className="logo-image"
+            />
           </div>
+          <p className="footer-description">
+            At Florigas Inc, we pride ourselves on offering top-notch customer care and professional expertise as your full-service propane supplier in Florida.
+          </p>
+        </div>
 
+        {/* Bottom Section: Three Columns */}
+        <div className="footer-columns">
           {/* How we can help */}
           <div className="footer-column">
             <h3 className="footer-column-title">How we can help?</h3>

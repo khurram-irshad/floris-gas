@@ -207,6 +207,14 @@ export default function SuccessStoriesGrid() {
           </div>
         )}
       </div>
+           <div className="success-stories-load-more-button-container">
+                    <button 
+                      // onClick={handleReadMoreCaseStudies}
+                      className="success-stories-load-more-button"
+                    >
+                      Load More Case Studies
+                    </button>
+            </div>
     </section>
   );
 }

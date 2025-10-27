@@ -18,26 +18,29 @@
   color: #64748b;
   margin: 0 0 1rem 0;
   letter-spacing: 0.5px;
+  font-family: var(--font-gilroy);
 }
 
 .process-steps-title {
   font-size: 36px;
-  font-weight: 500;
+  font-weight: 600;
   background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  line-height: 1.3;
+  line-height: 100%;
   margin: 0 0 1.5rem 0;
   max-width: 40%;
+  font-family: var(--font-gilroy);
 }
 
 .process-steps-description {
-  font-size: 18px;
-  color: #64748b;
+  font-size: 20px;
+  color: #49484D;
   line-height: 1.6;
   margin: 0;
   max-width: 50%;
+  font-family: var(--font-gilroy);
 }
 
 .process-steps-grid {
@@ -83,21 +86,24 @@
   font-weight: 600;
   margin: 0 0 0.5rem 0;
   text-transform: uppercase;
+  font-family: var(--font-gilroy);
 }
 
 .process-step-title {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
-  color: #1e293b;
+  color: #49484D;
   margin: 0 0 1rem 0;
-  line-height: 1.4;
+  line-height: 100%;
+  font-family: var(--font-gilroy);
 }
 
 .process-step-description {
   font-size: 16px;
-  color: #64748b;
-  line-height: 1.6;
+  color: #49484D;
+  line-height: 100%;
   margin: 0;
+  font-family: var(--font-gilroy);
 }
 
 .process-steps-buttons {
@@ -115,6 +121,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   text-transform: capitalize;
+  font-family: var(--font-gilroy);
 }
 
 .process-steps-button.primary {
@@ -145,6 +152,9 @@
   }
   .process-steps-subtitle {
     margin: 0;
+    font-size: 16px;
+    line-height: 100%;
+    color: #49484D;
   }
   
   .process-steps-container {
@@ -156,7 +166,8 @@
   }
   
   .process-steps-title {
-    font-size: 28px;
+    margin-top: 0.5rem;
+    font-size: 24px;
     max-width: 100%;
     margin-bottom: 0.5rem;
   }
@@ -164,6 +175,8 @@
   .process-steps-description {
     font-size: 16px;
     max-width: 100%;
+    line-height: 100%;
+    color: #49484D;
   }
   
   .process-steps-grid {
@@ -191,11 +204,13 @@
   }
   
   .process-step-title {
-    font-size: 18px;
+    font-size: 24px;
   }
   
   .process-step-description {
-    font-size: 15px;
+    font-size: 18px;
+    line-height: 100%;
+    color: #49484D;
   }
   
   .process-steps-buttons {

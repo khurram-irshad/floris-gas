@@ -55,7 +55,7 @@ export default function PropaneBenefitsSection() {
           <div className="propane-benefits-right">
             <div className="propane-benefits-image-container">
               <Image
-                src="/faq-background.png"
+                src="/faq-background.jpg"
                 alt="Propane Benefits - Forklift and Propane Tanks"
                 fill
                 className="propane-benefits-main-image"

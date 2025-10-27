@@ -1,7 +1,6 @@
 .propane-benefits-section {
   background: #ffffff;
   padding: 5rem 0;
-  border-bottom: 1px solid #e2e8f0;
 }
 
 .propane-benefits-container {
@@ -27,15 +26,18 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  line-height: 1.3;
+  line-height: 100%;
   margin: 0 0 1.5rem 0;
+  font-family: var(--font-gilroy);
+  font-weight:600;
 }
 
 .propane-benefits-description {
-  font-size: 18px;
-  color: #64748b;
+  font-size: 20px;
+  color: #262424;
   line-height: 1.6;
   margin: 0 0 2.5rem 0;
+  font-family: var(--font-gilroy);
 }
 
 .propane-benefits-list {
@@ -69,11 +71,12 @@
 }
 
 .propane-benefit-title {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
-  color: #1e293b;
+  color: #49484D;
   margin: 0 0 0.5rem 0;
-  line-height: 1.3;
+  line-height: 100%;
+  font-family: var(--font-gilroy);
 }
 
 .propane-benefit-description {
@@ -81,6 +84,7 @@
   color: #64748b;
   line-height: 1.5;
   margin: 0;
+  font-family: var(--font-gilroy);
 }
 
 .propane-benefits-right {
@@ -104,16 +108,6 @@
   border-radius: 12px;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 1024px) {
-  .propane-benefits-title {
-    font-size: 32px;
-  }
-  
-  .propane-benefits-description {
-    font-size: 17px;
-  }
-}
 
 @media screen and (max-width: 768px) {
   .propane-benefits-section {
@@ -145,12 +139,21 @@
   }
   
   .propane-benefits-title {
-    font-size: 28px;
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: 600;
+    font-family: var(--font-gilroy);
+    background: linear-gradient(90deg, #4068FC 0%, #60B8FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
   
   .propane-benefits-description {
     font-size: 16px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    line-height: 100%;
+    color: #49484D;
   }
   
   .propane-benefits-list {
@@ -167,7 +170,9 @@
   }
   
   .propane-benefit-description {
-    font-size: 15px;
+    font-size: 14px;
+    line-height: 100%;
+    color: #49484D;
   }
 }
 

@@ -9,7 +9,6 @@ import ProcessStepsSection from '@/components/sections/ProcessStepsSection';
 import ResidentialFAQSection from '@/components/sections/ResidentialFAQSection';
 import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import CallToActionSection from '@/components/sections/CallToActionSection';
-import LocationSection from '@/components/sections/LocationSection';
 
 export default function ResidentialPage() {
   return (
@@ -23,7 +22,6 @@ export default function ResidentialPage() {
         <PropaneBenefitsSection />
         <ProcessStepsSection />
         <ResidentialFAQSection />
-        <LocationSection />
         <TestimonialsSection />
         <CallToActionSection />
       </main>

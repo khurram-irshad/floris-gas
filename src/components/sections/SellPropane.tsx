@@ -54,16 +54,16 @@ export default function SellPropane() {
           
           <div className="sell-propane-stats">
             <div className="stat-item">
-              <div className="stat-number">24/7</div>
-              <div className="stat-label">Emergency Support</div>
+              <div className="stats-number">24/7</div>
+              <div className="stats-label">Emergency Support</div>
             </div>
             <div className="stat-item">
-              <div className="stat-number">5,000+</div>
-              <div className="stat-label">Businesses Served</div>
+              <div className="stats-number">5,000+</div>
+              <div className="stats-label">Businesses Served</div>
             </div>
             <div className="stat-item">
-              <div className="stat-number">30+</div>
-              <div className="stat-label">Years Experience</div>
+              <div className="stats-number">30+</div>
+              <div className="stats-label">Years Experience</div>
             </div>
           </div>
         </div>

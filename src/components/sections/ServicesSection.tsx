@@ -16,7 +16,7 @@ const servicesData = [
     id: 2,
     title: 'Commercial Solutions',
     description: 'Reliable propane solutions tailored to keep your business running smoothly with efficiency and cost-effectiveness.',
-    image: '/card-2.png',
+    image: '/commercial.jpg',
     buttonText: 'Get Started',
     buttonColor: 'blue'
   },
@@ -24,7 +24,7 @@ const servicesData = [
     id: 3,
     title: 'Sell Propane',
     description: 'Partner with us to sell propane and grow your business with reliable supply, trusted support, and flexible partnership opportunities.',
-    image: '/card-3.png',
+    image: '/sell-propane.jpg',
     buttonText: 'Get Started',
     buttonColor: 'blue'
   }

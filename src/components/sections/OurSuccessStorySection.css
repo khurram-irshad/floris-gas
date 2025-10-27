@@ -1,7 +1,7 @@
 /* Our Success Story Section */
 .success-story-section {
   padding: 5rem 0;
-  background: white;
+  background: #F4F7FA;
 }
 
 .success-story-container {
@@ -17,21 +17,25 @@
 }
 
 .success-story-title {
-  font-size: 2.5rem;
+  font-size: 36px;
   font-weight: 600;
   color: #1f2937;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
   background: linear-gradient(90deg, #416AFC 0%, #5DB2FE 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  font-family: var(--font-gilroy);
+  line-height: 100%;
 }
 
 .success-story-description {
-  font-size: 1.125rem;
-  color: #6b7280;
-  line-height: 1.6;
+  font-size: 20px;
+  color: #49484D;
+  line-height: 100%;
   margin: 0;
+  font-family: var(--font-gilroy);
+  margin: 0 auto;
 }
 
 /* Timeline Container */
@@ -43,11 +47,11 @@
 }
 
 /* Swiper Customization */
-.timeline-swiper {
+/* .timeline-swiper {
   padding: 2rem 0;
   overflow: visible;
   margin: 0 -2rem;
-}
+} */
 
 .timeline-swiper .swiper-slide {
   height: auto;
@@ -72,7 +76,8 @@
 }
 
 .timeline-card-image {
-  width: 448px;
+  width: 100%;
+  max-width: 448px;
   position: relative;
   height: 314px;
   overflow: hidden;
@@ -130,6 +135,7 @@
   font-size: 0.875rem;
   font-weight: 600;
   color: #1f2937;
+  font-family: var(--font-gilroy);
 }
 
 /* Hover Overlay */
@@ -155,15 +161,18 @@
 .timeline-hover-title {
   font-size: 1.25rem;
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
   margin-top: 0;
+  font-family: var(--font-gilroy);
+  line-height: 100%;
 }
 
 .timeline-hover-desc {
   font-size: 0.875rem;
-  line-height: 1.4;
+  line-height: 100%;
   margin: 0;
   opacity: 0.9;
+  font-family: var(--font-gilroy);
 }
 
 /* Navigation */
@@ -243,8 +252,7 @@
     padding: 3rem 0;
   }
   .timeline-card {
-    width: auto;
-
+    width: 100%;
   }
   
   .success-story-container {
@@ -256,20 +264,26 @@
   }
   
   .success-story-title {
-    font-size: 2rem;
+    font-size: 24px;
+    font-family: var(--font-gilroy);
+    font-weight: 600;
   }
   
   .success-story-description {
-    font-size: 1rem;
+    font-size: 16px;
+    font-family: var(--font-gilroy);
+    color: #49484D;
+    max-width: 100%;
   }
   
 
   
   .timeline-card-image {
     height: 250px;
-    width: 450px;
     border: 5px solid white;
     border-radius: 16px;
+    width: 100%;
+    max-width: 100%;
   }
   
   .timeline-overlay {
@@ -298,5 +312,15 @@
   .nav-button {
     width: 40px;
     height: 40px;
+  }
+  .timeline-container {
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+    padding: 0 0rem;
+  }
+  .timeline-swiper .swiper-slide {
+    width: 100% !important;
+    justify-content: center !important;
   }
 }

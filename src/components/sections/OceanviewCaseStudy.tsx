@@ -136,14 +136,14 @@ export default function OceanviewCaseStudy() {
                 </div>
               </div>
             </div>
-            <div className="oceanview-case-study-actions">
+            {/* <div className="oceanview-case-study-actions">
                     <button 
                       onClick={handleReadMoreCaseStudies}
                       className="oceanview-case-study-button"
                     >
                       Read More Case Studies →
                     </button>
-                </div>
+            </div> */}
           </div>
         </div>
         

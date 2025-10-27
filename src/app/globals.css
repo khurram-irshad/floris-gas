@@ -3,26 +3,9 @@
 @import "@fontsource/inter/500.css";
 @import "@fontsource/inter/600.css";
 
-/* Gilroy Font */
-@font-face {
-  font-family: 'Gilroy-Bold';
-  src: url('/fonts/Gilroy-Bold.woff2') format('woff2'),
-       url('/fonts/Gilroy-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gilroy-SemiBold';
-  src: url('/fonts/Gilroy-SemiBold.woff2') format('woff2'),
-       url('/fonts/Gilroy-SemiBold.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
 
 @theme {
+  --font-gilroy: var(--font-gilroy);
   --color-nav-text: #676666;
   --color-nav-text-active: #49484D;
   --color-primary-blue: #4f46e5;

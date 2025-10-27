@@ -93,7 +93,7 @@ export default function HeroSection() {
               ))}
             </div>
             <div className="social-proof-text">
-              <span className="active-members">{STATS.ACTIVE_MEMBERS} Active Members</span>
+              <span className="active-members">{STATS.ACTIVE_MEMBERS} <span className="active-members-text"> Active Members</span></span>
               <br />
               <span className="service-text">Enjoy our facilities</span>
             </div>
@@ -120,7 +120,7 @@ export default function HeroSection() {
                 <input
                   type="text"
                   name="firstName"
-                  placeholder="First Name"
+                  placeholder="Enter Name"
                   value={formData.firstName}
                   onChange={handleInputChange}
                   className="input"

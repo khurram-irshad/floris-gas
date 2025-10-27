@@ -58,7 +58,7 @@
   font-weight: 700;
   line-height: 1.2;
   margin: 0 0 1.5rem 0;
-  font-family: 'Gilroy-Bold', sans-serif;
+  font-family: var(--font-gilroy);
 }
 
 .residential-hero-description {
@@ -66,6 +66,7 @@
   line-height: 1.6;
   margin: 0 0 2.5rem 0;
   color: rgba(255, 255, 255, 0.9);
+  font-family: var(--font-gilroy);
 }
 
 .residential-hero-buttons {
@@ -84,6 +85,7 @@
   transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  font-family: var(--font-gilroy);
 }
 
 .residential-hero-button.primary {

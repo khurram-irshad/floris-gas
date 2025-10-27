@@ -18,21 +18,26 @@
 }
 
 .what-drive-us-title {
-  font-size: 2.5rem;
-  font-weight: 500;
+  font-size: 36px;
+  font-weight: 600;
   color: #1f2937;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
   background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  font-family: var(--font-gilroy);
+  line-height: 100%;
 }
 
 .what-drive-us-description {
-  font-size: 1.125rem;
-  color: #6b7280;
-  line-height: 1.6;
+  font-size: 20px;
+  color: #49484D;
+  line-height: 100%;
   margin: 0;
+  font-family: var(--font-gilroy);
+  max-width: 60%;
+  margin: 0 auto;
 }
 
 /* Content Wrapper with Background */
@@ -70,20 +75,23 @@
 }
 
 .mission-title {
-  font-size: 2rem;
+  font-size: 36px;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
   background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  font-family: var(--font-gilroy);
+  line-height: 100%;
 }
 
 .mission-description {
-  font-size: 1.125rem;
-  line-height: 1.6;
-  color: #6b7280;
+  font-size: 18px;
+  line-height: 100%;
+  color: #49484D;
   margin: 0;
+  font-family: var(--font-gilroy);
 }
 
 /* Features Grid - 2x2 */
@@ -132,19 +140,22 @@
 }
 
 .feature-title {
-  font-size: 1.25rem;
+  font-size: 24px;
   font-weight: 600;
-  color: #1f2937;
-  margin-bottom: 0.75rem;
+  color: #49484D;
+  margin-bottom: 8px;
   margin-top: 0;
+  font-family: var(--font-gilroy);
+  line-height: 100%;
 }
 
 .feature-description {
-  font-size: 0.95rem;
-  color: #6b7280;
-  line-height: 1.5;
+  font-size: 16px;
+  color: #49484D;
+  line-height: 100%;
   margin: 0;
   flex-grow: 1;
+  font-family: var(--font-gilroy);
 }
 
 /* Responsive Design */
@@ -177,11 +188,16 @@
   }
   
   .what-drive-us-title {
-    font-size: 2rem;
+    font-size: 24px;
+    font-family: var(--font-gilroy);
+    font-weight: 600;
   }
   
   .what-drive-us-description {
-    font-size: 1rem;
+    font-size: 16px;
+    font-family: var(--font-gilroy);
+    color: #49484D;
+    max-width: 100%;
   }
   
   .features-grid {
@@ -194,10 +210,25 @@
   }
   
   .mission-title {
-    font-size: 1.5rem;
+    font-size: 36px;
+    font-family: var(--font-gilroy);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
   }
   
   .mission-description {
-    font-size: 1rem;
+    font-size: 18px;
+    font-family: var(--font-gilroy);
+    color: #49484D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .main-image {
+    border-radius: 20px;
+    overflow: hidden;
+    min-height: auto;
   }
 }

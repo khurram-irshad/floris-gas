@@ -14,21 +14,25 @@
 }
 
 .industries-subtitle {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
-  color: #64748b;
-  letter-spacing: 0.5px;
+  color: #49484D;
   margin: 0 0 1rem 0;
+  font-family: var(--font-gilroy);
 }
 
 .industries-title {
   font-size: 36px;
   font-weight: 600;
-  color: #4168FC;
-  line-height: 1.4;
+  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  line-height: 100%;
   margin: 0;
   max-width: 800px;
   margin: 0 auto;
+  font-family: var(--font-gilroy);
 }
 
 .industries-grid {
@@ -72,21 +76,26 @@
 
 
 .industry-category {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
-  color: #4168FC;
+  background: linear-gradient(90deg, #416AFC 0%, #5DB2FE 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-bottom: 0.75rem;
   padding-top: 1rem;
+  font-family: var(--font-gilroy);
 }
 
 .industry-description {
-  font-size: 16px;
-  font-weight: 500;
-  color: #1e293b;
-  line-height: 1.5;
+  font-size: 20px;
+  font-weight: 600;
+  color: #49484D;
+  line-height: 100%;
   margin: 0 0 1.5rem 0;
+  font-family: var(--font-gilroy);
 }
 
 .industry-features {
@@ -104,12 +113,14 @@
 
 .feature-checkmark {
   flex-shrink: 0;
+  filter: brightness(0) saturate(100%) invert(47%) sepia(89%) saturate(2618%) hue-rotate(130deg) brightness(95%) contrast(101%);
 }
 
 .feature-text {
-  font-size: 14px;
-  color: #64748b;
+  font-size: 16px;
+  color: #49484D;
   font-weight: 400;
+  font-family: var(--font-gilroy);
 }
 
 .industry-view-more-btn {
@@ -123,6 +134,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  font-family: var(--font-gilroy);
 }
 
 .industry-view-more-btn img {
@@ -158,11 +170,12 @@
     margin-bottom: 0rem;
   }
   .industry-description {
-    font-size: 24px;
-    font-weight: 500;
-    color: #1e293b;
-    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 600;
+    color: #49484D;
+    line-height: 100%;
     margin: 0 0 1.5rem 0;
+    font-family: var(--font-gilroy);
   }
   
   .industries-container {
@@ -175,6 +188,8 @@
   
   .industries-title {
     font-size: 24px;
+    font-family: var(--font-gilroy);
+    font-weight: 600;
   }
   
   .industries-grid {

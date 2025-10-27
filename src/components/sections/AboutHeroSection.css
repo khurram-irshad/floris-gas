@@ -48,12 +48,12 @@
 }
 
 .about-hero-title {
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 1.2;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 100%;
   color: white;
-  font-family: 'Gilroy-Bold', sans-serif;
-  margin: 0 0 1.5rem 0;
+  font-family: var(--font-gilroy);
+  margin: 0 0 16px 0;
 }
 
 .highlight-text {
@@ -62,12 +62,13 @@
 
 .about-hero-description {
   font-size: 20px;
-  line-height: 1.6;
+  line-height: 100%;
   margin: 0 0 2.5rem 0;
   color: rgba(255, 255, 255, 0.9);
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2.5rem;
+  font-family: var(--font-gilroy);
+  max-width: 75%;
 }
 
 .about-hero-buttons {
@@ -79,9 +80,9 @@
 }
 
 .about-hero-button {
-  padding: 1rem 2rem;
+  padding: 12px 16px;
   border: none;
-  border-radius: 8px;
+  border-radius: 14px;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
@@ -90,11 +91,13 @@
   align-items: center;
   gap: 0.5rem;
   text-transform: capitalize;
+  font-family: var(--font-gilroy);
 }
 
 .about-hero-button.primary {
   background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
   color: white;
+  width: 15%;
 }
 
 .about-hero-button.primary:hover {
@@ -104,10 +107,14 @@
 }
 
 .about-hero-button.secondary {
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
+  color: #49484D;
   border: 2px solid rgba(255, 255, 255, 0.3);
+  background-color: white;
   backdrop-filter: blur(10px);
+  width: 15%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-hero-button.secondary:hover {
@@ -128,11 +135,14 @@
   
   .about-hero-title {
     font-size: 24px;
-    font-weight:400 ;
+    font-weight: 600;
+    font-family: var(--font-gilroy);
   }
   
   .about-hero-description {
     font-size: 16px;
+    font-family: var(--font-gilroy);
+    max-width: 100%;
   }
   
   .about-hero-description br {
@@ -147,5 +157,35 @@
   .about-hero-button {
     width: 100%;
     justify-content: center;
+    padding: 12px 16px;
+    border-radius: 14px;
+  }
+  .about-hero-button.primary {
+    background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+    color: white;
+    width: 100%;
+  }
+  
+  .about-hero-button.primary:hover {
+    background: linear-gradient(90deg, #3558e0 0%, #5fb7ff 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(65, 104, 252, 0.4);
+  }
+  
+  .about-hero-button.secondary {
+    color: #49484D;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background-color: white;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-hero-button.secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
   }
 }

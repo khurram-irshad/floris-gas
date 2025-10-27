@@ -15,12 +15,11 @@
 }
 
 .how-it-works-subtitle {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
-  color: #64748b;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin: 0 0 1rem 0;
+  color: #49484D;
+  margin: 0 0 0.5rem 0;
+  font-family: var(--font-gilroy);
 }
 
 .how-it-works-title {
@@ -30,16 +29,18 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  line-height: 1.4;
+  line-height: 100%;
   margin: 0 0 1.5rem 0;
+  font-family: var(--font-gilroy);
 }
 
 .how-it-works-description {
-  font-size: 18px;
-  color: #64748b;
-  line-height: 1.6;
+  font-size: 20px;
+  color: #49484D;
+  line-height: 100%;
   margin: 0;
   margin: 0 auto;
+  font-family: var(--font-gilroy);
 }
 
 .process-steps-grid {
@@ -82,30 +83,33 @@
 
 .step-number {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
   background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   margin-bottom: 0.5rem;
   text-align: left;
+  font-family: var(--font-gilroy);
 }
 
 .step-title {
   font-size: 24px;
-  font-weight: 400;
-  color: #1e293b;
+  font-weight: 600;
+  color: #49484D;
   margin-bottom: 4px;
-  line-height: 1.3;
+  line-height: 100%;
   text-align: left;
+  font-family: var(--font-gilroy);
 }
 
 .step-description {
   font-size: 16px;
-  color: #64748b;
-  line-height: 1.3;
+  color: #49484D;
+  line-height: 100%;
   margin: 0;
   text-align: left;
+  font-family: var(--font-gilroy);
 }
 
 .how-it-works-note {
@@ -115,10 +119,11 @@
 
 .process-note {
   font-size: 16px;
-  color: #64748b;
+  color: #49484D;
   line-height: 1.6;
   margin: 0;
   margin: 0 auto;
+  font-family: var(--font-gilroy);
 }
 
 .how-it-works-action {
@@ -136,6 +141,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   text-transform: capitalize;
+  font-family: var(--font-gilroy);
 }
 
 
@@ -156,9 +162,7 @@
   }
   .how-it-works-subtitle {
     margin-bottom: 0.5rem;
-  }
-  .how-it-works-title{
-    margin-bottom: 0.5rem;
+    font-weight: 600;
   }
   
   .how-it-works-container {
@@ -170,14 +174,35 @@
   }
   
   .how-it-works-title {
-    font-size: 28px;
+    font-size: 24px;
+    font-family: var(--font-gilroy);
+    font-weight: 600;
+    margin: 0 0 .5rem;
   }
   
   .how-it-works-description {
     font-size: 16px;
+    font-family: var(--font-gilroy);
+    color: #49484D;
     br {
       display: none;
     }
+  }
+  .step-number {
+    font-size: 18px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 4px;
+    text-align: left;
+    font-family: var(--font-gilroy);
+  }
+  .step-icon-container {
+    border-radius: 12px;
+    display: flex;
+    margin-bottom: 12px;
   }
   
   .process-steps-grid {
@@ -200,15 +225,17 @@
   }
   
   .step-title {
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
   }
   
   .step-description {
-    font-size: 15px;
+    font-size: 14px;
   }
   
   .process-note {
-    font-size: 15px;
+    font-size: 16px;
     text-align: center;
   }
   
