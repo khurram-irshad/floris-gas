@@ -53,7 +53,7 @@ export default function FAQSection() {
     <section className="faq-section">
       <div className="faq-background-container">
         <Image
-          src="/faq-background.png"
+          src="/faq.jpg"
           alt="FAQ Background"
           fill
           className="faq-background-image"
