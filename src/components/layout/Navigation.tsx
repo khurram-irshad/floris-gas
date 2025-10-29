@@ -76,7 +76,10 @@ export default function Navigation() {
 
           {/* CTA Button - Extreme Right */}
           <div className="hidden lg:flex items-center flex-shrink-0">
-            <button className="bg-accent-red hover:bg-accent-red-hover text-white px-4 py-2.5 rounded-md font-medium text-xs tracking-wide transition-all duration-200 shadow-sm hover:shadow-md flex items-center gap-2">
+            <Link 
+              href="/find-location"
+              className="bg-accent-red hover:bg-accent-red-hover text-white px-4 py-2.5 rounded-md font-medium text-xs tracking-wide transition-all duration-200 shadow-sm hover:shadow-md flex items-center gap-2"
+            >
               <Image
                 src="/location-01.svg"
                 alt="Location"
@@ -85,13 +88,13 @@ export default function Navigation() {
                 className="w-4 h-4"
               />
               FIND LOCATION
-            </button>
+            </Link>
           </div>
 
           {/* Mobile buttons container */}
           <div className="lg:hidden ml-auto flex items-center gap-3">
             {/* Location button */}
-            <button className="mobile-location-button-header">
+            <Link href="/find-location" className="mobile-location-button-header">
               <div className="location-icon-container">
                 <Image
                   src="/mobile-navigation.png"
@@ -101,7 +104,7 @@ export default function Navigation() {
                   className="location-icon"
                 />
               </div>
-            </button>
+            </Link>
             <div className='mobile-menu-icon-container'>
               <button
                 onClick={toggleMenu}
