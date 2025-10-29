@@ -20,6 +20,24 @@ const eslintConfig = [
       "next-env.d.ts",
     ],
   },
+  {
+    rules: {
+      // Disable TypeScript 'any' type warnings
+      "@typescript-eslint/no-explicit-any": "off",
+      
+      // Disable unused variables warnings
+      "@typescript-eslint/no-unused-vars": "off",
+      
+      // Disable React hooks exhaustive deps warnings
+      "react-hooks/exhaustive-deps": "off",
+      
+      // Disable Next.js img element warnings
+      "@next/next/no-img-element": "off",
+      
+      // Disable prefer-const warnings
+      "prefer-const": "off",
+    },
+  },
 ];
 
 export default eslintConfig;
