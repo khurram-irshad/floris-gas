@@ -43,6 +43,12 @@ declare global {
   }
 }
 
+// Google Maps type definitions
+type GoogleMapsLatLng = any;
+type GoogleMapsMap = any;
+type GoogleMapsMarker = any;
+type GoogleMapsCircle = any;
+
 // Optimized Google Maps script loader
 const loadGoogleMapsScript = (): Promise<void> => {
   // Check if Google Maps is already loaded
@@ -189,7 +195,7 @@ function ResultsContent() {
           searchCircle.baseCircle.setMap(null);
         }
         if (searchCircle.radarRings) {
-          searchCircle.radarRings.forEach((ring: any) => ring.setMap(null));
+          searchCircle.radarRings.forEach((ring: GoogleMapsCircle) => ring.setMap(null));
         }
       }
     };
@@ -479,7 +485,7 @@ function ResultsContent() {
     });
   }, [searchQuery, addCleanupFunction]);
 
-  const createSearchRadiusCircle = useCallback((center: any, mapInstance: any, hasStations: boolean = true) => {
+  const createSearchRadiusCircle = useCallback((center: GoogleMapsLatLng, mapInstance: GoogleMapsMap, hasStations: boolean = true) => {
     // Remove existing radar system if any
     if (searchCircle) {
       if (searchCircle.animationId) {
@@ -489,7 +495,7 @@ function ResultsContent() {
         searchCircle.baseCircle.setMap(null);
       }
       if (searchCircle.radarRings) {
-        searchCircle.radarRings.forEach((ring: any) => ring.setMap(null));
+        searchCircle.radarRings.forEach((ring: GoogleMapsCircle) => ring.setMap(null));
       }
     }
 
@@ -512,7 +518,7 @@ function ResultsContent() {
     });
 
     // Create radar rings for smooth radar effect
-    const radarRings: any[] = [];
+    const radarRings: GoogleMapsCircle[] = [];
     const numRings = 3; // Reduced for better performance
     
     for (let i = 0; i < numRings; i++) {
@@ -530,7 +536,7 @@ function ResultsContent() {
     }
 
     // Smooth radar animation using requestAnimationFrame
-    let startTime = Date.now();
+    const startTime = Date.now();
     let animationId: number;
     
     const smoothRadarAnimation = () => {
@@ -605,7 +611,7 @@ function ResultsContent() {
     return radarSystem;
   }, [searchCircle, addCleanupFunction]);
 
-  const findAndDisplayNearestStations = useCallback((searchLoc: any, mapInstance: any) => {
+  const findAndDisplayNearestStations = useCallback((searchLoc: GoogleMapsLatLng, mapInstance: GoogleMapsMap) => {
     
     // Update loading message
     setLoadingMessage('Calculating distances to stations...');
@@ -631,7 +637,7 @@ function ResultsContent() {
     
     // Determine what to show based on distance
     let stationsToShow: GasStation[] = [];
-    let searchMessage = '';
+    const searchMessage = '';
     
     if (nearbyStations.length > 0) {
       // Show all stations within 20 miles
@@ -663,13 +669,13 @@ function ResultsContent() {
         searchCircle.baseCircle.setMap(null);
       }
       if (searchCircle.radarRings) {
-        searchCircle.radarRings.forEach((ring: any) => ring.setMap(null));
+        searchCircle.radarRings.forEach((ring: GoogleMapsCircle) => ring.setMap(null));
       }
       setSearchCircle(null);
     }
     
     // Add markers for nearby gas stations
-    const newMarkers: any[] = [];
+    const newMarkers: GoogleMapsMarker[] = [];
     
     stationsToShow.forEach((station: GasStation, index: number) => {
       
@@ -772,65 +778,7 @@ function ResultsContent() {
     setLoadingMessage('');
   }, [createSearchRadiusCircle, markers, searchCircle, stationsWithDistance, addCleanupFunction]);
 
-  const showAllStationsOnMap = (mapInstance: any) => {
-    const newMarkers: any[] = [];
-    
-    gasStationsData.forEach((station: GasStation, index: number) => {
-      const marker = new window.google.maps.Marker({
-        position: { lat: station.lat, lng: station.lng },
-        map: mapInstance,
-        title: station.name,
-        label: {
-          text: (index + 1).toString(),
-          color: 'white',
-          fontWeight: 'bold',
-          fontSize: '14px'
-        },
-        icon: {
-          url: '/fuel-pump.png',
-          scaledSize: new window.google.maps.Size(40, 40),
-          anchor: new window.google.maps.Point(20, 40)
-        },
-        zIndex: 100
-      });
-
-      const infoWindow = new window.google.maps.InfoWindow({
-        content: `
-          <div style="padding: 10px; max-width: 300px;">
-            <h3 style="margin: 0 0 10px 0; color: #1e293b; font-size: 16px; font-weight: 600;">${station.name}</h3>
-            <p style="margin: 0 0 8px 0; color: #64748b; font-size: 14px;">${station.address}</p>
-            <p style="margin: 0 0 8px 0; color: #64748b; font-size: 14px;">📞 ${station.phone}</p>
-            <p style="margin: 0 0 12px 0; color: #64748b; font-size: 14px;">🕒 ${station.hours}</p>
-            
-            <div style="margin-bottom: 12px;">
-              <h4 style="margin: 0 0 6px 0; color: #1e293b; font-size: 14px; font-weight: 600;">Fuel Prices</h4>
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4px; font-size: 13px;">
-                <span>Regular: $${station.regularPrice}</span>
-                <span>Premium: $${station.premiumPrice}</span>
-                <span>Diesel: $${station.dieselPrice}</span>
-                <span style="color: #416AFC; font-weight: 600;">Propane: $${station.propanePrice}</span>
-              </div>
-            </div>
-            
-            <button 
-              onclick="window.open('https://www.google.com/maps/dir/?api=1&destination=${station.lat},${station.lng}', '_blank')"
-              style="background: linear-gradient(90deg, #416AFC 0%, #5DB2FE 100%); color: white; border: none; padding: 8px 16px; border-radius: 6px; font-size: 14px; cursor: pointer; width: 100%;"
-            >
-              Get Directions
-            </button>
-          </div>
-        `
-      });
-
-      marker.addListener('click', () => {
-        infoWindow.open(mapInstance, marker);
-      });
-
-      newMarkers.push(marker);
-    });
-
-    setMarkers(newMarkers);
-  };
+  // Removed unused showAllStationsOnMap function
 
   const handleStationClick = useCallback((station: GasStation) => {
     if (map && markers[nearestStations.indexOf(station)]) {
@@ -862,78 +810,9 @@ function ResultsContent() {
     }
   }, [newSearchQuery, map, searchAndShowResults]);
 
-  const handleQuickSearch = useCallback((location: string) => {
-    setSearchQuery(location);
-    setNewSearchQuery('');
-    if (map) {
-      // Update URL without page reload
-      const newUrl = `/find-location/results?q=${encodeURIComponent(location)}`;
-      window.history.pushState({}, '', newUrl);
-      
-      // Perform the search
-      searchAndShowResults(map, location);
-    }
-  }, [map, searchAndShowResults]);
+  // Removed unused handleQuickSearch function
 
-  const handleUseCurrentLocation = useCallback(() => {
-    if (userLocation && map) {
-      setIsLoading(true);
-      setLoadingMessage('Finding nearby stations...');
-      
-      // Clear existing markers
-      markers.forEach(marker => marker.setMap(null));
-      setMarkers([]);
-      
-      // Center map on user location
-      map.setCenter(userLocation);
-      map.setZoom(12);
-      
-      // Add user location marker
-      const userMarker = new window.google.maps.Marker({
-        position: userLocation,
-        map: map,
-        title: 'Your Current Location',
-        icon: {
-          path: window.google.maps.SymbolPath.CIRCLE,
-          scale: 20,
-          fillColor: '#00FF00',
-          fillOpacity: 1,
-          strokeColor: '#FFFFFF',
-          strokeWeight: 4
-        },
-        zIndex: 2000,
-        animation: window.google.maps.Animation.DROP
-      });
-
-      // Add cleanup for user marker
-      addCleanupFunction(() => {
-        userMarker.setMap(null);
-      });
-
-      // Add info window for user location
-      const userInfoWindow = new window.google.maps.InfoWindow({
-        content: `
-          <div style="padding: 10px; text-align: center;">
-            <h3 style="margin: 0 0 8px 0; color: #00AA00; font-size: 16px; font-weight: 600;">📍 Your Current Location</h3>
-            <p style="margin: 0; color: #64748b; font-size: 14px;">Showing nearby FlorisGas stations</p>
-          </div>
-        `
-      });
-
-      userMarker.addListener('click', () => {
-        userInfoWindow.open(map, userMarker);
-      });
-
-      // Find and show nearby stations
-      const userLatLng = new window.google.maps.LatLng(userLocation.lat, userLocation.lng);
-      findAndDisplayNearestStations(userLatLng, map);
-      
-      // Update search query display
-      setSearchQuery('Current Location');
-    } else if (!userLocation) {
-      alert('Current location not available. Please allow location access or try searching for a specific location.');
-    }
-  }, [userLocation, map, markers, addCleanupFunction, findAndDisplayNearestStations]);
+  // Removed unused handleUseCurrentLocation function
 
   // Bottom sheet touch handlers
   const handleBottomSheetToggle = useCallback(() => {
@@ -943,7 +822,6 @@ function ResultsContent() {
   const handleTouchStart = useCallback((e: React.TouchEvent) => {
     const touch = e.touches[0];
     const startY = touch.clientY;
-    const startTime = Date.now();
     
     const handleTouchMove = (moveEvent: TouchEvent) => {
       const currentTouch = moveEvent.touches[0];
@@ -1070,7 +948,7 @@ function ResultsContent() {
                       <li>Check your spelling and try again</li>
                       <li>Try searching for a nearby city or landmark</li>
                       <li>Use a more specific address</li>
-                      <li>Try "City, State" format (e.g., "Miami, FL")</li>
+                      <li>Try &quot;City, State&quot; format (e.g., &quot;Miami, FL&quot;)</li>
                     </ul>
                   </div>
                   
@@ -1080,11 +958,11 @@ function ResultsContent() {
               <div className="no-stations-found">
                 <div className="no-stations-content">
                   <h3>No Gas Stations Found</h3>
-                  <p>We couldn't find any FlorisGas stations near this location.</p>
+                  <p>We couldn&apos;t find any FlorisGas stations near this location.</p>
                 </div>
               </div>
             ) : nearestStations.length > 0 ? (
-              nearestStations.map((station, index) => (
+              nearestStations.map((station) => (
               <div 
                 key={station.id} 
                 className="station-card"
@@ -1174,11 +1052,11 @@ function ResultsContent() {
             ) : nearestStations.length === 0 && hasSearched ? (
               <div className="mobile-no-results">
                 <h3>No Gas Stations Found</h3>
-                <p>We couldn't find any FlorisGas stations near this location.</p>
+                <p>We couldn&apos;t find any FlorisGas stations near this location.</p>
               </div>
             ) : (
               <div className="mobile-stations-list">
-                {nearestStations.map((station, index) => (
+                {nearestStations.map((station) => (
                   <div 
                     key={station.id} 
                     className="mobile-station-card"

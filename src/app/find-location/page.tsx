@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
-import Image from 'next/image';
 import Navigation from '@/components/layout/Navigation';
 import gasStationsData from '@/data/gas-stations.json';
 import './page.css';
