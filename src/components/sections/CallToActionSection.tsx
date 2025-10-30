@@ -1,12 +1,14 @@
 'use client';
 
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import './CallToActionSection.css';
 
 export default function CallToActionSection() {
+  const router = useRouter();
+  
   const handleFindLocation = () => {
-    // Handle find location logic
-    console.log('Find location clicked');
+    router.push('/find-location');
   };
 
   const handleCall = () => {

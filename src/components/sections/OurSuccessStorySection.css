@@ -55,7 +55,6 @@
 
 .timeline-swiper .swiper-slide {
   height: auto;
-  display: flex;
   justify-content: center;
 }
 
