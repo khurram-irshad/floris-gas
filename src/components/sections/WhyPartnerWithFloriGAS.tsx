@@ -6,37 +6,37 @@ import './WhyPartnerWithFloriGAS.css';
 const partnerBenefits = [
   {
     id: 1,
-    icon: '/faster.png', // You can replace with specific icons
+    icon: '/p-trusted.jpg', 
     title: 'Trusted Since 1995',
     description: 'Join a proven leader in the propane industry with nearly 30 years of excellence and reliability in Florida.'
   },
   {
     id: 2,
-    icon: '/faster.png', // You can replace with specific icons
+    icon: '/p-bulk.jpg', 
     title: 'Bulk Delivery',
     description: 'Enjoy competitive wholesale pricing that allows for strong profit margins on every propane tank sold.'
   },
   {
     id: 3,
-    icon: '/faster.png', // You can replace with specific icons
+    icon: '/p-safety.jpg', 
     title: 'Safety Compliance',
     description: 'Never worry about stockouts with our guaranteed supply chain and flexible delivery scheduling.'
   },
   {
     id: 4,
-    icon: '/faster.png', // You can replace with specific icons
+    icon: '/p-priority.jpg',
     title: 'Priority Support',
     description: 'Receive professional marketing materials, signage, and promotional support to drive sales.'
   },
   {
     id: 5,
-    icon: '/faster.png', // You can replace with specific icons
+    icon: '/p-contract.jpg', 
     title: 'Contract Flexibility',
     description: 'Complete training programs ensure your team handles propane safely and meets all regulations.'
   },
   {
     id: 6,
-    icon: '/faster.png', // You can replace with specific icons
+    icon: '/p-equipment.jpg', 
     title: 'Equipment Services',
     description: '24/7 partner support team ready to help with orders, questions, and business growth strategies.'
   }

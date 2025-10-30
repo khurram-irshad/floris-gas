@@ -6,19 +6,19 @@ import './ThreeDecadesSection.css';
 const features = [
   {
     id: 1,
-    icon: '/faster.png',
+    icon: '/residential.png',
     title: 'Residential Excellence',
     description: 'Thousands of Florida families trust us for consistent, safe propane delivery to power their homes, grills, and outdoor living spaces.'
   },
   {
     id: 2,
-    icon: '/faster.png',
+    icon: '/commercial.png',
     title: 'Commercial Leadership',
     description: 'From restaurants to manufacturing, our commercial solutions power businesses across Florida with unmatched reliability and cost efficiency.'
   },
   {
     id: 3,
-    icon: '/faster.png',
+    icon: '/partnership.png',
     title: 'Partnership Growth',
     description: 'Our network of retail partners across Florida generates new revenue streams while serving their communities with quality propane solutions.'
   }

@@ -58,7 +58,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .benefit-icon-image {
@@ -81,7 +81,7 @@
 
 .propane-benefit-description {
   font-size: 14px;
-  color: #64748b;
+  color: #49484D;
   line-height: 1.5;
   margin: 0;
   font-family: var(--font-gilroy);

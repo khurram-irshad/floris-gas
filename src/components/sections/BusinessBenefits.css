@@ -200,6 +200,7 @@
   .benefit-description {
     color: #49484D;
     font-family: var(--font-gilroy);
+    padding-bottom: 12px;
   }
   
   .business-benefits-grid {
@@ -208,7 +209,7 @@
   }
   
   .benefit-card {
-    padding: 1.5rem;
+    padding: 1rem;
   }
   
   .business-benefits-actions {

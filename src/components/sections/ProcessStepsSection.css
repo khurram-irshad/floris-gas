@@ -60,12 +60,8 @@
   transform: translateY(-4px);
   box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
-
-.process-step-icon {
-  background: #f3f4f6;
-  border-radius: 0.75rem;
-  display: flex;
-  margin-bottom: 1.5rem;
+.process-step-icon{
+  margin-bottom: 36px;
 }
 
 .step-icon-image {
@@ -186,7 +182,7 @@
   }
   
   .process-step-card {
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 0;
   }
   
@@ -199,8 +195,8 @@
   }
   
   .process-step-icon {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 48px;
+    height: 48px;
   }
   
   .process-step-title {

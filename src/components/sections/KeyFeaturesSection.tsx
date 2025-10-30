@@ -6,19 +6,19 @@ import './KeyFeaturesSection.css';
 const features = [
   {
     id: 1,
-    icon: "/faster.png",
+    icon: "/r-affordable.jpg",
     title: "Affordable Pricing for Every Household",
     description: "Enjoy competitive rates without compromising on quality."
   },
   {
     id: 2,
-    icon: "/faster.png",
+    icon: "/r-convenient.jpg",
     title: "Convenient Delivery Right to Your Doorstep",
     description: "We ensure timely and hassle-free delivery for your convenience."
   },
   {
     id: 3,
-    icon: "/faster.png",
+    icon: "/r-energy.jpg",
     title: "Energy-Efficient Solutions for Your Home",
     description: "Reduce your energy bills while enjoying superior performance."
   }

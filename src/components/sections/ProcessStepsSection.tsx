@@ -9,21 +9,21 @@ const steps = [
     stepNumber: "Step 1:",
     title: "Schedule Your Propane Delivery",
     description: "Choose a convenient time for our team to deliver.",
-    icon: "/faster.png"
+    icon: "/s-schedule.jpg"
   },
   {
     id: 2,
     stepNumber: "Step 2:",
     title: "Reliable Delivery to Your Home",
     description: "Our experienced drivers will ensure safe delivery.",
-    icon: "/faster.png"
+    icon: "/s-reliable.jpg"
   },
   {
     id: 3,
     stepNumber: "Step 3:",
     title: "Enjoy Comfort and Peace of Mind",
     description: "Relax and enjoy the warmth of propane in your home.",
-    icon: "/faster.png"
+    icon: "/s-enjoy.jpg"
   }
 ];
 
@@ -58,8 +58,8 @@ export default function ProcessStepsSection() {
                 <Image
                   src={step.icon}
                   alt={step.title}
-                  width={40}
-                  height={40}
+                  width={48}
+                  height={48}
                   className="step-icon-image"
                 />
               </div>

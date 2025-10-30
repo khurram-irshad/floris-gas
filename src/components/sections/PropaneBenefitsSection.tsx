@@ -6,13 +6,13 @@ import './PropaneBenefitsSection.css';
 const benefits = [
   {
     id: 1,
-    icon: "/faster.png",
+    icon: "/safety-first.jpg",
     title: "Safety First",
     description: "Rigorously tested to ensure safety for your family and home."
   },
   {
     id: 2,
-    icon: "/faster.png", 
+    icon: "/affordable-energy.jpg", 
     title: "Affordable Energy",
     description: "Enjoy competitive pricing and save on your energy bills with propane."
   }
