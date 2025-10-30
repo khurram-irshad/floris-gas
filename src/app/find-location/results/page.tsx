@@ -847,13 +847,10 @@ function ResultsContent() {
 
   return (
     <div className="results-page">
-      {/* Desktop Navigation - Hidden on mobile */}
-      <div className="desktop-nav">
-        <Navigation />
-      </div>
+      <Navigation />
       
       {/* Mobile Header */}
-      <div className="mobile-header">
+      <div className="mobile-header-navigation">
         <button 
           className="mobile-back-btn"
           onClick={handleNewSearch}

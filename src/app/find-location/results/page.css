@@ -13,7 +13,7 @@
   display: block;
 }
 
-.mobile-header {
+.mobile-header-navigation {
   display: none;
 }
 
@@ -689,7 +689,7 @@
   }
   
   /* Show mobile header */
-  .mobile-header {
+  .mobile-header-navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
