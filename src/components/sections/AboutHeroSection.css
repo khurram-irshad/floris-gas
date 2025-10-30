@@ -97,7 +97,7 @@
 .about-hero-button.primary {
   background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
   color: white;
-  width: 15%;
+  width: fit-content;
 }
 
 .about-hero-button.primary:hover {
@@ -111,7 +111,7 @@
   border: 2px solid rgba(255, 255, 255, 0.3);
   background-color: white;
   backdrop-filter: blur(10px);
-  width: 15%;
+  width: fit-content;
   text-align: center;
   align-items: center;
   justify-content: center;

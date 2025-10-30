@@ -59,7 +59,7 @@
 
 .feature-card {
   text-align: center;
-  padding: 0;
+  padding: 1rem;
 }
 
 .feature-icon-container {
@@ -246,6 +246,10 @@
   
   .why-choose-image-container {
     height: 300px;
+  }
+  .feature-card {
+    text-align: center;
+    padding: 1rem;
   }
 }
 

@@ -29,7 +29,7 @@ export default function StatsSection() {
               key={index} 
               className="stat-item"
             >
-              <div className="stat-number">
+              <div className="home-stat-number">
                 {stat.number}
               </div>
               <div className="stat-text">

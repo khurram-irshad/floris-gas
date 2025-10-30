@@ -103,6 +103,7 @@
   border-radius: 24px;
   padding: 10px;
   font-family: var(--font-gilroy);
+  width: fit-content;
 }
 
 .business-benefits-actions {

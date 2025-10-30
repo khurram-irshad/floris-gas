@@ -32,7 +32,7 @@
 }
 
 
-.stat-number {
+.home-stat-number {
   font-size: 48px;
   font-weight: 600;
   font-family: var(--font-gilroy);
@@ -84,7 +84,7 @@
     border-bottom: 1px solid #e5e7eb;
   }
 
-  .stat-number {
+  .home-stat-number {
     font-size: 48px;
     font-weight: 700;
     font-family: var(--font-gilroy);
