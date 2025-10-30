@@ -207,9 +207,10 @@
   
   .process-steps-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
     margin-bottom: 2rem;
+    gap: 0rem;
   }
+  
   
   .process-step-item {
     padding: 1rem;
