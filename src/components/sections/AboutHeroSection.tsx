@@ -2,14 +2,16 @@
 
 import Image from 'next/image';
 import './AboutHeroSection.css';
-
+import { useRouter } from 'next/navigation';
 export default function AboutHeroSection() {
+  const router = useRouter();
+
   const handleRequestQuote = () => {
-    console.log('Request A Quote clicked');
+    router.push('/contact');
   };
 
   const handleContactNow = () => {
-    console.log('Contact Now clicked');
+    router.push('/contact');
   };
 
   return (

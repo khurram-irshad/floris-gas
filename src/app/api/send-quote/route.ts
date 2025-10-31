@@ -22,26 +22,27 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Debug logging for production
-    console.log('Environment variables check:');
-    console.log('EMAIL_USER exists:', !!process.env.EMAIL_USER);
-    console.log('EMAIL_PASS exists:', !!process.env.EMAIL_PASS);
-    console.log('EMAIL_USER value (first 5 chars):', process.env.EMAIL_USER?.substring(0, 5));
-    console.log('All env keys:', Object.keys(process.env).filter(key => key.includes('EMAIL')));
+
+    // Try multiple environment variable naming conventions
+    const emailUser = process.env.EMAIL_USER || process.env.NEXT_PUBLIC_EMAIL_USER;
+    const emailPass = process.env.EMAIL_PASS || process.env.NEXT_PUBLIC_EMAIL_PASS;
 
     // Check if environment variables exist
-    if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
+    if (!emailUser || !emailPass) {
       console.error('Missing environment variables in production');
       console.error('EMAIL_USER:', process.env.EMAIL_USER ? 'Set' : 'Missing');
       console.error('EMAIL_PASS:', process.env.EMAIL_PASS ? 'Set' : 'Missing');
+      console.error('NEXT_PUBLIC_EMAIL_USER:', process.env.NEXT_PUBLIC_EMAIL_USER ? 'Set' : 'Missing');
+      console.error('NEXT_PUBLIC_EMAIL_PASS:', process.env.NEXT_PUBLIC_EMAIL_PASS ? 'Set' : 'Missing');
       
       return NextResponse.json(
         { 
           error: 'Email service not configured. Please contact administrator.',
           debug: {
-            emailUserExists: !!process.env.EMAIL_USER,
-            emailPassExists: !!process.env.EMAIL_PASS,
-            availableEnvKeys: Object.keys(process.env).filter(key => key.includes('EMAIL'))
+            emailUserExists: !!emailUser,
+            emailPassExists: !!emailPass,
+            allEnvKeys: Object.keys(process.env),
+            emailRelatedKeys: Object.keys(process.env).filter(key => key.toLowerCase().includes('email'))
           }
         },
         { status: 500 }
@@ -52,14 +53,14 @@ export async function POST(request: NextRequest) {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS, 
+        user: emailUser,
+        pass: emailPass, 
       },
     });
 
     // Email content
     const mailOptions = {
-      from: process.env.EMAIL_USER,
+      from: emailUser,
       to: 'mrrana0795@gmail.com',
       subject: 'New Quote Request from FlorisGAS Website',
       html: `
