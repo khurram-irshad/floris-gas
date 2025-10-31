@@ -24,9 +24,6 @@ export async function POST(request: NextRequest) {
 
     // Check if environment variables exist
     if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
-      console.error('Missing environment variables:');
-      console.error('EMAIL_USER:', process.env.EMAIL_USER ? 'Set' : 'Missing');
-      console.error('EMAIL_PASS:', process.env.EMAIL_PASS ? 'Set' : 'Missing');
       
       return NextResponse.json(
         { error: 'Email service not configured. Please contact administrator.' },
@@ -131,10 +128,6 @@ This contact form was submitted through the FlorisGAS website.
       console.error('Error stack:', error.stack);
     }
     
-    // Check if environment variables are set
-    console.error('Environment check:');
-    console.error('EMAIL_USER exists:', !!process.env.EMAIL_USER);
-    console.error('EMAIL_PASS exists:', !!process.env.EMAIL_PASS);
     
     return NextResponse.json(
       { 
