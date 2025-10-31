@@ -22,11 +22,28 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Debug logging for production
+    console.log('Environment variables check:');
+    console.log('EMAIL_USER exists:', !!process.env.EMAIL_USER);
+    console.log('EMAIL_PASS exists:', !!process.env.EMAIL_PASS);
+    console.log('EMAIL_USER value (first 5 chars):', process.env.EMAIL_USER?.substring(0, 5));
+    console.log('All env keys:', Object.keys(process.env).filter(key => key.includes('EMAIL')));
+
     // Check if environment variables exist
     if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
+      console.error('Missing environment variables in production');
+      console.error('EMAIL_USER:', process.env.EMAIL_USER ? 'Set' : 'Missing');
+      console.error('EMAIL_PASS:', process.env.EMAIL_PASS ? 'Set' : 'Missing');
       
       return NextResponse.json(
-        { error: 'Email service not configured. Please contact administrator.' },
+        { 
+          error: 'Email service not configured. Please contact administrator.',
+          debug: {
+            emailUserExists: !!process.env.EMAIL_USER,
+            emailPassExists: !!process.env.EMAIL_PASS,
+            availableEnvKeys: Object.keys(process.env).filter(key => key.includes('EMAIL'))
+          }
+        },
         { status: 500 }
       );
     }
