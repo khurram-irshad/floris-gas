@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import './BusinessBenefits.css';
+import { useRouter } from 'next/navigation';
 
 const benefitsData = [
   {
@@ -49,12 +50,14 @@ const benefitsData = [
 ];
 
 export default function BusinessBenefits() {
+  const router = useRouter();
+
   const handleRequestQuote = () => {
-    console.log('Request quote clicked');
+    router.push('/contact');
   };
 
   const handleLearnMore = () => {
-    console.log('Learn more clicked');
+    router.push('/about');
   };
 
   return (

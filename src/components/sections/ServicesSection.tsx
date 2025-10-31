@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import './ServicesSection.css';
 
 const servicesData = [
@@ -10,7 +11,8 @@ const servicesData = [
     description: 'Convenient, on-time propane delivery to power your home with comfort and reliability.',
     image: '/card-1.png',
     buttonText: 'Get Started',
-    buttonColor: 'blue'
+    buttonColor: 'blue',
+    route: '/residential'
   },
   {
     id: 2,
@@ -18,7 +20,8 @@ const servicesData = [
     description: 'Reliable propane solutions tailored to keep your business running smoothly with efficiency and cost-effectiveness.',
     image: '/commercial.jpg',
     buttonText: 'Get Started',
-    buttonColor: 'blue'
+    buttonColor: 'blue',
+    route: '/commercial'
   },
   {
     id: 3,
@@ -26,11 +29,18 @@ const servicesData = [
     description: 'Partner with us to sell propane and grow your business with reliable supply, trusted support, and flexible partnership opportunities.',
     image: '/sell-propane.jpg',
     buttonText: 'Get Started',
-    buttonColor: 'blue'
+    buttonColor: 'blue',
+    route: '/sell-propane'
   }
 ];
 
 export default function ServicesSection() {
+  const router = useRouter();
+
+  const handleServiceClick = (route: string) => {
+    router.push(route);
+  };
+
   return (
     <section className="services-section">
       <div className="services-container">
@@ -59,7 +69,10 @@ export default function ServicesSection() {
               <div className="service-content">
                 <h3 className="service-title">{service.title}</h3>
                 <p className="service-description">{service.description}</p>
-                <button className={`service-button ${service.buttonColor}`}>
+                <button 
+                  className={`service-button ${service.buttonColor}`}
+                  onClick={() => handleServiceClick(service.route)}
+                >
                   {service.buttonText}
                   <Image src="/card-arrow.png" alt="Arrow" width={12} height={12} />
                 </button>

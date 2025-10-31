@@ -2,14 +2,17 @@
 
 import Image from 'next/image';
 import './SellPropane.css';
+import { useRouter } from 'next/navigation';
 
 export default function SellPropane() {
+  const router = useRouter();
+
   const handleBecomePartner = () => {
-    console.log('Become a partner clicked');
+    router.push('/contact');
   };
 
   const handleGetInstantQuote = () => {
-    console.log('Get instant quote clicked');
+    router.push('/contact');
   };
 
   return (

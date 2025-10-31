@@ -1,14 +1,19 @@
 'use client';
 
 import './PowerYourBusinessCTA.css';
+import { useRouter } from 'next/navigation';
+
 
 export default function PowerYourBusinessCTA() {
+  const router = useRouter();
+
   const handleTalkToExpert = () => {
-    console.log('Talk To An Expert clicked');
+    router.push('/contact');
+    // console.log('Talk To An Expert clicked');
   };
 
   const handleGetInstantQuote = () => {
-    console.log('Get Instant Quote clicked');
+    router.push('/contact');
   };
 
   return (
@@ -24,20 +29,6 @@ export default function PowerYourBusinessCTA() {
           </p>
         </div>
 
-        <div className="power-your-business-stats">
-          <div className="stat-item">
-            <div className="stat-number">24/7</div>
-            <div className="power-your-business-stat-label">Emergency Support</div>
-          </div>
-          <div className="stat-item">
-            <div className="stat-number">5,000+</div>
-            <div className="power-your-business-stat-label">Businesses Served</div>
-          </div>
-          <div className="stat-item">
-            <div className="stat-number">30+</div>
-            <div className="power-your-business-stat-label">Years Experience</div>
-          </div>
-        </div>
         
         <div className="power-your-business-buttons">
           <button 
@@ -52,6 +43,20 @@ export default function PowerYourBusinessCTA() {
           >
             Get Instant Quote
           </button>
+        </div>
+        <div className="power-your-business-stats">
+          <div className="stat-item">
+            <div className="commercial-stat-number">24/7</div>
+            <div className="power-your-business-stat-label">Emergency Support</div>
+          </div>
+          <div className="stat-item">
+            <div className="commercial-stat-number">5,000+</div>
+            <div className="power-your-business-stat-label">Businesses Served</div>
+          </div>
+          <div className="stat-item">
+            <div className="commercial-stat-number">30+</div>
+            <div className="power-your-business-stat-label">Years Experience</div>
+          </div>
         </div>
       </div>
     </section>

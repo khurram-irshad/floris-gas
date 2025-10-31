@@ -27,6 +27,10 @@ export default function HeroSection() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState<{
+    type: 'success' | 'error';
+    text: string;
+  } | null>(null);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -36,13 +40,52 @@ export default function HeroSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitMessage(null);
+    
+    // Basic validation
+    if (!formData.firstName.trim() || !formData.email.trim() || !formData.phone.trim()) {
+      setSubmitMessage({
+        type: 'error',
+        text: 'Please fill in all fields.'
+      });
+      setIsSubmitting(false);
+      return;
+    }
     
     try {
-      // Handle form submission here
-      console.log('Form submitted:', formData);
-      // TODO: Add actual form submission logic
+      const response = await fetch('/api/send-quote', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSubmitMessage({
+          type: 'success',
+          text: 'Quote request sent successfully! We\'ll contact you soon.'
+        });
+        // Reset form
+        setFormData({
+          firstName: '',
+          email: '',
+          phone: '',
+        });
+      } else {
+        setSubmitMessage({
+          type: 'error',
+          text: data.error || 'Failed to send quote request. Please try again.'
+        });
+      }
     } catch (error) {
       console.error('Form submission error:', error);
+      setSubmitMessage({
+        type: 'error',
+        text: 'Network error. Please check your connection and try again.'
+      });
     } finally {
       setIsSubmitting(false);
     }
@@ -124,6 +167,7 @@ export default function HeroSection() {
                   value={formData.firstName}
                   onChange={handleInputChange}
                   className="input"
+                  required
                 />
                 <input
                   type="email"
@@ -132,7 +176,7 @@ export default function HeroSection() {
                   value={formData.email}
                   onChange={handleInputChange}
                   className="input"
-                  
+                  required
                 />
                 <input
                   type="tel"
@@ -141,6 +185,7 @@ export default function HeroSection() {
                   value={formData.phone}
                   onChange={handleInputChange}
                   className="input"
+                  required
                 />
                 <button
                   type="submit"
@@ -151,6 +196,25 @@ export default function HeroSection() {
                 </button>
               </div>
             </form>
+            
+            {/* Success/Error Message */}
+            {submitMessage && (
+              <div 
+                className={`message ${submitMessage.type === 'success' ? 'message-success' : 'message-error'}`}
+                style={{
+                  padding: '12px 16px',
+                  borderRadius: '8px',
+                  marginTop: '16px',
+                  fontSize: '14px',
+                  fontWeight: '500',
+                  backgroundColor: submitMessage.type === 'success' ? '#d4edda' : '#f8d7da',
+                  color: submitMessage.type === 'success' ? '#155724' : '#721c24',
+                  border: `1px solid ${submitMessage.type === 'success' ? '#c3e6cb' : '#f5c6cb'}`
+                }}
+              >
+                {submitMessage.text}
+              </div>
+            )}
             
             <p className="disclaimer-text">
               By submitting your contact details, you agree to receive SMS/calls from FlorisGAS propane. Message & data rates may apply.

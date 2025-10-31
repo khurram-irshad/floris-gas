@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import './KeyFeaturesSection.css';
+import { useRouter } from 'next/navigation';
 
 const features = [
   {
@@ -25,14 +26,14 @@ const features = [
 ];
 
 export default function KeyFeaturesSection() {
+  const router = useRouter();
+
   const handleRequestQuote = () => {
-    // Handle request quote logic
-    console.log('Request quote clicked');
+    router.push('/contact');
   };
 
   const handleLearnMore = () => {
-    // Handle learn more logic
-    console.log('Learn more clicked');
+    router.push('/about');
   };
 
   return (

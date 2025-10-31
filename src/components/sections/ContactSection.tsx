@@ -12,6 +12,11 @@ export default function ContactSection() {
     service: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState<{
+    type: 'success' | 'error';
+    text: string;
+  } | null>(null);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -21,9 +26,60 @@ export default function ContactSection() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    setIsSubmitting(true);
+    setSubmitMessage(null);
+    
+    // Basic validation
+    if (!formData.fullName.trim() || !formData.email.trim() || !formData.phoneNumber.trim() || !formData.service || !formData.message.trim()) {
+      setSubmitMessage({
+        type: 'error',
+        text: 'Please fill in all fields.'
+      });
+      setIsSubmitting(false);
+      return;
+    }
+    
+    try {
+      const response = await fetch('/api/send-contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSubmitMessage({
+          type: 'success',
+          text: 'Contact form submitted successfully! We\'ll get back to you soon.'
+        });
+        // Reset form
+        setFormData({
+          fullName: '',
+          email: '',
+          phoneNumber: '',
+          service: '',
+          message: ''
+        });
+      } else {
+        setSubmitMessage({
+          type: 'error',
+          text: data.error || 'Failed to send contact form. Please try again.'
+        });
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      setSubmitMessage({
+        type: 'error',
+        text: 'Network error. Please check your connection and try again.'
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -197,10 +253,33 @@ export default function ContactSection() {
                 />
               </div>
 
-              <button type="submit" className="form-submit-btn">
-                Submit response
+              <button 
+                type="submit" 
+                disabled={isSubmitting}
+                className="form-submit-btn"
+              >
+                {isSubmitting ? 'Submitting...' : 'Submit response'}
               </button>
             </form>
+            
+            {/* Success/Error Message */}
+            {submitMessage && (
+              <div 
+                className={`message ${submitMessage.type === 'success' ? 'message-success' : 'message-error'}`}
+                style={{
+                  padding: '12px 16px',
+                  borderRadius: '8px',
+                  marginTop: '16px',
+                  fontSize: '14px',
+                  fontWeight: '500',
+                  backgroundColor: submitMessage.type === 'success' ? '#d4edda' : '#f8d7da',
+                  color: submitMessage.type === 'success' ? '#155724' : '#721c24',
+                  border: `1px solid ${submitMessage.type === 'success' ? '#c3e6cb' : '#f5c6cb'}`
+                }}
+              >
+                {submitMessage.text}
+              </div>
+            )}
           </div>
         </div>
       </div>

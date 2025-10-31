@@ -2,14 +2,16 @@
 
 import Image from 'next/image';
 import './CaseStudiesHeroSection.css';
+import { useRouter } from 'next/navigation';
 
-export default function CaseStudiesHeroSection() {
+export default function CaseStudiesHeroSection() {  
+  const router = useRouter();
   const handleExploreCaseStudies = () => {
     console.log('Explore Case Studies clicked');
   };
 
   const handleAboutUs = () => {
-    console.log('About Us clicked');
+    router.push('/about');
   };
 
   return (

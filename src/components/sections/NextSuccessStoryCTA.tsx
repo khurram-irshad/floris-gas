@@ -1,14 +1,16 @@
 'use client';
 
 import './NextSuccessStoryCTA.css';
+import { useRouter } from 'next/navigation';
 
 export default function NextSuccessStoryCTA() {
+  const router = useRouter();
   const handleGetStarted = () => {
-    console.log('Get Started clicked');
+    router.push('/contact');
   };
 
   const handleContactUs = () => {
-    console.log('Contact Us clicked');
+    router.push('/contact');
   };
 
   return (

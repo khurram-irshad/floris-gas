@@ -92,11 +92,11 @@
   text-align: center;
 }
 
-.stat-number {
+.commercial-stat-number {
   font-size: 24px;
   font-weight: 600;
-  color: #49484D;
-  margin-bottom: 8px;
+  color: #ffffff;
+  margin-top: 48px;
   line-height: 1;
   font-family: var(--font-gilroy);
 }

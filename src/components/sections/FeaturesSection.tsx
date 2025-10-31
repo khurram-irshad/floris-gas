@@ -69,10 +69,10 @@ export default function FeaturesSection() {
               <div className="feature-content">
                 <h3 className="feature-title">{feature.title}</h3>
                 <p className="feature-description">{feature.description}</p>
-                <button className="feature-button">
+                {/* <button className="feature-button">
                   {feature.buttonText}
                   <Image src="/card-arrow.png" alt="Arrow" width={12} height={12} />
-                </button>
+                </button> */}
               </div>
             </div>
           ))}

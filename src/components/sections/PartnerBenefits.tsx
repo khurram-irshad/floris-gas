@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import './PartnerBenefits.css';
+import { useRouter } from 'next/navigation';
 
 const partnerBenefits = [
   {
@@ -39,8 +40,9 @@ const partnerBenefits = [
 ];
 
 export default function PartnerBenefits() {
+  const router = useRouter();
   const handleTalkToTeam = () => {
-    console.log('Talk to our team clicked');
+    router.push('/contact');
   };
 
   return (

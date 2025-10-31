@@ -61,10 +61,10 @@ export default function ResidentialServicesSection() {
                 <span className="residential-service-subtitle">{service.subtitle}</span>
                 <h3 className="residential-service-title">{service.title}</h3>
                 <p className="residential-service-description">{service.description}</p>
-                <button className={`residential-service-button ${service.buttonColor}`}>
+                {/* <button className={`residential-service-button ${service.buttonColor}`}>
                   {service.buttonText}
                   <Image src="/card-arrow.png" alt="Arrow" width={12} height={12} />
-                </button>
+                </button> */}
               </div>
             </div>
           ))}

@@ -1,16 +1,17 @@
 'use client';
 
 import './CommercialPropaneSolutions.css';
+import { useRouter } from 'next/navigation';
 
 export default function CommercialPropaneSolutions() {
+  const router = useRouter();
+
   const handleRequestQuote = () => {
-    // Handle request quote logic
-    console.log('Request quote clicked');
+    router.push('/contact');
   };
 
   const handleLearnMore = () => {
-    // Handle learn more logic
-    console.log('Learn more clicked');
+   router.push('/about');
   };
 
   return (

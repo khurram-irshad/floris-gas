@@ -178,7 +178,7 @@ export default function SuccessStoriesGrid() {
                   ))}
                 </div>
 
-                <button 
+                {/* <button 
                   onClick={() => handleReadFullStory(story.id)}
                   className="success-story-read-more"
                 >
@@ -190,7 +190,7 @@ export default function SuccessStoriesGrid() {
                     height={12}
                     className="success-story-arrow"
                   />
-                </button>
+                </button> */}
               </div>
             </div>
           ))}
@@ -207,14 +207,14 @@ export default function SuccessStoriesGrid() {
           </div>
         )}
       </div>
-           <div className="success-stories-load-more-button-container">
+           {/* <div className="success-stories-load-more-button-container">
                     <button 
                       // onClick={handleReadMoreCaseStudies}
                       className="success-stories-load-more-button"
                     >
                       Load More Case Studies
                     </button>
-            </div>
+            </div> */}
     </section>
   );
 }

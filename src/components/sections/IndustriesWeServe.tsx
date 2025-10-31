@@ -100,7 +100,7 @@ export default function IndustriesWeServe() {
                   ))}
                 </div>
                 
-                <button 
+                {/* <button 
                   onClick={() => handleViewMore(industry.category)}
                   className="industry-view-more-btn blue"
                 >
@@ -111,7 +111,7 @@ export default function IndustriesWeServe() {
                     width={16}
                     height={16}
                   />
-                </button>
+                </button> */}
               </div>
             </div>
           ))}

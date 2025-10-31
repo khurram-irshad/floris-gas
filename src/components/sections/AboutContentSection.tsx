@@ -1,14 +1,17 @@
 'use client';
 
 import './AboutContentSection.css';
+import { useRouter } from 'next/navigation';
 
 export default function AboutContentSection() {
+  const router = useRouter();
+
   const handleRequestQuote = () => {
-    console.log('Request A Quote clicked');
+    router.push('/contact');
   };
 
   const handleLearnMore = () => {
-    console.log('Learn More clicked');
+    router.push('/about');
   };
 
   return (

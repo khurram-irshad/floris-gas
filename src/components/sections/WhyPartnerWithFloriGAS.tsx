@@ -2,6 +2,8 @@
 
 import Image from 'next/image';
 import './WhyPartnerWithFloriGAS.css';
+import { useRouter } from 'next/navigation';
+
 
 const partnerBenefits = [
   {
@@ -43,12 +45,13 @@ const partnerBenefits = [
 ];
 
 export default function WhyPartnerWithFloriGAS() {
+  const router = useRouter();
   const handleRequestQuote = () => {
-    console.log('Request quote clicked');
+    router.push('/contact');
   };
 
   const handleLearnMore = () => {
-    console.log('Learn more clicked');
+    router.push('/about');
   };
 
   return (

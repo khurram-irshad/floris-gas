@@ -2,10 +2,13 @@
 
 import Image from 'next/image';
 import './CaseStudy.css';
+import { useRouter } from 'next/navigation';
 
 export default function CaseStudy() {
+  const router = useRouter();
+  
   const handleReadMoreCaseStudies = () => {
-    console.log('Read more case studies clicked');
+    router.push('/case-studies');
   };
 
   return (

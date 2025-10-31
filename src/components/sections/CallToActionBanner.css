@@ -39,8 +39,8 @@
   font-family: 'Gilroy-Bold', sans-serif;
 }
 
-.cta-button {
-  background: white;
+.cta-primary {
+  background: #FB4444;
   color: #49484D;
   border: none;
   border-radius: 12px;

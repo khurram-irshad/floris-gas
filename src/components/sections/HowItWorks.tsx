@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import './HowItWorks.css';
+import { useRouter } from 'next/navigation';
 
 const processSteps = [
   {
@@ -28,8 +29,9 @@ const processSteps = [
 ];
 
 export default function HowItWorks() {
+  const router = useRouter();
   const handleRequestQuote = () => {
-    console.log('Request quote clicked');
+    router.push('/contact');
   };
 
   return (
