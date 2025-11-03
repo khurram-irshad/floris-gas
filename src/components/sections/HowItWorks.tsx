@@ -48,7 +48,7 @@ export default function HowItWorks() {
           </p>
         </div>
 
-        <div className="process-steps-grid">
+        <div className="how-it-works-process-steps-grid">
           {processSteps.map((step) => (
             <div key={step.id} className="process-step-item">
               <div className="step-icon-container">

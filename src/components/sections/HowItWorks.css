@@ -43,7 +43,7 @@
   font-family: var(--font-gilroy);
 }
 
-.process-steps-grid {
+.how-it-works-process-steps-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
