@@ -54,6 +54,18 @@
   gap: 0.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+.contact-cta-button {
+  padding: 0.875rem 1.75rem;
+  font-size: 16px;
+  background: white;
+  color: #49484D;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
 
 /* Right Side - Person Image */
@@ -165,9 +177,10 @@
     height: 391px;
   }
   
-  .cta-button {
+  .contact-cta-button {
     padding: 0.875rem 1.75rem;
     font-size: 0.95rem;
+    background: white;
   }
 }
 /* Additional responsive adjustments for smaller screens */

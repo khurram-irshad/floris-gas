@@ -4,6 +4,7 @@ import ContactHeroSection from '../../components/sections/ContactHeroSection';
 import ContactSection from '@/components/sections/ContactSection';
 import CallToActionBanner from '@/components/sections/CallToActionBanner';
 import TestimonialsSection from '@/components/sections/TestimonialsSection';
+import CallToActionSection from '@/components/sections/CallToActionSection';
 
 export default function ContactPage() {
   return (
@@ -14,7 +15,7 @@ export default function ContactPage() {
         <ContactSection />
         <CallToActionBanner />
         <TestimonialsSection/>
-        {/* Additional sections can be added here later */}
+        <CallToActionSection/>
       </main>
       <Footer />
     </div>

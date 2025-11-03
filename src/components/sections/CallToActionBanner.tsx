@@ -2,10 +2,13 @@
 
 import Image from 'next/image';
 import './CallToActionBanner.css';
+import { useRouter } from 'next/navigation';
+
 
 export default function CallToActionBanner() {
+  const router = useRouter();
   const handleSellPropane = () => {
-    console.log('Sell Propane clicked');
+    router.push('/sell-propane');
   };
 
   return (
@@ -22,7 +25,7 @@ export default function CallToActionBanner() {
             
             <button 
               onClick={handleSellPropane}
-              className="cta-button"
+              className="contact-cta-button"
             >
               Sell Propane →
             </button>

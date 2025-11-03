@@ -9,6 +9,7 @@ import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import OurVisionSection from '@/components/sections/OurVisionSection';
 import OurValuesSection from '@/components/sections/OurValuesSection';
 import MeetOurLeadershipSection from '@/components/sections/MeetOurLeadershipSection';
+import CallToActionSection from '@/components/sections/CallToActionSection';
 
 export default function AboutPage() {
   return (
@@ -24,7 +25,7 @@ export default function AboutPage() {
         <OurValuesSection />
         <MeetOurLeadershipSection/>
         <TestimonialsSection />
-        {/* Additional sections can be added here later */}
+        <CallToActionSection/>
       </main>
       <Footer />
     </div>
