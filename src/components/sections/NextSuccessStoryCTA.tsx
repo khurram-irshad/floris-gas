@@ -43,20 +43,20 @@ export default function NextSuccessStoryCTA() {
 
         <div className="next-success-story-stats">
           <div className="stat-item-case-studies">
-            <div className="stat-number">500+</div>
-            <div className="stat-label">Partner Locations</div>
+            <div className="next-success-story-stat-number">500+</div>
+            <div className="next-success-story-stat-label">Partner Locations</div>
           </div>
           <div className="stat-item-case-studies">
-            <div className="stat-number">24/7</div>
-            <div className="stat-label">Emergency Support</div>
+            <div className="next-success-story-stat-number">24/7</div>
+            <div className="next-success-story-stat-label">Emergency Support</div>
           </div>
           <div className="stat-item-case-studies">
-            <div className="stat-number">98%</div>
-            <div className="stat-label">Partner Satisfaction</div>
+            <div className="next-success-story-stat-number">98%</div>
+            <div className="next-success-story-stat-label">Partner Satisfaction</div>
           </div>
           <div className="stat-item-case-studies">
-            <div className="stat-number">30+</div>
-            <div className="stat-label">Years Experience</div>
+            <div className="next-success-story-stat-number">30+</div>
+            <div className="next-success-story-stat-label">Years Experience</div>
           </div>
         </div>
       </div>

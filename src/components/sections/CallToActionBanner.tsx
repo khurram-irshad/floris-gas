@@ -17,7 +17,7 @@ export default function CallToActionBanner() {
         <div className="cta-banner-content">
           {/* Left Side - Text Content */}
           <div className="cta-text-content">
-            <h2 className="cta-title">
+            <h2 className="banner-cta-title">
               Your Reliable Trusted<br />
               Gas Service Is Just<br />
               One Call Away
@@ -36,8 +36,8 @@ export default function CallToActionBanner() {
             <Image
               src="/contact-img.png"
               alt="Professional gas service technician"
-              width={400}
-              height={300}
+              width={391}
+              height={496}
               className="cta-person-image"
             />
           </div>

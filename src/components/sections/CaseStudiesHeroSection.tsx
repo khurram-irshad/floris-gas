@@ -24,7 +24,6 @@ export default function CaseStudiesHeroSection() {
           className="case-studies-hero-bg-image"
           priority
         />
-        <div className="case-studies-hero-overlay"></div>
       </div>
       
       <div className="case-studies-hero-container">

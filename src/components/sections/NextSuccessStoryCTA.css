@@ -94,7 +94,7 @@
   text-align: center;
 }
 
-.stat-number {
+.next-success-story-stat-number {
   font-size: 24px;
   font-weight: 700;
   color: #ffffff;
@@ -103,7 +103,7 @@
   font-family: var(--font-gilroy);
 }
 
-.stat-label {
+.next-success-story-stat-label {
   font-size: 20px;
   color: rgba(255, 255, 255, 0.8);
   line-height: 100%;
@@ -170,7 +170,7 @@
     gap: 3rem;
   }
   
-  .stat-number {
+  .next-success-story-stat-number {
     font-size: 24px;
     font-family: var(--font-gilroy);
     font-weight: 700;

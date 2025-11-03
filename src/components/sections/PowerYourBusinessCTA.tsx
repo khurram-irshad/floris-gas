@@ -45,17 +45,17 @@ export default function PowerYourBusinessCTA() {
           </button>
         </div>
         <div className="power-your-business-stats">
-          <div className="stat-item">
+          <div className="power-your-business-stat-item">
             <div className="commercial-stat-number">24/7</div>
-            <div className="power-your-business-stat-label">Emergency Support</div>
+            <div className="power-your-business-stat-sublabel">Emergency Support</div>
           </div>
-          <div className="stat-item">
+          <div className="power-your-business-stat-item">
             <div className="commercial-stat-number">5,000+</div>
-            <div className="power-your-business-stat-label">Businesses Served</div>
+            <div className="power-your-business-stat-sublabel">Businesses Served</div>
           </div>
-          <div className="stat-item">
+          <div className="power-your-business-stat-item">
             <div className="commercial-stat-number">30+</div>
-            <div className="power-your-business-stat-label">Years Experience</div>
+            <div className="power-your-business-stat-sublabel">Years Experience</div>
           </div>
         </div>
       </div>

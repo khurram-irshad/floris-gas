@@ -88,7 +88,7 @@
   max-width: 600px;
 }
 
-.stat-item {
+.power-your-business-stat-item {
   text-align: center;
 }
 
@@ -101,12 +101,13 @@
   font-family: var(--font-gilroy);
 }
 
-.power-your-business-stat-label {
+.power-your-business-stat-sublabel {
   font-size: 20px;
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.4;
   font-weight: 400;
   font-family: var(--font-gilroy);
+  margin-top: 12px;
 }
 
 /* Responsive Design */
@@ -165,21 +166,21 @@
     margin-bottom: 40px;
   }
   
-  .stat-item {
+  .power-your-business-stat-item {
     padding: 20px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
   
-  .stat-item:last-child {
+  .power-your-business-stat-item:last-child {
     border-bottom: none;
   }
   
-  .stat-number {
+  .power-your-business-stat-number {
     font-size: 24px;
     margin-bottom: 8px;
   }
   
-  .power-your-business-stat-label {
+  .power-your-business-stat-sublabel {
     font-size: 16px;
   }
 }

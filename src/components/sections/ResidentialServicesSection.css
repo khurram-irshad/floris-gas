@@ -47,7 +47,7 @@
   transition: all 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
-  height: 618px;
+  height: auto;
 }
 
 .residential-service-card:hover {
@@ -109,9 +109,12 @@
   font-size: 18px;
   color: #49484c;
   line-height: 100%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 12px;
   flex: 1;
   font-family: var(--font-gilroy);
+}
+.residential-service-card:hover .residential-service-description {
+  color: #ffffff;
 }
 
 /* Service Button */

@@ -105,8 +105,7 @@
   border-radius: 0.75rem;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  background-color: #f4f7fa;
+  background-color: white;
 }
 
 .faq-item.open {
@@ -136,9 +135,6 @@
   transition: all 0.2s ease-in-out;
 }
 
-.faq-question:hover {
-  background: rgba(0, 0, 0, 0.05);
-}
 
 .faq-item.open .faq-question:hover {
   background: rgba(255, 255, 255, 0.1);

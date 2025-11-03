@@ -51,9 +51,19 @@
 
 .process-step-card {
   background: #f4f7fa;
-  border-radius: 12px;
   padding: 1rem;
   border: 1px solid #e2e8f0;
+}
+
+/* Add border radius to first and last cards */
+.process-step-card:first-child {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.process-step-card:last-child {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 

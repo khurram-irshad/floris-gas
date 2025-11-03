@@ -67,7 +67,7 @@
 .oceanview-case-study-image-container {
   position: relative;
   width: 100%;
-  height: 800px;
+  height: 750px;
   border-radius: 12px;
   overflow: hidden;
 }
@@ -102,8 +102,8 @@
 }
 
 .oceanview-case-study-sections {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin-bottom: 2.5rem;
 }
@@ -146,6 +146,7 @@
   padding: 16px;
   height: auto;
   border-left: 4px solid #06bc55;
+  grid-column: 1 / -1; /* Span full width */
 }
 
 .oceanview-case-study-item-header {

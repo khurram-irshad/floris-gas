@@ -29,13 +29,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
-  radial-gradient(
-    100% 200% at 100% 100%, 
-    rgba(78, 117, 170, 0.25) 1%,   
-    rgba(14, 8, 27, 0.85) 1% 
-  );
-
+  background: radial-gradient(193.05% 218.27% at 8.75% -37.14%, rgba(79, 117, 171, 0.9) 4.03%, #0E081B 91.3%);
   z-index: 2;
 }
 

@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 
 export default function CaseStudy() {
   const router = useRouter();
-  
+
   const handleReadMoreCaseStudies = () => {
     router.push('/case-studies');
   };
@@ -33,9 +33,9 @@ export default function CaseStudy() {
               Marina Bay Restaurant Group
             </h2>
             
-            <p className="case-study-subtitle">
+            {/* <p className="case-study-subtitle">
               How we helped a growing restaurant chain reduce costs by 35% while improving reliability across 12 locations.
-            </p>
+            </p> */}
             
               <div className="case-study-sections">
                 <div className="case-study-item challenge">

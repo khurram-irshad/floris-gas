@@ -5,7 +5,6 @@
 }
 
 .success-story-container {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -70,13 +69,11 @@
 }
 
 .timeline-card:hover {
-  transform: translateY(-8px);
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
 }
 
 .timeline-card-image {
   width: 100%;
-  max-width: 448px;
   position: relative;
   height: 314px;
   overflow: hidden;
@@ -180,6 +177,7 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
+  padding: 0rem 2rem 0rem 2rem;
 }
 
 .nav-controls-left {
