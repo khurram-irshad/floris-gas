@@ -5,7 +5,7 @@ import WhyPartnerWithFloriGAS from '@/components/sections/WhyPartnerWithFloriGAS
 import WhatYouGetAsPartner from '@/components/sections/WhatYouGetAsPartner';
 import PartnerBenefits from '@/components/sections/PartnerBenefits';
 import HowItWorks from '@/components/sections/HowItWorks';
-import ReadyToStartEarning from '@/components/sections/ReadyToStartEarning';
+// import ReadyToStartEarning from '@/components/sections/ReadyToStartEarning';
 import ResidentialFAQSection from '@/components/sections/ResidentialFAQSection';
 import ReadyToSellPropaneCTA from '@/components/sections/ReadyToSellPropaneCTA';
 import TestimonialsSection from '@/components/sections/TestimonialsSection';
@@ -17,7 +17,7 @@ export default function SellPropanePage() {
       <main>
         <SellPropane />
         <WhyPartnerWithFloriGAS />
-        <ReadyToStartEarning />
+        {/* <ReadyToStartEarning /> */}
         <HowItWorks />
         <PartnerBenefits />
         <WhatYouGetAsPartner />

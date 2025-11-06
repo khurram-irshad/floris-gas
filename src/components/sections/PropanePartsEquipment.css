@@ -1,0 +1,129 @@
+/* Propane Parts and Equipment Section Component Styles */
+
+.propane-parts-equipment-section {
+  background: #ffffff;
+  padding: 5rem 0;
+}
+
+.propane-parts-equipment-container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header Styles */
+.propane-parts-equipment-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.propane-parts-equipment-title {
+  font-size: 36px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  line-height: 100%;
+  margin: 0 0 1.5rem 0;
+  font-family: var(--font-gilroy);
+}
+
+.propane-parts-equipment-description {
+  font-size: 20px;
+  color: #49484D;
+  line-height: 1.6;
+  max-width: 65%;
+  margin: 0 auto;
+  font-family: var(--font-gilroy);
+}
+
+/* Equipment Grid */
+.propane-parts-equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Equipment Card */
+.equipment-card {
+  background: #F4F7FA;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #E3E6EA;
+  height: 240px;
+}
+
+.equipment-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+}
+
+/* Equipment Image */
+.equipment-image-container {
+  position: relative;
+  overflow: hidden;
+  background: #F4F7FA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 900px) {
+  .propane-parts-equipment-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .propane-parts-equipment-description {
+    max-width: 85%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .propane-parts-equipment-section {
+    padding: 3rem 0;
+  }
+  
+  .propane-parts-equipment-container {
+    padding: 0 0.75rem;
+  }
+  
+  .propane-parts-equipment-header {
+    margin-bottom: 3rem;
+  }
+  
+  .propane-parts-equipment-title {
+    font-size: 28px;
+    font-family: var(--font-gilroy);
+    font-weight: 600;
+  }
+  
+  .propane-parts-equipment-description {
+    font-size: 16px;
+    max-width: 100%;
+    font-family: var(--font-gilroy);
+  }
+  
+  .propane-parts-equipment-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .equipment-image-container {
+    height: 240px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .equipment-image-container {
+    height: 200px;
+  }
+}

@@ -117,7 +117,7 @@ export default function HeroSection() {
       <div className="content-container">
         <div className="main-content">
           
-          <div className="social-proof-container">
+          {/* <div className="social-proof-container">
             <div className="avatars-container">
               {CUSTOMER_AVATARS.map((avatar) => (
                 <div
@@ -140,7 +140,7 @@ export default function HeroSection() {
               <br />
               <span className="service-text">Enjoy our facilities</span>
             </div>
-          </div>
+          </div> */}
 
           {/* Main Heading */}
           <div className="heading-container">

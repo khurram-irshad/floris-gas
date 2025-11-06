@@ -2,6 +2,7 @@ import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
 import ResidentialHeroSection from '@/components/sections/ResidentialHeroSection';
 import PropaneSolutionsSection from '@/components/sections/PropaneSolutionsSection';
+import WhatWeOffer from '@/components/sections/WhatWeOffer';
 import KeyFeaturesSection from '@/components/sections/KeyFeaturesSection';
 import ResidentialServicesSection from '@/components/sections/ResidentialServicesSection';
 import PropaneBenefitsSection from '@/components/sections/PropaneBenefitsSection';
@@ -17,6 +18,7 @@ export default function ResidentialPage() {
       <main>
         <ResidentialHeroSection />
         <PropaneSolutionsSection />
+        <WhatWeOffer />
         <KeyFeaturesSection />
         <ResidentialServicesSection />
         <PropaneBenefitsSection />

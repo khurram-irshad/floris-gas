@@ -4,8 +4,9 @@ import CommercialHeroSection from '../../components/sections/CommercialHeroSecti
 import CommercialPropaneSolutions from '@/components/sections/CommercialPropaneSolutions';
 import IndustriesWeServe from '@/components/sections/IndustriesWeServe';
 import BusinessBenefits from '@/components/sections/BusinessBenefits';
-import ReadyToExperience from '@/components/sections/ReadyToExperience';
+// import ReadyToExperience from '@/components/sections/ReadyToExperience';
 import CaseStudy from '@/components/sections/CaseStudy';
+import PropanePartsEquipment from '@/components/sections/PropanePartsEquipment';
 import PowerYourBusinessCTA from '@/components/sections/PowerYourBusinessCTA';
 import ResidentialFAQSection from '@/components/sections/ResidentialFAQSection';
 import TestimonialsSection from '@/components/sections/TestimonialsSection';
@@ -20,8 +21,9 @@ export default function CommercialPage() {
         <CommercialPropaneSolutions />
         <IndustriesWeServe />
         <BusinessBenefits />
-        <ReadyToExperience />
+        {/* <ReadyToExperience /> */}
         <CaseStudy />
+        <PropanePartsEquipment />
         <ResidentialFAQSection />
         <PowerYourBusinessCTA />
         <TestimonialsSection />

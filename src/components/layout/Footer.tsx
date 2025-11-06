@@ -29,10 +29,10 @@ export default function Footer() {
           <div className="footer-column">
             <h3 className="footer-column-title">How we can help?</h3>
             <ul className="footer-links">
-              <li><a href="#" className="footer-link">Faster Delivery Times</a></li>
-              <li><a href="#" className="footer-link">Safety Inspections</a></li>
-              <li><a href="#" className="footer-link">Experienced Drivers</a></li>
-              <li><a href="#" className="footer-link">Trusted Since 1995</a></li>
+              <li><a  className="footer-link">Faster Delivery Times</a></li>
+              <li><a  className="footer-link">Safety Inspections</a></li>
+              <li><a  className="footer-link">Experienced Drivers</a></li>
+              <li><a  className="footer-link">Trusted Since 1995</a></li>
             </ul>
           </div>
 
@@ -40,10 +40,10 @@ export default function Footer() {
           <div className="footer-column">
             <h3 className="footer-column-title">Services</h3>
             <ul className="footer-links">
-              <li><a href="#" className="footer-link">Residential</a></li>
-              <li><a href="#" className="footer-link">Commercial</a></li>
-              <li><a href="#" className="footer-link">Sell Propane</a></li>
-              <li><a href="#" className="footer-link">About Us</a></li>
+              <li><a href="residential" className="footer-link">Residential</a></li>
+              <li><a href="commercial" className="footer-link">Commercial</a></li>
+              <li><a href="sell-propane" className="footer-link">Sell Propane</a></li>
+              <li><a href="about" className="footer-link">About Us</a></li>
             </ul>
           </div>
 
@@ -51,9 +51,9 @@ export default function Footer() {
           <div className="footer-column">
             <h3 className="footer-column-title">About florigas</h3>
             <ul className="footer-links">
-              <li><a href="#" className="footer-link">Home</a></li>
-              <li><a href="#" className="footer-link">Find A Location</a></li>
-              <li><a href="#" className="footer-link">Contact Us</a></li>
+              <li><a href="/" className="footer-link">Home</a></li>
+              <li><a href="/find-location" className="footer-link">Find A Location</a></li>
+              <li><a href="/contact" className="footer-link">Contact Us</a></li>
             </ul>
           </div>
         </div>

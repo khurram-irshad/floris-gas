@@ -5,7 +5,8 @@ import HeroVideoOverlay from '@/components/sections/HeroVideoOverlay';
 import StatsSection from '@/components/sections/StatsSection';
 import ServicesSection from '@/components/sections/ServicesSection';
 import FeaturesSection from '@/components/sections/FeaturesSection';
-import PartnersSection from '@/components/sections/PartnersSection';
+import WhatWeOffer from '@/components/sections/WhatWeOffer';
+// import PartnersSection from '@/components/sections/PartnersSection';
 import FAQSection from '@/components/sections/FAQSection';
 import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import CallToActionSection from '@/components/sections/CallToActionSection';
@@ -22,7 +23,8 @@ export default function Home() {
         <ServicesSection />
         <StatsSection />
         <FeaturesSection />
-        <PartnersSection />
+        <WhatWeOffer />
+        {/* <PartnersSection /> */}
         <FAQSection />
         <TestimonialsSection />
         <CallToActionSection />

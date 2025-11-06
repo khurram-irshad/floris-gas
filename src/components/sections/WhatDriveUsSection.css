@@ -95,7 +95,7 @@
 }
 
 /* Features Grid - 2x2 */
-.features-grid {
+.drive-us-features-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -169,7 +169,7 @@
     min-height: auto;
   }
   
-  .features-grid {
+  .drive-us-features-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -200,7 +200,7 @@
     max-width: 100%;
   }
   
-  .features-grid {
+  .drive-us-features-grid {
     gap: 1rem;
   }
   

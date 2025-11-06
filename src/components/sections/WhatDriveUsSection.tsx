@@ -31,7 +31,7 @@ export default function WhatDriveUsSection() {
             </div>
 
             {/* Features Grid */}
-            <div className="features-grid">
+            <div className="drive-us-features-grid">
               {/* Performance */}
               <div className="feature-card">
                 <div className="feature-icon">
