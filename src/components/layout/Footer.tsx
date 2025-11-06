@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import './Footer.css';
 
 export default function Footer() {
@@ -51,9 +52,9 @@ export default function Footer() {
           <div className="footer-column">
             <h3 className="footer-column-title">About florigas</h3>
             <ul className="footer-links">
-              <li><a href="/" className="footer-link">Home</a></li>
-              <li><a href="/find-location" className="footer-link">Find A Location</a></li>
-              <li><a href="/contact" className="footer-link">Contact Us</a></li>
+              <li><Link href="/" className="footer-link">Home</Link></li>
+              <li><Link href="/find-location" className="footer-link">Find A Location</Link></li>
+              <li><Link href="/contact" className="footer-link">Contact Us</Link></li>
             </ul>
           </div>
         </div>

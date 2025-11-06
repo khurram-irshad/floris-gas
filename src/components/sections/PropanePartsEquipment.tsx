@@ -36,7 +36,7 @@ export default function PropanePartsEquipment() {
             Propane Parts and Equipment
           </h2>
           <p className="propane-parts-equipment-description">
-            We're committed to providing safe and reliable propane service throughout Florida,
+            We&apos;re committed to providing safe and reliable propane service throughout Florida,
             with quality equipment and professional support you can trust.
           </p>
         </div>
