@@ -134,6 +134,8 @@ function ResultsContent() {
   const mapRef = useRef<HTMLDivElement>(null);
   const cleanupRef = useRef<(() => void)[]>([]);
   const bottomSheetRef = useRef<HTMLDivElement>(null);
+  const searchInputRef = useRef<HTMLInputElement>(null);
+  const autocompleteRef = useRef<any>(null);
 
   // Memoized distance calculations
   const stationsWithDistance = useMemo(() => {
@@ -484,6 +486,45 @@ function ResultsContent() {
       }
     });
   }, [searchQuery, addCleanupFunction]);
+
+  // Initialize Google Places Autocomplete when Google Maps is loaded
+  useEffect(() => {
+    if (searchInputRef.current && window.google?.maps?.places && !autocompleteRef.current && map) {
+      const autocomplete = new window.google.maps.places.Autocomplete(searchInputRef.current, {
+        types: ['geocode', 'establishment'],
+        fields: ['geometry', 'formatted_address', 'name', 'place_id']
+      });
+      
+      autocompleteRef.current = autocomplete;
+      
+      // Handle place selection
+      autocomplete.addListener('place_changed', () => {
+        const place = autocomplete.getPlace();
+        
+        if (!place.geometry || !place.geometry.location) {
+          console.warn('No details available for input: ' + place.name);
+          return;
+        }
+        
+        // Update search query with selected place
+        const address = place.formatted_address || place.name || '';
+        setNewSearchQuery(address);
+        
+        // Update URL and perform search
+        const trimmedQuery = address.trim();
+        setSearchQuery(trimmedQuery);
+        
+        // Update URL without page reload
+        const newUrl = `/find-location/results?q=${encodeURIComponent(trimmedQuery)}`;
+        window.history.pushState({}, '', newUrl);
+        
+        // Perform the search if map is available
+        if (map) {
+          searchAndShowResults(map, trimmedQuery);
+        }
+      });
+    }
+  }, [map, searchAndShowResults]);
 
   const createSearchRadiusCircle = useCallback((center: GoogleMapsLatLng, mapInstance: GoogleMapsMap, hasStations: boolean = true) => {
     // Remove existing radar system if any
@@ -873,6 +914,7 @@ function ResultsContent() {
               <form onSubmit={handleSearchSubmit} className="header-search-form">
                 <div className="header-search-container">
                   <input
+                    ref={searchInputRef}
                     type="text"
                     placeholder={searchQuery || "Enter location..."}
                     value={newSearchQuery}

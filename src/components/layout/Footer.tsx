@@ -63,7 +63,7 @@ export default function Footer() {
       {/* Copyright */}
       <div className="footer-bottom">
         <p className="footer-copyright">
-          © FLORIGAS 2024. ALL RIGHT RESERVED
+          © FLORIGAS {new Date().getFullYear()}. ALL RIGHT RESERVED
         </p>
       </div>
     </footer>

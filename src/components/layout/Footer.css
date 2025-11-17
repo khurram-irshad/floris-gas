@@ -30,17 +30,10 @@
 
 /* Bottom section: Three columns */
 .footer-columns {
-  display: grid;
-  grid-template-columns: 2.5fr 2.5fr 1.5fr;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   margin-bottom: 3rem;
-}
-.footer-column:nth-child(2) {
-  justify-self: center;
-}
-
-.footer-column:last-child {
-  justify-self: end;
 }
 
 .logo-image {
@@ -108,9 +101,9 @@
     margin-bottom: 3rem;
   }
   .footer-columns{
-      grid-template-columns: 2.5fr 2.5fr 1.5fr;
+      display: flex;
+      justify-content: space-between;
       margin-bottom: 3rem;
-      display: grid;
   }
 
 }
@@ -141,11 +134,6 @@
     grid-template-columns: 1fr;
     gap: 2rem;
     margin-bottom: 2rem;
-  }
-  
-  .footer-column:last-child {
-    grid-column: 1;
-    justify-self: center;
   }
   
   .footer-column-title {

@@ -38,6 +38,8 @@ export default function FindLocationPage() {
   const [infoWindow, setInfoWindow] = useState<any>(null);
   const [userLocation, setUserLocation] = useState<{lat: number, lng: number} | null>(null);
   const mapRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
+  const autocompleteRef = useRef<any>(null);
 
   // Load Google Maps API and get user location
   useEffect(() => {
@@ -98,6 +100,43 @@ export default function FindLocationPage() {
 
     loadGoogleMaps();
   }, []);
+
+  // Initialize Google Places Autocomplete when Google Maps is loaded
+  useEffect(() => {
+    if (inputRef.current && window.google?.maps?.places && !autocompleteRef.current) {
+      const autocomplete = new window.google.maps.places.Autocomplete(inputRef.current, {
+        types: ['geocode', 'establishment'],
+        fields: ['geometry', 'formatted_address', 'name', 'place_id']
+      });
+      
+      autocompleteRef.current = autocomplete;
+      
+      // Handle place selection
+      autocomplete.addListener('place_changed', () => {
+        const place = autocomplete.getPlace();
+        
+        if (!place.geometry || !place.geometry.location) {
+          console.warn('No details available for input: ' + place.name);
+          return;
+        }
+        
+        // Update search query with selected place
+        const address = place.formatted_address || place.name || '';
+        setSearchQuery(address);
+        
+        // Center map on selected place if map is available
+        if (map) {
+          const location = {
+            lat: place.geometry.location.lat(),
+            lng: place.geometry.location.lng()
+          };
+          
+          map.setCenter(location);
+          map.setZoom(12);
+        }
+      });
+    }
+  }, [map]);
 
   // Re-center map when user location becomes available
   useEffect(() => {
@@ -192,14 +231,14 @@ export default function FindLocationPage() {
       mapTypeControl: false,
       streetViewControl: false,
       fullscreenControl: false,
-      zoomControl: false,
+      zoomControl: true,
       panControl: false,
       rotateControl: false,
       scaleControl: false,
-      draggable: false,
-      scrollwheel: false,
+      draggable: true,
+      scrollwheel: true,
       disableDoubleClickZoom: false,
-      gestureHandling: 'none',
+      gestureHandling: 'greedy',
       keyboardShortcuts: false,
       styles: [
         {
@@ -393,6 +432,7 @@ export default function FindLocationPage() {
                   <path d="m21 21-4.35-4.35" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
                 <input
+                  ref={inputRef}
                   type="text"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
