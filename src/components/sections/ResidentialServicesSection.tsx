@@ -26,7 +26,7 @@ const servicesData = [
     id: 3,
     subtitle: 'Backup',
     title: 'Dependable Backup Generators for Peace of Mind During Outages.',
-    description: 'Our backup generators ensure your home stays powered, no matter the weather.',
+    description: 'Keep your generator\'s fuel topped off to ensure your home stays powered, no matter the weather',
     image: '/backup.png',
     buttonText: 'Backup',
     buttonColor: 'blue'

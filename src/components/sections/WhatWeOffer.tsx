@@ -9,21 +9,21 @@ export default function WhatWeOffer() {
       id: 1,
       title: 'Tank Exchange',
       description: 'FloriGAS offers convenient tank exchange services through our vast network of retailers across Florida.',
-      image: '/card-1.png',
+      image: '/sell-propane.jpg',
       alt: 'Tank Exchange Service'
     },
     {
       id: 2,
       title: 'Tank Refill',
       description: 'Refills through our delivery service. Our fleet delivers across South Florida, Tampa, and Georgia. Call to schedule a delivery.',
-      image: '/commercial.jpg',
+      image: '/card-1.png',
       alt: 'Tank Refill Service'
     },
     {
       id: 3,
       title: 'Residential Propane Parts',
       description: 'Discover our selection of propane tanks and accessories for homes and businesses across Florida. For your safety, installations.',
-      image: '/sell-propane.jpg',
+      image: '/residential-offer.svg',
       alt: 'Residential Propane Parts'
     }
   ];

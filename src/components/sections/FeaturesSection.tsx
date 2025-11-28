@@ -8,23 +8,23 @@ const featuresData = [
     id: 1,
     title: 'Faster Delivery Times',
     description: 'Average 2-hour response time vs competitors 4-6 hours',
-    icon: '/faster.png',
+    icon: '/home-delivery-card.svg',
     buttonText: 'Learn More',
     size: 'normal'
   },
   {
     id: 2,
     title: 'More Locations',
-    description: '500+ service points across the region for your convenience',
-    icon: '/location.png',
+    description: '500+ cylinder exchange locations.',
+    icon: '/home-location-card.svg',
     buttonText: 'Learn More',
     size: 'normal'
   },
   {
     id: 3,
-    title: 'Safety Inspections',
-    description: 'Industry-leading safety record with certified technicians',
-    icon: '/protection.png',
+    title: 'Better Value',
+    description: 'Take advantage of our competitive pricing, we work with any budget.',
+    icon: '/home-value-card.svg',
     buttonText: 'Learn More',
     size: 'normal'
   },
@@ -32,7 +32,7 @@ const featuresData = [
     id: 4,
     title: 'Trusted Since 1995',
     description: 'Delivering reliable propane services with nearly three decades of proven excellence',
-    icon: '/trusted.png',
+    icon: '/home-trust-card.svg',
     buttonText: 'Learn More',
     size: 'large'
   },
@@ -40,7 +40,7 @@ const featuresData = [
     id: 5,
     title: 'Experienced Drivers',
     description: 'Skilled local professionals ensuring safe and on-time deliveries every day.',
-    icon: '/experienced.png',
+    icon: '/home-driver-card.svg',
     buttonText: 'Learn More',
     size: 'large'
   }

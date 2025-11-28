@@ -1,47 +1,59 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import './TestimonialsSection.css';
 
 const testimonials = [
   {
     id: 1,
-    text: "Their keep-full program means I never worry about running out of propane during our family BBQs. The drivers are professional and always explain everything clearly.",
-    author: "Mike Rodriguez",
-    location: "Winter Park, FL",
-    avatar: "/avatar-1.jpg"
+    text: "Wow my first time using this company and they went above and beyond for me on Saturday thank you jerelyn for your service and excellent customer service.",
+    author: "Oscar Zegarra",
+    location: "Miami, Florida, USA",
+    avatar: "/oscar.jpg"
   },
   {
     id: 2,
-    text: "Outstanding service! Their keep-full program means I never worry about running out of propane during our family BBQs. The drivers are professional and always explain everything clearly.",
-    author: "Mike Rodriguez",
-    location: "Winter Park, FL",
-    avatar: "/avatar-1.jpg"
+    text: "Wonderful company. Excellent customer service. I switched companies about 6 months ago and I am extremely satisfied. Special thank you to Jerelyn. She was extremely helpful.",
+    author: "Melinda Shaffer",
+    location: "Miami, Florida, USA",
+    avatar: "/melinda.jpg"
   },
   {
     id: 3,
-    text: "The drivers are professional and always explain everything clearly. Outstanding service!",
-    author: "Mike Rodriguez",
-    location: "Winter Park, FL",
-    avatar: "/avatar-1.jpg"
+    text: "The service to our home was excellent. We purchased a brand new tank and we also purchased gas. The person who handled my account at Florigas, Laisu was courteous and helpful. The installer waited until everything was in order. Thank you Florigas.",
+    author: "Guy Sperduto",
+    location: "Miami, Florida, USA",
+    avatar: "/guy.jpg"
   }
 ];
 
 export default function TestimonialsSection() {
   const sliderRef = useRef<HTMLDivElement>(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Check if we're on mobile
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   useEffect(() => {
     const slider = sliderRef.current;
     if (!slider) return;
 
-    // Check if we're on mobile
-    const isMobile = window.innerWidth <= 768;
+    // Only run auto-scroll on mobile
     if (!isMobile) return;
 
     let scrollPosition = 0;
     const scrollStep = 1;
-      const scrollDelay = 20;
+      const scrollDelay = 10;
     let isUserInteracting = false;
 
     const autoScroll = () => {
@@ -94,7 +106,7 @@ export default function TestimonialsSection() {
         slider.removeEventListener('scroll', handleScroll);
       }
     };
-  }, []);
+  }, [isMobile]);
 
   return (
     <section className="testimonials-section">
@@ -134,7 +146,7 @@ export default function TestimonialsSection() {
             </div>
           ))}
           {/* Duplicate testimonials for seamless loop on mobile */}
-          {testimonials.map((testimonial, index) => (
+          {isMobile && testimonials.map((testimonial, index) => (
             <div key={`duplicate-${testimonial.id}`} className={`testimonial-card mobile-duplicate ${index === 0 ? 'first-card' : ''}`}>
               <div className="testimonial-quote-icon">
                 <span className="quote-mark">❝</span>
