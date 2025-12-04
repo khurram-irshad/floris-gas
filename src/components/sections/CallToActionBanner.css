@@ -41,7 +41,7 @@
 
 .cta-primary {
   background: #FB4444;
-  color: #49484D;
+  color: white;
   border: none;
   border-radius: 12px;
   padding: 1rem 2rem;
@@ -270,3 +270,4 @@
   }
 }
 
+ 
