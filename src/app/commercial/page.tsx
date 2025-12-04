@@ -5,7 +5,7 @@ import CommercialPropaneSolutions from '@/components/sections/CommercialPropaneS
 import IndustriesWeServe from '@/components/sections/IndustriesWeServe';
 import BusinessBenefits from '@/components/sections/BusinessBenefits';
 // import ReadyToExperience from '@/components/sections/ReadyToExperience';
-import CaseStudy from '@/components/sections/CaseStudy';
+// import CaseStudy from '@/components/sections/CaseStudy';
 import PropanePartsEquipment from '@/components/sections/PropanePartsEquipment';
 import PowerYourBusinessCTA from '@/components/sections/PowerYourBusinessCTA';
 import ResidentialFAQSection from '@/components/sections/ResidentialFAQSection';
@@ -22,7 +22,7 @@ export default function CommercialPage() {
         <IndustriesWeServe />
         <BusinessBenefits />
         {/* <ReadyToExperience /> */}
-        <CaseStudy />
+        {/* <CaseStudy /> */}
         <PropanePartsEquipment />
         <ResidentialFAQSection />
         <PowerYourBusinessCTA />

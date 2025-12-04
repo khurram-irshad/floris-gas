@@ -143,11 +143,11 @@ export default function ContactSection() {
               <div className="address-info">
                 <div className="address-item">
                   <span className="address-icon">📍</span>
-                  <span className="address-text">2540 NW 79TH AVE, MIAMI, FL 33142, USA</span>
+                  <span className="address-text">2990 NW 24th St, Miami, FL 33142</span>
                 </div>
                 <div className="address-item">
                   <span className="address-icon">✉️</span>
-                  <span className="address-text">example@Florigas.com</span>
+                  <span className="address-text">info@florigas.us</span>
                 </div>
               </div>
             </div>

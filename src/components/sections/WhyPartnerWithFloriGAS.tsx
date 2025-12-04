@@ -15,32 +15,32 @@ const partnerBenefits = [
   {
     id: 2,
     icon: '/p-bulk.jpg', 
-    title: 'Bulk Delivery',
-    description: 'Enjoy competitive wholesale pricing that allows for strong profit margins on every propane tank sold.'
+    title: 'Reliable Service',
+    description: 'Through flexible routing and distribution centers across multiple states, we are able to provide retail stores with consistent supply.'
   },
   {
     id: 3,
     icon: '/p-safety.jpg', 
     title: 'Safety Compliance',
-    description: 'Never worry about stockouts with our guaranteed supply chain and flexible delivery scheduling.'
+    description: 'Our equipment is in compliance with all state regulations. FloriGas\'s in-house licensing department can also assist with licensing specific to your location.'
   },
   {
     id: 4,
     icon: '/p-priority.jpg',
     title: 'Priority Support',
-    description: 'Receive professional marketing materials, signage, and promotional support to drive sales.'
+    description: '24/7 partner support team ready to help with orders, questions, and business growth strategies. Always speak with a live person in our offices.'
   },
   {
     id: 5,
     icon: '/p-contract.jpg', 
-    title: 'Contract Flexibility',
-    description: 'Complete training programs ensure your team handles propane safely and meets all regulations.'
+    title: 'Favorable Contract Structure',
+    description: 'Enjoy competitive pricing that allows for strong profit margin on tanks sold. All products are on consignment, only pay for what is sold.'
   },
   {
     id: 6,
     icon: '/p-equipment.jpg', 
     title: 'Equipment Services',
-    description: '24/7 partner support team ready to help with orders, questions, and business growth strategies.'
+    description: 'Customers receive all new equipment. Marketing materials, signage, and promotional support to drive sales are also available.'
   }
 ];
 
@@ -59,11 +59,10 @@ export default function WhyPartnerWithFloriGAS() {
       <div className="why-partner-container">
         <div className="why-partner-header">
           <h2 className="why-partner-title">
-            Why Partner with FloriGAS?
+            Why Partner with FloriGas
           </h2>
           <p className="why-partner-description">
-            Join a network of successful partners who trust FloriGAS for reliable supply,<br />
-            strong support, and profitable propane sales opportunities.
+            Join a network of successful partners who trust FloriGas for reliable supply, strong support, and profitable propane sales opportunities.
           </p>
         </div>
 
