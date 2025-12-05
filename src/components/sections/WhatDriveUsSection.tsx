@@ -103,7 +103,7 @@ export default function WhatDriveUsSection() {
             <div className="main-image">
               <Image
                 src="/drive-us.png"
-                alt="FloriGAS delivery service"
+                alt="FloriGas delivery service"
                 width={600}
                 height={500}
                 className="main-img"

@@ -17,7 +17,7 @@ const timelineData = [
     id: 1,
     year: '1995',
     icon: '/Frame-icon-6.svg',
-    title: 'FloriGAS Founded',
+    title: 'FloriGas Founded',
     shortDescription: 'From one truck to serving Central Florida.',
     fullDescription: 'Started as a small family business with a single delivery truck, focused on providing reliable propane services to Central Florida communities.',
     image: '/Frame-1.jpg'
@@ -81,7 +81,7 @@ export default function OurSuccessStorySection() {
         <div className="success-story-header">
           <h2 className="success-story-title">Our Success Story</h2>
           <p className="success-story-description">
-            At Florigas Inc, we&apos;re your trusted full-service propane supplier in Florida. Backed by years<br />
+            At FloriGas Inc, we&apos;re your trusted full-service propane supplier in Florida. Backed by years<br />
             of expertise, we deliver reliable service with integrity, respect, and dedication.
           </p>
         </div>

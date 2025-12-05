@@ -26,7 +26,7 @@ export default function OurValuesSection() {
                 <div className="value-content">
                   <h4 className="value-title">Priority</h4>
                   <p className="value-description">
-                    Flori gas ensuring the safety as our top priorities.
+                    Flori Gas ensuring the safety as our top priorities.
                   </p>
                 </div>
                 <div className="value-icon">
@@ -81,7 +81,7 @@ export default function OurValuesSection() {
               <div className="values-main-image">
                 <Image
                   src="/our-values.jpg"
-                  alt="FloriGAS team members"
+                  alt="FloriGas team members"
                   width={400}
                   height={400}
                   className="values-main-img"

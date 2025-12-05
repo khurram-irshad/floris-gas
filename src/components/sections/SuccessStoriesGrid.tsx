@@ -127,7 +127,7 @@ export default function SuccessStoriesGrid() {
         <div className="success-stories-grid-header">
           <h2 className="success-stories-grid-title">Success Stories Across Florida</h2>
           <p className="success-stories-grid-description">
-            Discover how FloriGAS has helped customers across residential, commercial, and 
+            Discover how FloriGas has helped customers across residential, commercial, and 
             partnership sectors achieve their goals with reliable propane solutions.
           </p>
         </div>

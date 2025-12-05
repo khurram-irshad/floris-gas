@@ -13,14 +13,14 @@ export default function Footer() {
           <div className="footer-logo">
             <Image
               src="/footer-logo.png"
-              alt="Florigas"
+              alt="FloriGas"
               width={120}
               height={40}
               className="logo-image"
             />
           </div>
           <p className="footer-description">
-            At Florigas Inc, we pride ourselves on offering top-notch customer care and professional expertise as your full-service propane supplier in Florida.
+            At FloriGas Inc, we pride ourselves on offering top-notch customer care and professional expertise as your full-service propane supplier in Florida.
           </p>
         </div>
 
@@ -50,7 +50,7 @@ export default function Footer() {
 
           {/* About florigas */}
           <div className="footer-column">
-            <h3 className="footer-column-title">About florigas</h3>
+            <h3 className="footer-column-title">About FloriGas</h3>
             <ul className="footer-links">
               <li><Link href="/" className="footer-link">Home</Link></li>
               <li><Link href="/find-location" className="footer-link">Find A Location</Link></li>
@@ -63,7 +63,7 @@ export default function Footer() {
       {/* Copyright */}
       <div className="footer-bottom">
         <p className="footer-copyright">
-          © FLORIGAS {new Date().getFullYear()}. ALL RIGHT RESERVED
+          © FloriGas {new Date().getFullYear()}. ALL RIGHT RESERVED
         </p>
       </div>
     </footer>

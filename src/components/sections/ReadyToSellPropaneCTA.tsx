@@ -19,7 +19,7 @@ export default function ReadyToSellPropaneCTA() {
             Ready to Sell Propane?
           </h2>
           <h3 className="ready-to-sell-propane-subtitle">
-            Become a FloriGAS Partner Today
+            Become a FloriGas Partner Today
           </h3>
           <p className="ready-to-sell-propane-description">
             Join hundreds of successful businesses across Florida who are earning with propane<br />

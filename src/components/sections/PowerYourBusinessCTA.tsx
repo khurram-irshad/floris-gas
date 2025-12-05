@@ -21,7 +21,7 @@ export default function PowerYourBusinessCTA() {
       <div className="power-your-business-container">
         <div className="power-your-business-content">
           <h2 className="power-your-business-title">
-            Power Your Business with FloriGAS
+            Power Your Business with FloriGas
           </h2>
           <p className="power-your-business-description">
             Join thousands of Florida businesses that rely on our expertise, reliability,<br />

@@ -56,7 +56,7 @@ export default function HeroVideoOverlay() {
               width="450"
               height="270"
               src="https://www.youtube.com/embed/Fp6kDEAEz9I?autoplay=1"
-              title="What we do - FloriGAS"
+              title="What we do - FloriGas"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen

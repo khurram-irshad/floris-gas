@@ -56,7 +56,7 @@ export default function ThreeDecadesSection() {
           <div className="trusted-badge">Trusted Since 1995</div>
           <h2 className="three-decades-title">Three Decades of Proven Success</h2>
           <p className="three-decades-description">
-            For over 30 years, FloriGAS has been Florida&apos;s most trusted propane provider. From small 
+            For over 30 years, FloriGas has been Florida&apos;s most trusted propane provider. From small 
             residential needs to large commercial operations, we&apos;ve built lasting partnerships through 
             reliability, expertise, and unwavering commitment to service excellence.
           </p>
@@ -86,7 +86,7 @@ export default function ThreeDecadesSection() {
         {/* Why Choose Section */}
         <div className="why-choose-section">
           <div className="why-choose-left">
-            <h3 className="why-choose-title">Why Florida Chooses FloriGAS</h3>
+            <h3 className="why-choose-title">Why Florida Chooses FloriGas</h3>
             <div className="why-choose-features">
               {whyChooseFeatures.map((item) => (
                 <div key={item.id} className="why-choose-item">
@@ -109,7 +109,7 @@ export default function ThreeDecadesSection() {
             <div className="why-choose-image-container">
               <Image
                 src="/card-1.png"
-                alt="FloriGAS service professional"
+                alt="FloriGas service professional"
                 fill
                 className="why-choose-image"
               />

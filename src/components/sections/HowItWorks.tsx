@@ -43,7 +43,7 @@ export default function HowItWorks() {
             How It Works
           </h2>
           <p className="how-it-works-description">
-            Getting started as a FloriGAS partner is simple and straightforward. We<br />
+            Getting started as a FloriGas partner is simple and straightforward. We<br />
             guide you through every step of the process.
           </p>
         </div>

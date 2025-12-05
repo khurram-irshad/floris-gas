@@ -8,7 +8,7 @@ export default function WhatWeOffer() {
     {
       id: 1,
       title: 'Tank Exchange',
-      description: 'FloriGAS offers convenient tank exchange services through our vast network of retailers across Florida.',
+      description: 'FloriGas offers convenient tank exchange services through our vast network of retailers across Florida.',
       image: '/sell-propane.jpg',
       alt: 'Tank Exchange Service'
     },

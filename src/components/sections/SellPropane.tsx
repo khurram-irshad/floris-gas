@@ -31,7 +31,7 @@ export default function SellPropane() {
       <div className="sell-propane-container">
         <div className="sell-propane-content">
           <h1 className="sell-propane-title">
-            Partner with FloriGAS. <span className="highlight-text">Sell Propane.</span><br />
+            Partner with FloriGas. <span className="highlight-text">Sell Propane.</span><br />
             Grow Your Business.
           </h1>
           

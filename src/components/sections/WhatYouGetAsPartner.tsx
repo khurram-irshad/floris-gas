@@ -87,7 +87,7 @@ export default function WhatYouGetAsPartner() {
             What You Get as a Partner
           </h2>
           <p className="what-you-get-description">
-            FloriGAS provides everything you need to successfully sell propane and grow<br />
+            FloriGas provides everything you need to successfully sell propane and grow<br />
             your business. No hidden costs, no surprises – just comprehensive support.
           </p>
         </div>

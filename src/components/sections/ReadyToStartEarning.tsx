@@ -15,7 +15,7 @@ export default function ReadyToStartEarning() {
             Ready to Start Earning with Propane Sales?
           </h2>
           <p className="ready-to-start-description">
-            Join hundreds of successful Florida businesses already partnering with FloriGAS.
+            Join hundreds of successful Florida businesses already partnering with FloriGas.
           </p>
           
           <button 

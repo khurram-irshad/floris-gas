@@ -15,7 +15,7 @@ export default function ReadyToExperience() {
             Ready to Experience These Benefits?
           </h2>
           <p className="ready-to-experience-description">
-            Join thousands of Florida businesses that trust FloriGAS for their propane needs.
+            Join thousands of Florida businesses that trust FloriGas for their propane needs.
           </p>
           
           <button 

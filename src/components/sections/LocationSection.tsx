@@ -18,7 +18,7 @@ export default function LocationSection() {
       <div className="location-container">
         <div className="location-content">
           <h2 className="location-title">
-            Find the nearest Florigas location or schedule delivery to your doorstep. We&apos;re always nearby when you need us.
+            Find the nearest FloriGas location or schedule delivery to your doorstep. We&apos;re always nearby when you need us.
           </h2>
           
           <div className="location-finder-card">

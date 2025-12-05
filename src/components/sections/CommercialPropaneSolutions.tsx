@@ -26,7 +26,7 @@ export default function CommercialPropaneSolutions() {
           
           <div className="commercial-propane-solutions-right">
             <p className="commercial-propane-solutions-description">
-              From small restaurants to large-scale operations, FloriGAS delivers the power your business needs with unmatched reliability and service.
+              From small restaurants to large-scale operations, FloriGas delivers the power your business needs with unmatched reliability and service.
             </p>
             
             <div className="commercial-propane-solutions-buttons">

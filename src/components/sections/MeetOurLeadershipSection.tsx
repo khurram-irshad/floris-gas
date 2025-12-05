@@ -9,7 +9,7 @@ const leadershipData = [
     id: 1,
     name: 'Micheal Clark',
     title: 'Chief Executive Officer',
-    description: 'With 25+ years in energy services, Micheal has led FloriGAS through strategic growth while maintaining our family-business values.',
+    description: 'With 25+ years in energy services, Micheal has led FloriGas through strategic growth while maintaining our family-business values.',
     image: '/micheal-clark.jpg',
     socialLinks: {
       facebook: '#',

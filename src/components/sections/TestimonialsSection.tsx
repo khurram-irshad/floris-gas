@@ -21,7 +21,7 @@ const testimonials = [
   },
   {
     id: 3,
-    text: "The service to our home was excellent. We purchased a brand new tank and we also purchased gas. The person who handled my account at Florigas, Laisu was courteous and helpful. The installer waited until everything was in order. Thank you Florigas.",
+    text: "The service to our home was excellent. We purchased a brand new tank and we also purchased gas. The person who handled my account at FloriGas, Laisu was courteous and helpful. The installer waited until everything was in order. Thank you FloriGas.",
     author: "Guy Sperduto",
     location: "Miami, Florida, USA",
     avatar: "/guy.jpg"

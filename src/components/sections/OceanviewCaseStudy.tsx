@@ -15,7 +15,7 @@ export default function OceanviewCaseStudy() {
           <div className="oceanview-featured-badge">Featured Success Story</div>
           <h2 className="oceanview-case-study-main-title">Oceanview Resort & Spa</h2>
           <p className="oceanview-case-study-main-description">
-            How FloriGAS helped a luxury resort reduce energy costs by 25% while improving service 
+            How FloriGas helped a luxury resort reduce energy costs by 25% while improving service 
             reliability across their entire operation.
           </p>
         </div>
@@ -37,7 +37,7 @@ export default function OceanviewCaseStudy() {
             <p className="oceanview-transforming-description">
               Oceanview Resort & Spa faced rising energy costs and unreliable 
               propane supply that threatened their reputation for excellence. See how 
-              FloriGAS delivered a complete solution.
+              FloriGas delivered a complete solution.
             </p>
             
             <div className="oceanview-case-study-sections">
@@ -115,7 +115,7 @@ export default function OceanviewCaseStudy() {
             <div className="oceanview-case-study-testimonial">
               <div className="oceanview-testimonial-content">
                 <p className="oceanview-testimonial-text">
-                  &quot;FloriGAS transformed our operations. We went from worrying about 
+                  &quot;FloriGas transformed our operations. We went from worrying about 
                   propane supply to focusing on what we do best - serving great food 
                   to our guests.&quot;
                 </p>

@@ -54,7 +54,7 @@ export default function FeaturesSection() {
         <div className="features-header">
           <h2 className="features-title">How can we help?</h2>
           <p className="features-subtitle">
-            At Florigas Inc. we pride ourselves on offering top-notch customer care and professional
+            At FloriGas Inc. we pride ourselves on offering top-notch customer care and professional
             expertise as your full-service propane supplier in Florida.
           </p>
         </div>

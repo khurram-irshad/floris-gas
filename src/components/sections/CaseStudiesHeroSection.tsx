@@ -29,7 +29,7 @@ export default function CaseStudiesHeroSection() {
       <div className="case-studies-hero-container">
         <div className="case-studies-hero-content">
           <h1 className="case-studies-hero-title">
-            Partner with FloriGAS. <span className="highlight-text">Sell Propane.</span><br />
+            Partner with FloriGas. <span className="highlight-text">Sell Propane.</span><br />
             Grow Your Business.
           </h1>
           

@@ -54,7 +54,7 @@ export default function PartnerBenefits() {
               Partner Benefits
             </h2>
             <p className="partner-benefits-description">
-              When you partner with FloriGAS, you&apos;re not just adding a product line – you&apos;re joining a comprehensive support system designed for your success.
+              When you partner with FloriGas, you&apos;re not just adding a product line – you&apos;re joining a comprehensive support system designed for your success.
             </p>
             
             <div className="benefits-list">

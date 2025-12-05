@@ -69,7 +69,7 @@ export default function BusinessBenefits() {
             Benefits for Your Business
           </h2>
           <p className="business-benefits-description">
-            Partner with FloriGAS and experience the advantages that keep businesses running efficiently and profitably.
+            Partner with FloriGas and experience the advantages that keep businesses running efficiently and profitably.
           </p>
         </div>
 

@@ -17,7 +17,7 @@ export default function ContactHeroSection() {
       <div className="contact-hero-background">
         <Image
           src="/contact-hero.png"
-          alt="Contact FloriGAS Background"
+          alt="Contact FloriGas Background"
           fill
           className="contact-hero-bg-image"
           priority

@@ -19,7 +19,7 @@ export default function VideoOverlaySection() {
       <div className="video-background-container">
         <Image
           src="/trucks-background.jpg"
-          alt="FloriGAS Trucks Fleet"
+          alt="FloriGas Trucks Fleet"
           fill
           className="video-background-image"
           priority

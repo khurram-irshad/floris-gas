@@ -16,7 +16,7 @@ export default function OurVisionSection() {
               <div className="vision-main-image">
                 <Image
                   src="/vision-section.jpg"
-                  alt="FloriGAS facility"
+                  alt="FloriGas facility"
                   width={600}
                   height={500}
                   className="vision-main-img"

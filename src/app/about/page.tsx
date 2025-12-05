@@ -1,25 +1,3 @@
-/**
- * About Page
- * 
- * This page tells the story of FloriGAS, providing visitors with comprehensive
- * information about the company's history, mission, values, and leadership.
- * 
- * Domain Context:
- * FloriGAS Inc. is a family-owned and operated propane supplier serving Florida.
- * The company provides:
- * - Full-service propane delivery and supply
- * - Residential and commercial propane solutions
- * - Partnership opportunities for distributors
- * - Expert customer service built on trust, respect, and integrity
- * 
- * The about page serves to:
- * 1. Establish credibility and trust through company history
- * 2. Communicate the company's mission, vision, and core values
- * 3. Humanize the brand by introducing leadership team
- * 4. Showcase company achievements and statistics
- * 5. Build emotional connection with potential customers/partners
- */
-
 import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
 import AboutHeroSection from '@/components/sections/AboutHeroSection';
