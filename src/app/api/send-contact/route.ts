@@ -55,7 +55,7 @@ export async function POST(request: NextRequest) {
     // Email content
     const mailOptions = {
       from: emailUser,
-      to: 'mrrana0795@gmail.com',
+      to: 'info@florigas.us',
       subject: 'New Contact Form Submission from FlorisGAS Website',
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">

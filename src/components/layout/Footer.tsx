@@ -27,7 +27,7 @@ export default function Footer() {
         {/* Bottom Section: Three Columns */}
         <div className="footer-columns">
           {/* How we can help */}
-          <div className="footer-column">
+          {/* <div className="footer-column">
             <h3 className="footer-column-title">How we can help?</h3>
             <ul className="footer-links">
               <li><a  className="footer-link">Faster Delivery Times</a></li>
@@ -35,7 +35,7 @@ export default function Footer() {
               <li><a  className="footer-link">Experienced Drivers</a></li>
               <li><a  className="footer-link">Trusted Since 1995</a></li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Services */}
           <div className="footer-column">
