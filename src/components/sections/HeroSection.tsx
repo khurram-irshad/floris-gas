@@ -26,7 +26,6 @@ export default function HeroSection() {
     phone: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const [submitMessage, setSubmitMessage] = useState<{
     type: 'success' | 'error';
     text: string;
@@ -91,23 +90,26 @@ export default function HeroSection() {
     }
   };
 
-  const handlePlayVideo = () => {
-    setIsVideoModalOpen(true);
-  };
-
-  const handleCloseVideoModal = () => {
-    setIsVideoModalOpen(false);
-  };
-
   return (
     <section className="hero-section">
-      {/* Background Image */}
+      {/* Background Video */}
       <div className="background-container">
+        <div className="video-background-wrapper">
+          <iframe
+            className="video-background"
+            src="https://www.youtube.com/embed/Fp6kDEAEz9I?autoplay=1&loop=1&playlist=Fp6kDEAEz9I&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
+            title="FlorisGAS Hero Background Video"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+        {/* Fallback image for loading/error states */}
         <Image
           src="/hero-section-background.png"
           alt="FlorisGAS Hero Background"
           fill
-          className="object-cover object-center"
+          className="background-fallback"
           priority
         />
         {/* Overlay for better text readability */}
@@ -221,58 +223,9 @@ export default function HeroSection() {
             </p>
           </div>
 
-          {/* Mobile Video Button */}
-          <div className="mobile-video-button-container">
-            <button 
-              onClick={handlePlayVideo}
-              className="mobile-video-button"
-            >
-              <svg 
-                width="24" 
-                height="24" 
-                viewBox="0 0 24 24" 
-                fill="none"
-                className="mobile-play-icon"
-              >
-                <circle cx="12" cy="12" r="12" fill="white" />
-                <path 
-                  d="M10 8L16 12L10 16V8Z" 
-                  fill="#4168FC"
-                />
-              </svg>
-              Play Our Vision
-            </button>
-          </div>
         </div>
     
       </div>
-
-      {/* Video Modal for Mobile */}
-      {isVideoModalOpen && (
-        <div className="video-modal-overlay" onClick={handleCloseVideoModal}>
-          <div className="video-modal-container" onClick={(e) => e.stopPropagation()}>
-            <button 
-              className="video-modal-close"
-              onClick={handleCloseVideoModal}
-              aria-label="Close video"
-            >
-              ×
-            </button>
-            <div className="video-modal-content">
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/Fp6kDEAEz9I?autoplay=1"
-                title="What we do - FloriGas"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="video-modal-iframe"
-              />
-            </div>
-          </div>
-        </div>
-      )}
 
     </section>
   );
