@@ -6,7 +6,10 @@
   font-family: var(--font-gilroy);
   background: #f8fafc;
   position: relative;
+  overflow-x: hidden;
 }
+
+/* Note: Body scroll prevention is handled via JavaScript useEffect for better control */
 
 /* Mobile/Desktop Navigation Toggle */
 .desktop-nav {
@@ -39,12 +42,27 @@
   border-bottom: 1px solid #e2e8f0;
   background: white;
   display: flex;
-  align-items: center;
   gap: 16px;
   width: 100%;
   position: sticky;
   top: 0;
   z-index: 1;
+}
+.desktop-back-button {
+  background: #f1f5f9;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  color: #64748b;
+  transition: all 0.2s ease;
+  display: flex;
+  height: fit-content;
+}
+
+.desktop-back-button:hover {
+  background: #e2e8f0;
+  color: #64748b;
 }
 
 .back-button {
@@ -65,7 +83,8 @@
   color: #1e293b;
 }
 .search-info{
-  width: 100%;
+  flex: 1;
+  min-width: 0;
 }
 
 .search-info h2 {
@@ -746,7 +765,7 @@
     display: none !important;
   }
   
-  /* Show mobile header */
+  /* Show mobile header - Fixed position to always stay at top */
   .mobile-header-navigation {
     display: flex;
     align-items: center;
@@ -754,10 +773,13 @@
     padding: 12px 16px;
     background: white;
     border-bottom: 1px solid #e2e8f0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    z-index: 1001;
     height: 56px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   }
   
   .mobile-back-btn {
@@ -787,8 +809,13 @@
   
   /* Full-screen layout */
   .results-main {
-    height: calc(100vh - 56px); /* Account for mobile header */
-    position: relative;
+    height: 100vh;
+    position: fixed;
+    top: 56px; /* Account for fixed mobile header */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
   }
   
   /* Full-screen map */
@@ -800,6 +827,7 @@
     left: 0;
     right: 0;
     bottom: 0;
+    overflow: hidden;
   }
   
   .map-container {
@@ -807,11 +835,11 @@
     height: 100% !important;
   }
   
-  /* Mobile Bottom Sheet */
+  /* Mobile Bottom Sheet - Fixed position */
   .mobile-bottom-sheet {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
@@ -819,18 +847,19 @@
     border-radius: 16px 16px 0 0;
     box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
     max-height: 70vh;
-    min-height: 200px;
-    z-index: 1000;
-    transform: translateY(calc(100% - 120px));
+    z-index: 1002;
+    transform: translateY(100%); /* Completely hidden by default */
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    touch-action: pan-y;
   }
   
-  .mobile-bottom-sheet:hover {
-    transform: translateY(0);
+  /* Show small peek when there are results but not expanded */
+  .mobile-bottom-sheet.has-results:not(.expanded) {
+    transform: translateY(calc(100% - 80px)); /* Show 80px peek */
   }
   
   .mobile-bottom-sheet.expanded {
-    transform: translateY(0);
+    transform: translateY(0); /* Fully visible when expanded */
   }
   
   .bottom-sheet-handle {
@@ -867,6 +896,8 @@
     flex: 1;
     overflow-y: auto;
     padding: 0;
+    max-height: calc(70vh - 80px); /* Account for handle and header */
+    -webkit-overflow-scrolling: touch;
   }
   
   /* Mobile Loading/Error States */

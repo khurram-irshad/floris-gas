@@ -860,6 +860,48 @@ function ResultsContent() {
     setBottomSheetExpanded(!bottomSheetExpanded);
   }, [bottomSheetExpanded]);
 
+  // Prevent body scrolling when bottom sheet is expanded
+  useEffect(() => {
+    if (bottomSheetExpanded) {
+      // Prevent body scroll when bottom sheet is open
+      document.body.style.overflow = 'hidden';
+      document.body.style.position = 'fixed';
+      document.body.style.width = '100%';
+    } else {
+      // Restore body scroll when bottom sheet is closed
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.width = '';
+    }
+    
+    // Cleanup on unmount
+    return () => {
+      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.width = '';
+    };
+  }, [bottomSheetExpanded]);
+
+  // Close bottom sheet when clicking on the map
+  const handleMapClick = useCallback(() => {
+    if (bottomSheetExpanded) {
+      setBottomSheetExpanded(false);
+    }
+  }, [bottomSheetExpanded]);
+
+  // Prevent bottom sheet from closing when clicking inside it (except header)
+  const handleBottomSheetClick = useCallback((e: React.MouseEvent) => {
+    e.stopPropagation();
+  }, []);
+
+  // Close bottom sheet when clicking on the header area
+  const handleHeaderClick = useCallback((e: React.MouseEvent) => {
+    e.stopPropagation(); // Prevent triggering map click
+    if (bottomSheetExpanded) {
+      setBottomSheetExpanded(false);
+    }
+  }, [bottomSheetExpanded]);
+
   const handleTouchStart = useCallback((e: React.TouchEvent) => {
     const touch = e.touches[0];
     const startY = touch.clientY;
@@ -909,6 +951,16 @@ function ResultsContent() {
         {/* Desktop Sidebar - Hidden on mobile */}
         <div className="results-sidebar desktop-only">
           <div className="search-header">
+            <button 
+              className="desktop-back-button"
+              onClick={handleNewSearch}
+              aria-label="Back to search"
+              title="Back to find location"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M19 12H5M12 19l-7-7 7-7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
             <div className="search-info">
               {/* Integrated Search Bar */}
               <form onSubmit={handleSearchSubmit} className="header-search-form">
@@ -1042,21 +1094,25 @@ function ResultsContent() {
         </div>
 
         {/* Full-screen Map */}
-        <div className="results-map">
+        <div className="results-map" onClick={handleMapClick}>
           <div ref={mapRef} className="map-container" />
         </div>
 
         {/* Mobile Bottom Sheet */}
         <div 
           ref={bottomSheetRef}
-          className={`mobile-bottom-sheet ${bottomSheetExpanded ? 'expanded' : ''}`}
+          className={`mobile-bottom-sheet ${bottomSheetExpanded ? 'expanded' : ''} ${nearestStations.length > 0 ? 'has-results' : ''}`}
           onTouchStart={handleTouchStart}
+          onClick={handleBottomSheetClick}
         >
           <div 
             className="bottom-sheet-handle"
             onClick={handleBottomSheetToggle}
           ></div>
-          <div className="bottom-sheet-header">
+          <div 
+            className="bottom-sheet-header"
+            onClick={handleHeaderClick}
+          >
             <div className="bottom-sheet-title">
               <h2>{nearestStations.length} Location{nearestStations.length !== 1 ? 's' : ''} Found</h2>
               {nearestStations.length > 0 && nearestStations.every(station => (station.distance || 0) <= SEARCH_RADIUS_MILES) && (
