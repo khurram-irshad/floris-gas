@@ -29,12 +29,6 @@ export async function POST(request: NextRequest) {
 
     // Check if environment variables exist
     if (!emailUser || !emailPass) {
-      console.error('Contact form - Missing environment variables in production');
-      console.error('EMAIL_USER:', process.env.EMAIL_USER ? 'Set' : 'Missing');
-      console.error('EMAIL_PASS:', process.env.EMAIL_PASS ? 'Set' : 'Missing');
-      console.error('NEXT_PUBLIC_EMAIL_USER:', process.env.NEXT_PUBLIC_EMAIL_USER ? 'Set' : 'Missing');
-      console.error('NEXT_PUBLIC_EMAIL_PASS:', process.env.NEXT_PUBLIC_EMAIL_PASS ? 'Set' : 'Missing');
-        
       return NextResponse.json(
         { 
           error: 'Email service not configured. Please contact administrator.',
