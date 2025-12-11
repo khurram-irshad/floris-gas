@@ -826,6 +826,8 @@ function ResultsContent() {
       map.setCenter({ lat: station.lat, lng: station.lng });
       map.setZoom(15);
       window.google.maps.event.trigger(markers[nearestStations.indexOf(station)], 'click');
+      // Collapse the bottom sheet after a station is selected to reveal the map
+      setBottomSheetExpanded(false);
     }
   }, [map, markers, nearestStations]);
 

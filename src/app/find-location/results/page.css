@@ -6,7 +6,8 @@
   font-family: var(--font-gilroy);
   background: #f8fafc;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
+  overscroll-behavior: none;
 }
 
 /* Note: Body scroll prevention is handled via JavaScript useEffect for better control */
@@ -774,7 +775,7 @@
     background: white;
     border-bottom: 1px solid #e2e8f0;
     position: fixed;
-    top: 64px;
+    top: 0;
     left: 0;
     right: 0;
     z-index: 1001;
@@ -809,9 +810,9 @@
   
   /* Full-screen layout */
   .results-main {
-    height: 100vh;
+    height: calc(100vh - 56px);
     position: fixed;
-    top: 56px; /* Account for fixed mobile header */
+    top: 56px; /* Align directly under the fixed header */
     left: 0;
     right: 0;
     bottom: 0;
