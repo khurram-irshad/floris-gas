@@ -112,7 +112,7 @@ export default function ContactSection() {
               </div>
             </div>
 
-            <div className="contact-info-section">
+            {/* <div className="contact-info-section">
               <h3 className="contact-info-title">Social Media</h3>
               <div className="social-links">
                 <a href="#" className="social-link facebook">
@@ -136,7 +136,7 @@ export default function ContactSection() {
                   </svg>
                 </a>
               </div>
-            </div>
+            </div> */}
 
             <div className="contact-info-section">
               <h3 className="contact-info-title">Visit us</h3>
