@@ -8,7 +8,7 @@ export default function ResidentialHeroSection() {
     <section className="residential-hero-section">
       <div className="residential-hero-background">
         <Image
-          src="/residential-hero-section.jpg"
+          src="/residential-hero-section.png"
           alt="Residential Propane Services"
           fill
           className="residential-hero-image"

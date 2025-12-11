@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef, Suspense, useMemo, useCallback } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
-import Navigation from '@/components/layout/Navigation';
 import gasStationsData from '@/data/gas-stations.json';
 import './page.css';
 
@@ -863,25 +862,31 @@ function ResultsContent() {
   }, [bottomSheetExpanded]);
 
   // Prevent body scrolling when bottom sheet is expanded
+  // Always prevent body scroll on this page to avoid underlying nav scroll
+  useEffect(() => {
+    const prevOverflow = document.body.style.overflow;
+    const prevPosition = document.body.style.position;
+    const prevWidth = document.body.style.width;
+    document.body.style.overflow = 'hidden';
+    document.body.style.position = 'fixed';
+    document.body.style.width = '100%';
+
+    return () => {
+      document.body.style.overflow = prevOverflow;
+      document.body.style.position = prevPosition;
+      document.body.style.width = prevWidth;
+    };
+  }, []);
+
+  // Maintain layout lock when toggling bottom sheet
   useEffect(() => {
     if (bottomSheetExpanded) {
-      // Prevent body scroll when bottom sheet is open
-      document.body.style.overflow = 'hidden';
       document.body.style.position = 'fixed';
       document.body.style.width = '100%';
     } else {
-      // Restore body scroll when bottom sheet is closed
-      document.body.style.overflow = '';
-      document.body.style.position = '';
-      document.body.style.width = '';
+      document.body.style.position = 'fixed';
+      document.body.style.width = '100%';
     }
-    
-    // Cleanup on unmount
-    return () => {
-      document.body.style.overflow = '';
-      document.body.style.position = '';
-      document.body.style.width = '';
-    };
   }, [bottomSheetExpanded]);
 
   // Close bottom sheet when clicking on the map
@@ -932,8 +937,6 @@ function ResultsContent() {
 
   return (
     <div className="results-page">
-      <Navigation />
-      
       {/* Mobile Header */}
       <div className="mobile-header-navigation">
         <button 
