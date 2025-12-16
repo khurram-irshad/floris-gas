@@ -2,12 +2,12 @@
 
 import { useState, useEffect, useRef, Suspense, useMemo, useCallback } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
-import gasStationsData from '@/data/gas-stations.json';
+import gasStationsData from '@/data/gas-stations-geocoded.json';
 import './page.css';
 
 // Constants
-const SEARCH_RADIUS_MILES = 20;
-const SEARCH_RADIUS_METERS = 32093.44; // 20 miles in meters
+const SEARCH_RADIUS_MILES = 6.21371; // 10km in miles (for filtering)
+const SEARCH_RADIUS_METERS = 10000; // 10km in meters
 const DEFAULT_CENTER = { lat: 39.8283, lng: -98.5795 }; // Geographic center of USA
 const ANIMATION_FRAME_RATE = 16; // 60fps
 const GEOLOCATION_TIMEOUT = 10000;
@@ -680,7 +680,7 @@ function ResultsContent() {
     const searchMessage = '';
     
     if (nearbyStations.length > 0) {
-      // Show all stations within 20 miles
+      // Show all stations within 10km radius
       stationsToShow = nearbyStations;
     
     }
@@ -1006,7 +1006,7 @@ function ResultsContent() {
               {/* Search Radius Indicator */}
               {nearestStations.length > 0 && nearestStations.every(station => (station.distance || 0) <= SEARCH_RADIUS_MILES) && (
                 <div className="radius-indicator">
-                  <span className="radius-badge">📍 Within {SEARCH_RADIUS_MILES}-mile radius</span>
+                  <span className="radius-badge">📍 Within 10km radius</span>
                 </div>
               )}
               
@@ -1121,7 +1121,7 @@ function ResultsContent() {
             <div className="bottom-sheet-title">
               <h2>{nearestStations.length} Location{nearestStations.length !== 1 ? 's' : ''} Found</h2>
               {nearestStations.length > 0 && nearestStations.every(station => (station.distance || 0) <= SEARCH_RADIUS_MILES) && (
-                <span className="mobile-radius-badge">Within {SEARCH_RADIUS_MILES}-mile radius</span>
+                <span className="mobile-radius-badge">Within 10km radius</span>
               )}
             </div>
           </div>
