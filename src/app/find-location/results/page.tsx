@@ -6,18 +6,15 @@ import gasStationsData from '@/data/gas-stations-geocoded.json';
 import './page.css';
 
 // Constants
-const SEARCH_RADIUS_MILES = 6.21371; // 10km in miles (for filtering)
-const SEARCH_RADIUS_METERS = 10000; // 10km in meters
+const SEARCH_RADIUS_MILES = 10; // 10 miles (for filtering)
+const SEARCH_RADIUS_METERS = 16093.4; // 10 miles in meters (10 * 1609.34)
 const DEFAULT_CENTER = { lat: 39.8283, lng: -98.5795 }; // Geographic center of USA
-const ANIMATION_FRAME_RATE = 16; // 60fps
-const GEOLOCATION_TIMEOUT = 10000;
-const GEOLOCATION_MAX_AGE = 300000; // 5 minutes
+
 
 // Google Maps script loading state
 let isGoogleMapsLoaded = false;
 let googleMapsLoadPromise: Promise<void> | null = null;
 
-// Define types for our gas station data
 interface GasStation {
   id: number;
   name: string;
@@ -121,7 +118,6 @@ function ResultsContent() {
   const [nearestStations, setNearestStations] = useState<GasStation[]>([]);
   const [searchLocation, setSearchLocation] = useState<any>(null);
   const [userLocation, setUserLocation] = useState<{lat: number, lng: number} | null>(null);
-  const [locationError, setLocationError] = useState<string>('');
   const [searchMessage, setSearchMessage] = useState<string>('');
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [loadingMessage, setLoadingMessage] = useState<string>('');
@@ -680,7 +676,7 @@ function ResultsContent() {
     const searchMessage = '';
     
     if (nearbyStations.length > 0) {
-      // Show all stations within 10km radius
+      // Show all stations within 10 miles radius
       stationsToShow = nearbyStations;
     
     }
@@ -852,16 +848,12 @@ function ResultsContent() {
     }
   }, [newSearchQuery, map, searchAndShowResults]);
 
-  // Removed unused handleQuickSearch function
-
-  // Removed unused handleUseCurrentLocation function
 
   // Bottom sheet touch handlers
   const handleBottomSheetToggle = useCallback(() => {
     setBottomSheetExpanded(!bottomSheetExpanded);
   }, [bottomSheetExpanded]);
 
-  // Prevent body scrolling when bottom sheet is expanded
   // Always prevent body scroll on this page to avoid underlying nav scroll
   useEffect(() => {
     const prevOverflow = document.body.style.overflow;
@@ -1006,7 +998,7 @@ function ResultsContent() {
               {/* Search Radius Indicator */}
               {nearestStations.length > 0 && nearestStations.every(station => (station.distance || 0) <= SEARCH_RADIUS_MILES) && (
                 <div className="radius-indicator">
-                  <span className="radius-badge">📍 Within 10km radius</span>
+                  <span className="radius-badge">📍 Within 10 miles radius</span>
                 </div>
               )}
               
@@ -1121,7 +1113,7 @@ function ResultsContent() {
             <div className="bottom-sheet-title">
               <h2>{nearestStations.length} Location{nearestStations.length !== 1 ? 's' : ''} Found</h2>
               {nearestStations.length > 0 && nearestStations.every(station => (station.distance || 0) <= SEARCH_RADIUS_MILES) && (
-                <span className="mobile-radius-badge">Within 10km radius</span>
+                <span className="mobile-radius-badge">Within 10 miles radius</span>
               )}
             </div>
           </div>
