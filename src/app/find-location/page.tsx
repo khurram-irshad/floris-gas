@@ -37,9 +37,11 @@ export default function FindLocationPage() {
   const [markers, setMarkers] = useState<any[]>([]);
   const [infoWindow, setInfoWindow] = useState<any>(null);
   const [userLocation, setUserLocation] = useState<{lat: number, lng: number} | null>(null);
+  const [isGeocodingLocation, setIsGeocodingLocation] = useState(false);
   const mapRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const autocompleteRef = useRef<any>(null);
+  const hasGeocodedLocationRef = useRef<boolean>(false);
 
   // Load Google Maps API and get user location
   useEffect(() => {
@@ -137,6 +139,27 @@ export default function FindLocationPage() {
       });
     }
   }, [map]);
+
+  // Geocode user location to address and populate search bar (only once when location is first obtained)
+  useEffect(() => {
+    if (userLocation && window.google?.maps?.Geocoder && !isGeocodingLocation && !hasGeocodedLocationRef.current && !searchQuery) {
+      setIsGeocodingLocation(true);
+      hasGeocodedLocationRef.current = true;
+      const geocoder = new window.google.maps.Geocoder();
+      const latLng = new window.google.maps.LatLng(userLocation.lat, userLocation.lng);
+      
+      geocoder.geocode({ location: latLng }, (results: any, status: any) => {
+        setIsGeocodingLocation(false);
+        if (status === 'OK' && results[0]) {
+          const address = results[0].formatted_address;
+          setSearchQuery(address);
+        } else {
+          // Fallback to coordinates if geocoding fails
+          setSearchQuery(`${userLocation.lat.toFixed(6)}, ${userLocation.lng.toFixed(6)}`);
+        }
+      });
+    }
+  }, [userLocation, isGeocodingLocation, searchQuery]);
 
   // Re-center map when user location becomes available
   useEffect(() => {
