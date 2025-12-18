@@ -5,7 +5,7 @@ const statsData: StatData[] = [
   {
     number: '1M+',
     label: 'Customers visit',
-    sublabel: 'every months'
+    sublabel: 'every month'
   },
   {
     number: '93%',
