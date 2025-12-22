@@ -1,0 +1,50 @@
+# Sitemap files
+Sitemap: https://florigas.com/sitemap.xml
+
+# Block Yandex completely
+User-agent: YandexBot
+Disallow: /
+
+# Rules for all other crawlers
+User-agent: *
+# Allow main content
+Allow: /$
+Allow: /commercial$
+Allow: /commercial/$
+Allow: /residential$
+Allow: /residential/$
+Allow: /sell-propane$
+Allow: /sell-propane/$
+Allow: /contact$
+Allow: /contact/$
+Allow: /find-location$
+Allow: /find-location/$
+
+# Disallow dynamic and API routes
+Disallow: /find-location/results
+Disallow: /api/
+
+# Disallow static assets and unnecessary files
+Disallow: /_next/static/
+Disallow: /_next/
+Disallow: /fonts/
+Disallow: /icons/
+Disallow: /*.js$
+Disallow: /*.jsx$
+Disallow: /*.ts$
+Disallow: /*.tsx$
+Disallow: /*.css$
+Disallow: /*.svg$
+Disallow: /*.png$
+Disallow: /*.jpg$
+Disallow: /*.jpeg$
+Disallow: /*.gif$
+Disallow: /*.webp$
+Disallow: /*.ico$
+Disallow: /*.woff$
+Disallow: /*.woff2$
+Disallow: /*.ttf$
+Disallow: /*.otf$
+Disallow: /*.eot$
+Disallow: /*.map$
+

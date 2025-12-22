@@ -1,31 +1,115 @@
-import Navigation from '@/components/layout/Navigation';
-import Footer from '@/components/layout/Footer';
-import HeroSection from '@/components/sections/HeroSection';
-import StatsSection from '@/components/sections/StatsSection';
-import ServicesSection from '@/components/sections/ServicesSection';
-import FeaturesSection from '@/components/sections/FeaturesSection';
-import WhatWeOffer from '@/components/sections/WhatWeOffer';
-// import PartnersSection from '@/components/sections/PartnersSection';
-import FAQSection from '@/components/sections/FAQSection';
-import TestimonialsSection from '@/components/sections/TestimonialsSection';
-import CallToActionSection from '@/components/sections/CallToActionSection';
+import HomePage from "@/components/ClientHomePage"
+import type { Metadata, Viewport } from "next"
 
-export default function Home() {
-  return (
-    <div className="min-h-screen bg-white">
-      <Navigation />
-      <main>
-        <HeroSection />
-        <ServicesSection />
-        <StatsSection />
-        <FeaturesSection />
-        <WhatWeOffer />
-        {/* <PartnersSection /> */}
-        <FAQSection />
-        <TestimonialsSection />
-        <CallToActionSection />
-      </main>
-      <Footer />
-    </div>
-  );
+export function generateViewport(): Viewport {
+  return {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+  }
+}
+
+export async function generateMetadata(): Promise<Metadata> {
+  const metadata: Metadata = {
+    title:
+      "FloriGas | Premium Propane Service That Puts Your Convenience First",
+    description:
+      "At FloriGas Inc, we're your trusted full-service propane supplier in Florida — delivering expert service, reliable supply, and customer care built on respect, trust, and integrity. Family-owned and operated, serving residential and commercial customers with premium propane solutions.",
+
+    metadataBase: new URL("https://florigas.com"),
+    openGraph: {
+      images: [
+        {
+          url: "https://florigas.com/hero-section-background.png",
+          width: 1200,
+          height: 630,
+          alt: "FloriGas Premium Propane Service",
+        },
+      ],
+      title:
+        "FloriGas | Premium Propane Service That Puts Your Convenience First",
+      description:
+        "At FloriGas Inc, we're your trusted full-service propane supplier in Florida — delivering expert service, reliable supply, and customer care built on respect, trust, and integrity. Family-owned and operated, serving residential and commercial customers with premium propane solutions.",
+      type: "website",
+      locale: "en_US",
+      url: "https://florigas.com",
+      siteName: "FloriGas",
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      images: [
+        {
+          url: "https://florigas.com/hero-section-background.png",
+          width: 1200,
+          height: 630,
+          alt: "FloriGas Premium Propane Service",
+        },
+      ],
+      title:
+        "FloriGas | Premium Propane Service That Puts Your Convenience First",
+      description:
+        "At FloriGas Inc, we're your trusted full-service propane supplier in Florida — delivering expert service, reliable supply, and customer care built on respect, trust, and integrity. Family-owned and operated, serving residential and commercial customers with premium propane solutions.",
+      site: "@florigas",
+      creator: "@florigas",
+    },
+
+    alternates: {
+      canonical: "https://florigas.com/",
+    },
+
+    robots: {
+      index: true,
+      follow: true,
+    },
+
+    keywords: [
+      "FloriGas",
+      "FloriGas Inc",
+      "propane",
+      "propane delivery",
+      "propane service",
+      "Florida propane",
+      "residential propane",
+      "commercial propane",
+      "propane supplier",
+      "propane delivery Florida",
+      "family owned propane",
+      "propane solutions",
+      "propane tank",
+      "propane refill",
+      "trusted propane supplier",
+      "gas in Miami",
+      "propane in Miami",
+      "propane delivery Miami",
+      "Miami propane service",
+      "propane Miami FL",
+      "gas Miami Florida",
+      "propane supplier Miami",
+      "Miami propane delivery",
+      "propane service Miami",
+      "Florida gas service",
+      "propane Florida",
+    ],
+    icons: {
+      icon: [
+        { url: "/icon.svg", sizes: "any", type: "image/svg+xml" },
+        { url: "/icon.svg", sizes: "32x32", type: "image/svg+xml" },
+        { url: "/icon.svg", sizes: "48x48", type: "image/svg+xml" },
+        { url: "/icon.svg", sizes: "64x64", type: "image/svg+xml" },
+        { url: "/icon.svg", sizes: "128x128", type: "image/svg+xml" },
+      ],
+      shortcut: "/icon.svg",
+      apple: [{ url: "/icon.svg", sizes: "180x180", type: "image/svg+xml" }],
+    },
+    other: {
+      "X-UA-Compatible": "IE=edge",
+    },
+  }
+
+  return metadata
+}
+
+export default async function Page() {
+  return <HomePage />
 }
