@@ -93,6 +93,7 @@ export async function generateMetadata(): Promise<Metadata> {
       "propane service inquiry Georgia",
       "FloriGas customer service Georgia",
       "propane delivery contact Georgia",
+      "miami gas",
     ],
     icons: {
       icon: [

@@ -102,6 +102,7 @@ export async function generateMetadata(): Promise<Metadata> {
       "FloriGas service centers Georgia",
       "gas stations Georgia",
       "propane stations near me Atlanta",
+      "miami gas",
     ],
     icons: {
       icon: [

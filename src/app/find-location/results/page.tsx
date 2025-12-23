@@ -88,6 +88,7 @@ export async function generateMetadata(): Promise<Metadata> {
       "find propane dealer Georgia",
       "gas stations Georgia",
       "propane stations near me Atlanta",
+      "miami gas",
     ],
     icons: {
       icon: [

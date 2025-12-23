@@ -71,6 +71,9 @@ export async function generateMetadata(): Promise<Metadata> {
     },
 
     keywords: [
+      "gas in miami",
+      "miami gass",
+      "miami gass services",
       "FloriGas",
       "FloriGas Inc",
       "propane",
@@ -86,7 +89,7 @@ export async function generateMetadata(): Promise<Metadata> {
       "propane tank",
       "propane refill",
       "trusted propane supplier",
-      "gas in Miami",
+
       "propane in Miami",
       "propane delivery Miami",
       "Miami propane service",
@@ -115,6 +118,7 @@ export async function generateMetadata(): Promise<Metadata> {
       "propane supplier Georgia",
       "propane delivery Atlanta",
       "propane Savannah",
+      "miami gas",
     ],
     icons: {
       icon: [
