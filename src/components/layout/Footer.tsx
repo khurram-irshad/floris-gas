@@ -1,8 +1,8 @@
-'use client';
+"use client"
 
-import Image from 'next/image';
-import Link from 'next/link';
-import './Footer.css';
+import Image from "next/image"
+import Link from "next/link"
+import "./Footer.css"
 
 export default function Footer() {
   return (
@@ -20,7 +20,9 @@ export default function Footer() {
             />
           </div>
           <p className="footer-description">
-            At FloriGas Inc, we pride ourselves on offering top-notch customer care and professional expertise as your full-service propane supplier in Florida.
+            At FloriGas Inc, we pride ourselves on offering top-notch customer
+            care and professional expertise as your full-service propane
+            supplier in Florida.
           </p>
         </div>
 
@@ -41,10 +43,38 @@ export default function Footer() {
           <div className="footer-column">
             <h3 className="footer-column-title">Services</h3>
             <ul className="footer-links">
-              <li><a href="residential" className="footer-link">Residential</a></li>
-              <li><a href="commercial" className="footer-link">Commercial</a></li>
-              <li><a href="sell-propane" className="footer-link">Sell Propane</a></li>
-              <li><a href="about" className="footer-link">About Us</a></li>
+              <li>
+                <a
+                  href="residential"
+                  className="footer-link"
+                >
+                  Residential
+                </a>
+              </li>
+              <li>
+                <a
+                  href="commercial"
+                  className="footer-link"
+                >
+                  Commercial
+                </a>
+              </li>
+              <li>
+                <a
+                  href="sell-propane"
+                  className="footer-link"
+                >
+                  Sell Propane
+                </a>
+              </li>
+              <li>
+                <a
+                  href="about"
+                  className="footer-link"
+                >
+                  About Us
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -52,9 +82,30 @@ export default function Footer() {
           <div className="footer-column">
             <h3 className="footer-column-title">About FloriGas</h3>
             <ul className="footer-links">
-              <li><Link href="/" className="footer-link">Home</Link></li>
-              <li><Link href="/find-location" className="footer-link">Find A Location</Link></li>
-              <li><Link href="/contact" className="footer-link">Contact Us</Link></li>
+              <li>
+                <Link
+                  href="/"
+                  className="footer-link"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/find-location"
+                  className="footer-link"
+                >
+                  Find A Location
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="footer-link"
+                >
+                  Contact Us
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -67,5 +118,5 @@ export default function Footer() {
         </p>
       </div>
     </footer>
-  );
+  )
 }

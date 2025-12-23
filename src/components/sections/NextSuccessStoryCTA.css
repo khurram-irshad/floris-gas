@@ -1,5 +1,9 @@
 .next-success-story-section {
-  background: radial-gradient(193.05% 218.27% at 8.75% -37.14%, #4E75AA 4.03%, #0E081B 91.3%);
+  background: radial-gradient(
+    193.05% 218.27% at 8.75% -37.14%,
+    #4e75aa 4.03%,
+    #0e081b 91.3%
+  );
   padding: 80px 0;
   text-align: center;
   color: white;
@@ -60,7 +64,7 @@
 }
 
 .next-success-story-button.primary {
-  background: linear-gradient(90deg, #4067FC 0%, #60B8FF 100%);
+  background: linear-gradient(90deg, #4067fc 0%, #60b8ff 100%);
   color: white;
   box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
 }
@@ -118,12 +122,12 @@
     font-family: var(--font-gilroy);
     font-weight: 600;
   }
-  
+
   .next-success-story-description {
     font-size: 17px;
     font-family: var(--font-gilroy);
   }
-  
+
   .next-success-story-stats {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
@@ -134,47 +138,45 @@
   .next-success-story-section {
     padding: 60px 0;
   }
-  
+
   .next-success-story-container {
     padding: 0 16px;
   }
-  
+
   .next-success-story-title {
     font-size: 24px;
     font-family: var(--font-gilroy);
     font-weight: 600;
   }
-  
+
   .next-success-story-description {
     font-size: 16px;
     margin-bottom: 32px;
     font-family: var(--font-gilroy);
   }
-  
+
   .next-success-story-buttons {
     flex-direction: column;
     gap: 16px;
   }
-  
+
   .next-success-story-button {
     width: 100%;
     padding: 12px 12px;
   }
-  
+
   .next-success-story-content {
     margin-bottom: 50px;
   }
-  
+
   .next-success-story-stats {
     grid-template-columns: none;
     gap: 3rem;
   }
-  
+
   .next-success-story-stat-number {
     font-size: 24px;
     font-family: var(--font-gilroy);
     font-weight: 700;
   }
-  
 }
-

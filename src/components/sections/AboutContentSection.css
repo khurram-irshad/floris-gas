@@ -21,7 +21,7 @@
 
 .about-content-title {
   font-size: 36px;
-  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background: linear-gradient(90deg, #4168fc 0%, #72c0fe 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -39,7 +39,7 @@
 .about-content-description {
   font-size: 20px;
   font-weight: 400;
-  color: #49484D;
+  color: #49484d;
   line-height: 100%;
   margin: 0 0 24px 0;
   font-family: var(--font-gilroy);
@@ -64,58 +64,55 @@
 }
 
 .about-content-button.primary {
-  background: linear-gradient(90deg, #4067FC 0%, #60B8FF 100%);
+  background: linear-gradient(90deg, #4067fc 0%, #60b8ff 100%);
   color: #ffffff;
 }
-
 
 .about-content-button.secondary {
   background: #eef2f6;
   color: #262525;
 }
 
-
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .about-content-section {
     padding: 3rem 0;
   }
-  
+
   .about-content-container {
     padding: 0 0.75rem;
   }
-  
+
   .about-content-wrapper {
     flex-direction: column;
     gap: 2rem;
     text-align: center;
   }
-  
+
   .about-content-left {
     flex: 1;
   }
-  
+
   .about-content-title {
     font-size: 24px;
     width: 100% !important;
     font-family: var(--font-gilroy);
     font-weight: 600;
   }
-  
+
   .about-content-description {
     font-size: 16px;
     font-family: var(--font-gilroy);
-    color: #49484D;
+    color: #49484d;
   }
-  
-  .about-content-button{
+
+  .about-content-button {
     width: 100%;
   }
   .about-content-button.secondary {
     background: #eef2f6;
   }
-  
-  
+
   .about-content-buttons {
     flex-direction: column;
   }

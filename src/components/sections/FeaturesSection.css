@@ -23,7 +23,7 @@
   font-size: 36px;
   font-weight: 600;
   font-family: var(--font-gilroy);
-  background: linear-gradient(90deg, #4068FC 0%, #60B8FF 100%);
+  background: linear-gradient(90deg, #4068fc 0%, #60b8ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -34,7 +34,7 @@
 
 .features-subtitle {
   font-size: 20px;
-  color: #49484D;
+  color: #49484d;
   line-height: 100%;
   flex: 1;
   text-align: left;
@@ -116,13 +116,13 @@
 
 /* Feature Button */
 .feature-button {
-  padding: 0.50rem 1rem;
+  padding: 0.5rem 1rem;
   border: 1px solid #e5e7eb;
   background: #ffffff;
   border-radius: 0.5rem;
   font-weight: 500;
   font-size: 14px;
-  color:#4A80FD;
+  color: #4a80fd;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   display: inline-flex;
@@ -152,7 +152,7 @@
   .features-header {
     display: block;
   }
-  .features-subtitle{
+  .features-subtitle {
     font-size: 16px;
     margin-left: 0;
     margin-top: 1rem;
@@ -163,11 +163,11 @@
   .features-grid {
     display: block;
   }
-  
+
   .feature-card {
     margin-bottom: 1rem;
   }
-  
+
   .feature-card:last-child {
     margin-bottom: 0;
   }

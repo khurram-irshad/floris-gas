@@ -1,5 +1,5 @@
-import { Suspense } from 'react';
-import ResultsPage from '@/components/ClientFindLocationResultsPage';
+import { Suspense } from "react"
+import ResultsPage from "@/components/ClientFindLocationResultsPage"
 import type { Metadata, Viewport } from "next"
 
 export function generateViewport(): Viewport {
@@ -12,8 +12,7 @@ export function generateViewport(): Viewport {
 
 export async function generateMetadata(): Promise<Metadata> {
   const metadata: Metadata = {
-    title:
-      "FloriGas Locations Near You | Propane Service Results",
+    title: "FloriGas Locations Near You | Propane Service Results",
     description:
       "View FloriGas propane service locations near your area. Find nearby propane stations, delivery services, and refill centers with addresses, hours, and contact information.",
 
@@ -27,8 +26,7 @@ export async function generateMetadata(): Promise<Metadata> {
           alt: "FloriGas Locations",
         },
       ],
-      title:
-        "FloriGas Locations Near You | Propane Service Results",
+      title: "FloriGas Locations Near You | Propane Service Results",
       description:
         "View FloriGas propane service locations near your area. Find nearby propane stations, delivery services, and refill centers with addresses, hours, and contact information.",
       type: "website",
@@ -47,8 +45,7 @@ export async function generateMetadata(): Promise<Metadata> {
           alt: "FloriGas Locations",
         },
       ],
-      title:
-        "FloriGas Locations Near You | Propane Service Results",
+      title: "FloriGas Locations Near You | Propane Service Results",
       description:
         "View FloriGas propane service locations near your area. Find nearby propane stations, delivery services, and refill centers with addresses, hours, and contact information.",
       site: "@florigas",
@@ -116,5 +113,5 @@ export default async function Page() {
     <Suspense fallback={<div>Loading...</div>}>
       <ResultsPage />
     </Suspense>
-  );
+  )
 }

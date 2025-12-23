@@ -1,5 +1,9 @@
 .power-your-business-section {
-  background: radial-gradient(193.05% 218.27% at 8.75% -37.14%, #4E75AA 4.03%, #0E081B 91.3%);
+  background: radial-gradient(
+    193.05% 218.27% at 8.75% -37.14%,
+    #4e75aa 4.03%,
+    #0e081b 91.3%
+  );
   padding: 80px 0;
   text-align: center;
   color: white;
@@ -64,7 +68,7 @@
 }
 
 .power-your-business-button.primary {
-  background: linear-gradient(90deg, #4067FC 0%, #60B8FF 100%);
+  background: linear-gradient(90deg, #4067fc 0%, #60b8ff 100%);
   color: white;
   box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
 }
@@ -76,7 +80,7 @@
 }
 
 .power-your-business-button.primary:hover {
-  background: linear-gradient(90deg, #3558E0 0%, #4DA6E8 100%);
+  background: linear-gradient(90deg, #3558e0 0%, #4da6e8 100%);
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
 }
@@ -115,11 +119,11 @@
   .power-your-business-title {
     font-size: 32px;
   }
-  
+
   .power-your-business-description {
     font-size: 18px;
   }
-  
+
   .power-your-business-stats {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -130,58 +134,56 @@
   .power-your-business-section {
     padding: 60px 0;
   }
-  
+
   .power-your-business-container {
     padding: 0 16px;
   }
-  
+
   .power-your-business-title {
     font-size: 24px;
     margin-bottom: 0.5rem;
   }
-  
+
   .power-your-business-description {
     font-size: 16px;
     margin-bottom: 32px;
   }
-  
+
   .power-your-business-buttons {
     flex-direction: column;
     gap: 16px;
-
   }
-  
+
   .power-your-business-button {
     width: 100%;
     padding: 16px 24px;
   }
-  
+
   .power-your-business-content {
     margin-bottom: 40px;
   }
-  
+
   .power-your-business-stats {
     grid-template-columns: 1fr;
     gap: 30px;
     margin-bottom: 40px;
   }
-  
+
   .power-your-business-stat-item {
     padding: 20px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
-  
+
   .power-your-business-stat-item:last-child {
     border-bottom: none;
   }
-  
+
   .power-your-business-stat-number {
     font-size: 24px;
     margin-bottom: 8px;
   }
-  
+
   .power-your-business-stat-sublabel {
     font-size: 16px;
   }
 }
-

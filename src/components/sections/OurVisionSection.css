@@ -22,7 +22,7 @@
   font-weight: 600;
   color: #1f2937;
   margin-bottom: 16px;
-  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background: linear-gradient(90deg, #4168fc 0%, #72c0fe 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -32,7 +32,7 @@
 
 .our-vision-description {
   font-size: 1.125rem;
-  color: #49484D;
+  color: #49484d;
   line-height: 100%;
   margin: 0;
   font-family: var(--font-gilroy);
@@ -100,7 +100,7 @@
   font-size: 36px;
   font-weight: 600;
   margin-bottom: 16px;
-  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background: linear-gradient(90deg, #4168fc 0%, #72c0fe 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -111,7 +111,7 @@
 .vision-content-description {
   font-size: 18px;
   line-height: 100%;
-  color: #49484D;
+  color: #49484d;
   margin: 0;
   font-family: var(--font-gilroy);
 }
@@ -134,7 +134,7 @@
 .vision-feature-icon {
   width: 48px;
   height: 48px;
-  background: #2F3B6A;
+  background: #2f3b6a;
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -143,11 +143,10 @@
   transition: all 0.3s ease;
 }
 
-
 .vision-feature-title {
   font-size: 24px;
   font-weight: 600;
-  color: #49484D;
+  color: #49484d;
   margin-bottom: 8px;
   margin-top: 0;
   font-family: var(--font-gilroy);
@@ -156,7 +155,7 @@
 
 .vision-feature-description {
   font-size: 16px;
-  color: #49484D;
+  color: #49484d;
   line-height: 100%;
   margin: 0;
   flex-grow: 1;
@@ -171,11 +170,11 @@
     display: flex;
     flex-direction: column-reverse;
   }
-  
+
   .vision-left-section {
     min-height: auto;
   }
-  
+
   .vision-features-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -188,7 +187,7 @@
   .vision-content-wrapper .our-vision-grid {
     padding: 0;
   }
-  
+
   .vision-main-image {
     border-radius: 20px;
     overflow: hidden;
@@ -196,34 +195,32 @@
     height: 100%;
     min-height: auto;
   }
-  
-  
+
   .our-vision-container {
     padding: 0 1rem;
   }
-  
+
   .our-vision-header {
     margin-bottom: 3rem;
   }
-  
+
   .our-vision-title {
     font-size: 24px;
     font-family: var(--font-gilroy);
     font-weight: 600;
   }
-  
+
   .our-vision-description {
     font-size: 16px;
     font-family: var(--font-gilroy);
-    color: #49484D;
+    color: #49484d;
     max-width: 100%;
   }
-  
+
   .vision-features-grid {
     gap: 1rem;
   }
-  
-  
+
   .vision-content-title {
     font-size: 36px;
     font-family: var(--font-gilroy);
@@ -232,11 +229,11 @@
     align-items: center;
     display: flex;
   }
-  
+
   .vision-content-description {
     font-size: 16px;
     font-family: var(--font-gilroy);
-    color: #49484D;
+    color: #49484d;
     display: flex;
     justify-content: center;
     align-items: center;

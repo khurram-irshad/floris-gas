@@ -1,30 +1,36 @@
-'use client';
+"use client"
 
-import { useState } from 'react';
-import Image from 'next/image';
-import './LocationSection.css';
+import { useState } from "react"
+import Image from "next/image"
+import "./LocationSection.css"
 
 export default function LocationSection() {
-  const [location, setLocation] = useState('');
+  const [location, setLocation] = useState("")
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+    e.preventDefault()
     // Handle location search logic here
-    console.log('Searching for location:', location);
-  };
+    console.log("Searching for location:", location)
+  }
 
   return (
     <section className="location-section">
       <div className="location-container">
         <div className="location-content">
           <h2 className="location-title">
-            Find the nearest FloriGas location or schedule delivery to your doorstep. We&apos;re always nearby when you need us.
+            Find the nearest FloriGas location or schedule delivery to your
+            doorstep. We&apos;re always nearby when you need us.
           </h2>
-          
+
           <div className="location-finder-card">
-            <h3 className="location-finder-title">Find Your Nearest Location</h3>
-            
-            <form onSubmit={handleSubmit} className="location-form">
+            <h3 className="location-finder-title">
+              Find Your Nearest Location
+            </h3>
+
+            <form
+              onSubmit={handleSubmit}
+              className="location-form"
+            >
               <div className="location-input-container">
                 <input
                   type="text"
@@ -33,7 +39,10 @@ export default function LocationSection() {
                   placeholder="Enter your location"
                   className="location-input"
                 />
-                <button type="button" className="location-icon-button">
+                <button
+                  type="button"
+                  className="location-icon-button"
+                >
                   <Image
                     src="/location-01.svg"
                     alt="Location"
@@ -43,8 +52,11 @@ export default function LocationSection() {
                   />
                 </button>
               </div>
-              
-              <button type="submit" className="location-submit-button">
+
+              <button
+                type="submit"
+                className="location-submit-button"
+              >
                 FIND LOCATION
               </button>
             </form>
@@ -52,5 +64,5 @@ export default function LocationSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }

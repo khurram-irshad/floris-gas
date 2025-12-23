@@ -1,7 +1,7 @@
-'use client';
+"use client"
 
-import Image from 'next/image';
-import './CommercialHeroSection.css';
+import Image from "next/image"
+import "./CommercialHeroSection.css"
 
 const CommercialHeroSection = () => {
   return (
@@ -16,7 +16,7 @@ const CommercialHeroSection = () => {
         />
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default CommercialHeroSection;
+export default CommercialHeroSection

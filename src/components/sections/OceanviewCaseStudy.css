@@ -17,7 +17,7 @@
 
 .oceanview-featured-badge {
   display: inline-block;
-  color: #49484D;
+  color: #49484d;
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 2px;
@@ -27,7 +27,7 @@
 .oceanview-case-study-main-title {
   font-size: 36px;
   font-weight: 600;
-  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background: linear-gradient(90deg, #4168fc 0%, #72c0fe 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -38,7 +38,7 @@
 
 .oceanview-case-study-main-description {
   font-size: 20px;
-  color: #49484D;
+  color: #49484d;
   line-height: 100%;
   margin: 0 auto;
   display: flex;
@@ -87,7 +87,7 @@
 .oceanview-transforming-title {
   font-size: 28px;
   font-weight: 600;
-  color: #49484D;
+  color: #49484d;
   margin-bottom: 8px;
   line-height: 100%;
   font-family: var(--font-gilroy);
@@ -95,7 +95,7 @@
 
 .oceanview-transforming-description {
   font-size: 20px;
-  color: #49484D;
+  color: #49484d;
   line-height: 100%;
   margin-bottom: 1rem;
   font-family: var(--font-gilroy);
@@ -116,10 +116,10 @@
   align-items: flex-start;
   border-radius: 8px;
   background-color: #ffffff;
-  border: 1px solid #E3E6EA;
+  border: 1px solid #e3e6ea;
   padding: 16px;
   height: auto;
-  border-left: 4px solid #F17D3A;
+  border-left: 4px solid #f17d3a;
 }
 
 .oceanview-case-study-item.solution {
@@ -129,7 +129,7 @@
   align-items: flex-start;
   border-radius: 8px;
   background-color: #ffffff;
-  border: 1px solid #E3E6EA;
+  border: 1px solid #e3e6ea;
   padding: 16px;
   height: auto;
   border-left: 4px solid #5b8be5;
@@ -142,7 +142,7 @@
   align-items: flex-start;
   border-radius: 8px;
   background-color: #ffffff;
-  border: 1px solid #E3E6EA;
+  border: 1px solid #e3e6ea;
   padding: 16px;
   height: auto;
   border-left: 4px solid #06bc55;
@@ -173,27 +173,27 @@
 .oceanview-case-study-item-title.challenge {
   font-size: 16px;
   font-weight: 600;
-  color: #F17D3A;
+  color: #f17d3a;
   font-family: var(--font-gilroy);
 }
 
 .oceanview-case-study-item-title.solution {
   font-size: 16px;
   font-weight: 600;
-  color: #5C8BE5;
+  color: #5c8be5;
   font-family: var(--font-gilroy);
 }
 
 .oceanview-case-study-item-title.result {
   font-size: 16px;
   font-weight: 600;
-  color: #05BC55;
+  color: #05bc55;
   font-family: var(--font-gilroy);
 }
 
 .oceanview-case-study-item-text {
   font-size: 14px;
-  color: #49484D;
+  color: #49484d;
   line-height: 100%;
   margin: 0;
   font-family: var(--font-gilroy);
@@ -206,7 +206,7 @@
 }
 
 .oceanview-result-stat.cost {
-  background: #EAFBF2;
+  background: #eafbf2;
   padding: 12px 8px;
   border-radius: 8px;
   text-align: center;
@@ -216,7 +216,7 @@
 }
 
 .oceanview-result-stat.uptime {
-  background: #EAF1FF;
+  background: #eaf1ff;
   padding: 12px 8px;
   border-radius: 8px;
   text-align: center;
@@ -226,7 +226,7 @@
 }
 
 .oceanview-result-stat.locations {
-  background: #F1E9FF;
+  background: #f1e9ff;
   padding: 12px 8px;
   border-radius: 8px;
   text-align: center;
@@ -255,7 +255,7 @@
 
 .oceanview-stat-label {
   font-size: 14px;
-  color: #49484D;
+  color: #49484d;
   font-weight: 500;
   font-family: var(--font-gilroy);
 }
@@ -270,7 +270,7 @@
 
 .oceanview-testimonial-text {
   font-size: 16px;
-  color: #49484D;
+  color: #49484d;
   line-height: 1.6;
   margin: 0 0 1rem 0;
   font-family: var(--font-gilroy);
@@ -300,14 +300,14 @@
 .oceanview-author-name {
   font-size: 18px;
   font-weight: 600;
-  color: #49484D;
+  color: #49484d;
   margin-bottom: 2px;
   font-family: var(--font-gilroy);
 }
 
 .oceanview-author-title {
   font-size: 18px;
-  color: #49484D;
+  color: #49484d;
   font-weight: 500;
   font-family: var(--font-gilroy);
 }
@@ -320,7 +320,7 @@
 }
 
 .oceanview-case-study-button {
-  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background: linear-gradient(90deg, #4168fc 0%, #72c0fe 100%);
   color: white;
   border: none;
   padding: 16px 32px;
@@ -347,7 +347,7 @@
   .oceanview-case-study-content {
     gap: 3rem;
   }
-  
+
   .oceanview-case-study-main-title {
     font-size: 32px;
     font-family: var(--font-gilroy);
@@ -364,33 +364,33 @@
   .oceanview-case-study-section {
     padding: 3rem 0;
   }
-  
+
   .oceanview-case-study-container {
     padding: 0 0.75rem;
   }
-  
+
   .oceanview-case-study-content {
     flex-direction: column;
     gap: 2rem;
   }
-  
+
   .oceanview-case-study-main-title {
     font-size: 24px;
     font-family: var(--font-gilroy);
     font-weight: 600;
   }
-  
+
   .oceanview-case-study-main-description {
     font-size: 16px;
     max-width: 100%;
     font-family: var(--font-gilroy);
-    color: #49484D;
+    color: #49484d;
   }
-  
+
   .oceanview-case-study-image-container {
     height: 400px;
   }
-  
+
   .oceanview-transforming-title {
     font-size: 20px;
     font-family: var(--font-gilroy);
@@ -399,22 +399,22 @@
   .oceanview-author-name {
     font-size: 14px;
     font-weight: 600;
-    color: #49484D;
+    color: #49484d;
     margin-bottom: 2px;
     font-family: var(--font-gilroy);
   }
   .oceanview-author-title {
     font-size: 14px;
-    color: #49484D;
+    color: #49484d;
     font-weight: 500;
     font-family: var(--font-gilroy);
   }
-  
+
   .oceanview-case-study-results {
     flex-direction: row;
     gap: 1rem;
   }
-  
+
   .oceanview-case-study-testimonial {
     padding: 1.5rem;
   }
@@ -423,4 +423,3 @@
     flex: 1 1 400px;
   }
 }
-

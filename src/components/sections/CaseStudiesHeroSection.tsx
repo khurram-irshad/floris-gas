@@ -1,18 +1,18 @@
-'use client';
+"use client"
 
-import Image from 'next/image';
-import './CaseStudiesHeroSection.css';
-import { useRouter } from 'next/navigation';
+import Image from "next/image"
+import "./CaseStudiesHeroSection.css"
+import { useRouter } from "next/navigation"
 
-export default function CaseStudiesHeroSection() {  
-  const router = useRouter();
+export default function CaseStudiesHeroSection() {
+  const router = useRouter()
   const handleExploreCaseStudies = () => {
-    console.log('Explore Case Studies clicked');
-  };
+    console.log("Explore Case Studies clicked")
+  }
 
   const handleAboutUs = () => {
-    router.push('/about');
-  };
+    router.push("/about")
+  }
 
   return (
     <section className="case-studies-hero-section">
@@ -25,27 +25,31 @@ export default function CaseStudiesHeroSection() {
           priority
         />
       </div>
-      
+
       <div className="case-studies-hero-container">
         <div className="case-studies-hero-content">
           <h1 className="case-studies-hero-title">
-            Partner with FloriGas. <span className="highlight-text">Sell Propane.</span><br />
+            Partner with FloriGas.{" "}
+            <span className="highlight-text">Sell Propane.</span>
+            <br />
             Grow Your Business.
           </h1>
-          
+
           <p className="case-studies-hero-description">
-            Join a trusted network and unlock new revenue opportunities with reliable supply &<br />
-            full support. Perfect for hardware stores, gas stations, and local distributors.
+            Join a trusted network and unlock new revenue opportunities with
+            reliable supply &<br />
+            full support. Perfect for hardware stores, gas stations, and local
+            distributors.
           </p>
-          
+
           <div className="case-studies-hero-buttons">
-            <button 
+            <button
               onClick={handleExploreCaseStudies}
               className="case-studies-hero-button primary"
             >
               Explore Case Studies →
             </button>
-            <button 
+            <button
               onClick={handleAboutUs}
               className="case-studies-hero-button"
             >
@@ -55,5 +59,5 @@ export default function CaseStudiesHeroSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }

@@ -9,7 +9,6 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-
 }
 
 .hero-video-container {
@@ -89,8 +88,6 @@
   transform: scale(1.05);
 }
 
-
-
 @media screen and (max-width: 767px) {
   .hero-video-overlay {
     display: none; /* Hide on mobile for better UX */
@@ -108,7 +105,6 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-  
   }
   .hero-video-container {
     background: rgba(255, 255, 255, 0.95);
@@ -122,9 +118,7 @@
     transform: translateY(20%); /* Position in bottom-right area */
     aspect-ratio: 450 / 270; /* Fixed aspect ratio to maintain consistent size */
   }
-  
 }
-
 
 /* Alternative mobile positioning if you want to show on mobile */
 /* @media screen and (max-width: 767px) {

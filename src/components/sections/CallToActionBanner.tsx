@@ -1,15 +1,14 @@
-'use client';
+"use client"
 
-import Image from 'next/image';
-import './CallToActionBanner.css';
-import { useRouter } from 'next/navigation';
-
+import Image from "next/image"
+import "./CallToActionBanner.css"
+import { useRouter } from "next/navigation"
 
 export default function CallToActionBanner() {
-  const router = useRouter();
+  const router = useRouter()
   const handleSellPropane = () => {
-    router.push('/sell-propane');
-  };
+    router.push("/sell-propane")
+  }
 
   return (
     <section className="cta-banner-section">
@@ -18,12 +17,14 @@ export default function CallToActionBanner() {
           {/* Left Side - Text Content */}
           <div className="cta-text-content">
             <h2 className="banner-cta-title">
-              Your Reliable Trusted<br />
-              Gas Service Is Just<br />
+              Your Reliable Trusted
+              <br />
+              Gas Service Is Just
+              <br />
               One Call Away
             </h2>
-            
-            <button 
+
+            <button
               onClick={handleSellPropane}
               className="contact-cta-button"
             >
@@ -44,5 +45,5 @@ export default function CallToActionBanner() {
         </div>
       </div>
     </section>
-  );
+  )
 }

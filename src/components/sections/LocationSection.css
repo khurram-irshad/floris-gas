@@ -1,5 +1,9 @@
 .location-section {
-  background: radial-gradient(193.05% 218.27% at 8.75% -37.14%, #4E75AA 4.03%, #0E081B 91.3%);
+  background: radial-gradient(
+    193.05% 218.27% at 8.75% -37.14%,
+    #4e75aa 4.03%,
+    #0e081b 91.3%
+  );
   padding: 5rem 0;
   min-height: 500px;
   display: flex;
@@ -26,7 +30,7 @@
   font-size: 36px;
   font-weight: 600;
   font-family: var(--font-gilroy);
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 100%;
   margin: 0;
 }
@@ -44,7 +48,7 @@
   font-size: 24px;
   font-weight: 500;
   font-family: var(--font-gilroy);
-  color: #49484D;
+  color: #49484d;
   margin: 0 0 2rem 0;
   text-align: center;
 }
@@ -67,7 +71,7 @@
   border: 2px solid #e5e7eb;
   border-radius: 8px;
   font-size: 16px;
-  color: #49484D;
+  color: #49484d;
   background: #f9fafb;
   transition: all 0.3s ease;
   font-weight: 400;
@@ -82,7 +86,7 @@
 }
 
 .location-input::placeholder {
-  color: #49484D;
+  color: #49484d;
 }
 
 .location-icon-button {
@@ -98,11 +102,8 @@
   justify-content: center;
 }
 
-
-
-
 .location-submit-button {
-   background: linear-gradient(90deg, #416AFC 0%, #5FB7FF 100%);
+  background: linear-gradient(90deg, #416afc 0%, #5fb7ff 100%);
   color: white;
   border: none;
   padding: 1rem 2rem;
@@ -116,7 +117,6 @@
   font-weight: 400;
   font-family: var(--font-gilroy);
 }
-
 
 .location-submit-button:active {
   transform: translateY(0);
@@ -132,34 +132,34 @@
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .location-container {
     padding: 0 0.75rem;
   }
-  
+
   .location-content {
     gap: 2rem;
   }
-  
+
   .location-title {
     font-size: 22px;
   }
-  
+
   .location-finder-card {
     padding: 2rem;
     max-width: none;
   }
-  
+
   .location-finder-title {
     font-size: 18px;
     margin-bottom: 1rem;
   }
-  
+
   .location-input {
     padding: 0.875rem 3rem 0.875rem 1rem;
     font-size: 14px;
   }
-  
+
   .location-submit-button {
     padding: 0.875rem 1.5rem;
     font-size: 14px;
@@ -170,8 +170,8 @@
   .location-title {
     font-size: 24px;
   }
-  
+
   .location-finder-card {
-    padding: .75rem;
+    padding: 0.75rem;
   }
 }

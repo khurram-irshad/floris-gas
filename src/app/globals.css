@@ -3,18 +3,16 @@
 @import "@fontsource/inter/500.css";
 @import "@fontsource/inter/600.css";
 
-
 @theme {
   --font-gilroy: var(--font-gilroy);
   --color-nav-text: #676666;
-  --color-nav-text-active: #49484D;
+  --color-nav-text-active: #49484d;
   --color-primary-blue: #4f46e5;
   --color-primary-blue-hover: #4338ca;
   --color-accent-red: #ef4444;
   --color-accent-red-hover: #dc2626;
-  --color-avatar-text:#7c7d82;
+  --color-avatar-text: #7c7d82;
 }
-
 
 :root {
   --background: #ffffff;

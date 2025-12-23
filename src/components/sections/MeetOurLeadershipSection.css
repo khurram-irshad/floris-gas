@@ -21,7 +21,7 @@
   font-weight: 600;
   color: #1f2937;
   margin-bottom: 16px;
-  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background: linear-gradient(90deg, #4168fc 0%, #72c0fe 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -31,7 +31,7 @@
 
 .leadership-description {
   font-size: 20px;
-  color: #49484D;
+  color: #49484d;
   line-height: 100%;
   margin: 0;
   font-family: var(--font-gilroy);
@@ -69,9 +69,14 @@
 /* Highlighted (middle) card */
 .leadership-card.highlighted {
   box-shadow: 0 20px 40px -10px rgba(78, 117, 170, 0.3);
-  border: 2px solid #4E75AA;
+  border: 2px solid #4e75aa;
   z-index: 2;
-  background: linear-gradient(199.8deg, #14152B 3.73%, #3E4D7D 58.07%, #14152B 91.85%);
+  background: linear-gradient(
+    199.8deg,
+    #14152b 3.73%,
+    #3e4d7d 58.07%,
+    #14152b 91.85%
+  );
 }
 
 /* Highlighted card text colors */
@@ -83,13 +88,12 @@
   color: rgba(255, 255, 255, 0.9);
 }
 
-
 .leader-image {
   position: relative;
   width: 100%;
   height: 384px;
   overflow: hidden;
-  padding:0.5rem;
+  padding: 0.5rem;
 }
 
 .leader-img {
@@ -100,7 +104,6 @@
   border-radius: 1rem;
 }
 
-
 .leader-content {
   padding: 1rem;
 }
@@ -108,7 +111,7 @@
 .leader-name {
   font-size: 28px;
   font-weight: 600;
-  color: #49484D;
+  color: #49484d;
   margin-top: 0;
   margin-bottom: 8px;
   font-family: var(--font-gilroy);
@@ -117,7 +120,7 @@
 
 .leader-title {
   font-size: 18px;
-  color:#416AFC !important;
+  color: #416afc !important;
   font-weight: 500;
   margin-bottom: 16px;
   margin-top: 0;
@@ -127,7 +130,7 @@
 
 .leader-description {
   font-size: 18px;
-  color: #49484D;
+  color: #49484d;
   line-height: 100%;
   margin-bottom: 1rem;
   margin-top: 0;
@@ -136,7 +139,7 @@
 
 .leader-social {
   display: flex;
-  background: linear-gradient(90deg, #4067FC 0%, #60B8FF 100%);
+  background: linear-gradient(90deg, #4067fc 0%, #60b8ff 100%);
   border-radius: 14px;
   padding: 0.5rem;
   width: fit-content;
@@ -186,7 +189,7 @@
   .leadership-description {
     font-size: 16px;
     font-family: var(--font-gilroy);
-    color: #49484D;
+    color: #49484d;
     max-width: 100%;
   }
 
@@ -229,9 +232,14 @@
   }
 
   .leadership-slide.active {
-    border: 2px solid #4E75AA;
+    border: 2px solid #4e75aa;
     box-shadow: 0 15px 30px -5px rgba(78, 117, 170, 0.2);
-    background: linear-gradient(199.8deg, #14152B 3.73%, #3E4D7D 58.07%, #14152B 91.85%) !important;
+    background: linear-gradient(
+      199.8deg,
+      #14152b 3.73%,
+      #3e4d7d 58.07%,
+      #14152b 91.85%
+    ) !important;
     border-radius: 24px;
   }
 
@@ -243,10 +251,9 @@
     color: rgba(255, 255, 255, 0.9);
   }
 
-
   .leader-image {
-    object-fit: contain; 
-    height: auto; 
+    object-fit: contain;
+    height: auto;
   }
 
   .leadership-slide .leader-content {
@@ -269,7 +276,7 @@
     font-size: 18px;
     margin-bottom: 1rem;
     font-family: var(--font-gilroy);
-    color: #49484D;
+    color: #49484d;
   }
 
   .leadership-slide .social-link {
@@ -286,7 +293,12 @@
   }
 
   .nav-btn {
-    background: linear-gradient(167.52deg, #0E091B -6.57%, #4A6F97 72.14%, #2F3B6A 94.53%);
+    background: linear-gradient(
+      167.52deg,
+      #0e091b -6.57%,
+      #4a6f97 72.14%,
+      #2f3b6a 94.53%
+    );
     color: white;
     border: none;
     border-radius: 50%;
@@ -320,9 +332,8 @@
   }
 
   .dot.active {
-    background: linear-gradient(90deg, #416AFC 0%, #5FB6FF 100%);
+    background: linear-gradient(90deg, #416afc 0%, #5fb6ff 100%);
     width: 30px;
     border-radius: 10px;
   }
 }
-

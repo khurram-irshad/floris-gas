@@ -17,7 +17,7 @@
 .how-it-works-subtitle {
   font-size: 16px;
   font-weight: 500;
-  color: #49484D;
+  color: #49484d;
   margin: 0 0 0.5rem 0;
   font-family: var(--font-gilroy);
 }
@@ -25,7 +25,7 @@
 .how-it-works-title {
   font-size: 36px;
   font-weight: 600;
-  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background: linear-gradient(90deg, #4168fc 0%, #72c0fe 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -36,7 +36,7 @@
 
 .how-it-works-description {
   font-size: 20px;
-  color: #49484D;
+  color: #49484d;
   line-height: 100%;
   margin: 0;
   margin: 0 auto;
@@ -66,8 +66,8 @@
   border-radius: 16px 16px 0 0;
 }
 .process-step-item:last-child {
-    border-bottom: none;
-    border-radius: 0 0 16px 16px;
+  border-bottom: none;
+  border-radius: 0 0 16px 16px;
 }
 
 .step-icon-container {
@@ -76,7 +76,6 @@
   margin-bottom: 24px;
 }
 
-
 .step-content {
   text-align: center;
 }
@@ -84,7 +83,7 @@
 .step-number {
   font-size: 18px;
   font-weight: 600;
-  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background: linear-gradient(90deg, #4168fc 0%, #72c0fe 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -96,7 +95,7 @@
 .step-title {
   font-size: 24px;
   font-weight: 600;
-  color: #49484D;
+  color: #49484d;
   margin-bottom: 12px;
   line-height: 100%;
   text-align: left;
@@ -105,7 +104,7 @@
 
 .step-description {
   font-size: 16px;
-  color: #49484D;
+  color: #49484d;
   line-height: 100%;
   margin: 0;
   text-align: left;
@@ -119,7 +118,7 @@
 
 .process-note {
   font-size: 16px;
-  color: #49484D;
+  color: #49484d;
   line-height: 1.6;
   margin: 0;
   margin: 0 auto;
@@ -131,7 +130,7 @@
 }
 
 .how-it-works-button {
-  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background: linear-gradient(90deg, #4168fc 0%, #72c0fe 100%);
   color: white;
   border: none;
   padding: 0.5rem 1rem;
@@ -144,13 +143,12 @@
   font-family: var(--font-gilroy);
 }
 
-
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
   .how-it-works-title {
     font-size: 32px;
   }
-  
+
   .process-steps-grid {
     gap: 1.5rem;
   }
@@ -164,26 +162,26 @@
     margin-bottom: 0.5rem;
     font-weight: 600;
   }
-  
+
   .how-it-works-container {
     padding: 0 0.75rem;
   }
-  
+
   .how-it-works-header {
     margin-bottom: 2.5rem;
   }
-  
+
   .how-it-works-title {
     font-size: 24px;
     font-family: var(--font-gilroy);
     font-weight: 600;
-    margin: 0 0 .5rem;
+    margin: 0 0 0.5rem;
   }
-  
+
   .how-it-works-description {
     font-size: 16px;
     font-family: var(--font-gilroy);
-    color: #49484D;
+    color: #49484d;
     br {
       display: none;
     }
@@ -191,7 +189,7 @@
   .step-number {
     font-size: 18px;
     font-weight: 600;
-    background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+    background: linear-gradient(90deg, #4168fc 0%, #72c0fe 100%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -204,42 +202,41 @@
     display: flex;
     margin-bottom: 12px;
   }
-  
+
   .process-steps-grid {
     grid-template-columns: 1fr;
     margin-bottom: 2rem;
     gap: 0rem;
   }
-  
-  
+
   .process-step-item {
     padding: 1rem;
   }
-  
+
   .process-step-item:first-child {
     border-radius: 16px 16px 0 0;
   }
-  
+
   .process-step-item:last-child {
     border-bottom: none;
     border-radius: 0 0 16px 16px;
   }
-  
+
   .step-title {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 8px;
   }
-  
+
   .step-description {
     font-size: 14px;
   }
-  
+
   .process-note {
     font-size: 16px;
     text-align: center;
   }
-  
+
   .how-it-works-button {
     width: 100%;
     padding: 0.875rem 1.5rem;

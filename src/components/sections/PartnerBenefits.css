@@ -22,7 +22,7 @@
 .partner-benefits-title {
   font-size: 36px;
   font-weight: 600;
-  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background: linear-gradient(90deg, #4168fc 0%, #72c0fe 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -32,7 +32,7 @@
 
 .partner-benefits-description {
   font-size: 20px;
-  color: #49484D;
+  color: #49484d;
   line-height: 100%;
   margin: 1rem 0 2rem 0;
   font-family: var(--font-gilroy);
@@ -56,18 +56,19 @@
 }
 
 .checkmark-icon {
-  filter: brightness(0) saturate(100%) invert(45%) sepia(84%) saturate(2676%) hue-rotate(130deg) brightness(119%) contrast(119%);
+  filter: brightness(0) saturate(100%) invert(45%) sepia(84%) saturate(2676%)
+    hue-rotate(130deg) brightness(119%) contrast(119%);
 }
 
 .benefit-text {
   font-size: 18px;
-  color: #49484D;
+  color: #49484d;
   line-height: 100%;
   font-family: var(--font-gilroy);
 }
 
 .partner-benefits-button {
-  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background: linear-gradient(90deg, #4168fc 0%, #72c0fe 100%);
   color: white;
   border: none;
   padding: 1rem 2rem;
@@ -133,31 +134,31 @@
   flex-shrink: 0;
 }
 
-
 .stat-overlay.satisfaction .stat-icon-img {
-  margin:0.7rem;
-  filter: brightness(0) saturate(100%) invert(22%) sepia(100%) saturate(3441%) hue-rotate(90deg) brightness(96%) contrast(101%);
+  margin: 0.7rem;
+  filter: brightness(0) saturate(100%) invert(22%) sepia(100%) saturate(3441%)
+    hue-rotate(90deg) brightness(96%) contrast(101%);
 }
 
 .stat-overlay.conversion .stat-icon-img {
-    margin:0.7rem;
-    filter: brightness(0) saturate(100%) invert(14%) sepia(95%) saturate(7482%) hue-rotate(240deg) brightness(96%) contrast(106%);
+  margin: 0.7rem;
+  filter: brightness(0) saturate(100%) invert(14%) sepia(95%) saturate(7482%)
+    hue-rotate(240deg) brightness(96%) contrast(106%);
 }
 
 .stat-icon.conversion {
-    width: 48px;
-    height: 48px;
-    background-color: #dae7ff;
-    border-radius: 16px;
-    border: 1px solid #6a9cfd;
+  width: 48px;
+  height: 48px;
+  background-color: #dae7ff;
+  border-radius: 16px;
+  border: 1px solid #6a9cfd;
 }
 .stat-icon.satisfaction {
-    width: 48px;
-    height: 48px;
-    background-color: #e8ffd7;
-    border-radius: 16px;
-    border: 1px solid #378300;
-    
+  width: 48px;
+  height: 48px;
+  background-color: #e8ffd7;
+  border-radius: 16px;
+  border: 1px solid #378300;
 }
 
 .stat-content {
@@ -168,49 +169,48 @@
 .stat-number-sell-propane {
   font-size: 16px;
   font-weight: 600;
-  color: #49484D;
+  color: #49484d;
   line-height: 1.2;
   font-family: var(--font-gilroy);
 }
 
 .stat-label {
   font-size: 14px;
-  color: #49484D;
+  color: #49484d;
   line-height: 1.2;
   font-family: var(--font-gilroy);
 }
-
 
 @media screen and (max-width: 768px) {
   .partner-benefits-section {
     padding: 3rem 0;
   }
-  
+
   .partner-benefits-container {
     padding: 0 0.75rem;
   }
-  
+
   .partner-benefits-content {
     flex-direction: column;
     gap: 4rem;
   }
-  
+
   .partner-benefits-title {
     font-size: 24px;
     font-family: var(--font-gilroy);
     font-weight: 600;
   }
-  
+
   .partner-benefits-description {
     font-size: 16px;
     font-family: var(--font-gilroy);
-    color: #49484D;
+    color: #49484d;
   }
-  
+
   .benefit-text {
     font-size: 14px;
     font-family: var(--font-gilroy);
-    color: #49484D;
+    color: #49484d;
   }
   .partner-benefits-right {
     flex: 1;
@@ -219,37 +219,36 @@
   .stat-number-sell-propane {
     font-size: 12px;
     font-weight: 600;
-    color: #49484D;
+    color: #49484d;
     line-height: 1.2;
   }
   .stat-label {
     font-size: 11px;
-    color: #49484D;
+    color: #49484d;
     line-height: 1.2;
     font-family: var(--font-gilroy);
   }
-  
+
   .partner-image-container {
     height: 350px;
   }
-  
+
   .stat-overlay {
     padding: 0.75rem;
   }
-  
+
   .stat-overlay.satisfaction {
     top: 19rem;
     right: 15px;
   }
-  
+
   .stat-overlay.conversion {
     bottom: 19rem;
     left: 15px;
   }
-  
+
   .partner-benefits-button {
     width: 100%;
     max-width: 220px;
   }
 }
-

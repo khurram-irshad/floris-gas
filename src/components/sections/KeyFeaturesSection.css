@@ -15,7 +15,7 @@
 
 .key-features-subtitle {
   font-size: 16px;
-  color: #49484D;
+  color: #49484d;
   margin: 0 0 1rem 0;
   line-height: 100%;
   font-family: var(--font-gilroy);
@@ -24,7 +24,7 @@
 
 .key-features-title {
   font-size: 36px;
-  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background: linear-gradient(90deg, #4168fc 0%, #72c0fe 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -37,7 +37,7 @@
 
 .key-features-description {
   font-size: 20px;
-  color: #49484D;
+  color: #49484d;
   line-height: 100%;
   margin: 0;
   max-width: 50%;
@@ -60,7 +60,8 @@
 
 .key-feature-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .key-feature-icon {
@@ -78,7 +79,7 @@
 .key-feature-title {
   font-size: 20px;
   font-weight: 600;
-  color: #49484D;
+  color: #49484d;
   margin: 0 0 1rem 0;
   line-height: 100%;
   width: 60%;
@@ -87,7 +88,7 @@
 
 .key-feature-description {
   font-size: 16px;
-  color: #49484D;
+  color: #49484d;
   line-height: 100%;
   margin: 0;
   width: 60%;
@@ -113,52 +114,49 @@
 }
 
 .key-features-button.primary {
-  background: linear-gradient(90deg, #4067FC 0%, #60B8FF 100%);
+  background: linear-gradient(90deg, #4067fc 0%, #60b8ff 100%);
   color: #ffffff;
 }
-
 
 .key-features-button.secondary {
   background: #eef2f6;
   color: #262525;
 }
 
-
-
 @media screen and (max-width: 768px) {
   .key-features-section {
     padding: 3rem 0;
   }
-  
+
   .key-features-container {
     padding: 0 0.75rem;
   }
-  
+
   .key-features-header {
     margin-bottom: 3rem;
   }
-  
+
   .key-features-title {
     font-size: 24px;
     max-width: 100%;
   }
-  
+
   .key-features-description {
     font-size: 16px;
     max-width: 100%;
-    color: #49484D;
+    color: #49484d;
   }
-  
+
   .key-features-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     margin-bottom: 2rem;
   }
-  
+
   .key-feature-card {
     padding: 1rem;
   }
-  
+
   .key-features-buttons {
     flex-direction: column;
   }
@@ -171,7 +169,7 @@
   .key-feature-title {
     font-size: 20px;
     font-weight: 600;
-    color: #49484D;
+    color: #49484d;
     margin: 0 0 1rem 0;
     line-height: 100%;
     width: 100%;
@@ -179,11 +177,10 @@
   }
   .key-feature-description {
     font-size: 16px;
-    color: #49484D;
+    color: #49484d;
     line-height: 100%;
     margin: 0;
     width: 100%;
     font-family: var(--font-gilroy);
   }
 }
-

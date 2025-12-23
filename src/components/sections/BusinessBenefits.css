@@ -16,7 +16,7 @@
 .business-benefits-subtitle {
   font-size: 16px;
   font-weight: 500;
-  color: #49484D;
+  color: #49484d;
   letter-spacing: 0.5px;
   margin: 0 0 1rem 0;
   font-family: var(--font-gilroy);
@@ -26,7 +26,7 @@
 .business-benefits-title {
   font-size: 36px;
   font-weight: 600;
-  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background: linear-gradient(90deg, #4168fc 0%, #72c0fe 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -38,7 +38,7 @@
 
 .business-benefits-description {
   font-size: 20px;
-  color: #49484D;
+  color: #49484d;
   line-height: 1.6;
   margin: 0;
   max-width: 600px;
@@ -59,13 +59,13 @@
   border-radius: 12px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
-  border: 1px solid #E3E6EA;
+  border: 1px solid #e3e6ea;
 }
 .benefit-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
-
 
 .benefit-icon-container {
   border-radius: 12px;
@@ -80,7 +80,7 @@
 .benefit-title {
   font-size: 24px;
   font-weight: 700;
-  color: #49484D;
+  color: #49484d;
   margin: 0 0 1rem 0;
   line-height: 100%;
   font-family: var(--font-gilroy);
@@ -88,7 +88,7 @@
 
 .benefit-description {
   font-size: 16px;
-  color: #49484D;
+  color: #49484d;
   line-height: 100%;
   margin: 0 0 1rem 0;
   font-family: var(--font-gilroy);
@@ -97,9 +97,9 @@
 .benefit-highlight {
   font-size: 14px;
   font-weight: 600;
-  color: #49484D;
+  color: #49484d;
   background-color: #ffffff;
-  border: 1px solid #E3E6EA;
+  border: 1px solid #e3e6ea;
   border-radius: 24px;
   padding: 10px;
   font-family: var(--font-gilroy);
@@ -130,7 +130,7 @@
 }
 
 .business-benefits-button.blue {
-  background: linear-gradient(90deg, #4068FC 0%, #60B8FF 100%);
+  background: linear-gradient(90deg, #4068fc 0%, #60b8ff 100%);
   color: white;
 }
 
@@ -162,7 +162,7 @@
   .business-benefits-title {
     font-size: 32px;
   }
-  
+
   .business-benefits-grid {
     gap: 1.5rem;
   }
@@ -172,18 +172,18 @@
   .business-benefits-section {
     padding: 3rem 0;
   }
-  
+
   .business-benefits-container {
     padding: 0 0.75rem;
   }
-  
+
   .business-benefits-header {
     margin-bottom: 2.5rem;
     text-align: left;
   }
   .business-benefits-subtitle {
     margin: 0 0 0 0;
-    color: #49484D;
+    color: #49484d;
     font-family: var(--font-gilroy);
   }
   .business-benefits-title {
@@ -192,32 +192,32 @@
     font-family: var(--font-gilroy);
     font-weight: 600;
   }
-  
+
   .business-benefits-description {
     font-size: 16px;
-    color: #49484D;
+    color: #49484d;
     font-family: var(--font-gilroy);
   }
   .benefit-description {
-    color: #49484D;
+    color: #49484d;
     font-family: var(--font-gilroy);
     padding-bottom: 12px;
   }
-  
+
   .business-benefits-grid {
-   grid-template-columns: none;
+    grid-template-columns: none;
     gap: 1.5rem;
   }
-  
+
   .benefit-card {
     padding: 1rem;
   }
-  
+
   .business-benefits-actions {
     flex-direction: column;
     gap: 0.75rem;
   }
-  
+
   .business-benefits-button,
   .business-benefits-learn-more {
     width: 100%;
@@ -226,13 +226,12 @@
   .benefit-highlight {
     font-size: 14px;
     font-weight: 600;
-    color: #49484D;
+    color: #49484d;
     background-color: #ffffff;
-    border: 1px solid #E3E6EA;
+    border: 1px solid #e3e6ea;
     border-radius: 24px;
     padding: 10px;
     font-family: var(--font-gilroy);
     width: fit-content;
   }
 }
-

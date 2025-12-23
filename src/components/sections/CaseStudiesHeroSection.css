@@ -23,7 +23,6 @@
   height: 628px !important;
 }
 
-
 .case-studies-hero-container {
   position: relative;
   z-index: 3;
@@ -42,7 +41,7 @@
   font-size: 36px;
   font-weight: 600;
   line-height: 100%;
-  color: #49484D;
+  color: #49484d;
   font-family: var(--font-gilroy);
 }
 
@@ -54,7 +53,7 @@
   font-size: 20px;
   line-height: 100%;
   margin: 1rem 0 1.5rem 0;
-  color: #49484D;
+  color: #49484d;
   margin-left: auto;
   margin-right: auto;
   font-family: var(--font-gilroy);
@@ -87,7 +86,7 @@
 }
 
 .case-studies-hero-button.primary {
-  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background: linear-gradient(90deg, #4168fc 0%, #72c0fe 100%);
   color: white;
 }
 
@@ -122,11 +121,11 @@
     font-family: var(--font-gilroy);
     font-weight: 600;
   }
-  
+
   .case-studies-hero-description {
     font-size: 17px;
     font-family: var(--font-gilroy);
-    color: #49484D;
+    color: #49484d;
   }
 }
 
@@ -142,32 +141,32 @@
   .case-studies-hero-container {
     padding: 0 0 200px 0;
   }
-  
+
   .case-studies-hero-title {
     font-size: 24px;
     font-family: var(--font-gilroy);
     font-weight: 600;
   }
-    .case-studies-hero-button.primary {
-      padding: 12px 16px;
-      border-radius: 14px;
-    }
-  
+  .case-studies-hero-button.primary {
+    padding: 12px 16px;
+    border-radius: 14px;
+  }
+
   .case-studies-hero-description {
     font-size: 16px;
-    color: #49484D;
+    color: #49484d;
     font-family: var(--font-gilroy);
   }
-  
+
   .case-studies-hero-description br {
     display: none;
   }
-  
+
   .case-studies-hero-buttons {
     flex-direction: column;
     gap: 0.75rem;
   }
-  
+
   .case-studies-hero-button {
     width: 100%;
     justify-content: center;

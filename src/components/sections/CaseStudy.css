@@ -48,12 +48,12 @@
 .case-study-label {
   font-size: 16px;
   font-weight: 500;
-  color: #49484D;
+  color: #49484d;
   letter-spacing: 0.5px;
   margin-bottom: 1rem;
   border-radius: 24px;
   background-color: #ffffff;
-  border: 1px solid #E3E6EA;
+  border: 1px solid #e3e6ea;
   padding: 10px;
   width: fit-content;
   font-family: var(--font-gilroy);
@@ -62,7 +62,7 @@
 .case-study-title {
   font-size: 36px;
   font-weight: 600;
-  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background: linear-gradient(90deg, #4168fc 0%, #72c0fe 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -73,7 +73,7 @@
 
 .case-study-subtitle {
   font-size: 20px;
-  color: #49484D;
+  color: #49484d;
   line-height: 1.6;
   margin: 0 0 2.5rem 0;
   font-family: var(--font-gilroy);
@@ -86,7 +86,6 @@
   margin-bottom: 2.5rem;
 }
 
-
 .case-study-item.challenge {
   display: flex;
   flex-direction: column;
@@ -94,10 +93,10 @@
   align-items: flex-start;
   border-radius: 8px;
   background-color: #ffffff;
-  border: 1px solid #E3E6EA;
+  border: 1px solid #e3e6ea;
   padding: 16px;
   height: auto;
-  border-left: 4px solid #F17D3A;
+  border-left: 4px solid #f17d3a;
 }
 .case-study-item.solution {
   display: flex;
@@ -106,7 +105,7 @@
   align-items: flex-start;
   border-radius: 8px;
   background-color: #ffffff;
-  border: 1px solid #E3E6EA;
+  border: 1px solid #e3e6ea;
   padding: 16px;
   height: auto;
   border-left: 4px solid #5b8be5;
@@ -118,7 +117,7 @@
   align-items: flex-start;
   border-radius: 8px;
   background-color: #ffffff;
-  border: 1px solid #E3E6EA;
+  border: 1px solid #e3e6ea;
   padding: 16px;
   height: auto;
   border-left: 4px solid #06bc55;
@@ -141,37 +140,35 @@
   flex-shrink: 0;
 }
 
-
 .case-study-item-content {
   flex: 1;
   width: 100%;
 }
 
-
 .case-study-item-title.challenge {
   font-size: 18px;
   font-weight: 600;
-  color: #F17D3A;
+  color: #f17d3a;
   font-family: var(--font-gilroy);
 }
 
 .case-study-item-title.solution {
   font-size: 18px;
   font-weight: 600;
-  color: #5C8BE5;
+  color: #5c8be5;
   font-family: var(--font-gilroy);
 }
 
 .case-study-item-title.result {
   font-size: 18px;
   font-weight: 600;
-  color: #05BC55;
+  color: #05bc55;
   font-family: var(--font-gilroy);
 }
 
 .case-study-item-text {
   font-size: 16px;
-  color: #49484D;
+  color: #49484d;
   line-height: 100%;
   margin: 0;
   font-family: var(--font-gilroy);
@@ -184,7 +181,7 @@
 }
 
 .result-stat.cost {
-  background: #EAFBF2;
+  background: #eafbf2;
   padding: 12px 8px;
   border-radius: 8px;
   text-align: center;
@@ -193,7 +190,7 @@
   width: 100%;
 }
 .result-stat.uptime {
-  background: #EAF1FF;
+  background: #eaf1ff;
   padding: 12px 8px;
   border-radius: 8px;
   text-align: center;
@@ -202,7 +199,7 @@
   width: 100%;
 }
 .result-stat.locations {
-  background: #F1E9FF;
+  background: #f1e9ff;
   padding: 12px 8px;
   border-radius: 8px;
   text-align: center;
@@ -230,10 +227,9 @@
   font-family: var(--font-gilroy);
 }
 
-
 .stat-label {
   font-size: 14px;
-  color: #49484D;
+  color: #49484d;
   font-weight: 500;
   font-family: var(--font-gilroy);
 }
@@ -247,7 +243,7 @@
 
 .testimonial-text {
   font-size: 18px;
-  color: #49484D;
+  color: #49484d;
   line-height: 1.6;
   margin: 0 0 1rem 0;
   font-style: italic;
@@ -272,13 +268,13 @@
 .author-name {
   font-size: 16px;
   font-weight: 600;
-  color: #49484D;
+  color: #49484d;
   font-family: var(--font-gilroy);
 }
 
 .author-title {
   font-size: 14px;
-  color: #49484D;
+  color: #49484d;
   font-family: var(--font-gilroy);
 }
 
@@ -305,7 +301,7 @@
 }
 
 .case-study-button.blue {
-  background: linear-gradient(90deg, #4068FC 0%, #60B8FF 100%);
+  background: linear-gradient(90deg, #4068fc 0%, #60b8ff 100%);
   color: white;
 }
 
@@ -314,17 +310,15 @@
   box-shadow: 0 4px 12px rgba(64, 104, 252, 0.3);
 }
 
-
-
 @media screen and (max-width: 768px) {
   .case-study-section {
     padding: 3rem 0;
   }
-  
+
   .case-study-container {
     padding: 0 0.75rem;
   }
-  
+
   .case-study-content {
     flex-direction: column-reverse;
     gap: 2rem;
@@ -333,24 +327,23 @@
     width: 100%;
     max-width: 100%;
   }
-  
+
   .case-study-right {
     padding: 1rem;
   }
-  
+
   .case-study-image-container {
     height: 400px;
   }
-  
+
   .case-study-title {
     font-size: 28px;
     font-family: var(--font-gilroy);
     font-weight: 600;
   }
-  
+
   .case-study-results {
     justify-content: center;
     flex-wrap: wrap;
   }
 }
-

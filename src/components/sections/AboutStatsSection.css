@@ -1,5 +1,5 @@
 .about-stats-section {
-  background-color: #F8F8FA;
+  background-color: #f8f8fa;
   padding: 30px 0;
 }
 
@@ -28,10 +28,10 @@
 .about-stat-number {
   font-size: 40px;
   font-weight: 600;
-  color: #49484D;
+  color: #49484d;
   line-height: 1;
   margin-bottom: 4px;
-  font-family: 'Gilroy-Bold', sans-serif;
+  font-family: "Gilroy-Bold", sans-serif;
 }
 
 .about-stat-label {
@@ -47,15 +47,15 @@
   .about-stats-section {
     padding: 50px 0;
   }
-  
+
   .about-stats-grid {
     gap: 30px;
   }
-  
+
   .about-stat-number {
     font-size: 42px;
   }
-  
+
   .about-stat-label {
     font-size: 15px;
   }
@@ -65,21 +65,21 @@
   .about-stats-section {
     padding: 40px 0;
   }
-  
+
   .about-stats-container {
     padding: 0 16px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+
   .about-stats-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
     row-gap: 40px;
     width: 100%;
   }
-  
+
   .about-stat-item {
     text-align: center;
     display: flex;
@@ -91,11 +91,11 @@
     justify-content: center;
     padding-bottom: 20px;
   }
-  
+
   .about-stat-number {
     font-size: 36px;
   }
-  
+
   .about-stat-label {
     font-size: 14px;
   }
@@ -106,7 +106,7 @@
     grid-template-columns: 1fr;
     gap: 24px;
   }
-  
+
   .about-stat-item {
     justify-content: center;
   }

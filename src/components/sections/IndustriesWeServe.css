@@ -16,7 +16,7 @@
 .industries-subtitle {
   font-size: 16px;
   font-weight: 500;
-  color: #49484D;
+  color: #49484d;
   margin: 0 0 1rem 0;
   font-family: var(--font-gilroy);
 }
@@ -24,7 +24,7 @@
 .industries-title {
   font-size: 36px;
   font-weight: 600;
-  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background: linear-gradient(90deg, #4168fc 0%, #72c0fe 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -73,11 +73,10 @@
   transform: scale(1.05);
 }
 
-
 .industry-category {
   font-size: 16px;
   font-weight: 600;
-  background: linear-gradient(90deg, #416AFC 0%, #5DB2FE 100%);
+  background: linear-gradient(90deg, #416afc 0%, #5db2fe 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -91,7 +90,7 @@
 .industry-description {
   font-size: 20px;
   font-weight: 600;
-  color: #49484D;
+  color: #49484d;
   line-height: 100%;
   margin: 0 0 1.5rem 0;
   font-family: var(--font-gilroy);
@@ -112,12 +111,13 @@
 
 .feature-checkmark {
   flex-shrink: 0;
-  filter: brightness(0) saturate(100%) invert(47%) sepia(89%) saturate(2618%) hue-rotate(130deg) brightness(95%) contrast(101%);
+  filter: brightness(0) saturate(100%) invert(47%) sepia(89%) saturate(2618%)
+    hue-rotate(130deg) brightness(95%) contrast(101%);
 }
 
 .feature-text {
   font-size: 16px;
-  color: #49484D;
+  color: #49484d;
   font-weight: 400;
   font-family: var(--font-gilroy);
 }
@@ -141,7 +141,7 @@
 }
 
 .industry-view-more-btn.blue {
-  background: linear-gradient(90deg, #4068FC 0%, #60B8FF 100%);
+  background: linear-gradient(90deg, #4068fc 0%, #60b8ff 100%);
   color: white;
 }
 
@@ -155,7 +155,7 @@
   .industries-title {
     font-size: 32px;
   }
-  
+
   .industries-grid {
     gap: 1.5rem;
   }
@@ -165,39 +165,38 @@
   .industries-section {
     padding: 3rem 0;
   }
-  .industries-subtitle{
+  .industries-subtitle {
     margin-bottom: 0rem;
   }
   .industry-description {
     font-size: 18px;
     font-weight: 600;
-    color: #49484D;
+    color: #49484d;
     line-height: 100%;
     margin: 0 0 1.5rem 0;
     font-family: var(--font-gilroy);
   }
-  
+
   .industries-container {
     padding: 0 0.75rem;
   }
-  
+
   .industries-header {
     margin-bottom: 2.5rem;
   }
-  
+
   .industries-title {
     font-size: 24px;
     font-family: var(--font-gilroy);
     font-weight: 600;
   }
-  
+
   .industries-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .industry-image-container {
     height: 240px;
   }
-  
 }

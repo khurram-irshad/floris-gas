@@ -2,7 +2,7 @@
 .our-values-section {
   padding: 5rem 0;
   background: #f8f9fa;
-  background-color: #F4F7FA;;
+  background-color: #f4f7fa;
 }
 
 .our-values-container {
@@ -21,7 +21,7 @@
   font-weight: 600;
   color: #1f2937;
   margin-bottom: 16px;
-  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background: linear-gradient(90deg, #4168fc 0%, #72c0fe 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -31,7 +31,7 @@
 
 .our-values-description {
   font-size: 18px;
-  color: #49484D;
+  color: #49484d;
   line-height: 100%;
   margin: 0;
   font-family: var(--font-gilroy);
@@ -40,7 +40,7 @@
 
 /* Content Wrapper with Background */
 .values-content-wrapper {
-  background-color: #F4F7FA;
+  background-color: #f4f7fa;
   padding: 1rem 0;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
@@ -125,7 +125,7 @@
 .value-title {
   font-size: 24px;
   font-weight: 600;
-  color: #49484D;
+  color: #49484d;
   margin-bottom: 8px;
   margin-top: 0;
   text-align: right;
@@ -133,19 +133,19 @@
   line-height: 100%;
 }
 .value-title-right {
-    font-size: 24px;
-    font-weight: 600;
-    color: #49484D;
-    margin-bottom: 8px;
-    margin-top: 0;
-    text-align: left;
-    font-family: var(--font-gilroy);
-    line-height: 100%;
-  }
+  font-size: 24px;
+  font-weight: 600;
+  color: #49484d;
+  margin-bottom: 8px;
+  margin-top: 0;
+  text-align: left;
+  font-family: var(--font-gilroy);
+  line-height: 100%;
+}
 
 .value-description {
   font-size: 16px;
-  color: #49484D;
+  color: #49484d;
   line-height: 100%;
   margin: 0;
   font-family: var(--font-gilroy);
@@ -154,7 +154,7 @@
 .value-icon {
   width: 48px;
   height: 48px;
-  background: #2F3B6A;
+  background: #2f3b6a;
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -163,7 +163,6 @@
   transition: all 0.3s ease;
 }
 
-
 /* Responsive Design */
 @media (max-width: 1024px) {
   .our-values-grid {
@@ -171,15 +170,14 @@
     gap: 2rem;
     text-align: center;
   }
-  
-  .values-left-section
-  {
+
+  .values-left-section {
     align-items: center;
   }
-  .values-right-section  {
+  .values-right-section {
     align-items: center;
   }
-  
+
   .values-left-section .value-item,
   .values-right-section .value-item {
     flex-direction: row;
@@ -187,7 +185,7 @@
     justify-content: center;
     max-width: 400px;
   }
-  
+
   .values-main-image {
     width: 300px;
     height: 300px;
@@ -210,61 +208,61 @@
   .values-right-section {
     align-items: flex-start !important;
   }
-  .values-right-section .value-item{
+  .values-right-section .value-item {
     flex-direction: row !important;
   }
-  
+
   .our-values-container {
     padding: 0 1rem;
   }
-  
+
   .our-values-header {
     margin-bottom: 3rem;
   }
-  
+
   .our-values-title {
     font-size: 24px;
     font-family: var(--font-gilroy);
     font-weight: 600;
   }
-  
+
   .our-values-description {
     font-size: 16px;
     font-family: var(--font-gilroy);
-    color: #49484D;
+    color: #49484d;
     max-width: 100%;
   }
-  
-   .values-content-wrapper .our-values-grid {
+
+  .values-content-wrapper .our-values-grid {
     gap: 2rem;
     padding: 0 !important;
   }
-  
+
   .values-left-section,
   .values-right-section {
     gap: 1.5rem;
   }
-  
+
   .value-item {
     gap: 1rem;
   }
-  
+
   .values-main-image {
     width: 100%;
     height: 250px;
   }
-  
+
   .value-title {
     font-size: 24px;
     text-align: left;
     font-family: var(--font-gilroy);
     font-weight: 600;
-    color: #49484D;
+    color: #49484d;
   }
-  
+
   .value-description {
     font-size: 16px;
     font-family: var(--font-gilroy);
-    color: #49484D;
+    color: #49484d;
   }
 }

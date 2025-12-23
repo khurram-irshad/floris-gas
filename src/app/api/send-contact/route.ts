@@ -1,62 +1,66 @@
-import { NextRequest, NextResponse } from 'next/server';
-import nodemailer from 'nodemailer';
+import { NextRequest, NextResponse } from "next/server"
+import nodemailer from "nodemailer"
 
 export async function POST(request: NextRequest) {
   try {
-    const { fullName, email, phoneNumber, service, message } = await request.json();
+    const { fullName, email, phoneNumber, service, message } =
+      await request.json()
 
     // Validate required fields
     if (!fullName || !email || !phoneNumber || !service || !message) {
       return NextResponse.json(
-        { error: 'All fields are required' },
+        { error: "All fields are required" },
         { status: 400 }
-      );
+      )
     }
 
     // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     if (!emailRegex.test(email)) {
       return NextResponse.json(
-        { error: 'Invalid email format' },
+        { error: "Invalid email format" },
         { status: 400 }
-      );
+      )
     }
 
-
     // Try multiple environment variable naming conventions
-    const emailUser = process.env.EMAIL_USER || process.env.NEXT_PUBLIC_EMAIL_USER;
-    const emailPass = process.env.EMAIL_PASS || process.env.NEXT_PUBLIC_EMAIL_PASS;
+    const emailUser =
+      process.env.EMAIL_USER || process.env.NEXT_PUBLIC_EMAIL_USER
+    const emailPass =
+      process.env.EMAIL_PASS || process.env.NEXT_PUBLIC_EMAIL_PASS
 
     // Check if environment variables exist
     if (!emailUser || !emailPass) {
       return NextResponse.json(
-        { 
-          error: 'Email service not configured. Please contact administrator.',
+        {
+          error: "Email service not configured. Please contact administrator.",
           debug: {
             emailUserExists: !!emailUser,
             emailPassExists: !!emailPass,
             allEnvKeys: Object.keys(process.env),
-            emailRelatedKeys: Object.keys(process.env).filter(key => key.toLowerCase().includes('email'))
-          }
+            emailRelatedKeys: Object.keys(process.env).filter((key) =>
+              key.toLowerCase().includes("email")
+            ),
+          },
         },
         { status: 500 }
-      );
+      )
     }
 
     // Create transporter using Gmail SMTP
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      service: "gmail",
       auth: {
         user: emailUser, // Your Gmail address
         pass: emailPass, // Your Gmail app password
       },
-    });
+    })
 
     // Email content
     const mailOptions = {
       from: emailUser,
-      to: 'info@florigas.us',
-      subject: 'New Contact Form Submission from FlorisGAS Website',
+      to: "info@florigas.us",
+      subject: "New Contact Form Submission from FlorisGAS Website",
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <h2 style="color: #4168FC; border-bottom: 2px solid #4168FC; padding-bottom: 10px;">
@@ -121,32 +125,30 @@ Submitted: ${new Date().toLocaleString()}
 
 This contact form was submitted through the FlorisGAS website.
       `,
-    };
+    }
 
     // Send email
-    await transporter.sendMail(mailOptions);
+    await transporter.sendMail(mailOptions)
 
     return NextResponse.json(
-      { message: 'Contact form submitted successfully!' },
+      { message: "Contact form submitted successfully!" },
       { status: 200 }
-    );
-
+    )
   } catch (error) {
-    console.error('Email sending error:', error);
-    
+    console.error("Email sending error:", error)
+
     // More detailed error logging
     if (error instanceof Error) {
-      console.error('Error message:', error.message);
-      console.error('Error stack:', error.stack);
+      console.error("Error message:", error.message)
+      console.error("Error stack:", error.stack)
     }
-    
-    
+
     return NextResponse.json(
-      { 
-        error: 'Failed to send contact form. Please try again.',
-        details: error instanceof Error ? error.message : 'Unknown error'
+      {
+        error: "Failed to send contact form. Please try again.",
+        details: error instanceof Error ? error.message : "Unknown error",
       },
       { status: 500 }
-    );
+    )
   }
 }

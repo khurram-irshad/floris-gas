@@ -11,8 +11,7 @@ export function generateViewport(): Viewport {
 
 export async function generateMetadata(): Promise<Metadata> {
   const metadata: Metadata = {
-    title:
-      "Contact FloriGas | Get in Touch - Propane Service in Florida",
+    title: "Contact FloriGas | Get in Touch - Propane Service in Florida",
     description:
       "Contact FloriGas for all your propane needs. Get in touch with our team for quotes, service inquiries, or questions about our residential and commercial propane services in Florida. We're here to help!",
 
@@ -26,8 +25,7 @@ export async function generateMetadata(): Promise<Metadata> {
           alt: "Contact FloriGas",
         },
       ],
-      title:
-        "Contact FloriGas | Get in Touch - Propane Service in Florida",
+      title: "Contact FloriGas | Get in Touch - Propane Service in Florida",
       description:
         "Contact FloriGas for all your propane needs. Get in touch with our team for quotes, service inquiries, or questions about our residential and commercial propane services in Florida. We're here to help!",
       type: "website",
@@ -46,8 +44,7 @@ export async function generateMetadata(): Promise<Metadata> {
           alt: "Contact FloriGas",
         },
       ],
-      title:
-        "Contact FloriGas | Get in Touch - Propane Service in Florida",
+      title: "Contact FloriGas | Get in Touch - Propane Service in Florida",
       description:
         "Contact FloriGas for all your propane needs. Get in touch with our team for quotes, service inquiries, or questions about our residential and commercial propane services in Florida. We're here to help!",
       site: "@florigas",

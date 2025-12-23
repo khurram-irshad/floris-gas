@@ -83,7 +83,7 @@
   background: #e2e8f0;
   color: #1e293b;
 }
-.search-info{
+.search-info {
   flex: 1;
   min-width: 0;
 }
@@ -99,7 +99,7 @@
 .search-info p {
   margin: 0 0 4px 0;
   font-size: 16px;
-  color: #416AFC;
+  color: #416afc;
   font-weight: 500;
   width: 100%;
 }
@@ -120,11 +120,10 @@
   padding: 2px;
   transition: all 0.2s ease;
   width: 100%;
-
 }
 
 .header-search-container:focus-within {
-  border-color: #416AFC;
+  border-color: #416afc;
   box-shadow: 0 0 0 3px rgba(65, 106, 252, 0.1);
 }
 
@@ -193,7 +192,7 @@
 
 .pac-matched {
   font-weight: 600;
-  color: #416AFC;
+  color: #416afc;
 }
 
 .pac-item-query {
@@ -203,7 +202,7 @@
 }
 
 .header-search-btn {
-  background: linear-gradient(90deg, #416AFC 0%, #5DB2FE 100%);
+  background: linear-gradient(90deg, #416afc 0%, #5db2fe 100%);
   color: white;
   border: none;
   padding: 8px;
@@ -215,7 +214,6 @@
   justify-content: center;
   margin-right: 4px;
 }
-
 
 .header-clear-btn {
   color: #64748b;
@@ -268,7 +266,6 @@
   border: 1px solid #3b82f6;
 }
 
-
 .stations-list {
   flex: 1;
   min-height: 0;
@@ -296,14 +293,18 @@
   width: 50px;
   height: 50px;
   border: 4px solid #e2e8f0;
-  border-top: 4px solid #416AFC;
+  border-top: 4px solid #416afc;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .loading-text h3 {
@@ -387,8 +388,9 @@
   justify-content: center;
 }
 
-.retry-search-btn, .use-location-btn {
-  background: linear-gradient(90deg, #416AFC 0%, #5DB2FE 100%);
+.retry-search-btn,
+.use-location-btn {
+  background: linear-gradient(90deg, #416afc 0%, #5db2fe 100%);
   color: white;
   border: none;
   padding: 12px 24px;
@@ -400,7 +402,8 @@
   min-width: 140px;
 }
 
-.retry-search-btn:hover, .use-location-btn:hover {
+.retry-search-btn:hover,
+.use-location-btn:hover {
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(65, 106, 252, 0.3);
 }
@@ -471,7 +474,7 @@
 }
 
 .try-different-search {
-  background: linear-gradient(90deg, #416AFC 0%, #5DB2FE 100%);
+  background: linear-gradient(90deg, #416afc 0%, #5db2fe 100%);
   color: white;
   border: none;
   padding: 10px 20px;
@@ -497,7 +500,7 @@
 
 .station-card:hover {
   background: #f8fafc;
-  border-left: 4px solid #416AFC;
+  border-left: 4px solid #416afc;
 }
 
 .station-image {
@@ -578,7 +581,7 @@
 }
 
 .price-item.highlight {
-  background: linear-gradient(90deg, #416AFC 0%, #5DB2FE 100%);
+  background: linear-gradient(90deg, #416afc 0%, #5db2fe 100%);
   color: white;
 }
 
@@ -617,7 +620,7 @@
 
 .station-distance {
   font-size: 14px;
-  color: #416AFC;
+  color: #416afc;
   font-weight: 600;
   padding: 8px 12px;
   background: #eff6ff;
@@ -648,30 +651,30 @@
     flex-direction: column;
     height: auto;
   }
-  
+
   .results-sidebar {
     width: 100%;
     height: 60vh;
     border-right: none;
     border-bottom: 1px solid #e2e8f0;
   }
-  
+
   .results-map {
     height: 40vh;
   }
-  
+
   .search-header {
     padding: 16px;
   }
-  
+
   .station-card {
     padding: 16px;
   }
-  
+
   .station-image {
     height: 100px;
   }
-  
+
   .fuel-prices {
     grid-template-columns: 1fr;
     gap: 6px;
@@ -682,39 +685,39 @@
   .results-main {
     height: calc(100vh - 72px);
   }
-  
+
   .results-sidebar {
     height: 50vh;
   }
-  
+
   .results-map {
     height: 50vh;
   }
-  
+
   .search-header {
     padding: 12px;
   }
-  
+
   .search-info h2 {
     font-size: 16px;
   }
-  
+
   .search-info p {
     font-size: 14px;
   }
-  
+
   .station-card {
     padding: 12px;
   }
-  
+
   .station-image {
     height: 80px;
   }
-  
+
   .station-name {
     font-size: 15px;
   }
-  
+
   .station-address,
   .station-phone,
   .station-hours {
@@ -761,11 +764,11 @@
   .desktop-nav {
     display: none;
   }
-  
+
   .desktop-only {
     display: none !important;
   }
-  
+
   /* Show mobile header - Fixed position to always stay at top */
   .mobile-header-navigation {
     display: flex;
@@ -782,32 +785,32 @@
     height: 56px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   }
-  
+
   .mobile-back-btn {
     background: none;
     border: none;
     padding: 8px;
     cursor: pointer;
-    color: #416AFC;
+    color: #416afc;
     border-radius: 8px;
     transition: background-color 0.2s ease;
   }
-  
+
   .mobile-back-btn:hover {
     background: #f1f5f9;
   }
-  
+
   .mobile-title {
     font-size: 18px;
     font-weight: 600;
     color: #1e293b;
     margin: 0;
   }
-  
+
   .mobile-header-spacer {
     width: 40px; /* Same as back button to center title */
   }
-  
+
   /* Full-screen layout */
   .results-main {
     height: calc(100vh - 56px);
@@ -818,7 +821,7 @@
     bottom: 0;
     overflow: hidden;
   }
-  
+
   /* Full-screen map */
   .results-map {
     width: 100% !important;
@@ -830,12 +833,12 @@
     bottom: 0;
     overflow: hidden;
   }
-  
+
   .map-container {
     width: 100% !important;
     height: 100% !important;
   }
-  
+
   /* Mobile Bottom Sheet - Fixed position */
   .mobile-bottom-sheet {
     display: flex;
@@ -853,16 +856,16 @@
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     touch-action: pan-y;
   }
-  
+
   /* Show small peek when there are results but not expanded */
   .mobile-bottom-sheet.has-results:not(.expanded) {
     transform: translateY(calc(100% - 80px)); /* Show 80px peek */
   }
-  
+
   .mobile-bottom-sheet.expanded {
     transform: translateY(0); /* Fully visible when expanded */
   }
-  
+
   .bottom-sheet-handle {
     width: 40px;
     height: 4px;
@@ -871,28 +874,28 @@
     margin: 12px auto 8px;
     cursor: pointer;
   }
-  
+
   .bottom-sheet-header {
     padding: 8px 20px 16px;
     border-bottom: 1px solid #f1f5f9;
   }
-  
+
   .bottom-sheet-title h2 {
     font-size: 18px;
     font-weight: 600;
     color: #1e293b;
     margin: 0 0 4px 0;
   }
-  
+
   .mobile-radius-badge {
     font-size: 12px;
-    color: #416AFC;
+    color: #416afc;
     background: #eff6ff;
     padding: 4px 8px;
     border-radius: 12px;
     font-weight: 500;
   }
-  
+
   .bottom-sheet-content {
     flex: 1;
     overflow-y: auto;
@@ -900,7 +903,7 @@
     max-height: calc(70vh - 80px); /* Account for handle and header */
     -webkit-overflow-scrolling: touch;
   }
-  
+
   /* Mobile Loading/Error States */
   .mobile-loading,
   .mobile-error,
@@ -912,7 +915,7 @@
     padding: 40px 20px;
     text-align: center;
   }
-  
+
   .mobile-loading h3,
   .mobile-error h3,
   .mobile-no-results h3 {
@@ -921,7 +924,7 @@
     color: #1e293b;
     margin: 16px 0 8px 0;
   }
-  
+
   .mobile-loading p,
   .mobile-error p,
   .mobile-no-results p {
@@ -929,12 +932,12 @@
     color: #64748b;
     margin: 0;
   }
-  
+
   /* Mobile Station List */
   .mobile-stations-list {
     padding: 0;
   }
-  
+
   .mobile-station-card {
     display: flex;
     align-items: center;
@@ -943,15 +946,15 @@
     cursor: pointer;
     transition: background-color 0.2s ease;
   }
-  
+
   .mobile-station-card:hover {
     background: #f8fafc;
   }
-  
+
   .mobile-station-card:last-child {
     border-bottom: none;
   }
-  
+
   .mobile-station-image {
     position: relative;
     width: 60px;
@@ -961,13 +964,13 @@
     margin-right: 12px;
     flex-shrink: 0;
   }
-  
+
   .mobile-station-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  
+
   .mobile-station-status {
     position: absolute;
     top: 6px;
@@ -981,12 +984,12 @@
     align-items: center;
     gap: 3px;
   }
-  
+
   .mobile-station-details {
     flex: 1;
     min-width: 0;
   }
-  
+
   .mobile-station-name {
     font-size: 16px;
     font-weight: 600;
@@ -996,7 +999,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  
+
   .mobile-station-address {
     font-size: 13px;
     color: #64748b;
@@ -1005,20 +1008,20 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  
+
   .mobile-station-distance {
     font-size: 12px;
-    color: #416AFC;
+    color: #416afc;
     font-weight: 500;
     margin: 0 0 8px 0;
   }
-  
+
   .mobile-station-services {
     display: flex;
     gap: 4px;
     flex-wrap: wrap;
   }
-  
+
   .mobile-service-tag {
     font-size: 10px;
     background: #f1f5f9;
@@ -1027,20 +1030,20 @@
     border-radius: 4px;
     font-weight: 500;
   }
-  
+
   .mobile-service-more {
     font-size: 10px;
     color: #94a3b8;
     font-weight: 500;
   }
-  
+
   .mobile-station-actions {
     margin-left: 12px;
     flex-shrink: 0;
   }
-  
+
   .mobile-directions-btn {
-    background: #416AFC;
+    background: #416afc;
     border: none;
     border-radius: 8px;
     padding: 8px;
@@ -1048,20 +1051,20 @@
     cursor: pointer;
     transition: background-color 0.2s ease;
   }
-  
+
   .mobile-directions-btn:hover {
     background: #3b5bfc;
   }
-  
+
   /* Touch-friendly interactions */
   .mobile-bottom-sheet {
     -webkit-overflow-scrolling: touch;
   }
-  
+
   .bottom-sheet-content {
     -webkit-overflow-scrolling: touch;
   }
-  
+
   /* Prevent map interaction when bottom sheet is being dragged */
   .mobile-bottom-sheet.dragging ~ .results-map {
     pointer-events: none;

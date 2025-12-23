@@ -1,7 +1,7 @@
-'use client';
+"use client"
 
-import Image from 'next/image';
-import './OurValuesSection.css';
+import Image from "next/image"
+import "./OurValuesSection.css"
 
 export default function OurValuesSection() {
   return (
@@ -11,7 +11,9 @@ export default function OurValuesSection() {
         <div className="our-values-header">
           <h2 className="our-values-title">Our Values</h2>
           <p className="our-values-description">
-            Safety, reliability, integrity, and community are at the heart of everything we do guiding our<br />
+            Safety, reliability, integrity, and community are at the heart of
+            everything we do guiding our
+            <br />
             commitment to deliver trusted propane services.
           </p>
         </div>
@@ -44,7 +46,8 @@ export default function OurValuesSection() {
                 <div className="value-content">
                   <h4 className="value-title">Reliability</h4>
                   <p className="value-description">
-                    Ensuring peace of mind through safe and efficient propane delivery.
+                    Ensuring peace of mind through safe and efficient propane
+                    delivery.
                   </p>
                 </div>
                 <div className="value-icon">
@@ -122,7 +125,8 @@ export default function OurValuesSection() {
                 <div className="value-content">
                   <h4 className="value-title-right">Communities</h4>
                   <p className="value-description">
-                    Building stronger communities through trusted energy solutions.
+                    Building stronger communities through trusted energy
+                    solutions.
                   </p>
                 </div>
               </div>
@@ -140,7 +144,8 @@ export default function OurValuesSection() {
                 <div className="value-content">
                   <h4 className="value-title-right">Customer service</h4>
                   <p className="value-description">
-                    Dedicated to transparent, honest, and customer-first service.
+                    Dedicated to transparent, honest, and customer-first
+                    service.
                   </p>
                 </div>
               </div>
@@ -149,5 +154,5 @@ export default function OurValuesSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }

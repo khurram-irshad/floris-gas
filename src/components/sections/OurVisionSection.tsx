@@ -1,7 +1,7 @@
-'use client';
+"use client"
 
-import Image from 'next/image';
-import './OurVisionSection.css';
+import Image from "next/image"
+import "./OurVisionSection.css"
 
 export default function OurVisionSection() {
   return (
@@ -30,8 +30,9 @@ export default function OurVisionSection() {
               <div className="vision-content">
                 <h3 className="vision-content-title">Our Vision</h3>
                 <p className="vision-content-description">
-                  Driving Florida&apos;s clean, reliable energy future through propane innovation 
-                  delivering efficient, sustainable, and cost-effective energy solutions.
+                  Driving Florida&apos;s clean, reliable energy future through
+                  propane innovation delivering efficient, sustainable, and
+                  cost-effective energy solutions.
                 </p>
               </div>
 
@@ -106,5 +107,5 @@ export default function OurVisionSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }

@@ -1,94 +1,98 @@
-'use client';
+"use client"
 
-import { useState } from 'react';
-import Image from 'next/image';
-import type { QuoteFormData } from '@/types';
-import './HeroSection.css';
+import { useState } from "react"
+import Image from "next/image"
+import type { QuoteFormData } from "@/types"
+import "./HeroSection.css"
 
 // Constants
 const CUSTOMER_AVATARS = [
-  { id: 1, src: '/avatar-1.jpg', alt: 'Customer 1' },
-  { id: 2, src: '/avatar-2.jpg', alt: 'Customer 2' },
-  { id: 3, src: '/avatar-3.jpg', alt: 'Customer 3' },
-  { id: 4, src: '/avatar-4.jpg', alt: 'Customer 4' },
-];
+  { id: 1, src: "/avatar-1.jpg", alt: "Customer 1" },
+  { id: 2, src: "/avatar-2.jpg", alt: "Customer 2" },
+  { id: 3, src: "/avatar-3.jpg", alt: "Customer 3" },
+  { id: 4, src: "/avatar-4.jpg", alt: "Customer 4" },
+]
 
 const STATS = {
-  ACTIVE_MEMBERS: '16K+',
-  MONTHLY_VISITORS: '1M+',
-  SATISFACTION_RATE: '93%'
-} as const;
+  ACTIVE_MEMBERS: "16K+",
+  MONTHLY_VISITORS: "1M+",
+  SATISFACTION_RATE: "93%",
+} as const
 
 export default function HeroSection() {
   const [formData, setFormData] = useState<QuoteFormData>({
-    firstName: '',
-    email: '',
-    phone: '',
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
+    firstName: "",
+    email: "",
+    phone: "",
+  })
+  const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitMessage, setSubmitMessage] = useState<{
-    type: 'success' | 'error';
-    text: string;
-  } | null>(null);
+    type: "success" | "error"
+    text: string
+  } | null>(null)
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
+    const { name, value } = e.target
+    setFormData((prev) => ({ ...prev, [name]: value }))
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitMessage(null);
-    
+    e.preventDefault()
+    setIsSubmitting(true)
+    setSubmitMessage(null)
+
     // Basic validation
-    if (!formData.firstName.trim() || !formData.email.trim() || !formData.phone.trim()) {
+    if (
+      !formData.firstName.trim() ||
+      !formData.email.trim() ||
+      !formData.phone.trim()
+    ) {
       setSubmitMessage({
-        type: 'error',
-        text: 'Please fill in all fields.'
-      });
-      setIsSubmitting(false);
-      return;
+        type: "error",
+        text: "Please fill in all fields.",
+      })
+      setIsSubmitting(false)
+      return
     }
-    
+
     try {
-      const response = await fetch('/api/send-quote', {
-        method: 'POST',
+      const response = await fetch("/api/send-quote", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
-      });
+      })
 
-      const data = await response.json();
+      const data = await response.json()
 
       if (response.ok) {
         setSubmitMessage({
-          type: 'success',
-          text: 'Quote request sent successfully! We\'ll contact you soon.'
-        });
+          type: "success",
+          text: "Quote request sent successfully! We'll contact you soon.",
+        })
         // Reset form
         setFormData({
-          firstName: '',
-          email: '',
-          phone: '',
-        });
+          firstName: "",
+          email: "",
+          phone: "",
+        })
       } else {
         setSubmitMessage({
-          type: 'error',
-          text: data.error || 'Failed to send quote request. Please try again.'
-        });
+          type: "error",
+          text: data.error || "Failed to send quote request. Please try again.",
+        })
       }
     } catch (error) {
-      console.error('Form submission error:', error);
+      console.error("Form submission error:", error)
       setSubmitMessage({
-        type: 'error',
-        text: 'Network error. Please check your connection and try again.'
-      });
+        type: "error",
+        text: "Network error. Please check your connection and try again.",
+      })
     } finally {
-      setIsSubmitting(false);
+      setIsSubmitting(false)
     }
-  };
+  }
 
   return (
     <section className="hero-section">
@@ -118,7 +122,6 @@ export default function HeroSection() {
 
       <div className="content-container">
         <div className="main-content">
-          
           {/* <div className="social-proof-container">
             <div className="avatars-container">
               {CUSTOMER_AVATARS.map((avatar) => (
@@ -147,20 +150,23 @@ export default function HeroSection() {
           {/* Main Heading */}
           <div className="heading-container">
             <h1 className="main-heading">
-              Premium{' '}
-              <span className="propane-text">Propane</span>{' '}
-              <span className="service-text-heading">Service</span>{' '}
-              That Puts Your Convenience First.
+              Premium <span className="propane-text">Propane</span>{" "}
+              <span className="service-text-heading">Service</span> That Puts
+              Your Convenience First.
             </h1>
-            
+
             <p className="sub-heading">
-              We are a family-owned and operated company that has been serving the community for many years.
+              We are a family-owned and operated company that has been serving
+              the community for many years.
             </p>
           </div>
 
           {/* Quote Form */}
           <div className="form-container">
-            <form onSubmit={handleSubmit} className="form">
+            <form
+              onSubmit={handleSubmit}
+              className="form"
+            >
               <div className="input-container">
                 <input
                   type="text"
@@ -194,39 +200,45 @@ export default function HeroSection() {
                   disabled={isSubmitting}
                   className="submit-button"
                 >
-                  {isSubmitting ? 'Submitting...' : 'Request A Quote →'}
+                  {isSubmitting ? "Submitting..." : "Request A Quote →"}
                 </button>
               </div>
             </form>
-            
+
             {/* Success/Error Message */}
             {submitMessage && (
-              <div 
-                className={`message ${submitMessage.type === 'success' ? 'message-success' : 'message-error'}`}
+              <div
+                className={`message ${
+                  submitMessage.type === "success"
+                    ? "message-success"
+                    : "message-error"
+                }`}
                 style={{
-                  padding: '12px 16px',
-                  borderRadius: '8px',
-                  marginTop: '16px',
-                  fontSize: '14px',
-                  fontWeight: '500',
-                  backgroundColor: submitMessage.type === 'success' ? '#d4edda' : '#f8d7da',
-                  color: submitMessage.type === 'success' ? '#155724' : '#721c24',
-                  border: `1px solid ${submitMessage.type === 'success' ? '#c3e6cb' : '#f5c6cb'}`
+                  padding: "12px 16px",
+                  borderRadius: "8px",
+                  marginTop: "16px",
+                  fontSize: "14px",
+                  fontWeight: "500",
+                  backgroundColor:
+                    submitMessage.type === "success" ? "#d4edda" : "#f8d7da",
+                  color:
+                    submitMessage.type === "success" ? "#155724" : "#721c24",
+                  border: `1px solid ${
+                    submitMessage.type === "success" ? "#c3e6cb" : "#f5c6cb"
+                  }`,
                 }}
               >
                 {submitMessage.text}
               </div>
             )}
-            
+
             <p className="disclaimer-text">
-              By submitting your contact details, you agree to receive SMS/calls from FlorisGAS propane. Message & data rates may apply.
+              By submitting your contact details, you agree to receive SMS/calls
+              from FlorisGAS propane. Message & data rates may apply.
             </p>
           </div>
-
         </div>
-    
       </div>
-
     </section>
-  );
+  )
 }

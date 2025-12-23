@@ -1,7 +1,7 @@
-'use client';
+"use client"
 
-import Image from 'next/image';
-import './ContactHeroSection.css';
+import Image from "next/image"
+import "./ContactHeroSection.css"
 
 export default function ContactHeroSection() {
   // const handleRequestQuote = () => {
@@ -24,9 +24,8 @@ export default function ContactHeroSection() {
         />
         <div className="contact-hero-overlay"></div>
       </div>
-      
-      <div className="contact-hero-container">
-      </div>
+
+      <div className="contact-hero-container"></div>
     </section>
-  );
+  )
 }

@@ -1,86 +1,96 @@
-'use client';
+"use client"
 
-import { useState } from 'react';
-import Image from 'next/image';
-import './ContactSection.css';
+import { useState } from "react"
+import Image from "next/image"
+import "./ContactSection.css"
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    phoneNumber: '',
-    service: '',
-    message: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
+    fullName: "",
+    email: "",
+    phoneNumber: "",
+    service: "",
+    message: "",
+  })
+  const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitMessage, setSubmitMessage] = useState<{
-    type: 'success' | 'error';
-    text: string;
-  } | null>(null);
+    type: "success" | "error"
+    text: string
+  } | null>(null)
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
+  const handleInputChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
+    const { name, value } = e.target
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
-    }));
-  };
+      [name]: value,
+    }))
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitMessage(null);
-    
+    e.preventDefault()
+    setIsSubmitting(true)
+    setSubmitMessage(null)
+
     // Basic validation
-    if (!formData.fullName.trim() || !formData.email.trim() || !formData.phoneNumber.trim() || !formData.service || !formData.message.trim()) {
+    if (
+      !formData.fullName.trim() ||
+      !formData.email.trim() ||
+      !formData.phoneNumber.trim() ||
+      !formData.service ||
+      !formData.message.trim()
+    ) {
       setSubmitMessage({
-        type: 'error',
-        text: 'Please fill in all fields.'
-      });
-      setIsSubmitting(false);
-      return;
+        type: "error",
+        text: "Please fill in all fields.",
+      })
+      setIsSubmitting(false)
+      return
     }
-    
+
     try {
-      const response = await fetch('/api/send-contact', {
-        method: 'POST',
+      const response = await fetch("/api/send-contact", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
-      });
+      })
 
-      const data = await response.json();
+      const data = await response.json()
 
       if (response.ok) {
         setSubmitMessage({
-          type: 'success',
-          text: 'Contact form submitted successfully! We\'ll get back to you soon.'
-        });
+          type: "success",
+          text: "Contact form submitted successfully! We'll get back to you soon.",
+        })
         // Reset form
         setFormData({
-          fullName: '',
-          email: '',
-          phoneNumber: '',
-          service: '',
-          message: ''
-        });
+          fullName: "",
+          email: "",
+          phoneNumber: "",
+          service: "",
+          message: "",
+        })
       } else {
         setSubmitMessage({
-          type: 'error',
-          text: data.error || 'Failed to send contact form. Please try again.'
-        });
+          type: "error",
+          text: data.error || "Failed to send contact form. Please try again.",
+        })
       }
     } catch (error) {
-      console.error('Form submission error:', error);
+      console.error("Form submission error:", error)
       setSubmitMessage({
-        type: 'error',
-        text: 'Network error. Please check your connection and try again.'
-      });
+        type: "error",
+        text: "Network error. Please check your connection and try again.",
+      })
     } finally {
-      setIsSubmitting(false);
+      setIsSubmitting(false)
     }
-  };
+  }
 
   return (
     <section className="contact-section">
@@ -89,8 +99,10 @@ export default function ContactSection() {
         <div className="contact-header">
           <h2 className="contact-title">Get in touch</h2>
           <p className="contact-description">
-            Join a trusted network and unlock new revenue opportunities with reliable supply &<br />
-            full support. Perfect for hardware stores, gas stations, and local distributors.
+            Join a trusted network and unlock new revenue opportunities with
+            reliable supply &<br />
+            full support. Perfect for hardware stores, gas stations, and local
+            distributors.
           </p>
         </div>
 
@@ -143,7 +155,9 @@ export default function ContactSection() {
               <div className="address-info">
                 <div className="address-item">
                   <span className="address-icon">📍</span>
-                  <span className="address-text">2990 NW 24th St, Miami, FL 33142</span>
+                  <span className="address-text">
+                    2990 NW 24th St, Miami, FL 33142
+                  </span>
                 </div>
                 <div className="address-item">
                   <span className="address-icon">✉️</span>
@@ -155,7 +169,8 @@ export default function ContactSection() {
             {/* Bottom Quote Section */}
             <div className="quote-section">
               <p className="quote-text">
-                We deliver high-quality propane gas with reliable service, ensuring safe and efficient energy solutions in your area.
+                We deliver high-quality propane gas with reliable service,
+                ensuring safe and efficient energy solutions in your area.
               </p>
               <div className="quote-author">
                 <div className="author-avatar">
@@ -176,9 +191,17 @@ export default function ContactSection() {
 
           {/* Right Side - Contact Form */}
           <div className="contact-form-container">
-            <form onSubmit={handleSubmit} className="contact-form">
+            <form
+              onSubmit={handleSubmit}
+              className="contact-form"
+            >
               <div className="form-group">
-                <label htmlFor="fullName" className="form-label">Full Name</label>
+                <label
+                  htmlFor="fullName"
+                  className="form-label"
+                >
+                  Full Name
+                </label>
                 <input
                   type="text"
                   id="fullName"
@@ -193,7 +216,12 @@ export default function ContactSection() {
 
               <div className="form-row">
                 <div className="form-group">
-                  <label htmlFor="email" className="form-label">Email</label>
+                  <label
+                    htmlFor="email"
+                    className="form-label"
+                  >
+                    Email
+                  </label>
                   <input
                     type="email"
                     id="email"
@@ -206,7 +234,12 @@ export default function ContactSection() {
                   />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="phoneNumber" className="form-label">Phone Number</label>
+                  <label
+                    htmlFor="phoneNumber"
+                    className="form-label"
+                  >
+                    Phone Number
+                  </label>
                   <input
                     type="tel"
                     id="phoneNumber"
@@ -221,7 +254,12 @@ export default function ContactSection() {
               </div>
 
               <div className="form-group">
-                <label htmlFor="service" className="form-label">Service</label>
+                <label
+                  htmlFor="service"
+                  className="form-label"
+                >
+                  Service
+                </label>
                 <select
                   id="service"
                   name="service"
@@ -240,7 +278,12 @@ export default function ContactSection() {
               </div>
 
               <div className="form-group">
-                <label htmlFor="message" className="form-label">Message</label>
+                <label
+                  htmlFor="message"
+                  className="form-label"
+                >
+                  Message
+                </label>
                 <textarea
                   id="message"
                   name="message"
@@ -253,28 +296,36 @@ export default function ContactSection() {
                 />
               </div>
 
-              <button 
-                type="submit" 
+              <button
+                type="submit"
                 disabled={isSubmitting}
                 className="form-submit-btn"
               >
-                {isSubmitting ? 'Submitting...' : 'Submit response'}
+                {isSubmitting ? "Submitting..." : "Submit response"}
               </button>
             </form>
-            
+
             {/* Success/Error Message */}
             {submitMessage && (
-              <div 
-                className={`message ${submitMessage.type === 'success' ? 'message-success' : 'message-error'}`}
+              <div
+                className={`message ${
+                  submitMessage.type === "success"
+                    ? "message-success"
+                    : "message-error"
+                }`}
                 style={{
-                  padding: '12px 16px',
-                  borderRadius: '8px',
-                  marginTop: '16px',
-                  fontSize: '14px',
-                  fontWeight: '500',
-                  backgroundColor: submitMessage.type === 'success' ? '#d4edda' : '#f8d7da',
-                  color: submitMessage.type === 'success' ? '#155724' : '#721c24',
-                  border: `1px solid ${submitMessage.type === 'success' ? '#c3e6cb' : '#f5c6cb'}`
+                  padding: "12px 16px",
+                  borderRadius: "8px",
+                  marginTop: "16px",
+                  fontSize: "14px",
+                  fontWeight: "500",
+                  backgroundColor:
+                    submitMessage.type === "success" ? "#d4edda" : "#f8d7da",
+                  color:
+                    submitMessage.type === "success" ? "#155724" : "#721c24",
+                  border: `1px solid ${
+                    submitMessage.type === "success" ? "#c3e6cb" : "#f5c6cb"
+                  }`,
                 }}
               >
                 {submitMessage.text}
@@ -284,5 +335,5 @@ export default function ContactSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }

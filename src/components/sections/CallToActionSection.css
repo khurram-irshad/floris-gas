@@ -61,13 +61,11 @@
 
 .cta-secondary {
   background: transparent;
-  color: #49484D;
+  color: #49484d;
   border: 2px solid white;
   font-size: 16px;
   background-color: #efefef;
 }
-
-
 
 .cta-divider {
   color: #ffffff;
@@ -84,28 +82,28 @@
   .cta-section {
     padding: 3rem 0;
   }
-  
+
   .cta-container {
     padding: 0 0.75rem;
   }
-  
+
   .cta-title {
     font-size: 24px;
     margin-bottom: 2rem;
   }
-  
+
   .cta-buttons {
     flex-direction: column;
     gap: 1rem;
     align-items: center;
   }
-  
+
   .cta-button {
     width: 100%;
     max-width: 280px;
     justify-content: center;
   }
-  
+
   .cta-divider {
     text-align: center;
     width: 100%;
@@ -117,7 +115,7 @@
   .cta-title {
     font-size: 24px;
   }
-  
+
   .cta-button {
     padding: 0.875rem 1.25rem;
     font-size: 13px;

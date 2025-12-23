@@ -1,18 +1,18 @@
-'use client';
+"use client"
 
-import './AboutContentSection.css';
-import { useRouter } from 'next/navigation';
+import "./AboutContentSection.css"
+import { useRouter } from "next/navigation"
 
 export default function AboutContentSection() {
-  const router = useRouter();
+  const router = useRouter()
 
   const handleRequestQuote = () => {
-    router.push('/contact');
-  };
+    router.push("/contact")
+  }
 
   const handleLearnMore = () => {
-    router.push('/about');
-  };
+    router.push("/about")
+  }
 
   return (
     <section className="about-content-section">
@@ -23,17 +23,25 @@ export default function AboutContentSection() {
               Reliable Propane Solutions for Your Home
             </h2>
           </div>
-          
+
           <div className="about-content-right">
             <p className="about-content-description">
-              Experience the warmth and comfort of propane with our safe and affordable solutions. Enjoy peace of mind knowing that your home is powered by a reliable energy source.
+              Experience the warmth and comfort of propane with our safe and
+              affordable solutions. Enjoy peace of mind knowing that your home
+              is powered by a reliable energy source.
             </p>
-            
+
             <div className="about-content-buttons">
-              <button onClick={handleRequestQuote} className="about-content-button primary">
+              <button
+                onClick={handleRequestQuote}
+                className="about-content-button primary"
+              >
                 Request A Quote →
               </button>
-              <button onClick={handleLearnMore} className="about-content-button secondary">
+              <button
+                onClick={handleLearnMore}
+                className="about-content-button secondary"
+              >
                 Learn More
               </button>
             </div>
@@ -41,5 +49,5 @@ export default function AboutContentSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }

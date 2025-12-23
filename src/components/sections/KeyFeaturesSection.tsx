@@ -1,40 +1,42 @@
-'use client';
+"use client"
 
-import Image from 'next/image';
-import './KeyFeaturesSection.css';
-import { useRouter } from 'next/navigation';
+import Image from "next/image"
+import "./KeyFeaturesSection.css"
+import { useRouter } from "next/navigation"
 
 const features = [
   {
     id: 1,
     icon: "/r-affordable.jpg",
     title: "Affordable Pricing for Every Household",
-    description: "Enjoy competitive rates without compromising on quality."
+    description: "Enjoy competitive rates without compromising on quality.",
   },
   {
     id: 2,
     icon: "/r-convenient.jpg",
     title: "Convenient Delivery Right to Your Doorstep",
-    description: "We ensure timely and hassle-free delivery for your convenience."
+    description:
+      "We ensure timely and hassle-free delivery for your convenience.",
   },
   {
     id: 3,
     icon: "/r-energy.jpg",
     title: "Energy-Efficient Solutions for Your Home",
-    description: "Reduce your energy bills while enjoying superior performance."
-  }
-];
+    description:
+      "Reduce your energy bills while enjoying superior performance.",
+  },
+]
 
 export default function KeyFeaturesSection() {
-  const router = useRouter();
+  const router = useRouter()
 
   const handleRequestQuote = () => {
-    router.push('/contact');
-  };
+    router.push("/contact")
+  }
 
   const handleLearnMore = () => {
-    router.push('/about');
-  };
+    router.push("/about")
+  }
 
   return (
     <section className="key-features-section">
@@ -45,13 +47,17 @@ export default function KeyFeaturesSection() {
             Key Features of Our Propane Services
           </h2>
           <p className="key-features-description">
-            Our propane services prioritize your family&apos;s safety and comfort. Experience reliable solutions that fit your budget.
+            Our propane services prioritize your family&apos;s safety and
+            comfort. Experience reliable solutions that fit your budget.
           </p>
         </div>
 
         <div className="key-features-grid">
           {features.map((feature) => (
-            <div key={feature.id} className="key-feature-card">
+            <div
+              key={feature.id}
+              className="key-feature-card"
+            >
               <div className="key-feature-icon">
                 <Image
                   src={feature.icon}
@@ -68,14 +74,20 @@ export default function KeyFeaturesSection() {
         </div>
 
         <div className="key-features-buttons">
-          <button onClick={handleRequestQuote} className="key-features-button primary">
+          <button
+            onClick={handleRequestQuote}
+            className="key-features-button primary"
+          >
             Request A Quote →
           </button>
-          <button onClick={handleLearnMore} className="key-features-button secondary">
+          <button
+            onClick={handleLearnMore}
+            className="key-features-button secondary"
+          >
             Learn More
           </button>
         </div>
       </div>
     </section>
-  );
+  )
 }

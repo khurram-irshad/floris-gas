@@ -1,7 +1,7 @@
 /* Our Success Story Section */
 .success-story-section {
   padding: 5rem 0;
-  background: #F4F7FA;
+  background: #f4f7fa;
 }
 
 .success-story-container {
@@ -20,7 +20,7 @@
   font-weight: 600;
   color: #1f2937;
   margin-bottom: 16px;
-  background: linear-gradient(90deg, #416AFC 0%, #5DB2FE 100%);
+  background: linear-gradient(90deg, #416afc 0%, #5db2fe 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -30,7 +30,7 @@
 
 .success-story-description {
   font-size: 20px;
-  color: #49484D;
+  color: #49484d;
   line-height: 100%;
   margin: 0;
   font-family: var(--font-gilroy);
@@ -106,7 +106,7 @@
 .timeline-icon-container {
   width: 30px;
   height: 30px;
-  background: #2F3B6A;
+  background: #2f3b6a;
   backdrop-filter: blur(10px);
   border-radius: 50%;
   display: flex;
@@ -140,7 +140,12 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to top, rgba(78, 117, 170, 1) 0%, rgba(14, 8, 27, 1) 50%, transparent 100%);
+  background: linear-gradient(
+    to top,
+    rgba(78, 117, 170, 1) 0%,
+    rgba(14, 8, 27, 1) 50%,
+    transparent 100%
+  );
   padding: 2rem 1.5rem 1.5rem 1.5rem;
   transform: translateY(100%);
   transition: transform 0.3s ease;
@@ -191,7 +196,7 @@
 }
 
 .nav-button {
-  background: #2F3B6A;
+  background: #2f3b6a;
   color: white;
   border: none;
   border-radius: 50%;
@@ -213,7 +218,6 @@
 .pagination-dots {
   display: flex;
   gap: 0.5rem;
-
 }
 
 .dot {
@@ -229,7 +233,7 @@
 .dot.active {
   width: 30px !important;
   border-radius: 10px !important;
-  background: linear-gradient(90deg, #416AFC 0%, #5FB6FF 100%);
+  background: linear-gradient(90deg, #416afc 0%, #5fb6ff 100%);
 }
 
 /* Responsive Design */
@@ -237,7 +241,7 @@
   .timeline-card {
     width: 400px;
   }
-  
+
   .timeline-card-image {
     width: 400px;
     height: 250px;
@@ -251,30 +255,28 @@
   .timeline-card {
     width: 100%;
   }
-  
+
   .success-story-container {
     padding: 0 1rem;
   }
-  
+
   .success-story-header {
     margin-bottom: 3rem;
   }
-  
+
   .success-story-title {
     font-size: 24px;
     font-family: var(--font-gilroy);
     font-weight: 600;
   }
-  
+
   .success-story-description {
     font-size: 16px;
     font-family: var(--font-gilroy);
-    color: #49484D;
+    color: #49484d;
     max-width: 100%;
   }
-  
 
-  
   .timeline-card-image {
     height: 250px;
     border: 5px solid white;
@@ -282,30 +284,30 @@
     width: 100%;
     max-width: 100%;
   }
-  
+
   .timeline-overlay {
     padding: 0.5rem;
   }
-  
+
   .timeline-icon-container {
     width: 24px;
     height: 24px;
   }
-  
+
   .timeline-year-badge {
     padding: 0.1rem 0.8rem;
   }
-  
+
   .timeline-year {
     font-size: 0.75rem;
   }
-  
+
   .timeline-navigation {
     flex-direction: row;
     gap: 1.5rem;
     align-items: center;
   }
-  
+
   .nav-button {
     width: 40px;
     height: 40px;

@@ -23,7 +23,6 @@
   height: 100%;
 }
 
-
 .contact-hero-container {
   position: relative;
   z-index: 3;
@@ -33,17 +32,12 @@
   padding: 4rem 1rem;
 }
 
-
-
-
 @media screen and (max-width: 768px) {
   .contact-hero-section {
     min-height: 400px;
   }
-  
+
   .contact-hero-container {
     padding: 6rem 1rem;
   }
-  
-  
 }

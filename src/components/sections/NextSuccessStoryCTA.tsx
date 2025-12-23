@@ -1,17 +1,17 @@
-'use client';
+"use client"
 
-import './NextSuccessStoryCTA.css';
-import { useRouter } from 'next/navigation';
+import "./NextSuccessStoryCTA.css"
+import { useRouter } from "next/navigation"
 
 export default function NextSuccessStoryCTA() {
-  const router = useRouter();
+  const router = useRouter()
   const handleGetStarted = () => {
-    router.push('/contact');
-  };
+    router.push("/contact")
+  }
 
   const handleContactUs = () => {
-    router.push('/contact');
-  };
+    router.push("/contact")
+  }
 
   return (
     <section className="next-success-story-section">
@@ -21,7 +21,9 @@ export default function NextSuccessStoryCTA() {
             Want to Be Our Next Success Story?
           </h2>
           <p className="next-success-story-description">
-            Partner with Florida&apos;s most trusted propane provider and join thousands of satisfied<br />
+            Partner with Florida&apos;s most trusted propane provider and join
+            thousands of satisfied
+            <br />
             customers who rely on our proven expertise and exceptional service.
           </p>
 
@@ -44,22 +46,30 @@ export default function NextSuccessStoryCTA() {
         <div className="next-success-story-stats">
           <div className="stat-item-case-studies">
             <div className="next-success-story-stat-number">500+</div>
-            <div className="next-success-story-stat-label">Partner Locations</div>
+            <div className="next-success-story-stat-label">
+              Partner Locations
+            </div>
           </div>
           <div className="stat-item-case-studies">
             <div className="next-success-story-stat-number">24/7</div>
-            <div className="next-success-story-stat-label">Emergency Support</div>
+            <div className="next-success-story-stat-label">
+              Emergency Support
+            </div>
           </div>
           <div className="stat-item-case-studies">
             <div className="next-success-story-stat-number">98%</div>
-            <div className="next-success-story-stat-label">Partner Satisfaction</div>
+            <div className="next-success-story-stat-label">
+              Partner Satisfaction
+            </div>
           </div>
           <div className="stat-item-case-studies">
             <div className="next-success-story-stat-number">30+</div>
-            <div className="next-success-story-stat-label">Years Experience</div>
+            <div className="next-success-story-stat-label">
+              Years Experience
+            </div>
           </div>
         </div>
       </div>
     </section>
-  );
+  )
 }

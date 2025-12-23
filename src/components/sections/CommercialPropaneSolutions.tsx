@@ -1,18 +1,18 @@
-'use client';
+"use client"
 
-import './CommercialPropaneSolutions.css';
-import { useRouter } from 'next/navigation';
+import "./CommercialPropaneSolutions.css"
+import { useRouter } from "next/navigation"
 
 export default function CommercialPropaneSolutions() {
-  const router = useRouter();
+  const router = useRouter()
 
   const handleRequestQuote = () => {
-    router.push('/contact');
-  };
+    router.push("/contact")
+  }
 
   const handleLearnMore = () => {
-   router.push('/about');
-  };
+    router.push("/about")
+  }
 
   return (
     <section className="commercial-propane-solutions-section">
@@ -23,17 +23,25 @@ export default function CommercialPropaneSolutions() {
               Powering Your Business with Reliable Propane.
             </h2>
           </div>
-          
+
           <div className="commercial-propane-solutions-right">
             <p className="commercial-propane-solutions-description">
-              From small restaurants to large-scale operations, FloriGas delivers the power your business needs with unmatched reliability and service.
+              From small restaurants to large-scale operations, FloriGas
+              delivers the power your business needs with unmatched reliability
+              and service.
             </p>
-            
+
             <div className="commercial-propane-solutions-buttons">
-              <button onClick={handleRequestQuote} className="commercial-propane-solutions-button">
+              <button
+                onClick={handleRequestQuote}
+                className="commercial-propane-solutions-button"
+              >
                 Request A Quote →
               </button>
-              <button onClick={handleLearnMore} className="commercial-propane-learn-more-button">
+              <button
+                onClick={handleLearnMore}
+                className="commercial-propane-learn-more-button"
+              >
                 Learn More
               </button>
             </div>
@@ -41,5 +49,5 @@ export default function CommercialPropaneSolutions() {
         </div>
       </div>
     </section>
-  );
+  )
 }
