@@ -1,5 +1,9 @@
 .ready-to-experience-section {
-  background: radial-gradient(193.05% 218.27% at 8.75% -37.14%, #4E75AA 4.03%, #0E081B 91.3%);
+  background: radial-gradient(
+    193.05% 218.27% at 8.75% -37.14%,
+    #4e75aa 4.03%,
+    #0e081b 91.3%
+  );
   padding: 4rem 0;
   text-align: center;
 }
@@ -60,7 +64,7 @@
   .ready-to-experience-title {
     font-size: 32px;
   }
-  
+
   .ready-to-experience-description {
     font-size: 17px;
   }
@@ -70,20 +74,20 @@
   .ready-to-experience-section {
     padding: 3rem 0;
   }
-  
+
   .ready-to-experience-container {
     padding: 0 0.75rem;
   }
-  
+
   .ready-to-experience-title {
     font-size: 28px;
   }
-  
+
   .ready-to-experience-description {
     font-size: 16px;
     margin-bottom: 2rem;
   }
-  
+
   .ready-to-experience-button {
     width: 100%;
     max-width: 320px;
@@ -92,4 +96,3 @@
     font-weight: 600;
   }
 }
-

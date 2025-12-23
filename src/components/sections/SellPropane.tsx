@@ -1,19 +1,19 @@
-'use client';
+"use client"
 
-import Image from 'next/image';
-import './SellPropane.css';
-import { useRouter } from 'next/navigation';
+import Image from "next/image"
+import "./SellPropane.css"
+import { useRouter } from "next/navigation"
 
 export default function SellPropane() {
-  const router = useRouter();
+  const router = useRouter()
 
   const handleBecomePartner = () => {
-    router.push('/contact');
-  };
+    router.push("/contact")
+  }
 
   const handleGetInstantQuote = () => {
-    router.push('/contact');
-  };
+    router.push("/contact")
+  }
 
   return (
     <section className="sell-propane-section">
@@ -27,34 +27,38 @@ export default function SellPropane() {
         />
         <div className="sell-propane-overlay"></div>
       </div>
-      
+
       <div className="sell-propane-container">
         <div className="sell-propane-content">
           <h1 className="sell-propane-title">
-            Partner with FloriGas. <span className="highlight-text">Sell Propane.</span><br />
+            Partner with FloriGas.{" "}
+            <span className="highlight-text">Sell Propane.</span>
+            <br />
             Grow Your Business.
           </h1>
-          
+
           <p className="sell-propane-description">
-            Join a trusted network and unlock new revenue opportunities with reliable supply &<br />
-            full support. Perfect for hardware stores, gas stations, and local distributors.
+            Join a trusted network and unlock new revenue opportunities with
+            reliable supply &<br />
+            full support. Perfect for hardware stores, gas stations, and local
+            distributors.
           </p>
-          
+
           <div className="sell-propane-buttons">
-            <button 
+            <button
               onClick={handleBecomePartner}
               className="sell-propane-button primary"
             >
               Become A Partner →
             </button>
-            <button 
+            <button
               onClick={handleGetInstantQuote}
               className="sell-propane-button"
             >
               Get Instant Quote
             </button>
           </div>
-          
+
           <div className="sell-propane-stats">
             <div className="stat-item">
               <div className="stats-number">24/7</div>
@@ -72,5 +76,5 @@ export default function SellPropane() {
         </div>
       </div>
     </section>
-  );
+  )
 }

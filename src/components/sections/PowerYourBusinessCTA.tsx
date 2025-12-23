@@ -1,20 +1,19 @@
-'use client';
+"use client"
 
-import './PowerYourBusinessCTA.css';
-import { useRouter } from 'next/navigation';
-
+import "./PowerYourBusinessCTA.css"
+import { useRouter } from "next/navigation"
 
 export default function PowerYourBusinessCTA() {
-  const router = useRouter();
+  const router = useRouter()
 
   const handleTalkToExpert = () => {
-    router.push('/contact');
+    router.push("/contact")
     // console.log('Talk To An Expert clicked');
-  };
+  }
 
   const handleGetInstantQuote = () => {
-    router.push('/contact');
-  };
+    router.push("/contact")
+  }
 
   return (
     <section className="power-your-business-section">
@@ -24,20 +23,21 @@ export default function PowerYourBusinessCTA() {
             Power Your Business with FloriGas
           </h2>
           <p className="power-your-business-description">
-            Join thousands of Florida businesses that rely on our expertise, reliability,<br />
+            Join thousands of Florida businesses that rely on our expertise,
+            reliability,
+            <br />
             and exceptional service for their propane needs.
           </p>
         </div>
 
-        
         <div className="power-your-business-buttons">
-          <button 
+          <button
             onClick={handleTalkToExpert}
             className="power-your-business-button primary"
           >
             Talk To An Expert →
           </button>
-          <button 
+          <button
             onClick={handleGetInstantQuote}
             className="power-your-business-button"
           >
@@ -47,18 +47,24 @@ export default function PowerYourBusinessCTA() {
         <div className="power-your-business-stats">
           <div className="power-your-business-stat-item">
             <div className="commercial-stat-number">24/7</div>
-            <div className="power-your-business-stat-sublabel">Emergency Support</div>
+            <div className="power-your-business-stat-sublabel">
+              Emergency Support
+            </div>
           </div>
           <div className="power-your-business-stat-item">
             <div className="commercial-stat-number">5,000+</div>
-            <div className="power-your-business-stat-sublabel">Businesses Served</div>
+            <div className="power-your-business-stat-sublabel">
+              Businesses Served
+            </div>
           </div>
           <div className="power-your-business-stat-item">
             <div className="commercial-stat-number">30+</div>
-            <div className="power-your-business-stat-sublabel">Years Experience</div>
+            <div className="power-your-business-stat-sublabel">
+              Years Experience
+            </div>
           </div>
         </div>
       </div>
     </section>
-  );
+  )
 }

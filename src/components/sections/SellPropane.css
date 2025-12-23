@@ -29,7 +29,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(193.05% 218.27% at 8.75% -37.14%, rgba(79, 117, 171, 0.9) 4.03%, #0E081B 91.3%);
+  background: radial-gradient(
+    193.05% 218.27% at 8.75% -37.14%,
+    rgba(79, 117, 171, 0.9) 4.03%,
+    #0e081b 91.3%
+  );
   z-index: 2;
 }
 
@@ -98,7 +102,7 @@
 }
 
 .sell-propane-button.primary {
-  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background: linear-gradient(90deg, #4168fc 0%, #72c0fe 100%);
   color: white;
 }
 
@@ -158,11 +162,11 @@
   .sell-propane-title {
     font-size: 42px;
   }
-  
+
   .sell-propane-description {
     font-size: 17px;
   }
-  
+
   .sell-propane-stats {
     gap: 3rem;
   }
@@ -172,13 +176,13 @@
   .sell-propane-container {
     padding: 3rem 1rem;
   }
-  
+
   .sell-propane-title {
     font-size: 28px;
     font-family: var(--font-gilroy);
     font-weight: 600;
   }
-  
+
   .sell-propane-description {
     font-size: 16px;
     font-family: var(--font-gilroy);
@@ -186,39 +190,38 @@
       display: none;
     }
   }
-  
+
   .sell-propane-buttons {
     flex-direction: column;
     gap: 0.75rem;
   }
-  
+
   .sell-propane-button {
     width: 100%;
     justify-content: center;
   }
-  
+
   .sell-propane-stats {
     flex-direction: column;
     gap: 0;
     margin: 0 auto;
   }
-  
+
   .stat-item {
     padding: 20px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
-  
+
   .stat-item:last-child {
     border-bottom: none;
   }
-  
+
   .stat-number {
     font-size: 24px;
     margin-bottom: 8px;
   }
-  
+
   .stat-label {
     font-size: 16px;
   }
 }
-

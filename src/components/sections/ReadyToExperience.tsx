@@ -1,11 +1,11 @@
-'use client';
+"use client"
 
-import './ReadyToExperience.css';
+import "./ReadyToExperience.css"
 
 export default function ReadyToExperience() {
   const handleStartPartnership = () => {
-    console.log('Start partnership clicked');
-  };
+    console.log("Start partnership clicked")
+  }
 
   return (
     <section className="ready-to-experience-section">
@@ -15,10 +15,11 @@ export default function ReadyToExperience() {
             Ready to Experience These Benefits?
           </h2>
           <p className="ready-to-experience-description">
-            Join thousands of Florida businesses that trust FloriGas for their propane needs.
+            Join thousands of Florida businesses that trust FloriGas for their
+            propane needs.
           </p>
-          
-          <button 
+
+          <button
             onClick={handleStartPartnership}
             className="ready-to-experience-button"
           >
@@ -27,5 +28,5 @@ export default function ReadyToExperience() {
         </div>
       </div>
     </section>
-  );
+  )
 }

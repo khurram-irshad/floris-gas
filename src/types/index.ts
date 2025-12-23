@@ -1,19 +1,19 @@
 export interface NavItem {
-  href: string;
-  label: string;
-  isExternal?: boolean;
+  href: string
+  label: string
+  isExternal?: boolean
 }
 
 export interface QuoteFormData {
-  firstName: string;
-  email: string;
-  phone: string;
+  firstName: string
+  email: string
+  phone: string
 }
 
 export interface StatData {
-  number: string;
-  label: string;
-  sublabel: string;
+  number: string
+  label: string
+  sublabel: string
 }
 
 // Removed unused CustomerStats interface

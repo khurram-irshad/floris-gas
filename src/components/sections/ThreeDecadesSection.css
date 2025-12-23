@@ -17,7 +17,7 @@
 
 .trusted-badge {
   display: inline-block;
-  color: #49484D;
+  color: #49484d;
   font-size: 16px;
   font-weight: 600;
   padding: 8px 16px;
@@ -27,7 +27,7 @@
 .three-decades-title {
   font-size: 36px;
   font-weight: 600;
-  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background: linear-gradient(90deg, #4168fc 0%, #72c0fe 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -37,12 +37,12 @@
 }
 
 .three-decades-title .highlight-blue {
-  color: #4067FC;
+  color: #4067fc;
 }
 
 .three-decades-description {
   font-size: 20px;
-  color: #49484D;
+  color: #49484d;
   line-height: 100%;
   margin: 0 auto;
   font-family: var(--font-gilroy);
@@ -75,7 +75,7 @@
 .feature-title {
   font-size: 24px;
   font-weight: 600;
-  color: #49484D;
+  color: #49484d;
   margin-bottom: 4px;
   line-height: 100%;
   font-family: var(--font-gilroy);
@@ -84,7 +84,7 @@
 
 .feature-description {
   font-size: 16px;
-  color: #49484D;
+  color: #49484d;
   line-height: 100%;
   margin: 0;
   font-family: var(--font-gilroy);
@@ -100,11 +100,10 @@
   border-radius: 12px;
 }
 
-
 .why-choose-title {
   font-size: 28px;
   font-weight: 600;
-  color: #49484D;
+  color: #49484d;
   margin-bottom: 32px;
   line-height: 100%;
   font-family: var(--font-gilroy);
@@ -125,7 +124,8 @@
 .why-choose-icon {
   flex-shrink: 0;
   margin-top: 2px;
-  filter: brightness(0) saturate(100%) invert(67%) sepia(69%) saturate(372%) hue-rotate(95deg) brightness(106%) contrast(101%);
+  filter: brightness(0) saturate(100%) invert(67%) sepia(69%) saturate(372%)
+    hue-rotate(95deg) brightness(106%) contrast(101%);
 }
 
 .checkmark-icon-case-studies {
@@ -135,11 +135,11 @@
 
 .why-choose-text {
   font-size: 14px;
-  color: #49484D;
+  color: #49484d;
   line-height: 100%;
   font-weight: 400;
   font-family: var(--font-gilroy);
-  margin-top:6px
+  margin-top: 6px;
 }
 
 .why-choose-right {
@@ -164,23 +164,23 @@
   .three-decades-section {
     padding: 60px 0;
   }
-  
+
   .three-decades-title {
     font-size: 40px;
     font-family: var(--font-gilroy);
     font-weight: 600;
   }
-  
+
   .three-decades-features {
     gap: 32px;
     margin-bottom: 60px;
     display: flex;
   }
-  
+
   .why-choose-section {
     gap: 40px;
   }
-  
+
   .why-choose-title {
     font-size: 28px;
     font-family: var(--font-gilroy);
@@ -192,21 +192,21 @@
   .three-decades-container {
     padding: 0 16px;
   }
-  
+
   .three-decades-header {
     margin-bottom: 40px;
   }
-  
+
   .three-decades-title {
     font-size: 24px;
     font-family: var(--font-gilroy);
     font-weight: 600;
   }
-  
+
   .three-decades-description {
     font-size: 16px;
     font-family: var(--font-gilroy);
-    color: #49484D;
+    color: #49484d;
     max-width: 100%;
   }
   .feature-icon-container {
@@ -214,24 +214,24 @@
     display: flex;
     border-radius: 12px;
   }
-  
+
   .three-decades-features {
     grid-template-columns: 1fr;
     gap: 40px;
     margin-bottom: 60px;
     display: grid;
   }
-  
+
   .why-choose-section {
     grid-template-columns: 1fr;
     gap: 40px;
     padding: 1rem;
   }
-  
+
   .why-choose-left {
     padding-right: 0;
   }
-  
+
   .why-choose-title {
     font-size: 20px;
     margin-bottom: 24px;
@@ -240,12 +240,12 @@
   }
   .feature-description {
     font-size: 14px;
-    color: #49484D;
+    color: #49484d;
     line-height: 100%;
     margin: 0;
     font-family: var(--font-gilroy);
   }
-  
+
   .why-choose-image-container {
     height: 300px;
   }
@@ -254,4 +254,3 @@
     padding: 1rem;
   }
 }
-

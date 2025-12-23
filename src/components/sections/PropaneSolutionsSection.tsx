@@ -1,18 +1,18 @@
-'use client';
+"use client"
 
-import { useRouter } from 'next/navigation';
-import './PropaneSolutionsSection.css';
+import { useRouter } from "next/navigation"
+import "./PropaneSolutionsSection.css"
 
 export default function PropaneSolutionsSection() {
-  const router = useRouter();
+  const router = useRouter()
 
   const handleRequestQuote = () => {
-    router.push('/contact');
-  };
+    router.push("/contact")
+  }
 
   const handleLearnMore = () => {
-    router.push('/about');
-  };
+    router.push("/about")
+  }
 
   return (
     <section className="propane-solutions-section">
@@ -23,17 +23,25 @@ export default function PropaneSolutionsSection() {
               Reliable Propane Solutions for Your Home
             </h2>
           </div>
-          
+
           <div className="propane-solutions-right">
             <p className="propane-solutions-description">
-              Experience the warmth and comfort of propane with our safe and affordable solutions. Enjoy peace of mind knowing that your home is powered by a reliable energy source.
+              Experience the warmth and comfort of propane with our safe and
+              affordable solutions. Enjoy peace of mind knowing that your home
+              is powered by a reliable energy source.
             </p>
-            
+
             <div className="propane-solutions-buttons">
-              <button onClick={handleRequestQuote} className="propane-solutions-button">
+              <button
+                onClick={handleRequestQuote}
+                className="propane-solutions-button"
+              >
                 Request A Quote →
               </button>
-              <button onClick={handleLearnMore} className="propane-learn-more-button">
+              <button
+                onClick={handleLearnMore}
+                className="propane-learn-more-button"
+              >
                 Learn More
               </button>
             </div>
@@ -41,5 +49,5 @@ export default function PropaneSolutionsSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }

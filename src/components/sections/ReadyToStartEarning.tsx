@@ -1,11 +1,11 @@
-'use client';
+"use client"
 
-import './ReadyToStartEarning.css';
+import "./ReadyToStartEarning.css"
 
 export default function ReadyToStartEarning() {
   const handleBecomePartner = () => {
-    console.log('Become a partner today clicked');
-  };
+    console.log("Become a partner today clicked")
+  }
 
   return (
     <section className="ready-to-start-section">
@@ -15,10 +15,11 @@ export default function ReadyToStartEarning() {
             Ready to Start Earning with Propane Sales?
           </h2>
           <p className="ready-to-start-description">
-            Join hundreds of successful Florida businesses already partnering with FloriGas.
+            Join hundreds of successful Florida businesses already partnering
+            with FloriGas.
           </p>
-          
-          <button 
+
+          <button
             onClick={handleBecomePartner}
             className="ready-to-start-button"
           >
@@ -27,5 +28,5 @@ export default function ReadyToStartEarning() {
         </div>
       </div>
     </section>
-  );
+  )
 }

@@ -1,8 +1,8 @@
-'use client';
+"use client"
 
-import { useState } from 'react';
-import Image from 'next/image';
-import './VideoOverlaySection.css';
+import { useState } from "react"
+import Image from "next/image"
+import "./VideoOverlaySection.css"
 
 export default function VideoOverlaySection() {
   // const [isVideoPlaying, setIsVideoPlaying] = useState(false); // Commented out unused variable
@@ -10,8 +10,8 @@ export default function VideoOverlaySection() {
   const handlePlayVideo = () => {
     // setIsVideoPlaying(true); // Commented out since variable is unused
     // You can integrate with YouTube API or iframe here
-    window.open('https://www.youtube.com/watch?v=Fp6kDEAEz9I', '_blank');
-  };
+    window.open("https://www.youtube.com/watch?v=Fp6kDEAEz9I", "_blank")
+  }
 
   return (
     <section className="video-overlay-section">
@@ -38,23 +38,28 @@ export default function VideoOverlaySection() {
               height={340}
               className="thumbnail-image"
             />
-            
+
             {/* Play Button */}
-            <button 
+            <button
               onClick={handlePlayVideo}
               className="play-button"
               aria-label="Play video"
             >
-              <svg 
-                width="60" 
-                height="60" 
-                viewBox="0 0 60 60" 
+              <svg
+                width="60"
+                height="60"
+                viewBox="0 0 60 60"
                 fill="none"
                 className="play-icon"
               >
-                <circle cx="30" cy="30" r="30" fill="rgba(255, 255, 255, 0.9)" />
-                <path 
-                  d="M25 20L40 30L25 40V20Z" 
+                <circle
+                  cx="30"
+                  cy="30"
+                  r="30"
+                  fill="rgba(255, 255, 255, 0.9)"
+                />
+                <path
+                  d="M25 20L40 30L25 40V20Z"
                   fill="#4168FC"
                 />
               </svg>
@@ -63,5 +68,5 @@ export default function VideoOverlaySection() {
         </div>
       </div>
     </section>
-  );
+  )
 }

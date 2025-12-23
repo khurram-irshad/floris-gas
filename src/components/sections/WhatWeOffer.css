@@ -19,7 +19,7 @@
 .what-we-offer-title {
   font-size: 36px;
   font-weight: 600;
-  background: linear-gradient(90deg, #4068FC 0%, #60B8FF 100%);
+  background: linear-gradient(90deg, #4068fc 0%, #60b8ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -30,7 +30,7 @@
 
 .what-we-offer-subtitle {
   font-size: 20px;
-  color: #49484D;
+  color: #49484d;
   font-family: var(--font-gilroy);
   font-weight: 400;
   max-width: 48rem;
@@ -60,7 +60,12 @@
 
 .offer-card:hover {
   transform: translateY(-4px);
-  background: linear-gradient(199.8deg, #14152B 3.73%, #3E4D7D 58.07%, #14152B 91.85%);
+  background: linear-gradient(
+    199.8deg,
+    #14152b 3.73%,
+    #3e4d7d 58.07%,
+    #14152b 91.85%
+  );
 }
 
 .offer-card:hover .offer-title {
@@ -100,14 +105,14 @@
   font-size: 28px;
   font-weight: 600;
   font-family: var(--font-gilroy);
-  color: #49484D;
+  color: #49484d;
   margin-bottom: 0.75rem;
   line-height: 100%;
 }
 
 .offer-description {
   font-size: 18px;
-  color: #49484D;
+  color: #49484d;
   line-height: 1.2;
   margin-bottom: 1.5rem;
   flex: 1;
@@ -120,20 +125,20 @@
   .what-we-offer-section {
     padding: 6rem 0;
   }
-  
+
   .what-we-offer-title {
     font-size: 24px;
     font-weight: 600;
     line-height: 100%;
     font-family: var(--font-gilroy);
   }
-  
+
   .what-we-offer-subtitle {
     font-size: 16px;
     line-height: 100%;
-    color: #49484D;
+    color: #49484d;
   }
-  
+
   .offer-title {
     font-size: 24px;
     font-weight: 600;
@@ -141,10 +146,10 @@
     margin-bottom: 0.75rem;
     line-height: 100%;
   }
-  
+
   .offer-description {
     font-size: 16px;
-    color: #49484D;
+    color: #49484d;
     line-height: 1.2;
     margin-bottom: 1.5rem;
     flex: 1;

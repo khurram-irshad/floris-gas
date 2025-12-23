@@ -1,45 +1,48 @@
-'use client';
+"use client"
 
-import Image from 'next/image';
-import { useRouter } from 'next/navigation';
-import './ServicesSection.css';
+import Image from "next/image"
+import { useRouter } from "next/navigation"
+import "./ServicesSection.css"
 
 const servicesData = [
   {
     id: 1,
-    title: 'Residential Propane Delivery',
-    description: 'Convenient, on-time propane delivery to power your home with comfort and reliability.',
-    image: '/card-1.png',
-    buttonText: 'Get Started',
-    buttonColor: 'blue',
-    route: '/residential'
+    title: "Residential Propane Delivery",
+    description:
+      "Convenient, on-time propane delivery to power your home with comfort and reliability.",
+    image: "/card-1.png",
+    buttonText: "Get Started",
+    buttonColor: "blue",
+    route: "/residential",
   },
   {
     id: 2,
-    title: 'Commercial Solutions',
-    description: 'Reliable propane solutions tailored to keep your business running smoothly with efficiency and cost-effectiveness.',
-    image: '/commercial.jpg',
-    buttonText: 'Get Started',
-    buttonColor: 'blue',
-    route: '/commercial'
+    title: "Commercial Solutions",
+    description:
+      "Reliable propane solutions tailored to keep your business running smoothly with efficiency and cost-effectiveness.",
+    image: "/commercial.jpg",
+    buttonText: "Get Started",
+    buttonColor: "blue",
+    route: "/commercial",
   },
   {
     id: 3,
-    title: 'Sell Propane',
-    description: 'Partner with us to sell propane and grow your business with reliable supply, trusted support, and flexible partnership opportunities.',
-    image: '/sell-propane.jpg',
-    buttonText: 'Get Started',
-    buttonColor: 'blue',
-    route: '/sell-propane'
-  }
-];
+    title: "Sell Propane",
+    description:
+      "Partner with us to sell propane and grow your business with reliable supply, trusted support, and flexible partnership opportunities.",
+    image: "/sell-propane.jpg",
+    buttonText: "Get Started",
+    buttonColor: "blue",
+    route: "/sell-propane",
+  },
+]
 
 export default function ServicesSection() {
-  const router = useRouter();
+  const router = useRouter()
 
   const handleServiceClick = (route: string) => {
-    router.push(route);
-  };
+    router.push(route)
+  }
 
   return (
     <section className="services-section">
@@ -48,15 +51,19 @@ export default function ServicesSection() {
         <div className="services-header">
           <h2 className="services-title">What we do?</h2>
           <p className="services-subtitle">
-            At FloriGas Inc. we pride ourselves on offering top-notch customer care and professional
-            expertise as your full-service propane supplier in Florida.
+            At FloriGas Inc. we pride ourselves on offering top-notch customer
+            care and professional expertise as your full-service propane
+            supplier in Florida.
           </p>
         </div>
 
         {/* Services Grid */}
         <div className="services-grid">
           {servicesData.map((service) => (
-            <div key={service.id} className="service-card">
+            <div
+              key={service.id}
+              className="service-card"
+            >
               <div className="service-image-container">
                 <Image
                   src={service.image}
@@ -69,12 +76,17 @@ export default function ServicesSection() {
               <div className="service-content">
                 <h3 className="service-title">{service.title}</h3>
                 <p className="service-description">{service.description}</p>
-                <button 
+                <button
                   className={`service-button ${service.buttonColor}`}
                   onClick={() => handleServiceClick(service.route)}
                 >
                   {service.buttonText}
-                  <Image src="/card-arrow.png" alt="Arrow" width={12} height={12} />
+                  <Image
+                    src="/card-arrow.png"
+                    alt="Arrow"
+                    width={12}
+                    height={12}
+                  />
                 </button>
               </div>
             </div>
@@ -82,5 +94,5 @@ export default function ServicesSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }

@@ -22,14 +22,14 @@
 .propane-benefits-title {
   font-size: 36px;
   font-weight: 500;
-  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background: linear-gradient(90deg, #4168fc 0%, #72c0fe 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   line-height: 100%;
   margin: 0 0 1.5rem 0;
   font-family: var(--font-gilroy);
-  font-weight:600;
+  font-weight: 600;
 }
 
 .propane-benefits-description {
@@ -73,7 +73,7 @@
 .propane-benefit-title {
   font-size: 20px;
   font-weight: 600;
-  color: #49484D;
+  color: #49484d;
   margin: 0 0 0.5rem 0;
   line-height: 100%;
   font-family: var(--font-gilroy);
@@ -81,7 +81,7 @@
 
 .propane-benefit-description {
   font-size: 14px;
-  color: #49484D;
+  color: #49484d;
   line-height: 1.5;
   margin: 0;
   font-family: var(--font-gilroy);
@@ -108,71 +108,69 @@
   border-radius: 12px;
 }
 
-
 @media screen and (max-width: 768px) {
   .propane-benefits-section {
     padding: 3rem 0;
   }
-  
+
   .propane-benefits-container {
     padding: 0 0.75rem;
   }
-  
+
   .propane-benefits-content {
     flex-direction: column;
     gap: 2rem;
   }
-  
+
   .propane-benefits-left {
     max-width: none;
   }
-  
+
   .propane-benefits-right {
     width: 100%;
     justify-content: center;
   }
-  
+
   .propane-benefits-image-container {
     height: 450px;
     width: 100%;
     max-width: 100%;
   }
-  
+
   .propane-benefits-title {
     font-size: 24px;
     line-height: 100%;
     font-weight: 600;
     font-family: var(--font-gilroy);
-    background: linear-gradient(90deg, #4068FC 0%, #60B8FF 100%);
+    background: linear-gradient(90deg, #4068fc 0%, #60b8ff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
-  
+
   .propane-benefits-description {
     font-size: 16px;
     margin-bottom: 1rem;
     line-height: 100%;
-    color: #49484D;
+    color: #49484d;
   }
-  
+
   .propane-benefits-list {
     gap: 1.25rem;
   }
-  
+
   .propane-benefit-icon {
     width: 40px;
     height: 40px;
   }
-  
+
   .propane-benefit-title {
     font-size: 18px;
   }
-  
+
   .propane-benefit-description {
     font-size: 14px;
     line-height: 100%;
-    color: #49484D;
+    color: #49484d;
   }
 }
-

@@ -1,15 +1,15 @@
-'use client';
+"use client"
 
-import './ReadyToSellPropaneCTA.css';
+import "./ReadyToSellPropaneCTA.css"
 
 export default function ReadyToSellPropaneCTA() {
   const handleApplyNow = () => {
-    console.log('Apply Now clicked');
-  };
+    console.log("Apply Now clicked")
+  }
 
   const handleScheduleConsultation = () => {
-    console.log('Schedule Consultation clicked');
-  };
+    console.log("Schedule Consultation clicked")
+  }
 
   return (
     <section className="ready-to-sell-propane-section">
@@ -22,18 +22,21 @@ export default function ReadyToSellPropaneCTA() {
             Become a FloriGas Partner Today
           </h3>
           <p className="ready-to-sell-propane-description">
-            Join hundreds of successful businesses across Florida who are earning with propane<br />
-            sales. Start your profitable partnership with the most trusted name in propane.
+            Join hundreds of successful businesses across Florida who are
+            earning with propane
+            <br />
+            sales. Start your profitable partnership with the most trusted name
+            in propane.
           </p>
-          
+
           <div className="ready-to-sell-propane-buttons">
-            <button 
+            <button
               onClick={handleApplyNow}
               className="ready-to-sell-propane-button primary"
             >
               Apply Now →
             </button>
-            <button 
+            <button
               onClick={handleScheduleConsultation}
               className="ready-to-sell-propane-button"
             >
@@ -62,5 +65,5 @@ export default function ReadyToSellPropaneCTA() {
         </div>
       </div>
     </section>
-  );
+  )
 }

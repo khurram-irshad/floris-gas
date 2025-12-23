@@ -24,7 +24,7 @@
 .process-steps-title {
   font-size: 36px;
   font-weight: 600;
-  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background: linear-gradient(90deg, #4168fc 0%, #72c0fe 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -36,7 +36,7 @@
 
 .process-steps-description {
   font-size: 20px;
-  color: #49484D;
+  color: #49484d;
   line-height: 1.6;
   margin: 0;
   max-width: 50%;
@@ -66,8 +66,7 @@
   border-bottom-right-radius: 12px;
 }
 
-
-.process-step-icon{
+.process-step-icon {
   margin-bottom: 36px;
 }
 
@@ -82,7 +81,7 @@
 
 .process-step-number {
   font-size: 14px;
-  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background: linear-gradient(90deg, #4168fc 0%, #72c0fe 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -95,7 +94,7 @@
 .process-step-title {
   font-size: 24px;
   font-weight: 600;
-  color: #49484D;
+  color: #49484d;
   margin: 0 0 1rem 0;
   line-height: 100%;
   font-family: var(--font-gilroy);
@@ -103,7 +102,7 @@
 
 .process-step-description {
   font-size: 16px;
-  color: #49484D;
+  color: #49484d;
   line-height: 100%;
   margin: 0;
   font-family: var(--font-gilroy);
@@ -128,7 +127,7 @@
 }
 
 .process-steps-button.primary {
-  background: linear-gradient(90deg, #4067FC 0%, #60B8FF 100%);
+  background: linear-gradient(90deg, #4067fc 0%, #60b8ff 100%);
   color: #ffffff;
 }
 
@@ -143,7 +142,7 @@
     font-size: 32px;
     max-width: 60%;
   }
-  
+
   .process-steps-description {
     max-width: 70%;
   }
@@ -157,70 +156,69 @@
     margin: 0;
     font-size: 16px;
     line-height: 100%;
-    color: #49484D;
+    color: #49484d;
   }
-  
+
   .process-steps-container {
     padding: 0 0.75rem;
   }
-  
+
   .process-steps-header {
     margin-bottom: 3rem;
   }
-  
+
   .process-steps-title {
     margin-top: 0.5rem;
     font-size: 24px;
     max-width: 100%;
     margin-bottom: 0.5rem;
   }
-  
+
   .process-steps-description {
     font-size: 16px;
     max-width: 100%;
     line-height: 100%;
-    color: #49484D;
+    color: #49484d;
   }
-  
+
   .process-steps-grid {
     grid-template-columns: 1fr;
     margin-bottom: 2rem;
     border-radius: 16px;
   }
-  
+
   .process-step-card {
     padding: 1rem;
     border-radius: 0;
   }
-  
+
   .process-step-card:first-child {
     border-radius: 16px 16px 0 0;
   }
-  
+
   .process-step-card:last-child {
     border-radius: 0 0 16px 16px;
   }
-  
+
   .process-step-icon {
     width: 48px;
     height: 48px;
   }
-  
+
   .process-step-title {
     font-size: 24px;
   }
-  
+
   .process-step-description {
     font-size: 18px;
     line-height: 100%;
-    color: #49484D;
+    color: #49484d;
   }
-  
+
   .process-steps-buttons {
-   flex-direction: column;
+    flex-direction: column;
   }
   .process-steps-button {
     width: 100%;
   }
 }
-

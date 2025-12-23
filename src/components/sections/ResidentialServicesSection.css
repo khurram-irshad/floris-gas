@@ -20,7 +20,7 @@
 
 .residential-services-title {
   font-size: 36px;
-  background: linear-gradient(90deg, #4068FC 0%, #60B8FF 100%);
+  background: linear-gradient(90deg, #4068fc 0%, #60b8ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -52,7 +52,12 @@
 
 .residential-service-card:hover {
   transform: translateY(-4px);
-  background: linear-gradient(199.8deg, #14152B 3.73%, #3E4D7D 58.07%, #14152B 91.85%);
+  background: linear-gradient(
+    199.8deg,
+    #14152b 3.73%,
+    #3e4d7d 58.07%,
+    #14152b 91.85%
+  );
 }
 
 .residential-service-card:hover .residential-service-title {
@@ -87,7 +92,7 @@
 .residential-service-subtitle {
   font-size: 18px;
   font-weight: 600;
-  background: linear-gradient(90deg, #416AFC 0%, #5DB2FE 100%);
+  background: linear-gradient(90deg, #416afc 0%, #5db2fe 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -138,7 +143,7 @@
 }
 
 .residential-service-button.blue {
-  background: linear-gradient(90deg, #4068FC 0%, #60B8FF 100%);
+  background: linear-gradient(90deg, #4068fc 0%, #60b8ff 100%);
   color: white;
 }
 
@@ -152,47 +157,47 @@
   .residential-services-section {
     padding: 3rem 0;
   }
-  .residential-services-header{
+  .residential-services-header {
     padding-left: 0;
     padding-right: 0;
   }
-  
+
   .residential-services-container {
     padding: 0 0.75rem;
   }
-  
+
   .residential-services-title {
     font-size: 24px;
     line-height: 100%;
     font-weight: 600;
     font-family: var(--font-gilroy);
-    background: linear-gradient(90deg, #4068FC 0%, #60B8FF 100%);
+    background: linear-gradient(90deg, #4068fc 0%, #60b8ff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
-  
+
   .residential-services-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .residential-service-card {
     height: auto;
   }
-  
+
   .residential-service-image-container {
     height: 250px;
   }
-  
+
   .residential-service-title {
     font-size: 24px;
     line-height: 100%;
     font-weight: 600;
     font-family: var(--font-gilroy);
-    color: #49484D;
+    color: #49484d;
   }
-  
+
   .residential-service-description {
     font-size: 16px;
   }

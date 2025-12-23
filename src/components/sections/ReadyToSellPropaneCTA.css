@@ -1,5 +1,9 @@
 .ready-to-sell-propane-section {
-  background: radial-gradient(193.05% 218.27% at 8.75% -37.14%, #4E75AA 4.03%, #0E081B 91.3%);
+  background: radial-gradient(
+    193.05% 218.27% at 8.75% -37.14%,
+    #4e75aa 4.03%,
+    #0e081b 91.3%
+  );
   padding: 80px 0;
   text-align: center;
   color: white;
@@ -68,11 +72,10 @@
 }
 
 .ready-to-sell-propane-button.primary {
-  background: linear-gradient(90deg, #4067FC 0%, #60B8FF 100%);
+  background: linear-gradient(90deg, #4067fc 0%, #60b8ff 100%);
   color: white;
   box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
 }
-
 
 .ready-to-sell-propane-button {
   background: #eef2f6;
@@ -120,11 +123,11 @@
   .ready-to-sell-propane-subtitle {
     font-size: 40px;
   }
-  
+
   .ready-to-sell-propane-description {
     font-size: 17px;
   }
-  
+
   .ready-to-sell-propane-stats {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
@@ -135,50 +138,49 @@
   .ready-to-sell-propane-section {
     padding: 60px 0;
   }
-  
+
   .ready-to-sell-propane-container {
     padding: 0 16px;
   }
-  
+
   .ready-to-sell-propane-title,
   .ready-to-sell-propane-subtitle {
     font-size: 28px;
     font-family: var(--font-gilroy);
     font-weight: 600;
   }
-  
+
   .ready-to-sell-propane-description {
     font-size: 16px;
     margin-bottom: 32px;
     font-family: var(--font-gilroy);
   }
-  
+
   .ready-to-sell-propane-buttons {
     flex-direction: column;
     gap: 16px;
   }
-  
+
   .ready-to-sell-propane-button {
     width: 100%;
     padding: 16px 24px;
   }
-  
+
   .ready-to-sell-propane-content {
     margin-bottom: 50px;
   }
-  
+
   .ready-to-sell-propane-stats {
     grid-template-columns: none;
     gap: 2rem;
   }
-  
+
   .stat-number {
     font-size: 28px;
   }
-  
+
   .stat-label-sell {
     font-size: 20px;
     font-weight: 400;
   }
 }
-

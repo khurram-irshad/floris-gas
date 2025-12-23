@@ -1,7 +1,7 @@
-'use client';
+"use client"
 
-import Image from 'next/image';
-import './ResidentialHeroSection.css';
+import Image from "next/image"
+import "./ResidentialHeroSection.css"
 
 export default function ResidentialHeroSection() {
   return (
@@ -16,5 +16,5 @@ export default function ResidentialHeroSection() {
         />
       </div>
     </section>
-  );
+  )
 }

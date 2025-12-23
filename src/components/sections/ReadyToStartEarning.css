@@ -1,5 +1,9 @@
 .ready-to-start-section {
-  background: radial-gradient(193.05% 218.27% at 8.75% -37.14%, #4E75AA 4.03%, #0E081B 91.3%);
+  background: radial-gradient(
+    193.05% 218.27% at 8.75% -37.14%,
+    #4e75aa 4.03%,
+    #0e081b 91.3%
+  );
   padding: 4rem 0;
   text-align: center;
 }
@@ -48,13 +52,12 @@
   font-family: var(--font-gilroy);
 }
 
-
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
   .ready-to-start-title {
     font-size: 32px;
   }
-  
+
   .ready-to-start-description {
     font-size: 17px;
   }
@@ -64,23 +67,23 @@
   .ready-to-start-section {
     padding: 3rem 0;
   }
-  
+
   .ready-to-start-container {
     padding: 0 0.75rem;
   }
-  
+
   .ready-to-start-title {
     font-size: 24px;
     font-family: var(--font-gilroy);
     font-weight: 600;
   }
-  
+
   .ready-to-start-description {
     font-size: 16px;
     margin-bottom: 2rem;
     font-family: var(--font-gilroy);
   }
-  
+
   .ready-to-start-button {
     width: 100%;
     max-width: 240px;
@@ -88,4 +91,3 @@
     font-size: 15px;
   }
 }
-

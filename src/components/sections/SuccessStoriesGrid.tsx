@@ -1,134 +1,144 @@
-'use client';
+"use client"
 
-import { useState } from 'react';
-import Image from 'next/image';
-import './SuccessStoriesGrid.css';
+import { useState } from "react"
+import Image from "next/image"
+import "./SuccessStoriesGrid.css"
 
 const successStories = [
   {
     id: 1,
-    category: 'residential',
-    badge: 'Residential',
-    title: 'Florida Family Estate',
-    description: 'Complete propane solution for 8,000 sq ft home with pool heating, outdoor kitchen, and backup generator.',
+    category: "residential",
+    badge: "Residential",
+    title: "Florida Family Estate",
+    description:
+      "Complete propane solution for 8,000 sq ft home with pool heating, outdoor kitchen, and backup generator.",
     benefits: [
-      '50% heating cost reduction',
-      '24/7 reliable backup power',
-      'Enhanced outdoor living'
+      "50% heating cost reduction",
+      "24/7 reliable backup power",
+      "Enhanced outdoor living",
     ],
-    image: '/florida-family-estate.jpg',
-    link: '#'
+    image: "/florida-family-estate.jpg",
+    link: "#",
   },
   {
     id: 2,
-    category: 'commercial',
-    badge: 'Commercial',
-    title: 'Coastal Seafood Restaurant Chain',
-    description: 'Bulk propane supply solution for 12-location restaurant chain specializing in fresh seafood.',
+    category: "commercial",
+    badge: "Commercial",
+    title: "Coastal Seafood Restaurant Chain",
+    description:
+      "Bulk propane supply solution for 12-location restaurant chain specializing in fresh seafood.",
     benefits: [
-      '35% cost savings across locations',
-      '99% delivery reliability',
-      '12 locations standardized'
+      "35% cost savings across locations",
+      "99% delivery reliability",
+      "12 locations standardized",
     ],
-    image: '/sea-food-resturant.jpg',
-    link: '#'
+    image: "/sea-food-resturant.jpg",
+    link: "#",
   },
   {
     id: 3,
-    category: 'partners',
-    badge: 'Partners',
-    title: 'Gulf Coast Hardware Network',
-    description: 'Partnership opportunity enabling 3 hardware stores to sell propane and generate additional revenue.',
+    category: "partners",
+    badge: "Partners",
+    title: "Gulf Coast Hardware Network",
+    description:
+      "Partnership opportunity enabling 3 hardware stores to sell propane and generate additional revenue.",
     benefits: [
-      '40% revenue increase',
-      '98% customer satisfaction',
-      '3 store network'
+      "40% revenue increase",
+      "98% customer satisfaction",
+      "3 store network",
     ],
-    image: '/gulf-coast.jpg',
-    link: '#'
+    image: "/gulf-coast.jpg",
+    link: "#",
   },
   {
     id: 4,
-    category: 'residential',
-    badge: 'Residential',
-    title: 'Lakefront Community Development',
-    description: 'Comprehensive propane infrastructure for 150+ homes in luxury lakefront community.',
+    category: "residential",
+    badge: "Residential",
+    title: "Lakefront Community Development",
+    description:
+      "Comprehensive propane infrastructure for 150+ homes in luxury lakefront community.",
     benefits: [
-      '150 homes served',
-      'Community-wide savings',
-      'Enhanced property values'
+      "150 homes served",
+      "Community-wide savings",
+      "Enhanced property values",
     ],
-    image: '/lake-front.jpg',
-    link: '#'
+    image: "/lake-front.jpg",
+    link: "#",
   },
   {
     id: 5,
-    category: 'commercial',
-    badge: 'Commercial',
-    title: 'Agricultural Processing Facility',
-    description: 'Large-scale propane solution for food processing plant with 24/7 operations requirements.',
+    category: "commercial",
+    badge: "Commercial",
+    title: "Agricultural Processing Facility",
+    description:
+      "Large-scale propane solution for food processing plant with 24/7 operations requirements.",
     benefits: [
-      'Zero downtime achieved',
-      '30% efficiency improvement',
-      '24/7 reliable supply'
+      "Zero downtime achieved",
+      "30% efficiency improvement",
+      "24/7 reliable supply",
     ],
-    image: '/agriculture.jpg',
-    link: '#'
+    image: "/agriculture.jpg",
+    link: "#",
   },
   {
     id: 6,
-    category: 'partners',
-    badge: 'Partners',
-    title: 'Marina & Marine Supply Stores',
-    description: 'Partnership with 4 marina locations to provide propane services for boaters and marine customers.',
+    category: "partners",
+    badge: "Partners",
+    title: "Marina & Marine Supply Stores",
+    description:
+      "Partnership with 4 marina locations to provide propane services for boaters and marine customers.",
     benefits: [
-      '4 marina partnerships',
-      '25% partner revenue boost',
-      'Marine market expansion'
+      "4 marina partnerships",
+      "25% partner revenue boost",
+      "Marine market expansion",
     ],
-    image: '/marina.jpg',
-    link: '#'
-  }
-];
+    image: "/marina.jpg",
+    link: "#",
+  },
+]
 
 const filterOptions = [
-  { id: 'all', label: 'All Stories', count: 6 },
-  { id: 'residential', label: 'Residential', count: 2 },
-  { id: 'commercial', label: 'Commercial', count: 2 },
-  { id: 'partners', label: 'Partners', count: 2 }
-];
+  { id: "all", label: "All Stories", count: 6 },
+  { id: "residential", label: "Residential", count: 2 },
+  { id: "commercial", label: "Commercial", count: 2 },
+  { id: "partners", label: "Partners", count: 2 },
+]
 
 export default function SuccessStoriesGrid() {
-  const [activeFilter, setActiveFilter] = useState('all');
-  const [visibleStories, setVisibleStories] = useState(6);
+  const [activeFilter, setActiveFilter] = useState("all")
+  const [visibleStories, setVisibleStories] = useState(6)
 
-  const filteredStories = activeFilter === 'all' 
-    ? successStories 
-    : successStories.filter(story => story.category === activeFilter);
+  const filteredStories =
+    activeFilter === "all"
+      ? successStories
+      : successStories.filter((story) => story.category === activeFilter)
 
-  const displayedStories = filteredStories.slice(0, visibleStories);
+  const displayedStories = filteredStories.slice(0, visibleStories)
 
   const handleFilterChange = (filterId: string) => {
-    setActiveFilter(filterId);
-    setVisibleStories(6); // Reset visible stories when filter changes
-  };
+    setActiveFilter(filterId)
+    setVisibleStories(6) // Reset visible stories when filter changes
+  }
 
   const handleLoadMore = () => {
-    setVisibleStories(prev => prev + 3);
-  };
+    setVisibleStories((prev) => prev + 3)
+  }
 
   const handleReadFullStory = (storyId: number) => {
-    console.log(`Read full story clicked for story ${storyId}`);
-  };
+    console.log(`Read full story clicked for story ${storyId}`)
+  }
 
   return (
     <section className="success-stories-grid-section">
       <div className="success-stories-grid-container">
         <div className="success-stories-grid-header">
-          <h2 className="success-stories-grid-title">Success Stories Across Florida</h2>
+          <h2 className="success-stories-grid-title">
+            Success Stories Across Florida
+          </h2>
           <p className="success-stories-grid-description">
-            Discover how FloriGas has helped customers across residential, commercial, and 
-            partnership sectors achieve their goals with reliable propane solutions.
+            Discover how FloriGas has helped customers across residential,
+            commercial, and partnership sectors achieve their goals with
+            reliable propane solutions.
           </p>
         </div>
 
@@ -137,7 +147,9 @@ export default function SuccessStoriesGrid() {
             <button
               key={option.id}
               onClick={() => handleFilterChange(option.id)}
-              className={`success-stories-filter-button ${activeFilter === option.id ? 'active' : ''}`}
+              className={`success-stories-filter-button ${
+                activeFilter === option.id ? "active" : ""
+              }`}
             >
               {option.label} ({option.count})
             </button>
@@ -146,7 +158,10 @@ export default function SuccessStoriesGrid() {
 
         <div className="success-stories-grid">
           {displayedStories.map((story) => (
-            <div key={story.id} className="success-story-card">
+            <div
+              key={story.id}
+              className="success-story-card"
+            >
               <div className="success-story-image-container">
                 <Image
                   src={story.image}
@@ -154,16 +169,21 @@ export default function SuccessStoriesGrid() {
                   fill
                   className="success-story-image"
                 />
-                <div className="success-story-badge"><span className="gradient-text">{story.badge}</span></div>
+                <div className="success-story-badge">
+                  <span className="gradient-text">{story.badge}</span>
+                </div>
               </div>
-              
+
               <div className="success-story-content">
                 <h3 className="success-story-title">{story.title}</h3>
                 <p className="success-story-description">{story.description}</p>
-                
+
                 <div className="success-story-benefits">
                   {story.benefits.map((benefit, index) => (
-                    <div key={index} className="success-story-benefit">
+                    <div
+                      key={index}
+                      className="success-story-benefit"
+                    >
                       <div className="success-story-checkmark">
                         <Image
                           src="/checkmark-badge.png"
@@ -173,7 +193,9 @@ export default function SuccessStoriesGrid() {
                           className="checkmark-icon"
                         />
                       </div>
-                      <span className="success-story-benefit-text">{benefit}</span>
+                      <span className="success-story-benefit-text">
+                        {benefit}
+                      </span>
                     </div>
                   ))}
                 </div>
@@ -198,7 +220,7 @@ export default function SuccessStoriesGrid() {
 
         {filteredStories.length > visibleStories && (
           <div className="success-stories-load-more">
-            <button 
+            <button
               onClick={handleLoadMore}
               className="success-stories-load-more-button"
             >
@@ -207,7 +229,7 @@ export default function SuccessStoriesGrid() {
           </div>
         )}
       </div>
-           {/* <div className="success-stories-load-more-button-container">
+      {/* <div className="success-stories-load-more-button-container">
                     <button 
                       // onClick={handleReadMoreCaseStudies}
                       className="success-stories-load-more-button"
@@ -216,5 +238,5 @@ export default function SuccessStoriesGrid() {
                     </button>
             </div> */}
     </section>
-  );
+  )
 }

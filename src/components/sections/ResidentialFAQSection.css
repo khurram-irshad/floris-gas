@@ -17,7 +17,7 @@
 .residential-faq-title {
   font-size: 36px;
   font-weight: 600;
-  color: #49484D;
+  color: #49484d;
   margin: 0 0 1.5rem 0;
   line-height: 1.2;
   font-family: var(--font-gilroy);
@@ -50,7 +50,12 @@
 }
 
 .residential-faq-item.open {
-  background: linear-gradient(92.35deg, #14152B 4.74%, #5D85B3 77.91%, #37447A 98.51%);
+  background: linear-gradient(
+    92.35deg,
+    #14152b 4.74%,
+    #5d85b3 77.91%,
+    #37447a 98.51%
+  );
   border-color: transparent;
 }
 
@@ -108,7 +113,8 @@
 .residential-faq-answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out, padding 0.3s ease-in-out;
+  transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out,
+    padding 0.3s ease-in-out;
   opacity: 0;
   padding: 0 1.5rem 0;
 }
@@ -132,37 +138,37 @@
   .residential-faq-section {
     padding: 3rem 0;
   }
-  
+
   .residential-faq-container {
     padding: 0 0.75rem;
   }
-  
+
   .residential-faq-header {
     margin-bottom: 3rem;
     text-align: left;
   }
-  
+
   .residential-faq-title {
     font-size: 24px;
     margin-bottom: 0.5rem;
   }
-  
+
   .residential-faq-description {
     font-size: 16px;
   }
-  
+
   .residential-faq-list {
     gap: 0.75rem;
   }
-  
+
   .residential-faq-question {
     padding: 1rem 1.25rem;
   }
-  
+
   .residential-faq-question-text {
     font-size: 14px;
   }
-  
+
   .residential-faq-item.open .residential-faq-answer {
     padding: 0 1.25rem 1rem;
   }
@@ -172,19 +178,19 @@
   .residential-faq-title {
     font-size: 24px;
   }
-  
+
   .residential-faq-description {
     font-size: 15px;
   }
-  
+
   .residential-faq-question {
     padding: 0.875rem 1rem;
   }
-  
+
   .residential-faq-question-text {
     font-size: 13px;
   }
-  
+
   .residential-faq-answer p {
     font-size: 13px;
   }

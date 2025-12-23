@@ -113,7 +113,7 @@
 .video-title {
   font-size: 2rem;
   font-weight: 600;
-  color: #4168FC;
+  color: #4168fc;
   margin-bottom: 1rem;
 }
 
@@ -136,11 +136,11 @@
   .video-overlay-section {
     display: flex;
   }
-  
+
   .video-content-container {
     padding: 4rem 2rem;
   }
-  
+
   .video-overlay-card {
     max-width: 600px;
   }
@@ -150,7 +150,7 @@
   .video-title {
     font-size: 2.5rem;
   }
-  
+
   .video-description {
     font-size: 1.125rem;
   }

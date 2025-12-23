@@ -16,7 +16,7 @@
 .what-you-get-title {
   font-size: 36px;
   font-weight: 600;
-  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background: linear-gradient(90deg, #4168fc 0%, #72c0fe 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -27,7 +27,7 @@
 
 .what-you-get-description {
   font-size: 20px;
-  color: #49484D;
+  color: #49484d;
   line-height: 1.6;
   margin: 0;
   margin: 0 auto;
@@ -59,14 +59,13 @@
   margin-bottom: 1.5rem;
 }
 
-
 .feature-content {
   text-align: left;
 }
 
 .feature-title {
   font-size: 24px;
-  color: #49484D;
+  color: #49484d;
   line-height: 100%;
   font-weight: 600;
   font-family: var(--font-gilroy);
@@ -74,7 +73,7 @@
 
 .feature-description {
   font-size: 16px;
-  color: #49484D;
+  color: #49484d;
   line-height: 100%;
   margin: 0.5rem 0 1.5rem 0;
   font-family: var(--font-gilroy);
@@ -97,12 +96,13 @@
 }
 
 .checkmark-icon {
-  filter: brightness(0) saturate(100%) invert(45%) sepia(84%) saturate(2676%) hue-rotate(130deg) brightness(119%) contrast(119%);
+  filter: brightness(0) saturate(100%) invert(45%) sepia(84%) saturate(2676%)
+    hue-rotate(130deg) brightness(119%) contrast(119%);
 }
 
 .feature-text {
   font-size: 16px;
-  color: #49484D;
+  color: #49484d;
   line-height: 1.5;
   font-family: var(--font-gilroy);
 }
@@ -112,7 +112,7 @@
   .what-you-get-title {
     font-size: 32px;
   }
-  
+
   .partner-features-grid {
     gap: 1.5rem;
   }
@@ -122,51 +122,50 @@
   .what-you-get-section {
     padding: 3rem 0;
   }
-  
+
   .what-you-get-container {
     padding: 0 0.75rem;
   }
-  
+
   .what-you-get-header {
     margin-bottom: 2.5rem;
   }
-  
+
   .what-you-get-title {
     font-size: 24px;
     font-family: var(--font-gilroy);
     font-weight: 600;
   }
-  
+
   .what-you-get-description {
     font-size: 16px;
     font-family: var(--font-gilroy);
-    color: #49484D;
+    color: #49484d;
     br {
       display: none;
     }
   }
-  
+
   .partner-features-grid {
     grid-template-columns: none;
     gap: 1.5rem;
   }
-  
+
   .partner-feature-card {
     padding: 1rem;
   }
-  
+
   .feature-title {
     font-size: 20px;
     font-weight: 600;
   }
-  
+
   .feature-description {
     font-size: 16px;
     font-weight: 500;
   }
-  
+
   .feature-text {
     font-size: 14px;
   }
 }
-

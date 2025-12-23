@@ -22,7 +22,7 @@
   font-weight: 600;
   color: #1f2937;
   margin-bottom: 16px;
-  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background: linear-gradient(90deg, #4168fc 0%, #72c0fe 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -32,7 +32,7 @@
 
 .what-drive-us-description {
   font-size: 20px;
-  color: #49484D;
+  color: #49484d;
   line-height: 100%;
   margin: 0;
   font-family: var(--font-gilroy);
@@ -42,7 +42,7 @@
 
 /* Content Wrapper with Background */
 .content-wrapper {
-  background-color: #F4F7FA;
+  background-color: #f4f7fa;
   padding: 3rem 0;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
@@ -78,7 +78,7 @@
   font-size: 36px;
   font-weight: 600;
   margin-bottom: 16px;
-  background: linear-gradient(90deg, #4168FC 0%, #72C0FE 100%);
+  background: linear-gradient(90deg, #4168fc 0%, #72c0fe 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -89,7 +89,7 @@
 .mission-description {
   font-size: 18px;
   line-height: 100%;
-  color: #49484D;
+  color: #49484d;
   margin: 0;
   font-family: var(--font-gilroy);
 }
@@ -128,9 +128,8 @@
   align-items: flex-start;
 }
 
-
 .feature-icon {
-  background: #2F3B6A;
+  background: #2f3b6a;
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -142,7 +141,7 @@
 .feature-title {
   font-size: 24px;
   font-weight: 600;
-  color: #49484D;
+  color: #49484d;
   margin-bottom: 8px;
   margin-top: 0;
   font-family: var(--font-gilroy);
@@ -151,7 +150,7 @@
 
 .feature-description {
   font-size: 16px;
-  color: #49484D;
+  color: #49484d;
   line-height: 100%;
   margin: 0;
   flex-grow: 1;
@@ -164,11 +163,11 @@
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .mission-section {
     min-height: auto;
   }
-  
+
   .drive-us-features-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -178,37 +177,36 @@
   .what-drive-us-section {
     padding: 3rem 0;
   }
-  
+
   .what-drive-us-container {
     padding: 0 1rem;
   }
-  
+
   .what-drive-us-header {
     margin-bottom: 3rem;
   }
-  
+
   .what-drive-us-title {
     font-size: 24px;
     font-family: var(--font-gilroy);
     font-weight: 600;
   }
-  
+
   .what-drive-us-description {
     font-size: 16px;
     font-family: var(--font-gilroy);
-    color: #49484D;
+    color: #49484d;
     max-width: 100%;
   }
-  
+
   .drive-us-features-grid {
     gap: 1rem;
   }
-  
-  
+
   .mission-section {
     padding: 1.5rem;
   }
-  
+
   .mission-title {
     font-size: 36px;
     font-family: var(--font-gilroy);
@@ -216,11 +214,11 @@
     display: flex;
     justify-content: center;
   }
-  
+
   .mission-description {
     font-size: 18px;
     font-family: var(--font-gilroy);
-    color: #49484D;
+    color: #49484d;
     display: flex;
     justify-content: center;
     align-items: center;

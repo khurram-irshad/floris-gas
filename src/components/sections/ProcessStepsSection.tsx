@@ -1,8 +1,8 @@
-'use client';
+"use client"
 
-import Image from 'next/image';
-import './ProcessStepsSection.css';
-import { useRouter } from 'next/navigation';
+import Image from "next/image"
+import "./ProcessStepsSection.css"
+import { useRouter } from "next/navigation"
 
 const steps = [
   {
@@ -10,34 +10,34 @@ const steps = [
     stepNumber: "Step 1:",
     title: "Schedule Your Propane Delivery",
     description: "Choose a convenient time for our team to deliver.",
-    icon: "/s-schedule.jpg"
+    icon: "/s-schedule.jpg",
   },
   {
     id: 2,
     stepNumber: "Step 2:",
     title: "Reliable Delivery to Your Home",
     description: "Our experienced drivers will ensure safe delivery.",
-    icon: "/s-reliable.jpg"
+    icon: "/s-reliable.jpg",
   },
   {
     id: 3,
     stepNumber: "Step 3:",
     title: "Enjoy Comfort and Peace of Mind",
     description: "Relax and enjoy the warmth of propane in your home.",
-    icon: "/s-enjoy.jpg"
-  }
-];
+    icon: "/s-enjoy.jpg",
+  },
+]
 
 export default function ProcessStepsSection() {
-  const router = useRouter();
+  const router = useRouter()
 
   const handleRequestQuote = () => {
-    router.push('/contact');
-  };
+    router.push("/contact")
+  }
 
   const handleLearnMore = () => {
-   router.push('/about');
-  };
+    router.push("/about")
+  }
 
   return (
     <section className="process-steps-section">
@@ -48,13 +48,17 @@ export default function ProcessStepsSection() {
             Simple Steps to Enjoy Your Propane Service
           </h2>
           <p className="process-steps-description">
-            Getting started with our propane service is easy. Follow these three simple steps to ensure your home is comfortable and efficient.
+            Getting started with our propane service is easy. Follow these three
+            simple steps to ensure your home is comfortable and efficient.
           </p>
         </div>
 
         <div className="process-steps-grid">
           {steps.map((step) => (
-            <div key={step.id} className="process-step-card">
+            <div
+              key={step.id}
+              className="process-step-card"
+            >
               <div className="process-step-icon">
                 <Image
                   src={step.icon}
@@ -64,7 +68,7 @@ export default function ProcessStepsSection() {
                   className="step-icon-image"
                 />
               </div>
-              
+
               <div className="process-step-content">
                 <p className="process-step-number">{step.stepNumber}</p>
                 <h3 className="process-step-title">{step.title}</h3>
@@ -75,14 +79,20 @@ export default function ProcessStepsSection() {
         </div>
 
         <div className="process-steps-buttons">
-          <button onClick={handleRequestQuote} className="process-steps-button primary">
+          <button
+            onClick={handleRequestQuote}
+            className="process-steps-button primary"
+          >
             Request A Quote →
           </button>
-          <button onClick={handleLearnMore} className="process-steps-button secondary">
+          <button
+            onClick={handleLearnMore}
+            className="process-steps-button secondary"
+          >
             Learn More
           </button>
         </div>
       </div>
     </section>
-  );
+  )
 }
