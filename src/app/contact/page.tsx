@@ -15,11 +15,11 @@ export async function generateMetadata(): Promise<Metadata> {
     description:
       "Contact FloriGas for all your propane needs. Get in touch with our team for quotes, service inquiries, or questions about our residential and commercial propane services in Florida. We're here to help!",
 
-    metadataBase: new URL("https://florigas.com"),
+    metadataBase: new URL("https://florigas.us"),
     openGraph: {
       images: [
         {
-          url: "https://florigas.com/hero-section-background.png",
+          url: "https://florigas.us/hero-section-background.png",
           width: 1200,
           height: 630,
           alt: "Contact FloriGas",
@@ -30,7 +30,7 @@ export async function generateMetadata(): Promise<Metadata> {
         "Contact FloriGas for all your propane needs. Get in touch with our team for quotes, service inquiries, or questions about our residential and commercial propane services in Florida. We're here to help!",
       type: "website",
       locale: "en_US",
-      url: "https://florigas.com/contact",
+      url: "https://florigas.us/contact",
       siteName: "FloriGas",
     },
 
@@ -38,7 +38,7 @@ export async function generateMetadata(): Promise<Metadata> {
       card: "summary_large_image",
       images: [
         {
-          url: "https://florigas.com/hero-section-background.png",
+          url: "https://florigas.us/hero-section-background.png",
           width: 1200,
           height: 630,
           alt: "Contact FloriGas",
@@ -52,7 +52,7 @@ export async function generateMetadata(): Promise<Metadata> {
     },
 
     alternates: {
-      canonical: "https://florigas.com/contact",
+      canonical: "https://florigas.us/contact",
     },
 
     robots: {

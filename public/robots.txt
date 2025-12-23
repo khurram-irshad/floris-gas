@@ -1,5 +1,5 @@
 # Sitemap files
-Sitemap: https://florigas.com/sitemap.xml
+Sitemap: https://florigas.us/sitemap.xml
 
 # Block Yandex completely
 User-agent: YandexBot

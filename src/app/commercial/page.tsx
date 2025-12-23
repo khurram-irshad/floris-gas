@@ -16,11 +16,11 @@ export async function generateMetadata(): Promise<Metadata> {
     description:
       "Reliable commercial propane solutions tailored to keep your business running smoothly with efficiency and cost-effectiveness. FloriGas provides expert propane services for restaurants, hotels, manufacturing, agriculture, and more across Florida.",
 
-    metadataBase: new URL("https://florigas.com"),
+    metadataBase: new URL("https://florigas.us"),
     openGraph: {
       images: [
         {
-          url: "https://florigas.com/hero-section-background.png",
+          url: "https://florigas.us/hero-section-background.png",
           width: 1200,
           height: 630,
           alt: "FloriGas Commercial Propane Solutions",
@@ -32,7 +32,7 @@ export async function generateMetadata(): Promise<Metadata> {
         "Reliable commercial propane solutions tailored to keep your business running smoothly with efficiency and cost-effectiveness. FloriGas provides expert propane services for restaurants, hotels, manufacturing, agriculture, and more across Florida.",
       type: "website",
       locale: "en_US",
-      url: "https://florigas.com/commercial",
+      url: "https://florigas.us/commercial",
       siteName: "FloriGas",
     },
 
@@ -40,7 +40,7 @@ export async function generateMetadata(): Promise<Metadata> {
       card: "summary_large_image",
       images: [
         {
-          url: "https://florigas.com/hero-section-background.png",
+          url: "https://florigas.us/hero-section-background.png",
           width: 1200,
           height: 630,
           alt: "FloriGas Commercial Propane Solutions",
@@ -55,7 +55,7 @@ export async function generateMetadata(): Promise<Metadata> {
     },
 
     alternates: {
-      canonical: "https://florigas.com/commercial",
+      canonical: "https://florigas.us/commercial",
     },
 
     robots: {

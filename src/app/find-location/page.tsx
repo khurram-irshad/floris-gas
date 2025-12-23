@@ -16,11 +16,11 @@ export async function generateMetadata(): Promise<Metadata> {
     description:
       "Find your nearest FloriGas propane service location. Search by city, address, or zip code to locate propane delivery, refill stations, and service centers near you in Florida.",
 
-    metadataBase: new URL("https://florigas.com"),
+    metadataBase: new URL("https://florigas.us"),
     openGraph: {
       images: [
         {
-          url: "https://florigas.com/hero-section-background.png",
+          url: "https://florigas.us/hero-section-background.png",
           width: 1200,
           height: 630,
           alt: "Find FloriGas Location",
@@ -32,7 +32,7 @@ export async function generateMetadata(): Promise<Metadata> {
         "Find your nearest FloriGas propane service location. Search by city, address, or zip code to locate propane delivery, refill stations, and service centers near you in Florida.",
       type: "website",
       locale: "en_US",
-      url: "https://florigas.com/find-location",
+      url: "https://florigas.us/find-location",
       siteName: "FloriGas",
     },
 
@@ -40,7 +40,7 @@ export async function generateMetadata(): Promise<Metadata> {
       card: "summary_large_image",
       images: [
         {
-          url: "https://florigas.com/hero-section-background.png",
+          url: "https://florigas.us/hero-section-background.png",
           width: 1200,
           height: 630,
           alt: "Find FloriGas Location",
@@ -55,7 +55,7 @@ export async function generateMetadata(): Promise<Metadata> {
     },
 
     alternates: {
-      canonical: "https://florigas.com/find-location",
+      canonical: "https://florigas.us/find-location",
     },
 
     robots: {

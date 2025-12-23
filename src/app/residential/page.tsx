@@ -16,11 +16,11 @@ export async function generateMetadata(): Promise<Metadata> {
     description:
       "Convenient, on-time residential propane delivery to power your home with comfort and reliability. FloriGas provides expert residential propane services including heating, cooking, water heating, and more for Florida homeowners.",
 
-    metadataBase: new URL("https://florigas.com"),
+    metadataBase: new URL("https://florigas.us"),
     openGraph: {
       images: [
         {
-          url: "https://florigas.com/hero-section-background.png",
+          url: "https://florigas.us/hero-section-background.png",
           width: 1200,
           height: 630,
           alt: "FloriGas Residential Propane Services",
@@ -32,7 +32,7 @@ export async function generateMetadata(): Promise<Metadata> {
         "Convenient, on-time residential propane delivery to power your home with comfort and reliability. FloriGas provides expert residential propane services including heating, cooking, water heating, and more for Florida homeowners.",
       type: "website",
       locale: "en_US",
-      url: "https://florigas.com/residential",
+      url: "https://florigas.us/residential",
       siteName: "FloriGas",
     },
 
@@ -40,7 +40,7 @@ export async function generateMetadata(): Promise<Metadata> {
       card: "summary_large_image",
       images: [
         {
-          url: "https://florigas.com/hero-section-background.png",
+          url: "https://florigas.us/hero-section-background.png",
           width: 1200,
           height: 630,
           alt: "FloriGas Residential Propane Services",
@@ -55,7 +55,7 @@ export async function generateMetadata(): Promise<Metadata> {
     },
 
     alternates: {
-      canonical: "https://florigas.com/residential",
+      canonical: "https://florigas.us/residential",
     },
 
     robots: {

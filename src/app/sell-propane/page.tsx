@@ -16,11 +16,11 @@ export async function generateMetadata(): Promise<Metadata> {
     description:
       "Partner with FloriGas to sell propane and grow your business with reliable supply, trusted support, and flexible partnership opportunities. Join our network of propane distributors and retailers across Florida.",
 
-    metadataBase: new URL("https://florigas.com"),
+    metadataBase: new URL("https://florigas.us"),
     openGraph: {
       images: [
         {
-          url: "https://florigas.com/hero-section-background.png",
+          url: "https://florigas.us/hero-section-background.png",
           width: 1200,
           height: 630,
           alt: "FloriGas Propane Partnership Program",
@@ -32,7 +32,7 @@ export async function generateMetadata(): Promise<Metadata> {
         "Partner with FloriGas to sell propane and grow your business with reliable supply, trusted support, and flexible partnership opportunities. Join our network of propane distributors and retailers across Florida.",
       type: "website",
       locale: "en_US",
-      url: "https://florigas.com/sell-propane",
+      url: "https://florigas.us/sell-propane",
       siteName: "FloriGas",
     },
 
@@ -40,7 +40,7 @@ export async function generateMetadata(): Promise<Metadata> {
       card: "summary_large_image",
       images: [
         {
-          url: "https://florigas.com/hero-section-background.png",
+          url: "https://florigas.us/hero-section-background.png",
           width: 1200,
           height: 630,
           alt: "FloriGas Propane Partnership Program",
@@ -55,7 +55,7 @@ export async function generateMetadata(): Promise<Metadata> {
     },
 
     alternates: {
-      canonical: "https://florigas.com/sell-propane",
+      canonical: "https://florigas.us/sell-propane",
     },
 
     robots: {
