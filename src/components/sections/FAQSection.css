@@ -266,7 +266,6 @@
   }
 
   .faq-bottom-blur {
-    bottom: 250px;
-    height: 600px !important;
+    height: 100% !important;
   }
 }

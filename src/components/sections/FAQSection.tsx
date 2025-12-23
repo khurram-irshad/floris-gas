@@ -50,7 +50,7 @@ const faqData = [
 ]
 
 export default function FAQSection() {
-  const [openItem, setOpenItem] = useState<number | null>(2)
+  const [openItem, setOpenItem] = useState<number | null>(0)
 
   const toggleItem = (id: number) => {
     setOpenItem((prev) => (prev === id ? null : id))
