@@ -1,157 +1,97 @@
-import { Geist_Mono } from 'next/font/google'
-import { gilroy } from './fonts'
-import './globals.css'
-import type { Metadata, Viewport } from 'next'
+import { Geist_Mono } from "next/font/google";
+import { gilroy } from "./fonts";
+import "./globals.css";
+import type { Metadata, Viewport } from "next";
 
 const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-})
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export function generateViewport(): Viewport {
   return {
-    width: 'device-width',
+    width: "device-width",
     initialScale: 1,
     maximumScale: 1,
-  }
+  };
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const metadata: Metadata = {
-    title:
-      'FloriGas | Premium Propane Service That Puts Your Convenience First',
+  return {
+    title: "FloriGas | Premium Propane Service That Puts Your Convenience First",
     description:
-      "At FloriGas Inc, we're your trusted full-service propane supplier in Florida — delivering expert service, reliable supply, and customer care built on respect, trust, and integrity. Family-owned and operated, serving residential and commercial customers with premium propane solutions.",
+      "FloriGas is a trusted full-service propane supplier delivering reliable propane solutions for residential and commercial customers with a focus on safety, service, and integrity.",
 
-    metadataBase: new URL('https://florigas.us'),
-    openGraph: {
-      images: [
-        {
-          url: 'https://florigas.us/hero-section-background.png',
-          width: 1200,
-          height: 630,
-          alt: 'FloriGas Premium Propane Service',
-        },
-      ],
-      title:
-        'FloriGas | Premium Propane Service That Puts Your Convenience First',
-      description:
-        "At FloriGas Inc, we're your trusted full-service propane supplier in Florida — delivering expert service, reliable supply, and customer care built on respect, trust, and integrity. Family-owned and operated, serving residential and commercial customers with premium propane solutions.",
-      type: 'website',
-      locale: 'en_US',
-      url: 'https://florigas.us',
-      siteName: 'FloriGas',
-    },
-
-    twitter: {
-      card: 'summary_large_image',
-      images: [
-        {
-          url: 'https://florigas.us/hero-section-background.png',
-          width: 1200,
-          height: 630,
-          alt: 'FloriGas Premium Propane Service',
-        },
-      ],
-      title:
-        'FloriGas | Premium Propane Service That Puts Your Convenience First',
-      description:
-        "At FloriGas Inc, we're your trusted full-service propane supplier in Florida — delivering expert service, reliable supply, and customer care built on respect, trust, and integrity. Family-owned and operated, serving residential and commercial customers with premium propane solutions.",
-      site: '@florigas',
-      creator: '@florigas',
-    },
+    metadataBase: new URL("https://florigas.us"),
 
     alternates: {
-      canonical: 'https://florigas.us/',
+      canonical: "https://florigas.us/",
     },
 
     robots: {
       index: true,
       follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1,
+      },
     },
 
-    keywords: [
-      'gas in miami',
-      'miami gas',
-      'miami gas services',
-      'FloriGas',
-      'FloriGas Inc',
-      'propane',
-      'propane delivery',
-      'propane service',
-      'Florida propane',
-      'residential propane',
-      'commercial propane',
-      'propane supplier',
-      'propane delivery Florida',
-      'family owned propane',
-      'propane solutions',
-      'propane tank',
-      'propane refill',
-      'trusted propane supplier',
-
-      'propane in Miami',
-      'propane delivery Miami',
-      'Miami propane service',
-      'propane Miami FL',
-      'gas Miami Florida',
-      'propane supplier Miami',
-      'Miami propane delivery',
-      'propane service Miami',
-      'Florida gas service',
-      'propane Florida',
-      'gas in Texas',
-      'propane in Texas',
-      'propane delivery Texas',
-      'Texas propane service',
-      'propane Texas',
-      'gas Texas',
-      'propane supplier Texas',
-      'propane delivery Dallas',
-      'propane Houston',
-      'gas in Georgia',
-      'propane in Georgia',
-      'propane delivery Georgia',
-      'Georgia propane service',
-      'propane Georgia',
-      'gas Georgia',
-      'propane supplier Georgia',
-      'propane delivery Atlanta',
-      'propane Savannah',
-      'miami gas',
-    ],
-    icons: {
-      icon: [
-        { url: '/icon.svg', sizes: 'any', type: 'image/svg+xml' },
-        { url: '/icon.svg', sizes: '32x32', type: 'image/svg+xml' },
-        { url: '/icon.svg', sizes: '48x48', type: 'image/svg+xml' },
-        { url: '/icon.svg', sizes: '64x64', type: 'image/svg+xml' },
-        { url: '/icon.svg', sizes: '128x128', type: 'image/svg+xml' },
+    openGraph: {
+      title: "FloriGas | Premium Propane Service",
+      description:
+        "Reliable propane services for residential and commercial customers, delivered with care, trust, and expertise.",
+      url: "https://florigas.us",
+      siteName: "FloriGas",
+      type: "website",
+      locale: "en_US",
+      images: [
+        {
+          url: "https://florigas.us/hero-section-background.png",
+          width: 1200,
+          height: 630,
+          alt: "FloriGas Premium Propane Service",
+        },
       ],
-      shortcut: '/icon.svg',
-      apple: [{ url: '/icon.svg', sizes: '180x180', type: 'image/svg+xml' }],
     },
-    verification: {
-      google: 'KMxzNVGPQBhBLB8c-yfhAthc5U9GV_ZfnfVCp7s4uCo',
-    },
-    other: {
-      'X-UA-Compatible': 'IE=edge',
-    },
-  }
 
-  return metadata
+    twitter: {
+      card: "summary_large_image",
+      title: "FloriGas | Premium Propane Service",
+      description:
+        "Reliable propane services for homes and businesses, delivered with care and integrity.",
+      images: ["https://florigas.us/hero-section-background.png"],
+      site: "@florigas",
+      creator: "@florigas",
+    },
+
+    icons: {
+      icon: [{ url: "/icon.svg", sizes: "any", type: "image/svg+xml" }],
+      shortcut: "/icon.svg",
+      apple: [{ url: "/icon.svg", sizes: "180x180", type: "image/svg+xml" }],
+    },
+
+    verification: {
+      google: "KMxzNVGPQBhBLB8c-yfhAthc5U9GV_ZfnfVCp7s4uCo",
+    },
+
+    other: {
+      "X-UA-Compatible": "IE=edge",
+    },
+  };
 }
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={gilroy.variable}>
       <body className={`${geistMono.variable} font-gilroy antialiased`}>
         {children}
       </body>
     </html>
-  )
+  );
 }
