@@ -72,8 +72,8 @@ export async function generateMetadata(): Promise<Metadata> {
 
     keywords: [
       'gas in miami',
-      'miami gass',
-      'miami gass services',
+      'miami gas',
+      'miami gas services',
       'FloriGas',
       'FloriGas Inc',
       'propane',

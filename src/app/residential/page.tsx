@@ -1,58 +1,21 @@
-import ResidentialPage from "@/components/ClientResidentialPage"
-import type { Metadata, Viewport } from "next"
+import ResidentialPage from "@/components/ClientResidentialPage";
+import type { Metadata, Viewport } from "next";
 
 export function generateViewport(): Viewport {
   return {
     width: "device-width",
     initialScale: 1,
     maximumScale: 1,
-  }
+  };
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const metadata: Metadata = {
-    title:
-      "Residential Propane Delivery | FloriGas - Home Propane Services in Florida",
+  return {
+    title: "Residential Propane Delivery | Home Propane Services | FloriGas",
     description:
-      "Convenient, on-time residential propane delivery to power your home with comfort and reliability. FloriGas provides expert residential propane services including heating, cooking, water heating, and more for Florida homeowners.",
+      "Reliable residential propane delivery for homes. FloriGas provides safe, on-time propane services for heating, cooking, water heating, and everyday household needs.",
 
     metadataBase: new URL("https://florigas.us"),
-    openGraph: {
-      images: [
-        {
-          url: "https://florigas.us/hero-section-background.png",
-          width: 1200,
-          height: 630,
-          alt: "FloriGas Residential Propane Services",
-        },
-      ],
-      title:
-        "Residential Propane Delivery | FloriGas - Home Propane Services in Florida",
-      description:
-        "Convenient, on-time residential propane delivery to power your home with comfort and reliability. FloriGas provides expert residential propane services including heating, cooking, water heating, and more for Florida homeowners.",
-      type: "website",
-      locale: "en_US",
-      url: "https://florigas.us/residential",
-      siteName: "FloriGas",
-    },
-
-    twitter: {
-      card: "summary_large_image",
-      images: [
-        {
-          url: "https://florigas.us/hero-section-background.png",
-          width: 1200,
-          height: 630,
-          alt: "FloriGas Residential Propane Services",
-        },
-      ],
-      title:
-        "Residential Propane Delivery | FloriGas - Home Propane Services in Florida",
-      description:
-        "Convenient, on-time residential propane delivery to power your home with comfort and reliability. FloriGas provides expert residential propane services including heating, cooking, water heating, and more for Florida homeowners.",
-      site: "@florigas",
-      creator: "@florigas",
-    },
 
     alternates: {
       canonical: "https://florigas.us/residential",
@@ -61,68 +24,55 @@ export async function generateMetadata(): Promise<Metadata> {
     robots: {
       index: true,
       follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1,
+      },
     },
 
-    keywords: [
-      "residential propane",
-      "home propane delivery",
-      "propane for home",
-      "residential propane service",
-      "home heating propane",
-      "propane delivery Florida",
-      "residential propane tank",
-      "home propane refill",
-      "Florida residential propane",
-      "propane for homeowners",
-      "FloriGas residential",
-      "residential propane Miami",
-      "home propane delivery Miami",
-      "propane for home Miami",
-      "Miami residential propane",
-      "propane delivery Miami residential",
-      "residential gas Miami",
-      "home gas Miami FL",
-      "propane service Miami residential",
-      "Miami home propane",
-      "residential propane Texas",
-      "home propane delivery Texas",
-      "propane for home Texas",
-      "Texas residential propane",
-      "propane delivery Texas residential",
-      "residential gas Texas",
-      "home gas Texas",
-      "propane service Texas residential",
-      "Dallas home propane",
-      "residential propane Georgia",
-      "home propane delivery Georgia",
-      "propane for home Georgia",
-      "Georgia residential propane",
-      "propane delivery Georgia residential",
-      "residential gas Georgia",
-      "home gas Georgia",
-      "propane service Georgia residential",
-      "Atlanta home propane",
-      "miami gas",
-    ],
-    icons: {
-      icon: [
-        { url: "/icon.svg", sizes: "any", type: "image/svg+xml" },
-        { url: "/icon.svg", sizes: "32x32", type: "image/svg+xml" },
-        { url: "/icon.svg", sizes: "48x48", type: "image/svg+xml" },
-        { url: "/icon.svg", sizes: "64x64", type: "image/svg+xml" },
-        { url: "/icon.svg", sizes: "128x128", type: "image/svg+xml" },
+    openGraph: {
+      title: "Residential Propane Delivery | Home Propane Services | FloriGas",
+      description:
+        "Reliable residential propane delivery for homes. Heating, cooking, water heating, and more with safe, dependable service.",
+      url: "https://florigas.us/residential",
+      siteName: "FloriGas",
+      type: "website",
+      locale: "en_US",
+      images: [
+        {
+          url: "https://florigas.us/hero-section-background.png",
+          width: 1200,
+          height: 630,
+          alt: "FloriGas Residential Propane Services",
+        },
       ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: "Residential Propane Delivery | Home Propane Services | FloriGas",
+      description:
+        "Safe, reliable residential propane delivery for heating, cooking, and household energy needs.",
+      images: ["https://florigas.us/hero-section-background.png"],
+      site: "@florigas",
+      creator: "@florigas",
+    },
+
+    icons: {
+      icon: [{ url: "/icon.svg", sizes: "any", type: "image/svg+xml" }],
       shortcut: "/icon.svg",
       apple: [{ url: "/icon.svg", sizes: "180x180", type: "image/svg+xml" }],
     },
+
     other: {
       "X-UA-Compatible": "IE=edge",
     },
-  }
-
-  return metadata
+  };
 }
 
-export default async function Page() {
-  return <ResidentialPage />
+export default function Page() {
+  return <ResidentialPage />;
 }

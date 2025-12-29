@@ -1,58 +1,21 @@
-import CommercialPage from "@/components/ClientCommercialPage"
-import type { Metadata, Viewport } from "next"
+import CommercialPage from "@/components/ClientCommercialPage";
+import type { Metadata, Viewport } from "next";
 
 export function generateViewport(): Viewport {
   return {
     width: "device-width",
     initialScale: 1,
     maximumScale: 1,
-  }
+  };
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const metadata: Metadata = {
-    title:
-      "Commercial Propane Solutions | FloriGas - Reliable Business Propane Services",
+  return {
+    title: "Commercial Propane Delivery in Florida | FloriGas",
     description:
-      "Reliable commercial propane solutions tailored to keep your business running smoothly with efficiency and cost-effectiveness. FloriGas provides expert propane services for restaurants, hotels, manufacturing, agriculture, and more across Florida.",
+      "Commercial propane delivery and service across Florida for restaurants, hotels, facilities, and industrial operations. Reliable supply, safety-first service, and responsive customer support.",
 
     metadataBase: new URL("https://florigas.us"),
-    openGraph: {
-      images: [
-        {
-          url: "https://florigas.us/hero-section-background.png",
-          width: 1200,
-          height: 630,
-          alt: "FloriGas Commercial Propane Solutions",
-        },
-      ],
-      title:
-        "Commercial Propane Solutions | FloriGas - Reliable Business Propane Services",
-      description:
-        "Reliable commercial propane solutions tailored to keep your business running smoothly with efficiency and cost-effectiveness. FloriGas provides expert propane services for restaurants, hotels, manufacturing, agriculture, and more across Florida.",
-      type: "website",
-      locale: "en_US",
-      url: "https://florigas.us/commercial",
-      siteName: "FloriGas",
-    },
-
-    twitter: {
-      card: "summary_large_image",
-      images: [
-        {
-          url: "https://florigas.us/hero-section-background.png",
-          width: 1200,
-          height: 630,
-          alt: "FloriGas Commercial Propane Solutions",
-        },
-      ],
-      title:
-        "Commercial Propane Solutions | FloriGas - Reliable Business Propane Services",
-      description:
-        "Reliable commercial propane solutions tailored to keep your business running smoothly with efficiency and cost-effectiveness. FloriGas provides expert propane services for restaurants, hotels, manufacturing, agriculture, and more across Florida.",
-      site: "@florigas",
-      creator: "@florigas",
-    },
 
     alternates: {
       canonical: "https://florigas.us/commercial",
@@ -61,68 +24,55 @@ export async function generateMetadata(): Promise<Metadata> {
     robots: {
       index: true,
       follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1,
+      },
     },
 
-    keywords: [
-      "commercial propane",
-      "business propane",
-      "propane for restaurants",
-      "industrial propane",
-      "propane for hotels",
-      "manufacturing propane",
-      "agriculture propane",
-      "commercial propane delivery",
-      "Florida commercial propane",
-      "propane supplier for business",
-      "FloriGas commercial",
-      "commercial propane Miami",
-      "business propane Miami",
-      "propane for restaurants Miami",
-      "Miami commercial propane",
-      "propane delivery Miami business",
-      "commercial gas Miami",
-      "business gas Miami FL",
-      "propane service Miami commercial",
-      "Miami industrial propane",
-      "commercial propane Texas",
-      "business propane Texas",
-      "propane for restaurants Texas",
-      "Texas commercial propane",
-      "propane delivery Texas business",
-      "commercial gas Texas",
-      "business gas Dallas",
-      "propane service Texas commercial",
-      "Houston industrial propane",
-      "commercial propane Georgia",
-      "business propane Georgia",
-      "propane for restaurants Georgia",
-      "Georgia commercial propane",
-      "propane delivery Georgia business",
-      "commercial gas Georgia",
-      "business gas Atlanta",
-      "propane service Georgia commercial",
-      "Savannah industrial propane",
-      "miami gas",
-    ],
-    icons: {
-      icon: [
-        { url: "/icon.svg", sizes: "any", type: "image/svg+xml" },
-        { url: "/icon.svg", sizes: "32x32", type: "image/svg+xml" },
-        { url: "/icon.svg", sizes: "48x48", type: "image/svg+xml" },
-        { url: "/icon.svg", sizes: "64x64", type: "image/svg+xml" },
-        { url: "/icon.svg", sizes: "128x128", type: "image/svg+xml" },
+    openGraph: {
+      title: "Commercial Propane Delivery in Florida | FloriGas",
+      description:
+        "Commercial propane delivery and service across Florida for restaurants, hotels, facilities, and industrial operations.",
+      url: "https://florigas.us/commercial",
+      siteName: "FloriGas",
+      type: "website",
+      locale: "en_US",
+      images: [
+        {
+          url: "https://florigas.us/hero-section-background.png",
+          width: 1200,
+          height: 630,
+          alt: "FloriGas Commercial Propane Service",
+        },
       ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: "Commercial Propane Delivery in Florida | FloriGas",
+      description:
+        "Commercial propane delivery and service across Florida for restaurants, hotels, facilities, and industrial operations.",
+      images: ["https://florigas.us/hero-section-background.png"],
+      site: "@florigas",
+      creator: "@florigas",
+    },
+
+    icons: {
+      icon: [{ url: "/icon.svg", sizes: "any", type: "image/svg+xml" }],
       shortcut: "/icon.svg",
       apple: [{ url: "/icon.svg", sizes: "180x180", type: "image/svg+xml" }],
     },
+
     other: {
       "X-UA-Compatible": "IE=edge",
     },
-  }
-
-  return metadata
+  };
 }
 
-export default async function Page() {
-  return <CommercialPage />
+export default function Page() {
+  return <CommercialPage />;
 }

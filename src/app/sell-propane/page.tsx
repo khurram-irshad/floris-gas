@@ -1,58 +1,21 @@
-import SellPropanePage from "@/components/ClientSellPropanePage"
-import type { Metadata, Viewport } from "next"
+import SellPropanePage from "@/components/ClientSellPropanePage";
+import type { Metadata, Viewport } from "next";
 
 export function generateViewport(): Viewport {
   return {
     width: "device-width",
     initialScale: 1,
     maximumScale: 1,
-  }
+  };
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const metadata: Metadata = {
-    title:
-      "Sell Propane | Partner with FloriGas - Propane Distribution Opportunities",
+  return {
+    title: "Sell Propane | Partner With FloriGas",
     description:
-      "Partner with FloriGas to sell propane and grow your business with reliable supply, trusted support, and flexible partnership opportunities. Join our network of propane distributors and retailers across Florida.",
+      "Partner with FloriGas to sell propane and grow your business. We offer reliable supply, operational support, and flexible partnership opportunities for propane distributors and retailers.",
 
     metadataBase: new URL("https://florigas.us"),
-    openGraph: {
-      images: [
-        {
-          url: "https://florigas.us/hero-section-background.png",
-          width: 1200,
-          height: 630,
-          alt: "FloriGas Propane Partnership Program",
-        },
-      ],
-      title:
-        "Sell Propane | Partner with FloriGas - Propane Distribution Opportunities",
-      description:
-        "Partner with FloriGas to sell propane and grow your business with reliable supply, trusted support, and flexible partnership opportunities. Join our network of propane distributors and retailers across Florida.",
-      type: "website",
-      locale: "en_US",
-      url: "https://florigas.us/sell-propane",
-      siteName: "FloriGas",
-    },
-
-    twitter: {
-      card: "summary_large_image",
-      images: [
-        {
-          url: "https://florigas.us/hero-section-background.png",
-          width: 1200,
-          height: 630,
-          alt: "FloriGas Propane Partnership Program",
-        },
-      ],
-      title:
-        "Sell Propane | Partner with FloriGas - Propane Distribution Opportunities",
-      description:
-        "Partner with FloriGas to sell propane and grow your business with reliable supply, trusted support, and flexible partnership opportunities. Join our network of propane distributors and retailers across Florida.",
-      site: "@florigas",
-      creator: "@florigas",
-    },
 
     alternates: {
       canonical: "https://florigas.us/sell-propane",
@@ -61,68 +24,55 @@ export async function generateMetadata(): Promise<Metadata> {
     robots: {
       index: true,
       follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1,
+      },
     },
 
-    keywords: [
-      "sell propane",
-      "propane distributor",
-      "propane partnership",
-      "propane retailer",
-      "propane distribution",
-      "become propane dealer",
-      "propane business opportunity",
-      "propane wholesale",
-      "propane reseller",
-      "FloriGas partnership",
-      "propane dealer program",
-      "sell propane Miami",
-      "propane distributor Miami",
-      "propane partnership Miami",
-      "Miami propane retailer",
-      "propane distribution Miami",
-      "become propane dealer Miami",
-      "propane business opportunity Miami",
-      "Miami propane wholesale",
-      "propane reseller Miami FL",
-      "sell propane Texas",
-      "propane distributor Texas",
-      "propane partnership Texas",
-      "Texas propane retailer",
-      "propane distribution Texas",
-      "become propane dealer Texas",
-      "propane business opportunity Texas",
-      "Texas propane wholesale",
-      "propane reseller Texas",
-      "sell propane Georgia",
-      "propane distributor Georgia",
-      "propane partnership Georgia",
-      "Georgia propane retailer",
-      "propane distribution Georgia",
-      "become propane dealer Georgia",
-      "propane business opportunity Georgia",
-      "Georgia propane wholesale",
-      "propane reseller Georgia",
-      "miami gas",
-    ],
-    icons: {
-      icon: [
-        { url: "/icon.svg", sizes: "any", type: "image/svg+xml" },
-        { url: "/icon.svg", sizes: "32x32", type: "image/svg+xml" },
-        { url: "/icon.svg", sizes: "48x48", type: "image/svg+xml" },
-        { url: "/icon.svg", sizes: "64x64", type: "image/svg+xml" },
-        { url: "/icon.svg", sizes: "128x128", type: "image/svg+xml" },
+    openGraph: {
+      title: "Sell Propane | Partner With FloriGas",
+      description:
+        "Partner with FloriGas to sell propane and grow your business with reliable supply and trusted operational support.",
+      url: "https://florigas.us/sell-propane",
+      siteName: "FloriGas",
+      type: "website",
+      locale: "en_US",
+      images: [
+        {
+          url: "https://florigas.us/hero-section-background.png",
+          width: 1200,
+          height: 630,
+          alt: "FloriGas Propane Partnership Program",
+        },
       ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: "Sell Propane | Partner With FloriGas",
+      description:
+        "Join FloriGas as a propane partner and grow your business with reliable supply and flexible opportunities.",
+      images: ["https://florigas.us/hero-section-background.png"],
+      site: "@florigas",
+      creator: "@florigas",
+    },
+
+    icons: {
+      icon: [{ url: "/icon.svg", sizes: "any", type: "image/svg+xml" }],
       shortcut: "/icon.svg",
       apple: [{ url: "/icon.svg", sizes: "180x180", type: "image/svg+xml" }],
     },
+
     other: {
       "X-UA-Compatible": "IE=edge",
     },
-  }
-
-  return metadata
+  };
 }
 
-export default async function Page() {
-  return <SellPropanePage />
+export default function Page() {
+  return <SellPropanePage />;
 }
