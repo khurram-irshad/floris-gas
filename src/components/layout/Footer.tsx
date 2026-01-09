@@ -28,16 +28,23 @@ export default function Footer() {
 
         {/* Bottom Section: Three Columns */}
         <div className="footer-columns">
-          {/* How we can help */}
-          {/* <div className="footer-column">
-            <h3 className="footer-column-title">How we can help?</h3>
-            <ul className="footer-links">
-              <li><a  className="footer-link">Faster Delivery Times</a></li>
-              <li><a  className="footer-link">Safety Inspections</a></li>
-              <li><a  className="footer-link">Experienced Drivers</a></li>
-              <li><a  className="footer-link">Trusted Since 1995</a></li>
-            </ul>
-          </div> */}
+          {/* Powered by INOVAQO */}
+          <div className="footer-column footer-powered-by">
+            <a
+              href="https://inovaqo.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-inovaqo-logo"
+            >
+              <Image
+                src="/inovaqo-logo.svg"
+                alt="Inovaqo"
+                width={136}
+                height={56}
+                className="inovaqo-logo-image"
+              />
+            </a>
+          </div>
 
           {/* Services */}
           <div className="footer-column">
@@ -108,6 +115,24 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+        </div>
+
+        {/* Mobile: Powered by INOVAQO - Centered below columns */}
+        <div className="footer-powered-by-mobile">
+          <a
+            href="https://inovaqo.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-inovaqo-logo"
+          >
+            <Image
+              src="/inovaqo-logo.svg"
+              alt="Inovaqo"
+              width={136}
+              height={56}
+              className="inovaqo-logo-image"
+            />
+          </a>
         </div>
       </div>
 
