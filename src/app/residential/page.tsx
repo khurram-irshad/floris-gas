@@ -61,12 +61,6 @@ export async function generateMetadata(): Promise<Metadata> {
       creator: "@florigas",
     },
 
-    icons: {
-      icon: [{ url: "/icon.svg", sizes: "any", type: "image/svg+xml" }],
-      shortcut: "/icon.svg",
-      apple: [{ url: "/icon.svg", sizes: "180x180", type: "image/svg+xml" }],
-    },
-
     other: {
       "X-UA-Compatible": "IE=edge",
     },

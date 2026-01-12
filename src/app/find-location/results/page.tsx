@@ -90,17 +90,6 @@ export async function generateMetadata(): Promise<Metadata> {
       "propane stations near me Atlanta",
       "miami gas",
     ],
-    icons: {
-      icon: [
-        { url: "/icon.svg", sizes: "any", type: "image/svg+xml" },
-        { url: "/icon.svg", sizes: "32x32", type: "image/svg+xml" },
-        { url: "/icon.svg", sizes: "48x48", type: "image/svg+xml" },
-        { url: "/icon.svg", sizes: "64x64", type: "image/svg+xml" },
-        { url: "/icon.svg", sizes: "128x128", type: "image/svg+xml" },
-      ],
-      shortcut: "/icon.svg",
-      apple: [{ url: "/icon.svg", sizes: "180x180", type: "image/svg+xml" }],
-    },
     other: {
       "X-UA-Compatible": "IE=edge",
     },
