@@ -97,17 +97,16 @@ export default function Navigation() {
             {/* Location button */}
             <Link
               href="/find-location"
-              className="mobile-location-button-header"
+              className="bg-accent-red hover:bg-accent-red-hover text-white px-1.5 py-1.5 rounded-md font-medium text-[12px] tracking-wide transition-all duration-200 shadow-sm hover:shadow-md flex items-center gap-1"
             >
-              <div className="location-icon-container">
-                <Image
-                  src="/mobile-navigation.png"
-                  alt="Location"
-                  width={36}
-                  height={36}
-                  className="location-icon"
-                />
-              </div>
+              <Image
+                src="/location-01.svg"
+                alt="Location"
+                width={16}
+                height={16}
+                className="w-4 h-4"
+              />
+              FIND LOCATION
             </Link>
             <div className="mobile-menu-icon-container">
               <button
