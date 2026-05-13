@@ -492,6 +492,9 @@ export default function FindLocationPage() {
       <div className="find-location-page">
         {/* Main Content */}
         <main className="find-location-main">
+          <h1 className="sr-only">
+            Find a FloriGas propane station or service location
+          </h1>
           {/* Map Background */}
           <div className="find-location-map-background">
             <div

@@ -1046,11 +1046,14 @@ function ResultsContent() {
               />
             </svg>
           </button>
-          <h1 className="mobile-title">Gas Stations</h1>
+          <p className="mobile-title">Gas Stations</p>
           <div className="mobile-header-spacer"></div>
         </div>
 
         <main className="results-main">
+          <h1 className="sr-only">
+            FloriGas propane station location results
+          </h1>
           {/* Desktop Sidebar - Hidden on mobile */}
           <div className="results-sidebar desktop-only">
             <div className="search-header">

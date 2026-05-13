@@ -19,9 +19,9 @@ export default function CommercialPropaneSolutions() {
       <div className="commercial-propane-solutions-container">
         <div className="commercial-propane-solutions-content">
           <div className="commercial-propane-solutions-left">
-            <h2 className="commercial-propane-solutions-title">
+            <h1 className="commercial-propane-solutions-title">
               Powering Your Business with Reliable Propane.
-            </h2>
+            </h1>
           </div>
 
           <div className="commercial-propane-solutions-right">

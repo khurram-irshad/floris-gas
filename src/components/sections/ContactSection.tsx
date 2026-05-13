@@ -97,7 +97,7 @@ export default function ContactSection() {
       <div className="contact-container">
         {/* Header */}
         <div className="contact-header">
-          <h2 className="contact-title">Get in touch</h2>
+          <h1 className="contact-title">Get in touch</h1>
           <p className="contact-description">
             Join a trusted network and unlock new revenue opportunities with
             reliable supply &<br />
@@ -111,7 +111,7 @@ export default function ContactSection() {
           {/* Left Side - Contact Information */}
           <div className="contact-info">
             <div className="contact-info-section">
-              <h3 className="contact-info-title">Contact us on</h3>
+              <h2 className="contact-info-title">Contact us on</h2>
               <div className="contact-phones">
                 <div className="phone-item">
                   <span className="phone-icon">📞</span>
@@ -125,7 +125,7 @@ export default function ContactSection() {
             </div>
 
             {/* <div className="contact-info-section">
-              <h3 className="contact-info-title">Social Media</h3>
+              <h2 className="contact-info-title">Social Media</h2>
               <div className="social-links">
                 <a href="#" className="social-link facebook">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -151,7 +151,7 @@ export default function ContactSection() {
             </div> */}
 
             <div className="contact-info-section">
-              <h3 className="contact-info-title">Visit us</h3>
+              <h2 className="contact-info-title">Visit us</h2>
               <div className="address-info">
                 <div className="address-item">
                   <span className="address-icon">📍</span>

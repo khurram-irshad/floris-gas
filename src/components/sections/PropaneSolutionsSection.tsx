@@ -19,9 +19,9 @@ export default function PropaneSolutionsSection() {
       <div className="propane-solutions-container">
         <div className="propane-solutions-content">
           <div className="propane-solutions-left">
-            <h2 className="propane-solutions-title">
+            <h1 className="propane-solutions-title">
               Reliable Propane Solutions for Your Home
-            </h2>
+            </h1>
           </div>
 
           <div className="propane-solutions-right">
